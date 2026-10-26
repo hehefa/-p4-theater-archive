@@ -1,0 +1,47 @@
+# 剧本｜表演指令－围
+
+[A站保存原文](<https://a.p4theater.cn/wechat/wechat-2020-07-31-62c73f6707>)
+
+原发布账号：p4剧场
+原记录日期：2020-07-31 19:59
+来源编号：`wechat-2020-07-31-62c73f6707`
+
+[公众号原文链接](<https://mp.weixin.qq.com/s?__biz=MzI0MTE4MTAwMw==&mid=2247484575&idx=4&sn=5ad143c126896bebff8aeb3b14ea9221&chksm=e85765e54bc3f30a69d029c09493f7c43d2d523c321f9810589331f51fceb284c17ba63b91c6#rd>)
+
+分类：剧本 / 独白 / 戏剧文本 · 文本
+
+## 保存正文
+
+那是一片绿色的净土，我永远心驰神往的地方。不论什么时候，身在何处，一闭上眼，我就能回到草原。
+
+ 我的眼睛在草原上漫无边际地奔跑，穿梭在蒙古包、羊群和绿草之间，跑了好远好远，回到了小时候。那是我要上小学的前一年，城里来了很多汉族人。似乎一夜之间，他们突然涌了进来，建起火车站、商店、餐厅、学校、宾馆、银行……汉人们散落在街上，到处都是。他们造钱，赚钱，好不热闹地一通忙活。我们被汉人包围了。
+
+ 目之所及的地方，全都是汉人，他们拉帮结伙，用陌生的语调说着我不熟悉的语言，穿着和我们不一样的衣服，又短又薄，长相奇特，怎么讲？总有种看不到血性的沉默在脸上。我走在街上，总觉得他们在用别样的眼光看我，冰冷、漠然——这群人先占领了我的家，然后又把我围了起来。
+
+ 在学校里，我也变成了一颗杂质，寄居在汉人中间。他们总是那么吵，成群结队，围成一座座躁动的墙，活跃、蠢蠢欲动，聒噪不停地骚动着。燥热，闷得我透不过气，我就像只没力气的飞虫被他们按住。哪里都有他们的影子，从早到晚，没一刻能躲开。我只记得我一次次翻出学校的围墙，跑啊跑，撒开腿，跨过马路、越过车流、逆着愈加汹涌的人潮……一路上筋疲力尽，气喘吁吁，我只想跑到草原上去。
+
+ 只属于我的草原，沁润我，打湿我，把我的皮肤都吸收透的草原——它在等着我。不用打招呼，羊群、蒙古包、奶茶，还有一望无际的碧绿——它们就知道我来了。那首熟悉的蒙古民谣又响起来了，珊蔻少有的悠扬曲调，十分温柔、醉人，让我想起妈妈的耳语。他们都在围墙之外的地方，我的最深处。
+
+ 想起草原的时候，我就是真正的自己。身体融化在那想象里，连血液流动的声音都变快了……眉头舒缓了一些，对，就这样，再想得深一点，只有我，只身驰骋在草原上……
+
+ 我的眉头总是皱的很近，需要时不时用手指梳理开。你看，它打结的地方还在抖动，松不下来。汉人筑起的围墙一直在我周围，从未消失。他们一遍遍书写我眉头的痕迹，拖着我走出草原，来到新世界——进入更敞亮、更复杂、更耀眼的版图……一次又一次，外族的力量冲蚀着我，把我变成一座变形的小岛，漂泊在大多数人群之外…..失衡、沉重、痛苦……
+
+ 没办法，总有个声音在喊我：闭上眼，跑起来吧。去草原，更深处的草原，继续跑，草原，它在等你……
+
+ “我‘在看’你再看”
+
+## 原文图像
+
+![原文图像 1](<https://mmbiz.qpic.cn/mmbiz_jpg/LHiamKLP0C5k54oicOLwwYvs9Apz8iaTyyYdGaCic1t1g5s0xHtYE4yHCgwlicpodUAB2hqLXJiaBMHfzUHQeWFFl7Ug/640?wx_fmt=jpeg>)
+
+![原文图像 2](<https://mmbiz.qpic.cn/mmbiz_jpg/LHiamKLP0C5k54oicOLwwYvs9Apz8iaTyyY1JdkZow5VEBCEiaU0hiclcvNaZLRoEA1JBlPwtAiaNOoewaK98SCTjGNw/640?wx_fmt=jpeg>)
+
+![原文图像 3](<https://mmbiz.qlogo.cn/mmbiz_jpg/LHiamKLP0C5k54oicOLwwYvs9Apz8iaTyyYjIicSxVBkLIJw8xuoibb28pFZwSrdcjpIYict7xGiaNUfJia6JLkSRHVeiaw/0?wx_fmt=jpeg>)
+
+![原文图像 4](<https://mmbiz.qpic.cn/mmbiz_jpg/LHiamKLP0C5k54oicOLwwYvs9Apz8iaTyyYicU0oHUeNcWLGNBbEwfYrStxZ5iaA8JRnicWibKWGb9pY3DiciagOFodgrng/640?wx_fmt=jpeg>)
+
+## 来源与版本
+
+- 官方来源：[原文页](<https://a.p4theater.cn/wechat/wechat-2020-07-31-62c73f6707>)
+- 保存正文 SHA-256：`036a24fd4953db2cf704dc26e377f39f40159f2059f3ddb6738b13450cf8f044`
+- 记录版本 SHA-256：`fe4a8f464be0e3eb732a48dd8f6407407550432d4a67b96c46df88440fea23fe`

@@ -1,0 +1,1889 @@
+{
+  "schema_version": 1,
+  "batch_id": "top10-target-language-coverage-20261024",
+  "target_language_slots": 240,
+  "github_versions_recorded": 199,
+  "source_version_unresolved": 41,
+  "scope": "Language slots are not new files. Recorded means an exact GitHub edition, not a new YouTube upload or a fresh current-platform verification.",
+  "items": [
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "ar",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:ar:75a3758f2d55ed2a0aa95a33fb96a4e3d49b37616e15816b20ae7494043aebb9",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "bn",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:bn:5c34ed9cc7a452d8689a75499574428942550ef4ef5cd09fa7c057e502ff395b",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "de",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact upload file is not the current final conversion-manifest version"
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "en",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:en:1829bc870b0b4d4b8db927cd532aaaa28371805ef4e06686868720be856f5cce",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "es",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:es:fa563bdea869afb9f0080d12b3666939324e585e56a5cf7e00df9c45e229ac51",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "fa",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:fa:29fac9f3423817548d6ba46c8f3ff810b8b07011419ed3d7415f881cf485ca1e",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "fr",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:fr:8d9fb2ab1c9fdc0f227036c56543be5e09dd3981efd7fdbfaf0dfaa3d1c94a15",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "hi",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:hi:64e99c8d49cef4500035c5c57792ca188ed4e0118eecb3fb0c7d6fb16ac64241",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "id",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:id:775109a09978a9a6b6c069c41ae5c2166ef62ee8f3b786ef30a69f39e86ec42a",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "it",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:it:3d3247135d0bec3ca826a6ffbc6f8c8eb84d9f8c3899ddbf51b8ecee5144dfd9",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "ja",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:ja:58b65a4ef05f1e74747e74f0b880136f678fa192dedb7e380d9f915aa4678926",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "ko",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:ko:b0f7f61d7724f60e2fa80e714d2abc7d73d264427a6b7e07370837269c55d451",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "ms",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:ms:1babf87884f7c3903759fc4d3f271099a421439b6206f7f44ff1d9e0a13c17d1",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "nl",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:nl:74acbe10d2d828bc17b1f2c67d962ae456e4a08ed1842b24bd359f0dce4caf1a",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "pl",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:pl:f397f9571807f6185b6a678fa442b1caa9dc1982ff6b61a34b97b98cde4f64e2",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "pt",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:pt:34af1ed315a36b89b3996b33c9d9a47223db51eb0dfb93d99744ed563c63d94e",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "ru",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:ru:9ab7c641b1d3295052edcee7e5adaab3929f1c6d82a7daf5112d0fada90b5acf",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "sw",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:sw:ab0d6cda1022b098359acfa91621ae430e827e1c997dccf37d84aa50517b89f2",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "th",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:th:d7c1836b0bded59b8db6d570861c7c011a75f8c31b5022833aab02169eb54cf3",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "tr",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:tr:cea96e7eb4f02f94c762309044530d0d670115d61d08b06c0fddd4b60861da70",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "uk",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:uk:28168317aacd3d9a4fbcf339abb2df062a199bb31057050f7ddb12ea2c019bb5",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "vi",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:vi:1da01077e624b9ca9ad573c23f6d8dc5b0749dfb7f51cba6315081abcc4dc793",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "zh-Hans",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:zh-Hans:1541c7a93eb1048037ab701c4f4efcd9d9a78f3486c6d12acddc9b45ee7387f4",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "EbG1mVS6nLM",
+      "language": "zh-Hant",
+      "caption_item_id": "youtube-caption:EbG1mVS6nLM:zh-Hant:bc709e4518bd2a53c4e49863152c7654c34f84b2e2742a8d12a2c3008d6fd88f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "ar",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:ar:aecea440a58712dd7a66c01abae5d7d68cf16a6feaf20ab4845a2332239a0f50",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "bn",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:bn:3a73a2dff904828018d004efc2baf71ec9ee3fba9d844f48c711c4beb347294f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "de",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "en",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:en:e2f3bf95bec737a8ca9735f9aa7656d1706dd60558683138f9cc8a561a0d05e8",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "es",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:es:5da587042746521dc7b3c9bc3c13ba6443c29c2d214bf2a048126d075184fda8",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "fa",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:fa:637a3d670069521bf5b2584d6e2702992c58564bb60c8d924ce7ce6ef7c2193e",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "fr",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:fr:8b36bffd200bc2257e2b842c873b853b1bfc501f73e48a6e99440914d11c9225",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "hi",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:hi:e7dfbf2c212a3f2bff7e24a53c6eb0c8c103618d5fca77943b2ffd5a7d818d4f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "id",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:id:b729ad0a0a769cf7a6f6dc039b0c3c55f721d4ac370083620b5652ed7fdf490e",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "it",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:it:6a023cfec3187b81244a067167b17b37ed5eb5db1d48317d74aeb49d8e232c15",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "ja",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:ja:ca2288fe9c2b0a6afdf1a2ee5a64dd1e3c83fcf07d180bb4978d4b765ef7c7b6",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "ko",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:ko:dec3c88c5e50de91a043fe6d7081fc32704418ee98fadec37d33f5e269d00c46",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "ms",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:ms:b32df87e7a5c93ef2c9b517e3cf63ba3d87dbeb9bef5c76d07cfbf8c36fa73c0",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "nl",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:nl:e65bf47aa881ed679d55c9205f3d2dec23eea9b753a800d0ae014e0fba3dbc9c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "pl",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:pl:628f2dca49b0aed62314d7cc6c08d6c1f5c48c7ce720f932caf149aeddabbc3d",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "pt",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:pt:839393c4b808f31b61036f5ceecf91928cbdadcd6685d2a69ccdd8963fc1d241",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "ru",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:ru:db5b264d3aa806228689264a1904a5e4b99232f297303a21a8c3941c92f0ea97",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "sw",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:sw:9b31d77ecd7196e6c6ddb9a43d4bfd5e9d67e4951a93c2b9acfcacae0833dd6b",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "th",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:th:84a56c0d15f51be10c46538b7e636e151dc52a02412994346f578c63ffc51f80",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "tr",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:tr:db07b4b0b73924ef12dce736909ccf88507e51ea135986d7528fd86ca58e27c6",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "uk",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:uk:898b7ff01aa492aace1e3db0b254881d055f1669b294aea40d25f6875a7b1b65",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "vi",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:vi:6ad1055177c8560e98e0bc43d170b3e3b4e4b61d5a463627fd44cf94e8e4ef7b",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "zh-Hans",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "F1riPOyQuCI",
+      "language": "zh-Hant",
+      "caption_item_id": "youtube-caption:F1riPOyQuCI:zh-Hant:3782aea8c9633300c13eab236abf31ba4cfa538df556c79b42da7e1c02b1aed4",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "ar",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:ar:0007db5063ceb8966dc813b0a159562588dbe303a3e3f2fe6ab780d465e994ea",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "bn",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:bn:7a693f95f5d0ad564d55cc88a058ea25cb14390af2f312defe4dc0adaf09fa56",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "de",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:de:2f1b28c269d2a4ef291b673d15242790e6a78e50d87c1553e4f6271723f07405",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "en",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:en:591486347c1c318e73fcde9979a4e8f1b2066baa66292942827ffe95b809bf6a",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "es",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:es:bc21fd1295e2106502c01e0fbcc5c76a6e49c6d7845de69cc8ddb443b83d9b4f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "fa",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:fa:81cead6c550f9d30629fdc02cbcf293fdfed51663102804b1d79a687ac7cbe89",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "fr",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:fr:57156868afdffaaa16e771f66b8eac655e93f9e213963a212ff304d1ae0d748f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "hi",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:hi:727fac3bfccd11263e44c6d91f1cee02fc01f19f6d1352942a710932d8eec54c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "id",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:id:680d291d7506caa6b4703cbdd27ea07a999abc530caa45638f91e9b62adbc088",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "it",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:it:32f8a883219702d9093851e4ce2bef002eed80b5f38fdb7bb060b11edbb10942",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "ja",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:ja:a05bd4d3294396e6eaf6112a7d82eaa9ae71a98c7ce1c3e1104e2e6a3b9f0ba4",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "ko",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:ko:0bf8dfc52000c62c340f4c2e1a12b531c0dd04b9d186af4957020c8099924a09",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "ms",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:ms:7b43a62dca72c95694b6fb186a2f133e9c13e0e5cd46d9d75bd58781612b03a4",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "nl",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:nl:62347fb8ad47043af9822ffe9f3a33d385a2ff91114786936ba37f88a321722c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "pl",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:pl:1e4926daf33243535a01dddaaa475e42212ef5f6d591ef91d615cdef44f5d501",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "pt",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:pt:7bc04fbbcd2e9494cd346033f83a311f46d24e84526fa46a3a0ef93666876dd9",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "ru",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:ru:0ee67519b6e19802bb6a5fac572561eaab99994e0d477236a605645710674780",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "sw",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:sw:281b65bbfa91028254b0147557c7e118a20bf092e5cdce5eccf1181afd9cd1d4",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "th",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:th:ffa686f290820eb552fb3f247303d468bf618a4e5c9bfdbef76c48e32f49dacb",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "tr",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:tr:9c3bfdb2bd381a75619e0b64694c1c861d8729b5d6260207091e5c0228e6cee2",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "uk",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:uk:96c29be2423b729c7b10cee4424c8bbe62fdbba713fca86aff25dd17f15bed74",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "vi",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:vi:d282df08dd6c18eeaa18b574907812f101cab913bcc47ec699797b6c652cbdc9",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "zh-Hans",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "F6mOpeQDfpU",
+      "language": "zh-Hant",
+      "caption_item_id": "youtube-caption:F6mOpeQDfpU:zh-Hant:c9b674035814770c93b10789e8f596806e200f251956f25c7dfbc38c0d5137db",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "ar",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:ar:5f59a53198c5c9fe4a0fa98fb6244302a0272c98fb54ca0cb8932607006c8b14",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "bn",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:bn:b1812737e10ac6bbde2f63fe2510d576b8e53a5c483899b14f5e906f278f2f3e",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "de",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact upload file is not the current final conversion-manifest version"
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "en",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:en:d206b14e0e06cc44e60f7b8ccaacd578cb02361c2baef95816f6f710845e0e00",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "es",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:es:4677dbe1579db4928d647a087716fda0b23e26664244e7910eb397bc0ba03e94",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "fa",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:fa:f90989746de26df59ffb9a5a16563d04ac10ea35074612e958e7e3b7bb80d808",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "fr",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:fr:a0894ed57371811480167d75e5aa37d5284e18fbc39436a3befa4c61264fecb2",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "hi",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:hi:f3dd33703baa8f229c4367c484053e03e61a9b3cf9a34c34a7acf5d5b3ed1f10",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "id",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "it",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:it:9d0e702d51068598623177727b4ca033548995f021d5254b27be9d82fe763026",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "ja",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:ja:397e2e322d9ffdad81f41712596a845d97110a647a6e54246fa9eab15e1013c3",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "ko",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:ko:6307938e73cdebae57cbdeb4ee8aecc8a6cfe07f521fb5c717eb7a77d6471696",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "ms",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:ms:03c7bf2fd579feb381f25b960555d61c067f4e08a0f10026b76a06bee7a15d65",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "nl",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:nl:c04f32de5bd98ad04d0a4f0aedc017b9e9546e1d79b47df704480033a62ef4fa",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "pl",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:pl:87c287968bfcdbab71b8ac03f8fe4c6842cac60b80b1ca24c7095d985366029a",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "pt",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:pt:d82c9df7e4ddcfddf9b7b02be19d0edb661a35194eaec7ced230260f70d6dccd",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "ru",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:ru:1a86860a92be212d44fbb66142cec1652fe1270bc628e3ddd70438326973ef68",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "sw",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:sw:eeed53731985524d1fa37faa5d8f01c4d753c399af6c8468e965a44964b8965f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "th",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:th:08d5570e0864b597df1c2f79e16cace1fcead8b650e6313a15468f4f2a292143",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "tr",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:tr:6372e68a5187657210317cd0fc7c9e2393b43e6e4d63d4407c19dd5c9b59f831",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "uk",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:uk:bd82f0011cfccc50cc0e3f7e2e65237fe375843821f98b078241ab803b4a47ce",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "vi",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:vi:291d7f6b9711ba41445c4e1409c6958b6caaa06dc10b73ba5890a6bc0a5e58d6",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "zh-Hans",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:zh-Hans:793eac76cdaec29046ff2884de9a045e06bd9fa24cd7f9ab54f837b10d18103c",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "IDtBlVWSsho",
+      "language": "zh-Hant",
+      "caption_item_id": "youtube-caption:IDtBlVWSsho:zh-Hant:1c4d5be33c921da7c2a008caad00469ea0b1f2aa35c858bbfbaf0169931199ed",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "ar",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "bn",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "de",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "en",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "es",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "fa",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "fr",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "hi",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "id",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "it",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "ja",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "ko",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "ms",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "nl",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "pl",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "pt",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "ru",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "sw",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "th",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "tr",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "uk",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "vi",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "zh-Hans",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "URZf2R5N_jw",
+      "language": "zh-Hant",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact_official_edition_context_unresolved; A page returned 404; no substitution or reupload"
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "ar",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:ar:e65778842ba1c969379b125b89f39e84a6d580ff706fbc11c1bcea3b863af5ad",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "bn",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:bn:f94a20c7a398969426c47757524af0025fa11e975043951ddf9d9b819d1aa55e",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "de",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:de:d54bd4346997672b95bcf7f6f65b4bb9de8827a69bcc21b7bd694885b8724253",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "en",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:en:29ffcb1cfc2927bed260122e62b4b6504d8089f4638d5d6f2ea7aa60c1e12d61",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "es",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:es:1ae2ee7df4c0e15437d54d26fb419af3a42d2fe21a0b9b64444e830812c9c24a",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "fa",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:fa:62e46c0203ccf6ecd1b5f465d1be6edede159678fe90541416b1a503e2e3e66c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "fr",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:fr:df5af91bc4dceb1a024273bccdaebc903041307bfdb498a7f511a2a3acc618d4",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "hi",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:hi:93b0c936f0a6878aca7c8585dce040500260ea76214c9077fd74cba379cb6e28",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "id",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:id:2443085dd0374948b9db6273ac22e2ace30d8f92300478cc52025226f45a2d54",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "it",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:it:91204745a30b0735ace62e838097c004169389560709c8772d5346b09102b5a4",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "ja",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact upload file is not the current final conversion-manifest version"
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "ko",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact upload file is not the current final conversion-manifest version"
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "ms",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:ms:68400a879c8fadbee1f9e9811c016375a29e9bcaf6294fc6bc5ed40951f0dbd8",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "nl",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:nl:f772ea9ca60467510b7af78af61dfdbb11e7c90163a3dd71ca618d195ac8b85d",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "pl",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:pl:6c22b78e6da9911e2245db7fefc89e96c5e3d8a4cd56d173ea8f5caef63d8003",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "pt",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:pt:95b9adc78b122e5ea8c5ee7fbf6d52b50f0dc62b9ecfb1745c16f487596778e7",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "ru",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:ru:ac8d1116f72fa60c497c38974b38468c955145f444863de71998894edd86807e",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "sw",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:sw:2c141cf4238d2f0f7a22d564f3a8cdd4470e868e02ae61a2acd1f48c2102e78b",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "th",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:th:a89ee0f19154400ec13901f8b22e3570addb6e0d1b9e93b04925faa524aea0ea",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "tr",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:tr:efe64cd7dcb7b30c702e148214ff39e1ffaa19024c966b121063864720405de5",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "uk",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:uk:6912fe76d50e256b7e4eae3296d8311817f95f085a15062cf1ae503d73dac0f7",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "vi",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:vi:d68a498f3d2634826631b04a3da72a5e88c500952fbfd742a4da3fb621fd871f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "zh-Hans",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "WH8cwipcVEI",
+      "language": "zh-Hant",
+      "caption_item_id": "youtube-caption:WH8cwipcVEI:zh-Hant:d3953288db83f89a2e86486c9aaf5b4178f85b7a644ebeca571ac93f3799e786",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "ar",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:ar:c6b370954e03663907a0b539f5d3e82e85690bf275ab1e6739a064c1b4173f42",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "bn",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:bn:78b0ddfcd7b3bc8e261c7652949c6f48baedac703f42f3cbd4fa9f4343def067",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "de",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:de:d01c664b1bd4c5ea2e788047e8e3697215d8bcbfb8cd4a757182dcc3e2c02486",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "en",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:en:c4cbcc14a70255967150e2f13c395eaa5bf0dd6f6af8efcefdc63d4380893c7d",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "es",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:es:3bfc8dfc3476ae386345f993cd0c524f1c8f6dc3958295488191dcf445abbdd0",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "fa",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:fa:50e865e194342e2ecf7e77c818e63e29a3cc092836e387f0bd106d359321743c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "fr",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:fr:49217d4de9e3ad3533706570b56b87100001c8ea1a6880f2ecf09757cfc05b8b",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "hi",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:hi:c9a71204d5f64b57515e31d3f2410cc155daf0eba0cad633cc723df90684d841",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "id",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "it",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:it:4f4394d68f2af7073e6ffcc34a34cee8ff526346fea40135ec70ef1d14856c59",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "ja",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:ja:e2aefac58740fe909f9959145b29b46876168d31e5972079607e1c907bdab8d9",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "ko",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:ko:a5c78b8d22d0300f5550d967d538386604b364360ea5708d8d0fa8039a65915f",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "ms",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:ms:e44dfa323301c5d4ef31d2b88993c103e2432a8831803482df9699c5025038c5",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "nl",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:nl:5e5d29a48d7f6d94409c447321dd9293523121a65e32cceb79ec3025daaa058b",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "pl",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:pl:8a876089f2d2b27513e4ff9cbf771ee6e7e08c764eaef625a00494b421c6e2e1",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "pt",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:pt:db3d1ce33b37f75c5da4c37755612bc278603a4eb9da4ba8bb51747ece8b9820",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "ru",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:ru:66c374b3c132867fdae1f2ed05521642767c9034b01e5d63148c7a7d9663910a",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "sw",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:sw:35a0c1ec1b6e5c8fe9c7030a9ec2f17265767b27ae81d859ded1076e39f2da5b",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "th",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:th:9569621c9c8f7222a75e6deebca021436fd79f935af1417044c8732a102d3f7f",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "tr",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:tr:bac25046b5691afa1201dbebe66fa01f4579689ea0a81414e41014e5d98f670c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "uk",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:uk:39c3b3ba801a1d7aa48bb8340b5b2e13f32f8561c2fab331c39b592fd5c21277",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "vi",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:vi:5b912438dac6b51cf57704fb85f295f979813ccb325b539f882cb83c2f740340",
+      "discovery_state": "already_in_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "zh-Hans",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "h2F6Bpk-9m8",
+      "language": "zh-Hant",
+      "caption_item_id": "youtube-caption:h2F6Bpk-9m8:zh-Hant:907afaa74e8c64b0ebbd8d15ee2df0d229e03c66e3d199e1d9ebd92da4531288",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "ar",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:ar:56b93caeb3672acfbcc9ee87aaca0ba64e467be5bd33a1023ef88637e03e0612",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "bn",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:bn:654954536c54254b12ddc14f31ccff15e026623d38c894db79cb535a205419ad",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "de",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:de:b4d151b164b379b21227167002b84b995ce9a2a3a5c6ec23e40eb878e7be1bce",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "en",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:en:be4a910d3a0180d7a5d944dcaecd0692b0e08c54b251d0f23829b231c78b5377",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "es",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:es:d0cd2388b3a4a89da4cbf33b7d0d70b51190090681dfd4f0c3cfe056775404f5",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "fa",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:fa:4ae12fee156b1e86ed334f2dfedd5915dcbebce0334b39dfd97a1c25f0986cb6",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "fr",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:fr:2efb76056460c22ff7696ad3ef50f89865eac7a8c8bdba9d176e68a57b637f65",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "hi",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:hi:97947fd185c51ed551899f2baef61e82160cc5d1a791114b2a659161d4057b83",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "id",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:id:593c7b1962cc7c224f42b7ef8934cdfbf453bd17d624d3a767dd998df269f253",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "it",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:it:8958aa633869dc9f0c699715dea42f9967fcbfec60d502cdc99228a80fef94b3",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "ja",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:ja:2b61cc14f8201924c26bdd0f6ca117488a8d6efd1078f10057259f27937bee7f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "ko",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:ko:ba55a7eb4c7f43c82864c8f842da3ab09d39158190ec3fd3d2e58cca6625fd6e",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "ms",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:ms:4baecf96ae8a4d5e2c53130c8a0ba37105112c06a3a98cf4f86bd9d1031b6e63",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "nl",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:nl:6c2cd0f45c9a7acff32093a4327e32660447ab44a4cd9b6b2f2ab672c379655b",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "pl",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:pl:b69921bfa2541167aac367b09bce86f538634f226ee43314fff8fdd7dd3e8781",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "pt",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:pt:a4cbdf2cd8dfb859b2d5a16abdee5b1a39484738c5b19f010c8efe5c6568fe77",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "ru",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:ru:9525d04ffda4b59b0a0245da2bfb25381ea0ab3117b89df050a8acd2153a5935",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "sw",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:sw:0e2a75f4f44b30f6bb4a27835c19f3aaa36070fdda923e951c82f0b68dffa8ab",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "th",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:th:cac2d98c1457126bdfeb0186917928a5aa5fca52524d939d016bd415ab7edb78",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "tr",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:tr:41d96027c9a8438036b7d120d8ff2a0b4545207a90d8be63435a9b588a42c486",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "uk",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:uk:2a9895d6a1d627b8386c9bf7a06fe5f4ae835177a0f54576849d286a5c2c6502",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "vi",
+      "caption_item_id": "youtube-caption:pGmFA0GVkaM:vi:9fceac8a36b32269c199e6110bc1203e9e400ac848a98afd15c96cecc9e9f383",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "zh-Hans",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "pGmFA0GVkaM",
+      "language": "zh-Hant",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "ar",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:ar:40bdd3c729eb0b04df5a68b2dc8abb679c9fe75a49c8b71bc45c0fe5fcc9ed9d",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "bn",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:bn:abf1722af144c3052b604507ddfcb36d4f37ec1ecb6189cac2d4035fe5e7336c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "de",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:de:996e35f7e067ea0ee0744716345f4f13acf0a30504043bb10c3b2182498cceae",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "en",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:en:38fd195eec4702307f8d4f391e86c89fe765722b7c51774e83a8ba0077215d6a",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "es",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:es:61c774ceb1d52c98e73f9ee4af15fb3a94a0267e0a87b546c115426bea6fc1cf",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "fa",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:fa:c076dd7264f01ae824976318cbfaf57b85267eb1da082aba429ab42ae8acd522",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "fr",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:fr:d11f71d41781ced9287131d8e5f63afb6fe34790dee4a844ab2f40bf7c611374",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "hi",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:hi:6fda38b794ba48e6c053895ccc34657ec608b1b335ddb516437b0ef11cec8ab2",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "id",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:id:41c11baf4fec9b4d73177eb41cf2fdca67eba9dbb95716d57fbb37818905c44a",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "it",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:it:e96641ccc52c4f63c10b3371c55dafe08aa694f428a66080817e153ced621576",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "ja",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:ja:7deb33a382453314e1e7758faea56b8e4222cf2bc313b09c4b040d18232d9a6f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "ko",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:ko:f90fe009e8cb40bdfdcb14c66ce65e9cfcbf102d1f64ffdabe9900ab7f0e5048",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "ms",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:ms:49fa76870a7f5ade99ea9762393ea055a66ee955abf05b949631143da1a8cbe0",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "nl",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:nl:53f2ea5f24ad8c82f8b50af879f315684066b165f5f4017d1f466826d0e2d698",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "pl",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:pl:020d3d00721d0dc1ce7f853a9401106884f10a326820bf03eb6f16e953aaff4c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "pt",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:pt:17aaf9636de1cd93e0ce59ec6851e24610c6d881cc9e67ed7b27b6494035400c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "ru",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:ru:2e67864dbb3ef55340722e82bb6528535ae2e1e4ed9c2e111a36be60e9d0906f",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "sw",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:sw:7894c5ba1ad0eb4d257428a868cb2d767b23219f1f2ee67eee00178fa6b4a42b",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "th",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:th:372291920251612154a61d8efc85fbbeb29f968aa219fe3e8ab7e2b062c35633",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "tr",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:tr:7b8f58803dcb0c0e829a0a0232c8a33549863ea3b677f63f18b738494f9fa728",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "uk",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:uk:d6743b9c641b558d62a916b6b5778d1ffc4c6dc213462a56c8b41dd587383f07",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "vi",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:vi:a06da6991f7871df4a03fd6d7c6f8ea35bf7c08253ec01e42247b2621a376bad",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "zh-Hans",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "rNv_kwuQKKQ",
+      "language": "zh-Hant",
+      "caption_item_id": "youtube-caption:rNv_kwuQKKQ:zh-Hant:f9ff0bd950eff2b2892c21ed61161ce1335b889b7701cc7d88e0578641ef8412",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "ar",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:ar:ac164cc4e23cc15bf4cf46d403c14f0e1611ba2da8ba9d50beef6314315d1a1e",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "bn",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:bn:fc0f5c29a0e5b9539bfae9183333ca86b933f92f80759d152b652bbda997acf7",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "de",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:de:f6f06f27bd8d1012cf8422c188ecbef92cc90176a6ad7cdce1c62e65fefd9097",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "en",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:en:420e9ccfa9ffc117b2b7a96570721f6bd7ab94efe6cd800e518f5bd113ecac1a",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "es",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:es:0419006939ceef71ce22bb2c136ed2cf705db37b6d0497e5f5ce082ae9b2b62c",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "fa",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:fa:af7e3fc3000397cfd1a79c41d9a75c30e238929680be179569aa3d934d8df6cc",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "fr",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:fr:26e8f607ad3743a689e802e6fc115f730e8d1e573843b2d95711c498139ba349",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "hi",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:hi:2d78aebffdf8dbb2cb5a9d9d51f8498d8e5d56d8eb6991da359d6f8d7fb8d777",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "id",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:id:02c2b6a4a2696271902f12f991d0dbff611a95595656a8901a3162c9895a19c8",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "it",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:it:f5864aa7ed5fb1686b8e7d58f0e5de789fb67899b0cfc45c15e356f1b07eba75",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "ja",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact upload file is not the current final conversion-manifest version"
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "ko",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "exact upload file is not the current final conversion-manifest version"
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "ms",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:ms:9c257deb769dacc327b4db8b265974a5b2e03c79332b28017f8b4a7ad948c640",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "nl",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:nl:b2ffd43cdcb64e8bbeed57c6c664d99252bd2853ca42fec7ff497d7b93dabdd0",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "pl",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:pl:b23699d8c22fde8fce3f881d664d8a26d0cd5b430c4b7084fc2f15783e14c449",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "pt",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:pt:03eebd3bbaf36ae543752a7910f2cdc92e7db156d18962b4e297c7035bfdb453",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "ru",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:ru:70ebad4f427c7f80ecdbb455a304a419906376791dc4497ce44f3445a312b9b9",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "sw",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:sw:2606a238a19c3c2a6d83b670fea79a0153988fb3ebe331202139cb9a565dfbf9",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "th",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:th:a8d0fe947864055dfd542f39db7023a3213dd2d14798397f0dc9cb45cff13c5e",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "tr",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:tr:c8129d45edf0f6fbb7a2d4ec69456cb7fc85a4b8a8b9e21ef4d443df4c742fc3",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "uk",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:uk:36640d51444db2b3348fd7a33eedcc8fe018dc7866ddd808497cfcdc0b00f045",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "vi",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:vi:03b64806a3af1255fd16a3da7dd564ec37cab737b040162717436e34cf13c169",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "zh-Hans",
+      "discovery_state": "source_version_unresolved",
+      "state": "source_version_unresolved",
+      "reason": "language row exists but no exact adopted local file/version binding; unused MT or pending update of a pre-existing source is not a mirror"
+    },
+    {
+      "youtube_id": "rS3KFGmoWac",
+      "language": "zh-Hant",
+      "caption_item_id": "youtube-caption:rS3KFGmoWac:zh-Hant:13f0cd0792f6fe03bd886a3c82c9998b9d1f215fa953d12cf01aa93b20793e98",
+      "discovery_state": "new_verified_for_github",
+      "state": "github_version_recorded",
+      "reason": "Exact recorded caption edition is present in the public manifest."
+    }
+  ]
+}

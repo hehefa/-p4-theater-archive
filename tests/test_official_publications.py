@@ -92,6 +92,19 @@ class OfficialPublicationTests(unittest.TestCase):
                 changed.update(extra)
                 self.save(work, [changed], [approval])
                 self.assertFalse(published.check(work)["valid"])
+
+    def test_reading_indexes_are_generated_from_verified_editions(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            item, approval = self.fixture(work)
+            self.assertFalse(published.build_indexes(work, check_only=True)["valid"])
+            self.assertTrue(published.build_indexes(work)["valid"])
+            self.assertTrue(published.build_indexes(work, check_only=True)["valid"])
+            text = (work / "published/captions.md").read_text(encoding="utf-8")
+            self.assertIn(item["official_context_url"], text)
+            self.assertIn("1份SRT", text)
+            (work / "published/captions.md").write_text("stale", encoding="utf-8")
+            self.assertFalse(published.build_indexes(work, check_only=True)["valid"])
     def test_exact_official_hosts_and_timezone_are_required(self):
         with tempfile.TemporaryDirectory() as tmp:
             work = Path(tmp)

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter, defaultdict
 from datetime import datetime
 import hashlib
 import json
@@ -23,7 +24,7 @@ RAW_APPROVED_VERSIONS = {
     "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537": "19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f",
 }
 BINDINGS = ("source_asset_ids", "source_file_ids", "source_subtitle_ids", "source_media_sha256")
-INDEXES = frozenset(("published/README.md", "published/captions.md", "published/materials.md"))
+INDEXES = frozenset(("published/README.md", "published/captions.md", "published/materials.md", "published/wechat.md"))
 PRIVATE_KEY = re.compile(r"private|local_path|access_token|refresh_token|client_secret|upload_session|upload_url|session_uri|cookie", re.I)
 LOCAL_VALUE = re.compile(r"(?i)(?:/Users/|/Volumes/|/home/|file://|(?<![a-z0-9])[a-z]:[\\/])")
 
@@ -247,6 +248,93 @@ def check(root):
         return {"valid": False, "errors": ["Invalid official publication data shape"]}
 
 
+def _label(value):
+    return str(value or "").replace("\\n", " ").replace("\n", " ").replace("|", "\\|").replace("[", "\\[").replace("]", "\\]")
+
+
+def _edition_indexes(root):
+    unused, verified = _load_verified(root)
+    items = {}
+    for item, record, unused_text, unused_cues in verified:
+        items[item["id"]] = item
+    counts = Counter(item["kind"] for item in items.values())
+    captions = defaultdict(list)
+    for item in items.values():
+        if item["kind"] == "caption":
+            captions[item.get("youtube_id", item["id"])].append(item)
+    wechat = [item for item in items.values() if item.get("subtype") in ("wechat_article", "wechat_backup_material")]
+    other = [item for item in items.values() if item["kind"] != "caption" and item not in wechat]
+
+    def files(item):
+        links = []
+        for record in item["files"]:
+            language = record.get("language", Path(record["path"]).suffix[1:].upper())
+            links.append("[" + _label(language) + "](" + record["path"].removeprefix("published/") + ")")
+        return " · ".join(links)
+
+    lines = ["# 已完成的作品字幕", "", f"{counts['caption']}份SRT，{len(captions)}个准确视频版本。文件数量包括独立语言和另存的字节版本，不是作品总数。", "",
+             "每份保留来源、版本SHA和原有质量说明。历史平台回执、本次官网回读与YouTube字幕当前状态分别保存在逐项清单；本页不把本地成品写成已在YouTube上线。", "",
+             "| 作品与准确版本 | 字幕下载 | 出处 |", "| --- | --- | --- |"]
+    for identity, group in sorted(captions.items(), key=lambda pair: (pair[1][0]["title"].casefold(), pair[0])):
+        first = group[0]
+        title = first["title"].split(" · ")[0]
+        target = first.get("youtube_url") or first["official_context_url"]
+        links = []
+        versions = Counter(item.get("language", "und") for item in group)
+        for item in sorted(group, key=lambda item: (item.get("language", "und"), item["id"])):
+            language = item.get("language", "und")
+            label = language if versions[language] == 1 else language + " " + item["files"][0]["sha256"][:8]
+            for record in item["files"]:
+                links.append("[" + _label(label) + "](" + record["path"].removeprefix("published/") + ")")
+        lines.append("| [" + _label(title) + "](" + target + ") | " + " · ".join(links) + " | [原文](" + first["official_context_url"] + ") |")
+    lines += ["", "[文稿与研究](materials.md) · [公众号原文](wechat.md) · [打卡进度](../PROGRESS.md) · [资料说明](README.md)", ""]
+    output = {"published/captions.md": "\n".join(lines)}
+
+    lines = ["# 已公开文稿与研究", "", f"{len(other)}项文稿、影音材料说明与研究，按实际公开版本保留署名、时间依据和原文链接。", "",
+             "公众号原文与备份文本另见[公众号目录](wechat.md)。影音原文件从原站观看或下载。", "",
+             "| 材料 | 阅读或下载 | 原文 |", "| --- | --- | --- |"]
+    for item in sorted(other, key=lambda item: (item["kind"], item["id"])):
+        lines.append("| " + _label(item["title"]) + " | " + files(item) + " | [原文](" + item["source_url"] + ") |")
+    lines += ["", "[字幕](captions.md) · [公众号原文](wechat.md) · [打卡进度](../PROGRESS.md)", ""]
+    output["published/materials.md"] = "\n".join(lines)
+
+    articles = [item for item in wechat if item.get("subtype") == "wechat_article"]
+    captured = sum(item.get("content_status") in ("full_text", "captured_text", "edited_public_excerpt") for item in articles)
+    lines = ["# 公众号原文与公开备份文本", "", f"{len(articles)}条公众号记录，其中{captured}条有保存文字；仅有目录信息的记录明确标为待补正文。保存文字不自动等于原始发表文章已经完整恢复。", "",
+             "备份材料数量与文章篇数分别计算。保留原发布账号、原文署名、文章发布日期和原图链接；文章日期不自动当作演出或创作日期。", ""]
+    for subtype, title in (("wechat_article", "公众号文章"), ("wechat_backup_material", "备份中的公开文本")):
+        selected = [item for item in wechat if item.get("subtype") == subtype]
+        lines += ["## " + title, "", "| 原文 | 状态 | 阅读 | 出处 |", "| --- | --- | --- | --- |"]
+        for item in sorted(selected, key=lambda item: (str(item.get("publication_date", item.get("source_date", "")) or ""), item["id"])):
+            status = {"full_text": "正文", "captured_text": "保存文字", "metadata_only": "待补正文", "edited_public_excerpt": "公开节选"}.get(item.get("content_status"), "依条目说明")
+            lines.append("| " + _label(item["title"]) + " | " + status + " | " + files(item) + " | [原文](" + item["source_url"] + ") |")
+        lines += [""]
+    lines += ["[字幕](captions.md) · [文稿与研究](materials.md) · [打卡进度](../PROGRESS.md)", ""]
+    output["published/wechat.md"] = "\n".join(lines)
+    lines = ["# P4与何发：公开文字资料", "", "[字幕下载](captions.md) · [文稿与研究](materials.md) · [公众号原文](wechat.md) · [打卡进度](../PROGRESS.md)", "",
+             f"当前收录{counts['caption']}份字幕、{counts['document']}项文稿／资料记录、{counts['research']}项研究。不同语言、字节版本、文章、素材和作品分别登记，数量不混作作品总数。", "",
+             "文字保留原字节或有来源的公开访问版、准确署名与原文链接。何发个人作品保持个人归属。大型影音保留官方观看／下载入口，内部底稿、原片与私有运维信息不在公开包。", "",
+             "[逐项来源与版本](manifest.json) · [版本批准记录](approvals.json) · [公开范围规则](../docs/公开范围投影.md)", "",
+             "## 检查与检索", "", "```sh", "python -X utf8 scripts/official_publications.py check --root .", "python -X utf8 scripts/official_publications.py build-indexes --root .", "python -X utf8 scripts/official_publications.py search \"剧本\" --root .", "```", "",
+             "检索带原文链接、字幕cue、版本SHA与相应时间轴。公开访问不授予统一开放许可；权利和核验范围沿用原资料。", ""]
+    output["published/README.md"] = "\n".join(lines)
+    return output
+
+
+def build_indexes(root, check_only=False):
+    root = Path(root).resolve()
+    expected = _edition_indexes(root)
+    changed = []
+    for relative, text in expected.items():
+        path = root / relative
+        body = text.encode("utf-8")
+        if not path.exists() or path.read_bytes() != body:
+            changed.append(relative)
+            if not check_only:
+                path.write_bytes(body)
+    return {"valid": not changed if check_only else True, "errors": ["Official edition indexes are stale"] if changed and check_only else [], "changed_files": changed}
+
+
 def search(root, query, limit=20):
     _require(isinstance(query, str) and query.strip() and type(limit) is int and 0 < limit <= 100, "Search needs text and a limit from 1 to 100")
     result, editions = _load_verified(root)
@@ -269,13 +357,20 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("check").add_argument("--root", default=".")
+    commands.add_parser("build-indexes").add_argument("--root", default=".")
+    commands.add_parser("check-indexes").add_argument("--root", default=".")
     search_parser = commands.add_parser("search")
     search_parser.add_argument("query")
     search_parser.add_argument("--root", default=".")
     search_parser.add_argument("--limit", type=int, default=20)
     args = parser.parse_args()
     try:
-        result = check(args.root) if args.command == "check" else search(args.root, args.query, args.limit)
+        if args.command == "check":
+            result = check(args.root)
+        elif args.command in ("build-indexes", "check-indexes"):
+            result = build_indexes(args.root, check_only=args.command == "check-indexes")
+        else:
+            result = search(args.root, args.query, args.limit)
     except (ValueError, OSError, UnicodeError) as exc:
         result = {"valid": False, "errors": [str(exc)]}
     except (TypeError, KeyError):

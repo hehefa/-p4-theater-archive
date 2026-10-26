@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "article_records": 554,
+  "with_saved_text": 538,
+  "missing_saved_text": [
+    {
+      "source_id": "wechat-2024-01-20-b903069d35",
+      "title": "周游之歌｜《成为自己的母亲》",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2024-01-20-b903069d35"
+    },
+    {
+      "source_id": "wechat-2022-08-31-e60dcedc94",
+      "title": "《一鹏的梦》",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-31-e60dcedc94"
+    },
+    {
+      "source_id": "wechat-2022-08-04-49d0154955",
+      "title": "【101剧团】演员招募｜撞个头破血流，冲破意义迷墙，把尸体烧光！",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955"
+    },
+    {
+      "source_id": "wechat-2022-04-08-781b065c94",
+      "title": "紫色行动招募｜在杭州天目里，一起创作一场“隔空”演出",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2022-04-08-781b065c94"
+    },
+    {
+      "source_id": "wechat-2022-04-02-b738dc3fb0",
+      "title": "秀秀初次邀约 | 清明前夜大联谊！",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2022-04-02-b738dc3fb0"
+    },
+    {
+      "source_id": "wechat-2021-12-25-7458a5209c",
+      "title": "北风剧社｜《冰山》预告",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2021-12-25-7458a5209c"
+    },
+    {
+      "source_id": "wechat-2020-12-23-61cd695ba4",
+      "title": "《天台上的嚎叫者》广告之【入梦大战视网膜】",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-12-23-61cd695ba4"
+    },
+    {
+      "source_id": "wechat-2020-11-19-217b0c7943",
+      "title": "舞蹈剧场《茧房》1分钟剪辑版",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-11-19-217b0c7943"
+    },
+    {
+      "source_id": "wechat-2020-11-08-0c373a366c",
+      "title": "p4剧场第五部公演戏剧《茧房》完满结束！",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-11-08-0c373a366c"
+    },
+    {
+      "source_id": "wechat-2020-06-30-9e290e5382",
+      "title": "行动表演｜你我皆演员",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-06-30-9e290e5382"
+    },
+    {
+      "source_id": "wechat-2020-06-28-ca712394e3",
+      "title": "『实像画廊——洞』",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-06-28-ca712394e3"
+    },
+    {
+      "source_id": "wechat-2020-06-28-605213af8f",
+      "title": "0027号体验者｜就是从此敞亮了",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-06-28-605213af8f"
+    },
+    {
+      "source_id": "wechat-2020-06-26-2e7c078434",
+      "title": "相机为具｜把梦照进现实",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-06-26-2e7c078434"
+    },
+    {
+      "source_id": "wechat-2020-06-25-dcb325f636",
+      "title": "登上舞台｜成为你自己，成为所有人",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-06-25-dcb325f636"
+    },
+    {
+      "source_id": "wechat-2020-06-24-bc151a2ed3",
+      "title": "光的启示｜神说，要有光，就有了光",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-06-24-bc151a2ed3"
+    },
+    {
+      "source_id": "wechat-2020-06-23-f539325535",
+      "title": "何为实像",
+      "reason": "no_saved_body; public_metadata_card_only",
+      "source_url": "https://a.p4theater.cn/wechat/wechat-2020-06-23-f539325535"
+    }
+  ],
+  "short_saved_text_is_not_automatically_incomplete": true
+}

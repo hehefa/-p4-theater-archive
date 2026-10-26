@@ -20,5 +20,7 @@ jobs:
       - run: python -X utf8 scripts/export_identity_crosswalk.py --root . --check
       - run: python -X utf8 scripts/public_reading.py check --root .
       - run: python -X utf8 scripts/official_publications.py check --root .
+      - run: python -X utf8 scripts/official_publications.py check-indexes --root .
+      - run: python -X utf8 scripts/archive_progress.py check --root .
       - run: python -X utf8 scripts/publication_receipts.py check --candidates catalog/publication-candidates.json --sources registry/publication-sources.json --catalog-dir catalog
       - run: python -X utf8 -m unittest discover -s tests -v

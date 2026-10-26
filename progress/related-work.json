@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "Public repositories only; source publication is distinct from production deployment.",
+  "items": [
+    {
+      "full_name": "hehefa/he-fa-critical-monograph",
+      "html_url": "https://github.com/hehefa/he-fa-critical-monograph",
+      "description": "岑照《悬置的断头台》｜关于何发摄影、P4剧场与《人类投降派》的评论；图文、PDF与引用 · The Suspended Guillotine by Cen Zhao",
+      "homepage": "https://hefa.p4theater.cn/reading/he-fa-critical-monograph",
+      "head_sha": "ef574971015e97cd7fc2772d0ca2e9dc16a147b0",
+      "head_url": "https://github.com/hehefa/he-fa-critical-monograph/commit/ef574971015e97cd7fc2772d0ca2e9dc16a147b0",
+      "head_date": "2026-10-25T06:02:33Z"
+    },
+    {
+      "full_name": "hehefa/p4-archive-toolkit",
+      "html_url": "https://github.com/hehefa/p4-archive-toolkit",
+      "description": "P4档案工具｜本地导入、检索、证据与版本管理；含已批准公开投影 / Local archive and evidence versioning toolkit",
+      "homepage": "https://github.com/hehefa/p4-theater",
+      "head_sha": "3540c6f14af399b9bfc5b5787a6f4ccb12e0a89f",
+      "head_url": "https://github.com/hehefa/p4-archive-toolkit/commit/3540c6f14af399b9bfc5b5787a6f4ccb12e0a89f",
+      "head_date": "2026-10-26T14:36:09Z"
+    },
+    {
+      "full_name": "hehefa/openai-agents-starter-python",
+      "html_url": "https://github.com/hehefa/openai-agents-starter-python",
+      "description": "P4与何发作品导览助手｜基于官方资料的问答、准确出处与原文链接 / Source-cited works guide",
+      "homepage": "https://guide.p4theater.cn/",
+      "head_sha": "f366159b14f1a2852027355136eacdcd0de441b5",
+      "head_url": "https://github.com/hehefa/openai-agents-starter-python/commit/f366159b14f1a2852027355136eacdcd0de441b5",
+      "head_date": "2026-10-26T14:35:19Z"
+    },
+    {
+      "full_name": "hehefa/p4-theater",
+      "html_url": "https://github.com/hehefa/p4-theater",
+      "description": "P4剧场｜作品、公共档案与研究总导航 · Works, public archives and research index",
+      "homepage": "https://p4theater.cn/",
+      "head_sha": "a93749be4a562469e256c99b8dcbcd96ed2c966e",
+      "head_url": "https://github.com/hehefa/p4-theater/commit/a93749be4a562469e256c99b8dcbcd96ed2c966e",
+      "head_date": "2026-10-26T14:41:56Z"
+    }
+  ]
+}
