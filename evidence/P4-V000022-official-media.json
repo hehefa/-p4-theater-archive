@@ -1,0 +1,36 @@
+{
+  "schema_version": "p4-official-project-media-evidence-v1",
+  "decision": "confirmed_p4_practice_media",
+  "scope": "item_level_project_or_practice_provenance_only",
+  "asset_id": "asset:79e51309-98d5-4a12-b7c1-ea5531476b71",
+  "asset_accession": "P4-V000022",
+  "file_id": "file:c86a5253-05c0-44db-afd9-5bd7712fc094",
+  "file_accession": "P4-F000022",
+  "source_filename": "2022-03-28 21-53-38 QKVF 1920x1080 30fps.mov",
+  "source_sha256": "4cb3b3ff96ae5f5a286606ce78c1ff8103b8c43d23c993df6781c8181a42e862",
+  "project_code": null,
+  "project_slug": null,
+  "official_context": "P4 venue and discussion records / 510 discussion archive; not a formal project; date not inferred from 510",
+  "formal_project_claim": false,
+  "official_event_date": null,
+  "evidence": [
+    {
+      "url": "https://a.p4theater.cn/videos/h0YpakR124o",
+      "http_status": 200,
+      "retrieved_at": "2026-10-26T15:16:33.4692411+00:00",
+      "html_utf8_sha256": "553a5fdc6a1933b75c10afd12a06366ec978dc0cadbbfd538ecf512f57125969",
+      "source_type": "official_video_description",
+      "supports": [
+        "substantive_official_discussion_description_with_exact_source_filename_and_full_sha256",
+        "Full original-source SHA-256 equals the current local file"
+      ],
+      "source_record_snapshot_is_not_used_as_video_hash": true
+    }
+  ],
+  "unsupported_claims": [
+    "No full-video continuous human viewing or dialogue listening review was performed here.",
+    "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+    "No other member of the containing directory or provisional event inherits this item-level decision.",
+    "This evidence cannot override the family/private deny list."
+  ]
+}

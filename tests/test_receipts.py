@@ -268,6 +268,16 @@ class ReceiptTests(unittest.TestCase):
         result = receipts.export_bindings(candidates, sources, self.mappings(candidates), self.cat)
         self.assertEqual(result["items"][0]["current_platform_observation"]["status"], "not_performed")
 
+    def test_scope_practice_item_evidence_from_one_site_is_not_a_new_platform_readback(self):
+        self.enable_scope()
+        self.official_source()
+        proof = self.cat["assets"]["asset:one"]["official_media_evidence"]
+        proof.update(decision="confirmed_p4_practice_media", scope="item_level_project_or_practice_provenance_only", formal_project_claim=False)
+        proof["evidence"] = proof["evidence"][:1]
+        candidates, _ = self.preview()
+        self.assertEqual(candidates["items"][0]["public_scope"]["basis"], "official_source_version_evidence")
+        self.assertEqual(candidates["items"][0]["current_platform_observation"]["status"], "not_performed")
+
     def test_scope_excluded_identity_wins_over_official_or_existing_public_metadata(self):
         self.enable_scope()
         self.official_source()

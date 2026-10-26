@@ -10,7 +10,7 @@
 | --- | ---: | --- |
 | [玻璃动物园](projects/P4-P000013/index.md) | 1 | [原语 / English / 中英](projects/P4-P000013/index.md#可读字幕) |
 
-另有[16条既有 YouTube 元数据关联](publications/README.md)。元数据、完整播放和在线字幕分别核验，关联记录不代替后两项检查。
+另有[17条既有 YouTube 元数据关联](publications/README.md)。元数据、完整播放和在线字幕分别核验，关联记录不代替后两项检查。
 
 
 ## 本批资料目录

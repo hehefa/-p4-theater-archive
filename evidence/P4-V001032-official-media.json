@@ -1,0 +1,36 @@
+{
+  "schema_version": "p4-official-project-media-evidence-v1",
+  "decision": "confirmed_project_media",
+  "scope": "item_level_project_or_practice_provenance_only",
+  "asset_id": "asset:4c7bc626-a3cb-4a24-b6db-8228eb695083",
+  "asset_accession": "P4-V001032",
+  "file_id": "file:3ebc565f-7e68-46ef-9289-350f9cff23ea",
+  "file_accession": "P4-F001032",
+  "source_filename": "DJI_0064.MP4",
+  "source_sha256": "27b24a123dfdf069fae2e2a564839596a3203c5e4f564fe248c30d9c34ae4da9",
+  "project_code": "P4C-020",
+  "project_slug": "porphyria",
+  "official_context": null,
+  "formal_project_claim": true,
+  "official_event_date": null,
+  "evidence": [
+    {
+      "url": "https://a.p4theater.cn/archive/materials/cv-porphyria-27b24a123dfd",
+      "http_status": 200,
+      "retrieved_at": "2026-10-26T15:16:30.0453655+00:00",
+      "html_utf8_sha256": "e428037a7b0bafb12aefe3aaf0a55519c4072e92fd9e583047d9d67fe2879653",
+      "source_type": "official_original_source_archive_record",
+      "supports": [
+        "official_original_source_record_explicitly_records_actual_frame_inspection_and_source_sha256",
+        "Full original-source SHA-256 equals the current local file"
+      ],
+      "source_record_snapshot_is_not_used_as_video_hash": true
+    }
+  ],
+  "unsupported_claims": [
+    "No full-video continuous human viewing or dialogue listening review was performed here.",
+    "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+    "No other member of the containing directory or provisional event inherits this item-level decision.",
+    "This evidence cannot override the family/private deny list."
+  ]
+}

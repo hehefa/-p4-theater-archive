@@ -15,9 +15,11 @@
   "production_private_state_modified": false,
   "source_media_operations": "none",
   "pc_handoff": {
-    "status": "awaiting_pc_validation_after_merge",
+    "status": "pc_validated_staged_integration_awaiting_root_publication",
     "acknowledgement": "not_received",
-    "next_action": "After the pull request is merged, read AGENTS.md and docs/跨端协作.md; check a clean code checkout, retain the original private registry/mapping and verification job, and reply in coordination issue #1 with the result commit and checked scope."
+    "next_action": "Root will publish the two-parent merge and verify PR/CI. Mac may consult the PC validation record when it becomes available; no external message has been sent.",
+    "pc_validation_record": "coordination/pc-validation-20261026.json",
+    "acknowledgement_scope": "No Issue comment or Mac acknowledgement is claimed; this repository record states PC local validation only."
   },
   "coordination_notice": "This file records a handoff and does not implement a cross-machine lock. No local paths, credentials or private state are stored here.",
   "initial_base_commit": "c9d50d06307113112799b98f7d3eb81788364b18",

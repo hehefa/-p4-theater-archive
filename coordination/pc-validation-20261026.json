@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "batch_id": "pc-integration-20261026",
+  "parent_batch_id": "p4-20261026-catalog-unification-01",
+  "recorded_at": "2026-10-26T16:36:32.649893+00:00",
+  "owner": "pc",
+  "status": "validated_staged_integration_not_yet_published",
+  "branch": "codex/pc-official-evidence-20261026",
+  "merge_parent_commits": {
+    "pc_final": "b37826459cd9b10a203b95ecc7dcf48bd36352ed",
+    "incoming_main": "3e11095a1db55196e0354fb928d473b7fb9fda12"
+  },
+  "result_commit": null,
+  "private_state_operation": "none_original_registry_mapping_master_and_live_cache_untouched",
+  "source_media_operations": "none",
+  "worker": {
+    "running_observed": true,
+    "observed_at": "2026-10-26T16:36:32.649893+00:00",
+    "check_scope": "read_only_process_presence",
+    "restarted_or_interrupted": false,
+    "live_progress_or_cache_read": false
+  },
+  "completed": [
+    "Source conflicts merged with both transaction/version safeguards and PC evidence/legacy-caption metadata retained",
+    "Generated INDEX, project, reading and identity outputs rebuilt from merged sources",
+    "Official proof compatibility accepts precise project or practice evidence from an official archive or main site; no automatic whole-folder release",
+    "Metadata-only legacy platform subtitle remains outside public search text"
+  ],
+  "scope_preserved": {
+    "private_inventory_video_files": 1740,
+    "public_selected_video_files": 1445,
+    "excluded_video_files": 295,
+    "public_caption_files": 3,
+    "official_individual_sources": 8,
+    "catalogue_entities": 4577,
+    "existing_platform_associations": 17,
+    "legacy_platform_subtitle": "P4-S001760",
+    "legacy_platform_body_public": false,
+    "new_video_uploads_completed_in_public_catalogue": 0,
+    "new_caption_tracks_published_and_menu_verified": 3,
+    "caption_render_sample_observations": 1,
+    "full_listening_review_claimed": false
+  },
+  "checks": [
+    {
+      "command": "python -X utf8 scripts/archive_catalog.py validate --root .",
+      "status": "passed"
+    },
+    {
+      "command": "python -X utf8 scripts/export_identity_crosswalk.py --root . --check",
+      "status": "passed"
+    },
+    {
+      "command": "python -X utf8 scripts/public_reading.py check --root .",
+      "status": "passed"
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s tests -v",
+      "status": "passed",
+      "tests_passed": 75
+    }
+  ],
+  "communication": {
+    "issue_comment_sent": false,
+    "external_task_message_sent": false,
+    "mac_receipt_acknowledgement": "not_claimed"
+  },
+  "remaining": [
+    "Root must publish the two-parent merge commit and verify the PR and CI",
+    "No claim that Mac has received or acknowledged this file",
+    "Full local video verification and archive publication remain incomplete; this check covers public text/contracts and synthetic tests only"
+  ]
+}

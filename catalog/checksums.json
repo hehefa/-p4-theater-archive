@@ -504,6 +504,83 @@
       "verification_basis": "full_sha256_with_unchanged_size_and_mtime",
       "verified_at": "2026-10-26T13:21:09.590660+00:00",
       "in_current_inventory": true
+    },
+    {
+      "id": "checksum:bbf85c9d-b3b1-4f0b-94fa-3b639fee9f34",
+      "accession": "P4-H000043",
+      "kind": "checksum",
+      "title": "SHA-256",
+      "file_id": "file:6b0d9a4d-1dda-4ca8-b207-75182a6e1d3f",
+      "algorithm": "sha256",
+      "value": "c00d7f0e56e8292a477ef70f0ee2e35e5780aa429a5aad05a2e4b5b1523c1d13",
+      "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+      "verified_at": "2026-10-26T15:18:00.622649+00:00"
+    },
+    {
+      "id": "checksum:8b286229-0f6f-446e-9907-139c1d5385b1",
+      "accession": "P4-H000044",
+      "kind": "checksum",
+      "title": "SHA-256",
+      "file_id": "file:2a31759b-5f9b-4fac-9b1d-5fc4fe8a7fed",
+      "algorithm": "sha256",
+      "value": "31f0c74ff40398e02fa24d0a656d427876137afcd6b608d77639da7f8d1c2a9b",
+      "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+      "verified_at": "2026-10-26T15:18:01.547341+00:00"
+    },
+    {
+      "id": "checksum:f1176083-b05c-4b9c-9ebe-392df67be48b",
+      "accession": "P4-H000045",
+      "kind": "checksum",
+      "title": "SHA-256",
+      "file_id": "file:b5282b3c-3443-4ec7-b8ec-3013f5844afc",
+      "algorithm": "sha256",
+      "value": "9398f87a8a1d12aca584ae81e712cf8335921ae1c964fc655d9205efdb0d3f56",
+      "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+      "verified_at": "2026-10-26T15:18:19.565956+00:00"
+    },
+    {
+      "id": "checksum:1cfee69a-92f1-455a-b433-43c52e03db07",
+      "accession": "P4-H000046",
+      "kind": "checksum",
+      "title": "SHA-256",
+      "file_id": "file:843f4299-55d5-4e06-b2b2-0b6432b624ff",
+      "algorithm": "sha256",
+      "value": "62d045be5f6fe406d32e71d15eecb69284985566e9a2614bd882f18deed94d21",
+      "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+      "verified_at": "2026-10-26T15:19:23.586608+00:00"
+    },
+    {
+      "id": "checksum:0571d61a-f7c4-4bbc-808b-5c17f4dbe642",
+      "accession": "P4-H000047",
+      "kind": "checksum",
+      "title": "SHA-256",
+      "file_id": "file:c86a5253-05c0-44db-afd9-5bd7712fc094",
+      "algorithm": "sha256",
+      "value": "4cb3b3ff96ae5f5a286606ce78c1ff8103b8c43d23c993df6781c8181a42e862",
+      "verification_basis": "completed_full_library_worker_result_with_current_size_and_mtime_revalidated",
+      "verified_at": "2026-10-26T15:20:41.364152+00:00"
+    },
+    {
+      "id": "checksum:c44dd9ed-572d-422e-ab21-f843d55df05e",
+      "accession": "P4-H000048",
+      "kind": "checksum",
+      "title": "SHA-256",
+      "file_id": "file:37ca9b80-1fda-4b1d-8acc-6790cf3fb800",
+      "algorithm": "sha256",
+      "value": "d8f0775081fda4346cd24c2faa2f8929440e651d5839ff3c34ac753f64f46399",
+      "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+      "verified_at": "2026-10-26T15:17:59.222510+00:00"
+    },
+    {
+      "id": "checksum:38d70e90-249e-43e1-b9fe-7ec701c55f04",
+      "accession": "P4-H000049",
+      "kind": "checksum",
+      "title": "SHA-256",
+      "file_id": "file:3ebc565f-7e68-46ef-9289-350f9cff23ea",
+      "algorithm": "sha256",
+      "value": "27b24a123dfdf069fae2e2a564839596a3203c5e4f564fe248c30d9c34ae4da9",
+      "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+      "verified_at": "2026-10-26T15:18:00.153438+00:00"
     }
   ]
 }

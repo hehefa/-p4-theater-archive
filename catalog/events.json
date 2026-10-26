@@ -2190,6 +2190,15 @@
       },
       "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
       "official_media_affiliation_status": "asset_level_review_required_not_folder_inferred"
     },
     {
@@ -2211,6 +2220,15 @@
       },
       "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
       "official_media_affiliation_status": "asset_level_review_required_not_folder_inferred"
     },
     {
@@ -2232,6 +2250,15 @@
       },
       "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
       "official_media_affiliation_status": "asset_level_review_required_not_folder_inferred"
     },
     {

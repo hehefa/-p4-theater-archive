@@ -88,8 +88,8 @@ def _official_source(root, asset, source_file, sub, source_hashes):
     if (not isinstance(digest, str) or not HEX.fullmatch(digest)
             or source_file["id"] != asset["file_id"]
             or any(proof.get(k) != v for k, v in identity.items())
-            or proof.get("decision") != "confirmed_project_media"
-            or proof.get("scope") != "project_media_provenance_only"
+            or proof.get("decision") not in ("confirmed_project_media", "confirmed_p4_practice_media")
+            or proof.get("scope") not in ("project_media_provenance_only", "item_level_project_or_practice_provenance_only", "official_context_plus_actual_media_cross_review")
             or asset.get("official_media_affiliation_status") != "confirmed_official_source_and_project_context"
             or asset.get("public_caption_export_allowed") is not True
             or sub.get("official_media_affiliation_status") != "confirmed_official_source_and_project_context"
@@ -107,8 +107,12 @@ def _official_source(root, asset, source_file, sub, source_hashes):
     for row in saved.get("evidence", []):
         if row.get("http_status") == 200 and isinstance(row.get("html_utf8_sha256"), str) and HEX.fullmatch(row["html_utf8_sha256"]):
             urls.append(_url(row["url"]))
-    if not {"a.p4theater.cn", "b.p4theater.cn"}.issubset({urlsplit(u).hostname for u in urls}):
-        raise ValueError("Official source requires archive and project-context evidence")
+    if not {"a.p4theater.cn", "b.p4theater.cn"}.intersection({urlsplit(u).hostname for u in urls}):
+        raise ValueError("Official source requires item-level archive or main-site evidence")
+    if proof.get("scope") == "official_context_plus_actual_media_cross_review":
+        review = proof.get("actual_content_review", {})
+        if review.get("source_sha256") != digest or review.get("completed") is not True or not review.get("reviewed_at") or not review.get("coverage"):
+            raise ValueError("Official context must bind an actual media content review")
     source_hashes[relative] = _sha(path.read_bytes())
     return {"source_sha256": digest, "official_evidence_path": relative,
             "official_source_urls": sorted(set(urls))}

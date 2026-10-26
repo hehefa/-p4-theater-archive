@@ -189,13 +189,17 @@ def scope_evaluation(cat, video_id, sha, size):
         a = cat["assets"][f["asset_id"]]
         proof = a.get("official_media_evidence", {})
         if (a.get("official_media_affiliation_status") != "confirmed_official_source_and_project_context"
-                or proof.get("decision") != "confirmed_project_media" or proof.get("scope") != "project_media_provenance_only"
+                or proof.get("decision") not in ("confirmed_project_media", "confirmed_p4_practice_media") or proof.get("scope") not in ("project_media_provenance_only", "item_level_project_or_practice_provenance_only", "official_context_plus_actual_media_cross_review")
                 or proof.get("file_id") != file_id or proof.get("asset_id") != a["id"] or proof.get("source_sha256") != sha
                 or (proof.get("source_bytes") is not None and proof["source_bytes"] != size)):
             continue
         domains = {urlparse(e.get("url", "")).hostname for e in proof.get("evidence", [])
                    if e.get("http_status") == 200 and urlparse(e.get("url", "")).scheme == "https"}
-        if {"a.p4theater.cn", "b.p4theater.cn"}.issubset(domains):
+        if proof.get("scope") == "official_context_plus_actual_media_cross_review":
+            review = proof.get("actual_content_review", {})
+            if review.get("source_sha256") != sha or review.get("completed") is not True or not review.get("reviewed_at") or not review.get("coverage"):
+                continue
+        if {"a.p4theater.cn", "b.p4theater.cn"}.intersection(domains):
             official.append(file_id)
     publication_files = [p["file_id"] for p in related if p["file_id"] in matches and p.get("source_sha256") == sha]
     eligible = sorted(set(official + publication_files))

@@ -1,0 +1,91 @@
+{
+  "channel_id": "UCp_LyzepcrZX6Cgzv2Qit4w",
+  "youtube_video_id": "uQ1HVDVdv6Y",
+  "url": "https://www.youtube.com/watch?v=uQ1HVDVdv6Y",
+  "asset_id": "asset:42a44e7c-809a-4e52-8843-4d2925f49d6f",
+  "file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+  "source_sha256": "21f434764243d5ea77d831cb3a5675a96b9ea78f24e1f2aef3d60687838b63d3",
+  "record_basis": "youtube_studio_and_viewer_caption_observation",
+  "verification_scope": "metadata_and_caption_menu_with_limited_render_sample",
+  "publication_origin": "pre_existing",
+  "new_upload_this_batch": false,
+  "recorded_at": "2026-10-26T08:29:41.044396-07:00",
+  "platform_observed_at": null,
+  "observation_receipt": {
+    "sha256": "0f3c265e5f0aec3f2490c4523bf936b986760eca8b4e2eef5159f6fc6b7ab0c2",
+    "interface": "YouTube Studio caption editor and watch-player menu",
+    "screenshots_retained": false
+  },
+  "caption_tracks": [
+    {
+      "subtitle_id": "subtitle:3ce0010f-c786-4350-a404-000396e16903",
+      "version_sha256": "0deadae5a57560a048565b79c3bb6ebac290dc688faaf903114d13229b282bb8",
+      "actual_track_name": "中文原语（机器稿·20261026）",
+      "platform_language_label": "中文",
+      "platform_track_id": null,
+      "published_this_update": true,
+      "studio_published": true,
+      "viewer_menu_selectable": true,
+      "quality_label": "machine_draft",
+      "human_line_by_line_listening_review": "not_performed",
+      "render_sample_status": "verified_at_00_00_12"
+    },
+    {
+      "subtitle_id": "subtitle:f12d1eca-79f8-4c2a-9da1-db408c8132cc",
+      "version_sha256": "7d46674002a04e5cfd1311eae555b675bf28fea752201bdc0dfc09aa62e41cd0",
+      "actual_track_name": "English (machine draft · 20261026)",
+      "platform_language_label": "英语",
+      "platform_track_id": null,
+      "published_this_update": true,
+      "studio_published": true,
+      "viewer_menu_selectable": true,
+      "quality_label": "machine_draft",
+      "human_line_by_line_listening_review": "not_performed",
+      "render_sample_status": "not_completed_before_computer_use_stop"
+    },
+    {
+      "subtitle_id": "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537",
+      "version_sha256": "19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f",
+      "actual_track_name": "中英双语（机器稿·20261026）",
+      "platform_language_label": "中文",
+      "platform_track_id": null,
+      "published_this_update": true,
+      "studio_published": true,
+      "viewer_menu_selectable": true,
+      "quality_label": "machine_draft",
+      "human_line_by_line_listening_review": "not_performed",
+      "render_sample_status": "not_completed_before_computer_use_stop"
+    },
+    {
+      "subtitle_id": "subtitle:0c770ac6-8107-4c06-b1d5-f167ccba48e0",
+      "version_sha256": "65445a4566fa4f7287f2eada51a9aff7bd1ace71299aa69fab78966f5ed36415",
+      "actual_track_name": "Original language - machine reviewed",
+      "platform_language_label": "中文",
+      "platform_track_id": null,
+      "published_this_update": false,
+      "legacy_platform_version": true,
+      "unchanged_online": true,
+      "studio_published": true,
+      "viewer_menu_selectable": true,
+      "quality_label": "platform_review_level_unknown",
+      "human_line_by_line_listening_review": "not_performed",
+      "render_sample_status": "not_checked"
+    }
+  ],
+  "caption_render_samples": [
+    {
+      "subtitle_id": "subtitle:3ce0010f-c786-4350-a404-000396e16903",
+      "at_seconds": 12,
+      "caption_text_visible": true,
+      "scope": "visual_original_language_caption_only_not_line_by_line_listening"
+    }
+  ],
+  "incomplete_checks": [
+    "English viewer actual display at representative times",
+    "Bilingual viewer actual two-line display at representative times",
+    "Start/middle/end viewer timing samples for each new track",
+    "Screenshot proof capture"
+  ],
+  "human_continuous_watch": "not_recorded",
+  "human_line_by_line_listening_review": "not_performed"
+}

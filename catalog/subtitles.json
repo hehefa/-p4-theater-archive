@@ -22773,7 +22773,7 @@
       "issue_counts": {},
       "human_listening_review": "not_recorded",
       "public_text_status": "public_machine_draft",
-      "youtube_caption_status": "not_uploaded_in_this_catalogue",
+      "youtube_caption_status": "published_menu_verified_render_sampling_incomplete",
       "pairing_status": "source_stem_three_variant_and_manifest_association_reviewed",
       "in_current_inventory": true,
       "content_scope_review": {
@@ -22799,6 +22799,23 @@
         "clock": "source_zero",
         "scope": "source_association_only_not_human_timing_or_word_accuracy_review"
       },
+      "quality_label": "machine_draft",
+      "platform_track_observations": [
+        {
+          "publication_id": "publication:09a2fe0d-35ae-481e-9f69-e457a14e8d21",
+          "subtitle_id": "subtitle:3ce0010f-c786-4350-a404-000396e16903",
+          "version_sha256": "0deadae5a57560a048565b79c3bb6ebac290dc688faaf903114d13229b282bb8",
+          "actual_track_name": "中文原语（机器稿·20261026）",
+          "platform_language_label": "中文",
+          "platform_track_id": null,
+          "published_this_update": true,
+          "studio_published": true,
+          "viewer_menu_selectable": true,
+          "quality_label": "machine_draft",
+          "human_line_by_line_listening_review": "not_performed",
+          "render_sample_status": "verified_at_00_00_12"
+        }
+      ],
       "official_media_affiliation_status": "confirmed_official_source_and_project_context"
     },
     {
@@ -22819,7 +22836,7 @@
       "issue_counts": {},
       "human_listening_review": "not_recorded",
       "public_text_status": "public_machine_draft",
-      "youtube_caption_status": "not_uploaded_in_this_catalogue",
+      "youtube_caption_status": "published_menu_verified_render_sampling_incomplete",
       "pairing_status": "source_stem_three_variant_and_manifest_association_reviewed",
       "in_current_inventory": true,
       "content_scope_review": {
@@ -22845,6 +22862,23 @@
         "clock": "source_zero",
         "scope": "source_association_only_not_human_timing_or_word_accuracy_review"
       },
+      "quality_label": "machine_draft",
+      "platform_track_observations": [
+        {
+          "publication_id": "publication:09a2fe0d-35ae-481e-9f69-e457a14e8d21",
+          "subtitle_id": "subtitle:f12d1eca-79f8-4c2a-9da1-db408c8132cc",
+          "version_sha256": "7d46674002a04e5cfd1311eae555b675bf28fea752201bdc0dfc09aa62e41cd0",
+          "actual_track_name": "English (machine draft · 20261026)",
+          "platform_language_label": "英语",
+          "platform_track_id": null,
+          "published_this_update": true,
+          "studio_published": true,
+          "viewer_menu_selectable": true,
+          "quality_label": "machine_draft",
+          "human_line_by_line_listening_review": "not_performed",
+          "render_sample_status": "not_completed_before_computer_use_stop"
+        }
+      ],
       "official_media_affiliation_status": "confirmed_official_source_and_project_context"
     },
     {
@@ -22865,7 +22899,7 @@
       "issue_counts": {},
       "human_listening_review": "not_recorded",
       "public_text_status": "public_machine_draft",
-      "youtube_caption_status": "not_uploaded_in_this_catalogue",
+      "youtube_caption_status": "published_menu_verified_render_sampling_incomplete",
       "pairing_status": "source_stem_three_variant_and_manifest_association_reviewed",
       "in_current_inventory": true,
       "content_scope_review": {
@@ -22891,6 +22925,23 @@
         "clock": "source_zero",
         "scope": "source_association_only_not_human_timing_or_word_accuracy_review"
       },
+      "quality_label": "machine_draft",
+      "platform_track_observations": [
+        {
+          "publication_id": "publication:09a2fe0d-35ae-481e-9f69-e457a14e8d21",
+          "subtitle_id": "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537",
+          "version_sha256": "19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f",
+          "actual_track_name": "中英双语（机器稿·20261026）",
+          "platform_language_label": "中文",
+          "platform_track_id": null,
+          "published_this_update": true,
+          "studio_published": true,
+          "viewer_menu_selectable": true,
+          "quality_label": "machine_draft",
+          "human_line_by_line_listening_review": "not_performed",
+          "render_sample_status": "not_completed_before_computer_use_stop"
+        }
+      ],
       "official_media_affiliation_status": "confirmed_official_source_and_project_context"
     },
     {
@@ -35411,6 +35462,45 @@
       "pairing_status": "filename_association_requires_review",
       "in_current_inventory": true,
       "official_media_affiliation_status": "official_media_affiliation_pending"
+    },
+    {
+      "id": "subtitle:0c770ac6-8107-4c06-b1d5-f167ccba48e0",
+      "accession": "P4-S001760",
+      "kind": "subtitle",
+      "title": "既有平台原语字幕版本（审校程度未知）",
+      "asset_ids": [
+        "asset:42a44e7c-809a-4e52-8843-4d2925f49d6f"
+      ],
+      "source_asset_id": "asset:42a44e7c-809a-4e52-8843-4d2925f49d6f",
+      "source_file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+      "language": "zh",
+      "role": "platform_original_language_legacy",
+      "clock": "source_zero",
+      "version_sha256": "65445a4566fa4f7287f2eada51a9aff7bd1ace71299aa69fab78966f5ed36415",
+      "bytes": 195268,
+      "cue_count": 3126,
+      "format_status": "structure_passed",
+      "quality_label": "platform_review_level_unknown",
+      "human_listening_review": "not_recorded",
+      "public_text_status": "withheld_platform_legacy_text_context_review_pending",
+      "youtube_caption_status": "pre_existing_published_track_preserved_menu_observed",
+      "pairing_status": "same_video_language_and_actual_track_name_download_observed",
+      "platform_origin": "downloaded_pre_existing_published_track",
+      "platform_video_id": "uQ1HVDVdv6Y",
+      "platform_language_label": "中文",
+      "platform_track_actual_name": "Original language - machine reviewed",
+      "existing_platform_label_is_not_review_evidence": true,
+      "platform_track_observation": {
+        "video_id": "uQ1HVDVdv6Y",
+        "actual_name": "Original language - machine reviewed",
+        "language_label": "中文",
+        "download_sha256": "65445a4566fa4f7287f2eada51a9aff7bd1ace71299aa69fab78966f5ed36415",
+        "unchanged_online": true,
+        "viewer_menu_selectable": true
+      },
+      "in_current_inventory": true,
+      "official_media_affiliation_status": "confirmed_official_source_and_project_context",
+      "privacy_screening_status": "initial_pattern_screen_no_identifying_format_hits_context_review_pending_not_full_review"
     }
   ]
 }

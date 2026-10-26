@@ -21,6 +21,31 @@ def write_json(path, obj):
 
 
 class ReadingTests(unittest.TestCase):
+    def test_individual_practice_evidence_from_one_official_site_keeps_scope_binding(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp); tables, _ = self.fixture(root)
+            asset = tables["assets"][0]
+            proof = asset["official_media_evidence"]
+            proof.update(decision="confirmed_p4_practice_media", scope="item_level_project_or_practice_provenance_only", formal_project_claim=False)
+            proof["evidence"] = proof["evidence"][:1]
+            write_json(root / "catalog/assets.json", {"items": tables["assets"]})
+            write_json(root / "evidence" / (asset["accession"] + "-official-media.json"), proof)
+            self.assertTrue(reading.build(root)["ok"])
+            self.assertTrue(reading.check(root)["ok"])
+            proof["source_sha256"] = "b" * 64
+            write_json(root / "catalog/assets.json", {"items": tables["assets"]})
+            with self.assertRaisesRegex(ValueError, "exact official source"):
+                reading.build(root)
+
+    def test_legacy_platform_metadata_is_not_public_search_text(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp); tables, _ = self.fixture(root)
+            tables["subtitles"].append({"id": "subtitle:legacy", "accession": "P4-S000005", "asset_ids": [tables["assets"][0]["id"]], "source_asset_id": tables["assets"][0]["id"], "source_file_id": "file:one", "language": "zh", "role": "platform_original_language_legacy", "quality_label": "platform_review_level_unknown", "public_text_status": "withheld_platform_legacy_text_context_review_pending", "platform_track_actual_name": "Original language - machine reviewed"})
+            write_json(root / "catalog/subtitles.json", {"items": tables["subtitles"]})
+            self.assertEqual(reading.build(root)["public_captions"], 2)
+            self.assertEqual(reading.search(root, "machine reviewed"), [])
+            self.assertTrue(reading.check(root)["ok"])
+
     def approve_exports(self, root, tables):
         """Synthetic approvals contain no real private material or provenance."""
         exports = [s for s in tables["subtitles"] if s.get("public_export")]

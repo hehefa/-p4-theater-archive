@@ -486,7 +486,7 @@
         "event:7b80d8de-2a34-4875-af35-5e90657645a8"
       ],
       "file_id": "file:6b0d9a4d-1dda-4ca8-b207-75182a6e1d3f",
-      "content_classification": "p4_candidate_official_media_affiliation_pending",
+      "content_classification": "official_p4_practice_media",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -495,11 +495,65 @@
         "subtitle:923029fa-077d-4bbd-b8c8-451289886e13"
       ],
       "in_current_inventory": true,
-      "public_caption_subtitle_ids": [],
-      "byte_copy_asset_ids": [],
+      "official_media_affiliation_status": "confirmed_official_source_and_project_context",
+      "official_media_evidence": {
+        "schema_version": "p4-official-project-media-evidence-v1",
+        "prepared_at": "2026-10-26T15:22:51.099388+00:00",
+        "decision": "confirmed_p4_practice_media",
+        "scope": "item_level_project_or_practice_provenance_only",
+        "asset_id": "asset:02dfbbbb-4a2a-4254-9d02-e5f2bb59ce60",
+        "asset_accession": "P4-V000018",
+        "file_id": "file:6b0d9a4d-1dda-4ca8-b207-75182a6e1d3f",
+        "file_accession": "P4-F000018",
+        "source_filename": "2022-03-28 20-42-18 NTNE 1920x1080 30fps.mov",
+        "source_bytes": 40272040,
+        "source_sha256": "c00d7f0e56e8292a477ef70f0ee2e35e5780aa429a5aad05a2e4b5b1523c1d13",
+        "project_code": null,
+        "project_slug": null,
+        "official_context": "P4 venue and discussion records / 510 discussion archive; not a formal project; date not inferred from 510",
+        "formal_project_claim": false,
+        "official_event_date": null,
+        "local_event_ids": [
+          "event:7b80d8de-2a34-4875-af35-5e90657645a8"
+        ],
+        "local_source_fingerprint": {
+          "sha256": "c00d7f0e56e8292a477ef70f0ee2e35e5780aa429a5aad05a2e4b5b1523c1d13",
+          "current_size_mtime_match_complete_hash_record": true,
+          "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+          "hash_verified_at": "2026-10-26T15:18:00.622649+00:00",
+          "root_worker_result_read_only": false
+        },
+        "evidence": [
+          {
+            "url": "https://a.p4theater.cn/videos/Gh4AMJh2pT4",
+            "http_status": 200,
+            "retrieved_at": "2026-10-26T15:16:28.9898112+00:00",
+            "html_utf8_sha256": "befee984fd8ec04c65e9ed239e752759148653e96de8a5548e6ca7f5e6d816e9",
+            "source_type": "official_video_description",
+            "supports": [
+              "substantive_official_discussion_description_with_exact_source_filename_and_full_sha256",
+              "Full original-source SHA-256 equals the current local file"
+            ],
+            "source_record_snapshot_is_not_used_as_video_hash": true
+          }
+        ],
+        "family_exclusion_guard": {
+          "matched": false,
+          "denied_ids_checked": 295,
+          "override_permitted": false
+        },
+        "unsupported_claims": [
+          "No full-video continuous human viewing or dialogue listening review was performed here.",
+          "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+          "No other member of the containing directory or provisional event inherits this item-level decision.",
+          "This evidence cannot override the family/private deny list."
+        ],
+        "publication_guidance": "Candidate for an item-specific provenance allow rule after root review; does not itself upload or change platform visibility."
+      },
       "new_public_upload_allowed": false,
-      "official_media_affiliation_status": "official_media_affiliation_pending",
-      "public_caption_export_allowed": false
+      "public_caption_export_allowed": false,
+      "public_caption_subtitle_ids": [],
+      "byte_copy_asset_ids": []
     },
     {
       "id": "asset:4acb1a3e-09d7-44c2-91eb-25b2fff8eb90",
@@ -514,7 +568,7 @@
         "event:7b80d8de-2a34-4875-af35-5e90657645a8"
       ],
       "file_id": "file:2a31759b-5f9b-4fac-9b1d-5fc4fe8a7fed",
-      "content_classification": "p4_candidate_official_media_affiliation_pending",
+      "content_classification": "official_p4_practice_media",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -523,11 +577,65 @@
         "subtitle:c241ad75-ebcf-49b7-8ab8-cee328d43e8d"
       ],
       "in_current_inventory": true,
-      "public_caption_subtitle_ids": [],
-      "byte_copy_asset_ids": [],
+      "official_media_affiliation_status": "confirmed_official_source_and_project_context",
+      "official_media_evidence": {
+        "schema_version": "p4-official-project-media-evidence-v1",
+        "prepared_at": "2026-10-26T15:22:51.099889+00:00",
+        "decision": "confirmed_p4_practice_media",
+        "scope": "item_level_project_or_practice_provenance_only",
+        "asset_id": "asset:4acb1a3e-09d7-44c2-91eb-25b2fff8eb90",
+        "asset_accession": "P4-V000019",
+        "file_id": "file:2a31759b-5f9b-4fac-9b1d-5fc4fe8a7fed",
+        "file_accession": "P4-F000019",
+        "source_filename": "2022-03-28 20-44-22 OUNG 1920x1080 30fps.mov",
+        "source_bytes": 77891229,
+        "source_sha256": "31f0c74ff40398e02fa24d0a656d427876137afcd6b608d77639da7f8d1c2a9b",
+        "project_code": null,
+        "project_slug": null,
+        "official_context": "P4 venue and discussion records / 510 discussion archive; not a formal project; date not inferred from 510",
+        "formal_project_claim": false,
+        "official_event_date": null,
+        "local_event_ids": [
+          "event:7b80d8de-2a34-4875-af35-5e90657645a8"
+        ],
+        "local_source_fingerprint": {
+          "sha256": "31f0c74ff40398e02fa24d0a656d427876137afcd6b608d77639da7f8d1c2a9b",
+          "current_size_mtime_match_complete_hash_record": true,
+          "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+          "hash_verified_at": "2026-10-26T15:18:01.547341+00:00",
+          "root_worker_result_read_only": false
+        },
+        "evidence": [
+          {
+            "url": "https://a.p4theater.cn/videos/y_N12G_fey0",
+            "http_status": 200,
+            "retrieved_at": "2026-10-26T15:16:29.8039673+00:00",
+            "html_utf8_sha256": "4726031013132f89f1ee9e2709f48f18cc82fd5c6e1fa7f1971268236d4f9a88",
+            "source_type": "official_video_description",
+            "supports": [
+              "substantive_official_discussion_description_with_exact_source_filename_and_full_sha256",
+              "Full original-source SHA-256 equals the current local file"
+            ],
+            "source_record_snapshot_is_not_used_as_video_hash": true
+          }
+        ],
+        "family_exclusion_guard": {
+          "matched": false,
+          "denied_ids_checked": 295,
+          "override_permitted": false
+        },
+        "unsupported_claims": [
+          "No full-video continuous human viewing or dialogue listening review was performed here.",
+          "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+          "No other member of the containing directory or provisional event inherits this item-level decision.",
+          "This evidence cannot override the family/private deny list."
+        ],
+        "publication_guidance": "Candidate for an item-specific provenance allow rule after root review; does not itself upload or change platform visibility."
+      },
       "new_public_upload_allowed": false,
-      "official_media_affiliation_status": "official_media_affiliation_pending",
-      "public_caption_export_allowed": false
+      "public_caption_export_allowed": false,
+      "public_caption_subtitle_ids": [],
+      "byte_copy_asset_ids": []
     },
     {
       "id": "asset:c81d2b69-ac82-4c5e-9e05-9a3b40890a90",
@@ -542,7 +650,7 @@
         "event:7b80d8de-2a34-4875-af35-5e90657645a8"
       ],
       "file_id": "file:b5282b3c-3443-4ec7-b8ec-3013f5844afc",
-      "content_classification": "p4_candidate_official_media_affiliation_pending",
+      "content_classification": "official_p4_practice_media",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -551,11 +659,65 @@
         "subtitle:88985573-2f6f-4e59-bd5f-ff4ef34974a1"
       ],
       "in_current_inventory": true,
-      "public_caption_subtitle_ids": [],
-      "byte_copy_asset_ids": [],
+      "official_media_affiliation_status": "confirmed_official_source_and_project_context",
+      "official_media_evidence": {
+        "schema_version": "p4-official-project-media-evidence-v1",
+        "prepared_at": "2026-10-26T15:22:51.100388+00:00",
+        "decision": "confirmed_p4_practice_media",
+        "scope": "item_level_project_or_practice_provenance_only",
+        "asset_id": "asset:c81d2b69-ac82-4c5e-9e05-9a3b40890a90",
+        "asset_accession": "P4-V000020",
+        "file_id": "file:b5282b3c-3443-4ec7-b8ec-3013f5844afc",
+        "file_accession": "P4-F000020",
+        "source_filename": "2022-03-28 20-46-12 MTI1 1920x1080 30fps.mov",
+        "source_bytes": 1626218016,
+        "source_sha256": "9398f87a8a1d12aca584ae81e712cf8335921ae1c964fc655d9205efdb0d3f56",
+        "project_code": null,
+        "project_slug": null,
+        "official_context": "P4 venue and discussion records / 510 discussion archive; not a formal project; date not inferred from 510",
+        "formal_project_claim": false,
+        "official_event_date": null,
+        "local_event_ids": [
+          "event:7b80d8de-2a34-4875-af35-5e90657645a8"
+        ],
+        "local_source_fingerprint": {
+          "sha256": "9398f87a8a1d12aca584ae81e712cf8335921ae1c964fc655d9205efdb0d3f56",
+          "current_size_mtime_match_complete_hash_record": true,
+          "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+          "hash_verified_at": "2026-10-26T15:18:19.565956+00:00",
+          "root_worker_result_read_only": false
+        },
+        "evidence": [
+          {
+            "url": "https://a.p4theater.cn/videos/gT0Ki84kQx4",
+            "http_status": 200,
+            "retrieved_at": "2026-10-26T15:16:31.1756842+00:00",
+            "html_utf8_sha256": "3dd1c8e60566904dd4d4c27e3e6884cd397e9f8c38ac0e261b4ed007808f97ed",
+            "source_type": "official_video_description",
+            "supports": [
+              "substantive_official_discussion_description_with_exact_source_filename_and_full_sha256",
+              "Full original-source SHA-256 equals the current local file"
+            ],
+            "source_record_snapshot_is_not_used_as_video_hash": true
+          }
+        ],
+        "family_exclusion_guard": {
+          "matched": false,
+          "denied_ids_checked": 295,
+          "override_permitted": false
+        },
+        "unsupported_claims": [
+          "No full-video continuous human viewing or dialogue listening review was performed here.",
+          "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+          "No other member of the containing directory or provisional event inherits this item-level decision.",
+          "This evidence cannot override the family/private deny list."
+        ],
+        "publication_guidance": "Candidate for an item-specific provenance allow rule after root review; does not itself upload or change platform visibility."
+      },
       "new_public_upload_allowed": false,
-      "official_media_affiliation_status": "official_media_affiliation_pending",
-      "public_caption_export_allowed": false
+      "public_caption_export_allowed": false,
+      "public_caption_subtitle_ids": [],
+      "byte_copy_asset_ids": []
     },
     {
       "id": "asset:702b73a7-1030-40a2-902b-2f2bc97daa74",
@@ -570,7 +732,7 @@
         "event:7b80d8de-2a34-4875-af35-5e90657645a8"
       ],
       "file_id": "file:843f4299-55d5-4e06-b2b2-0b6432b624ff",
-      "content_classification": "p4_candidate_official_media_affiliation_pending",
+      "content_classification": "official_p4_practice_media",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -579,11 +741,65 @@
         "subtitle:362bb4bd-635c-4c03-b2da-9a9c9e43b4d5"
       ],
       "in_current_inventory": true,
-      "public_caption_subtitle_ids": [],
-      "byte_copy_asset_ids": [],
+      "official_media_affiliation_status": "confirmed_official_source_and_project_context",
+      "official_media_evidence": {
+        "schema_version": "p4-official-project-media-evidence-v1",
+        "prepared_at": "2026-10-26T15:22:51.100888+00:00",
+        "decision": "confirmed_p4_practice_media",
+        "scope": "item_level_project_or_practice_provenance_only",
+        "asset_id": "asset:702b73a7-1030-40a2-902b-2f2bc97daa74",
+        "asset_accession": "P4-V000021",
+        "file_id": "file:843f4299-55d5-4e06-b2b2-0b6432b624ff",
+        "file_accession": "P4-F000021",
+        "source_filename": "2022-03-28 21-02-22 NJG2 1920x1080 30fps.mov",
+        "source_bytes": 5206417441,
+        "source_sha256": "62d045be5f6fe406d32e71d15eecb69284985566e9a2614bd882f18deed94d21",
+        "project_code": null,
+        "project_slug": null,
+        "official_context": "P4 venue and discussion records / 510 discussion archive; not a formal project; date not inferred from 510",
+        "formal_project_claim": false,
+        "official_event_date": null,
+        "local_event_ids": [
+          "event:7b80d8de-2a34-4875-af35-5e90657645a8"
+        ],
+        "local_source_fingerprint": {
+          "sha256": "62d045be5f6fe406d32e71d15eecb69284985566e9a2614bd882f18deed94d21",
+          "current_size_mtime_match_complete_hash_record": true,
+          "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+          "hash_verified_at": "2026-10-26T15:19:23.586608+00:00",
+          "root_worker_result_read_only": false
+        },
+        "evidence": [
+          {
+            "url": "https://a.p4theater.cn/videos/oGLd8OYeDNI",
+            "http_status": 200,
+            "retrieved_at": "2026-10-26T15:16:32.3158752+00:00",
+            "html_utf8_sha256": "5d9208ba403cb186bf21411a1cf597575ca755f215f89bfd02372fd97ff9cefe",
+            "source_type": "official_video_description",
+            "supports": [
+              "substantive_official_discussion_description_with_exact_source_filename_and_full_sha256",
+              "Full original-source SHA-256 equals the current local file"
+            ],
+            "source_record_snapshot_is_not_used_as_video_hash": true
+          }
+        ],
+        "family_exclusion_guard": {
+          "matched": false,
+          "denied_ids_checked": 295,
+          "override_permitted": false
+        },
+        "unsupported_claims": [
+          "No full-video continuous human viewing or dialogue listening review was performed here.",
+          "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+          "No other member of the containing directory or provisional event inherits this item-level decision.",
+          "This evidence cannot override the family/private deny list."
+        ],
+        "publication_guidance": "Candidate for an item-specific provenance allow rule after root review; does not itself upload or change platform visibility."
+      },
       "new_public_upload_allowed": false,
-      "official_media_affiliation_status": "official_media_affiliation_pending",
-      "public_caption_export_allowed": false
+      "public_caption_export_allowed": false,
+      "public_caption_subtitle_ids": [],
+      "byte_copy_asset_ids": []
     },
     {
       "id": "asset:79e51309-98d5-4a12-b7c1-ea5531476b71",
@@ -598,7 +814,7 @@
         "event:7b80d8de-2a34-4875-af35-5e90657645a8"
       ],
       "file_id": "file:c86a5253-05c0-44db-afd9-5bd7712fc094",
-      "content_classification": "p4_candidate_official_media_affiliation_pending",
+      "content_classification": "official_p4_practice_media",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -607,11 +823,65 @@
         "subtitle:23252ff8-7bbc-4399-9be4-43f8c0c784ab"
       ],
       "in_current_inventory": true,
-      "public_caption_subtitle_ids": [],
-      "byte_copy_asset_ids": [],
+      "official_media_affiliation_status": "confirmed_official_source_and_project_context",
+      "official_media_evidence": {
+        "schema_version": "p4-official-project-media-evidence-v1",
+        "prepared_at": "2026-10-26T15:22:51.101387+00:00",
+        "decision": "confirmed_p4_practice_media",
+        "scope": "item_level_project_or_practice_provenance_only",
+        "asset_id": "asset:79e51309-98d5-4a12-b7c1-ea5531476b71",
+        "asset_accession": "P4-V000022",
+        "file_id": "file:c86a5253-05c0-44db-afd9-5bd7712fc094",
+        "file_accession": "P4-F000022",
+        "source_filename": "2022-03-28 21-53-38 QKVF 1920x1080 30fps.mov",
+        "source_bytes": 2927061659,
+        "source_sha256": "4cb3b3ff96ae5f5a286606ce78c1ff8103b8c43d23c993df6781c8181a42e862",
+        "project_code": null,
+        "project_slug": null,
+        "official_context": "P4 venue and discussion records / 510 discussion archive; not a formal project; date not inferred from 510",
+        "formal_project_claim": false,
+        "official_event_date": null,
+        "local_event_ids": [
+          "event:7b80d8de-2a34-4875-af35-5e90657645a8"
+        ],
+        "local_source_fingerprint": {
+          "sha256": "4cb3b3ff96ae5f5a286606ce78c1ff8103b8c43d23c993df6781c8181a42e862",
+          "current_size_mtime_match_complete_hash_record": true,
+          "verification_basis": "completed_full_library_worker_result_with_current_size_and_mtime_revalidated",
+          "hash_verified_at": "2026-10-26T15:20:41.364152+00:00",
+          "root_worker_result_read_only": true
+        },
+        "evidence": [
+          {
+            "url": "https://a.p4theater.cn/videos/h0YpakR124o",
+            "http_status": 200,
+            "retrieved_at": "2026-10-26T15:16:33.4692411+00:00",
+            "html_utf8_sha256": "553a5fdc6a1933b75c10afd12a06366ec978dc0cadbbfd538ecf512f57125969",
+            "source_type": "official_video_description",
+            "supports": [
+              "substantive_official_discussion_description_with_exact_source_filename_and_full_sha256",
+              "Full original-source SHA-256 equals the current local file"
+            ],
+            "source_record_snapshot_is_not_used_as_video_hash": true
+          }
+        ],
+        "family_exclusion_guard": {
+          "matched": false,
+          "denied_ids_checked": 295,
+          "override_permitted": false
+        },
+        "unsupported_claims": [
+          "No full-video continuous human viewing or dialogue listening review was performed here.",
+          "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+          "No other member of the containing directory or provisional event inherits this item-level decision.",
+          "This evidence cannot override the family/private deny list."
+        ],
+        "publication_guidance": "Candidate for an item-specific provenance allow rule after root review; does not itself upload or change platform visibility."
+      },
       "new_public_upload_allowed": false,
-      "official_media_affiliation_status": "official_media_affiliation_pending",
-      "public_caption_export_allowed": false
+      "public_caption_export_allowed": false,
+      "public_caption_subtitle_ids": [],
+      "byte_copy_asset_ids": []
     },
     {
       "id": "asset:d3b22f44-7646-425e-8a1e-c5f25c589acf",
@@ -11664,7 +11934,7 @@
         "event:40ec6f16-45d0-4d03-8b69-4b0ccb0d6e26"
       ],
       "file_id": "file:37ca9b80-1fda-4b1d-8acc-6790cf3fb800",
-      "content_classification": "p4_candidate_official_media_affiliation_pending",
+      "content_classification": "official_project_media_confirmed",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -11673,11 +11943,65 @@
         "subtitle:891e3957-ea1c-4ad1-87f8-da20a18464cf"
       ],
       "in_current_inventory": true,
-      "public_caption_subtitle_ids": [],
-      "byte_copy_asset_ids": [],
+      "official_media_affiliation_status": "confirmed_official_source_and_project_context",
+      "official_media_evidence": {
+        "schema_version": "p4-official-project-media-evidence-v1",
+        "prepared_at": "2026-10-26T15:22:51.097883+00:00",
+        "decision": "confirmed_project_media",
+        "scope": "item_level_project_or_practice_provenance_only",
+        "asset_id": "asset:c3fbb2b9-83e7-42d0-971d-fcb692c97156",
+        "asset_accession": "P4-V000422",
+        "file_id": "file:37ca9b80-1fda-4b1d-8acc-6790cf3fb800",
+        "file_accession": "P4-F000422",
+        "source_filename": "IMG_4199.MOV",
+        "source_bytes": 53585331,
+        "source_sha256": "d8f0775081fda4346cd24c2faa2f8929440e651d5839ff3c34ac753f64f46399",
+        "project_code": "P4C-019",
+        "project_slug": "animal-farm-ecotheatre",
+        "official_context": null,
+        "formal_project_claim": true,
+        "official_event_date": null,
+        "local_event_ids": [
+          "event:40ec6f16-45d0-4d03-8b69-4b0ccb0d6e26"
+        ],
+        "local_source_fingerprint": {
+          "sha256": "d8f0775081fda4346cd24c2faa2f8929440e651d5839ff3c34ac753f64f46399",
+          "current_size_mtime_match_complete_hash_record": true,
+          "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+          "hash_verified_at": "2026-10-26T15:17:59.222510+00:00",
+          "root_worker_result_read_only": false
+        },
+        "evidence": [
+          {
+            "url": "https://a.p4theater.cn/archive/materials/cv-animal-farm-ecotheatre-d8f0775081fd",
+            "http_status": 200,
+            "retrieved_at": "2026-10-26T15:16:29.5677983+00:00",
+            "html_utf8_sha256": "d72fd37fd36268724b178de2ca7f4a65147b268cfc9264c533e8f08be6feddbc",
+            "source_type": "official_original_source_archive_record",
+            "supports": [
+              "official_original_source_record_explicitly_records_actual_frame_inspection_and_source_sha256",
+              "Full original-source SHA-256 equals the current local file"
+            ],
+            "source_record_snapshot_is_not_used_as_video_hash": true
+          }
+        ],
+        "family_exclusion_guard": {
+          "matched": false,
+          "denied_ids_checked": 295,
+          "override_permitted": false
+        },
+        "unsupported_claims": [
+          "No full-video continuous human viewing or dialogue listening review was performed here.",
+          "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+          "No other member of the containing directory or provisional event inherits this item-level decision.",
+          "This evidence cannot override the family/private deny list."
+        ],
+        "publication_guidance": "Candidate for an item-specific provenance allow rule after root review; does not itself upload or change platform visibility."
+      },
       "new_public_upload_allowed": false,
-      "official_media_affiliation_status": "official_media_affiliation_pending",
-      "public_caption_export_allowed": false
+      "public_caption_export_allowed": false,
+      "public_caption_subtitle_ids": [],
+      "byte_copy_asset_ids": []
     },
     {
       "id": "asset:35464f46-0fd6-46c9-95d6-716dfd588add",
@@ -18015,6 +18339,15 @@
         "subtitle:713d7340-d42d-4b19-afb3-ecec35b66374"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_project_slug": "body",
+          "official_source_url": "https://b.p4theater.cn/projects/body",
+          "status": "keyword_only_candidate_not_exact_source_identity",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -21907,6 +22240,9 @@
         "subtitle:cf99063b-8d5f-4367-9e5a-f04688462a23"
       ],
       "in_current_inventory": true,
+      "content_role": "third_party_reference_material_candidate",
+      "original_p4_event_recording_confirmed": false,
+      "official_project_association_pending": true,
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -21935,6 +22271,9 @@
         "subtitle:acc5736f-316a-4911-afe1-e1d9f3e8823e"
       ],
       "in_current_inventory": true,
+      "content_role": "third_party_reference_material_candidate",
+      "original_p4_event_recording_confirmed": false,
+      "official_project_association_pending": true,
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -21963,6 +22302,9 @@
         "subtitle:4ba0c963-7461-4d11-9bcb-1270486b3a13"
       ],
       "in_current_inventory": true,
+      "content_role": "third_party_reference_material_candidate",
+      "original_p4_event_recording_confirmed": false,
+      "official_project_association_pending": true,
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -21991,6 +22333,9 @@
         "subtitle:2ea48d36-0188-4b1b-9692-0227172f5bfb"
       ],
       "in_current_inventory": true,
+      "content_role": "third_party_reference_material_candidate",
+      "original_p4_event_recording_confirmed": false,
+      "official_project_association_pending": true,
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -22019,6 +22364,9 @@
         "subtitle:e3d1de4e-b550-45eb-90f4-5edfded713a0"
       ],
       "in_current_inventory": true,
+      "content_role": "third_party_reference_material_candidate",
+      "original_p4_event_recording_confirmed": false,
+      "official_project_association_pending": true,
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -22047,6 +22395,9 @@
         "subtitle:d819e949-800d-4e68-9e1c-b423d7ff2e8c"
       ],
       "in_current_inventory": true,
+      "content_role": "third_party_reference_material_candidate",
+      "original_p4_event_recording_confirmed": false,
+      "official_project_association_pending": true,
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -28672,7 +29023,7 @@
         "event:f5962576-51df-4d53-af9a-0dbc26683589"
       ],
       "file_id": "file:3ebc565f-7e68-46ef-9289-350f9cff23ea",
-      "content_classification": "p4_candidate_official_media_affiliation_pending",
+      "content_classification": "official_project_media_confirmed",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -28681,11 +29032,65 @@
         "subtitle:c89be798-b78a-4f27-b576-27e485c26da7"
       ],
       "in_current_inventory": true,
-      "public_caption_subtitle_ids": [],
-      "byte_copy_asset_ids": [],
+      "official_media_affiliation_status": "confirmed_official_source_and_project_context",
+      "official_media_evidence": {
+        "schema_version": "p4-official-project-media-evidence-v1",
+        "prepared_at": "2026-10-26T15:22:51.098885+00:00",
+        "decision": "confirmed_project_media",
+        "scope": "item_level_project_or_practice_provenance_only",
+        "asset_id": "asset:4c7bc626-a3cb-4a24-b6db-8228eb695083",
+        "asset_accession": "P4-V001032",
+        "file_id": "file:3ebc565f-7e68-46ef-9289-350f9cff23ea",
+        "file_accession": "P4-F001032",
+        "source_filename": "DJI_0064.MP4",
+        "source_bytes": 86168032,
+        "source_sha256": "27b24a123dfdf069fae2e2a564839596a3203c5e4f564fe248c30d9c34ae4da9",
+        "project_code": "P4C-020",
+        "project_slug": "porphyria",
+        "official_context": null,
+        "formal_project_claim": true,
+        "official_event_date": null,
+        "local_event_ids": [
+          "event:f5962576-51df-4d53-af9a-0dbc26683589"
+        ],
+        "local_source_fingerprint": {
+          "sha256": "27b24a123dfdf069fae2e2a564839596a3203c5e4f564fe248c30d9c34ae4da9",
+          "current_size_mtime_match_complete_hash_record": true,
+          "verification_basis": "new_complete_source_sha256_read_with_stable_before_after_size_and_mtime",
+          "hash_verified_at": "2026-10-26T15:18:00.153438+00:00",
+          "root_worker_result_read_only": false
+        },
+        "evidence": [
+          {
+            "url": "https://a.p4theater.cn/archive/materials/cv-porphyria-27b24a123dfd",
+            "http_status": 200,
+            "retrieved_at": "2026-10-26T15:16:30.0453655+00:00",
+            "html_utf8_sha256": "e428037a7b0bafb12aefe3aaf0a55519c4072e92fd9e583047d9d67fe2879653",
+            "source_type": "official_original_source_archive_record",
+            "supports": [
+              "official_original_source_record_explicitly_records_actual_frame_inspection_and_source_sha256",
+              "Full original-source SHA-256 equals the current local file"
+            ],
+            "source_record_snapshot_is_not_used_as_video_hash": true
+          }
+        ],
+        "family_exclusion_guard": {
+          "matched": false,
+          "denied_ids_checked": 295,
+          "override_permitted": false
+        },
+        "unsupported_claims": [
+          "No full-video continuous human viewing or dialogue listening review was performed here.",
+          "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+          "No other member of the containing directory or provisional event inherits this item-level decision.",
+          "This evidence cannot override the family/private deny list."
+        ],
+        "publication_guidance": "Candidate for an item-specific provenance allow rule after root review; does not itself upload or change platform visibility."
+      },
       "new_public_upload_allowed": false,
-      "official_media_affiliation_status": "official_media_affiliation_pending",
-      "public_caption_export_allowed": false
+      "public_caption_export_allowed": false,
+      "public_caption_subtitle_ids": [],
+      "byte_copy_asset_ids": []
     },
     {
       "id": "asset:62a80419-0a69-4f21-8f20-fa93c60b6f5b",
@@ -28793,6 +29198,15 @@
         "subtitle:1c7ce1ea-1a8c-4b35-b1d7-e7df23ba4c09"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_project_slug": "body",
+          "official_source_url": "https://b.p4theater.cn/projects/body",
+          "status": "keyword_only_candidate_not_exact_source_identity",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -29676,11 +30090,14 @@
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
-      "youtube_publication_ids": [],
+      "youtube_publication_ids": [
+        "publication:09a2fe0d-35ae-481e-9f69-e457a14e8d21"
+      ],
       "subtitle_ids": [
         "subtitle:3ce0010f-c786-4350-a404-000396e16903",
         "subtitle:f12d1eca-79f8-4c2a-9da1-db408c8132cc",
-        "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537"
+        "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537",
+        "subtitle:0c770ac6-8107-4c06-b1d5-f167ccba48e0"
       ],
       "in_current_inventory": true,
       "content_scope_review": {
@@ -29707,6 +30124,9 @@
         "subtitle:3ce0010f-c786-4350-a404-000396e16903",
         "subtitle:f12d1eca-79f8-4c2a-9da1-db408c8132cc",
         "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537"
+      ],
+      "platform_subtitle_ids": [
+        "subtitle:0c770ac6-8107-4c06-b1d5-f167ccba48e0"
       ],
       "new_public_upload_allowed": false,
       "official_media_affiliation_status": "confirmed_official_source_and_project_context",
@@ -35132,6 +35552,16 @@
         "subtitle:492c805f-7f5e-4ba5-90a8-06e4bd55f626"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35160,6 +35590,16 @@
         "subtitle:e8903459-7080-46f2-89d6-b5877b3cff4a"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35188,6 +35628,16 @@
         "subtitle:1082cb93-af4c-454e-84e7-4dd4c8562c37"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35216,6 +35666,16 @@
         "subtitle:07f188ec-0519-41df-b8cb-d7ced1aabf77"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35244,6 +35704,16 @@
         "subtitle:31c4d6fe-4ff4-4662-b24d-d16e52863775"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35272,6 +35742,16 @@
         "subtitle:9ef3d9ee-dd6f-4b91-96a6-75d6cb50c158"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35300,6 +35780,16 @@
         "subtitle:ca3743a8-384f-41e0-b7c8-94f1fd1b0a79"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35328,6 +35818,16 @@
         "subtitle:8e828427-be67-4c55-8ca0-7498cf52951a"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35356,6 +35856,16 @@
         "subtitle:7c41f3ef-a17a-43c4-b261-c23af092e815"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35384,6 +35894,16 @@
         "subtitle:db86b421-2c30-4fd4-bf30-a743e6733613"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35412,6 +35932,16 @@
         "subtitle:8f6fc15c-f9a6-40cb-a619-fe090905d928"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35440,6 +35970,16 @@
         "subtitle:4f9d4db2-7f6d-4ca1-a539-0d5c9a140446"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35468,6 +36008,16 @@
         "subtitle:4cc6b1ff-01ff-459b-9cc2-fa6311c564d3"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35496,6 +36046,16 @@
         "subtitle:73bb6d18-f1c6-434c-8460-cc875ca3f4ea"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35524,6 +36084,16 @@
         "subtitle:7a4bdf23-058f-40ad-8ebf-a482f3197baa"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35552,6 +36122,16 @@
         "subtitle:3753a72e-8a92-4629-924d-0aa4574f90ee"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35580,6 +36160,16 @@
         "subtitle:ef3c6dad-ce89-400a-8965-a2ebcd26e057"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35608,6 +36198,16 @@
         "subtitle:25161f86-f4dd-4425-b723-1634790f3a34"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35636,6 +36236,16 @@
         "subtitle:f883d46f-5ce2-4bfd-9266-0147db0ba1cb"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35664,6 +36274,16 @@
         "subtitle:bd0a1439-ac62-4cce-b62e-19ec08895f0c"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35692,6 +36312,16 @@
         "subtitle:be427652-6f96-4661-b4f4-54b2d9204f21"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35720,6 +36350,16 @@
         "subtitle:890e0e66-8393-4bb9-964a-9252184bbf45"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35748,6 +36388,16 @@
         "subtitle:aca3f9d7-de0d-43fc-8f5c-60aee1b13525"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35776,6 +36426,16 @@
         "subtitle:d521f365-a917-4884-b001-fb5a77ac6db4"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35804,6 +36464,16 @@
         "subtitle:77bd610d-527f-4daa-8978-9d4d78afdd85"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35832,6 +36502,16 @@
         "subtitle:3bc3233c-e397-45c6-924b-18006e06bcab"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35860,6 +36540,16 @@
         "subtitle:6a546e64-2f28-4258-8ad8-c949ed50d96a"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35888,6 +36578,16 @@
         "subtitle:8420d10d-668f-4225-8638-559cde1ad005"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35916,6 +36616,16 @@
         "subtitle:fc86b139-d7b3-4851-99ed-7bd8b172abb8"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35944,6 +36654,16 @@
         "subtitle:4f50b155-4a3c-415d-aaff-6c7423a454dc"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -35972,6 +36692,16 @@
         "subtitle:b82c792b-f2d1-4baa-bf5f-f69aff2ff89c"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36000,6 +36730,16 @@
         "subtitle:444a766e-fcad-4b0e-ae23-95f810979841"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36028,6 +36768,16 @@
         "subtitle:95e54d6c-3061-4b2b-b5d2-e7a5b0cc0f22"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36056,6 +36806,16 @@
         "subtitle:0b1f7d2f-aaab-46c9-b4fb-6e9dbfeb7da4"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36084,6 +36844,16 @@
         "subtitle:6c142086-0458-4933-83bd-db3836d19497"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36112,6 +36882,16 @@
         "subtitle:5ae9925c-f346-4ef8-ad6d-b1fa767d989e"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36140,6 +36920,16 @@
         "subtitle:5ccb74bc-2c98-47dd-aba6-21729260e9bf"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36168,6 +36958,16 @@
         "subtitle:871f81f8-b60e-4718-9061-de3fc866abac"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36196,6 +36996,16 @@
         "subtitle:c51be9e9-fcec-4eaa-882c-62a5ef648656"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36224,6 +37034,16 @@
         "subtitle:1c598dd5-8bc5-433e-826d-01f550da0b50"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36252,6 +37072,16 @@
         "subtitle:053f6fa6-a3b6-42b2-9e97-cf794a5dd7f9"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36280,6 +37110,16 @@
         "subtitle:b574b1b4-dbd2-413e-950c-9e83f288f16e"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36308,6 +37148,16 @@
         "subtitle:bc39ade3-8689-4670-9afc-db3f5446cb09"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36336,6 +37186,16 @@
         "subtitle:296ed151-8f69-44df-ac03-8c5e1545a5f4"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36364,6 +37224,16 @@
         "subtitle:f5dba229-5f8c-4db5-95cb-59e413c23856"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36392,6 +37262,16 @@
         "subtitle:91a449ce-09a0-450b-8195-0d4d99b95994"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36420,6 +37300,16 @@
         "subtitle:0e99e871-d364-4c7e-bcd9-21002527f539"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36448,6 +37338,16 @@
         "subtitle:d95aecda-1d9a-4612-af27-560e8ca9c91e"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36476,6 +37376,16 @@
         "subtitle:9c6571ec-0f89-4967-98bd-ad5bfb6b98f4"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36504,6 +37414,16 @@
         "subtitle:71c7ccac-85d4-48f7-9138-533a88777c05"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36532,6 +37452,16 @@
         "subtitle:462478be-da2a-4627-a9c4-85c395644300"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36560,6 +37490,16 @@
         "subtitle:efaa3b51-93a7-488b-820c-cf87fba76568"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36588,6 +37528,16 @@
         "subtitle:d513e0a7-4ade-4b80-8a78-76392d987eea"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36616,6 +37566,16 @@
         "subtitle:44366fd6-bc9c-47fb-8d87-bfe0f010365d"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36644,6 +37604,16 @@
         "subtitle:e7f86b25-2b7c-4d91-9c3f-95aa35775ca8"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36672,6 +37642,16 @@
         "subtitle:cb6d88fb-a66b-4458-bcea-25eba4c638d4"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36700,6 +37680,16 @@
         "subtitle:60717fa5-7c0f-4ed6-878a-e3b87a9b7db0"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36728,6 +37718,16 @@
         "subtitle:75abf1ac-fd6b-4796-8d9a-acbd0a28a810"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36756,6 +37756,16 @@
         "subtitle:48d4cc82-7bd7-476e-add0-a64627c071f9"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36784,6 +37794,16 @@
         "subtitle:0b616d11-2551-43b7-9719-aab4031308f6"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36812,6 +37832,16 @@
         "subtitle:e0337544-2f1f-49fe-9179-f9aa72fb7681"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36840,6 +37870,16 @@
         "subtitle:8da57977-53fa-4529-97c2-cebcbd9d5af3"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36868,6 +37908,16 @@
         "subtitle:a34c6735-a70d-4d8a-8956-d5bbd3a1068b"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36896,6 +37946,16 @@
         "subtitle:a73b2952-481d-446f-a0a1-b3a728d502e1"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36924,6 +37984,16 @@
         "subtitle:10def96c-c09c-4de1-b996-157a181a8179"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36952,6 +38022,16 @@
         "subtitle:93148f98-899d-43e3-bf3f-1a15deeb5cf1"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -36980,6 +38060,16 @@
         "subtitle:5c9d818a-824e-42ee-8bcc-474c7d5f82f1"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37008,6 +38098,16 @@
         "subtitle:cf76f87d-aab6-4351-afda-66ad2ae426c5"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37036,6 +38136,16 @@
         "subtitle:39a6ee30-5760-4120-9b04-3cb27de25465"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37064,6 +38174,16 @@
         "subtitle:8b134842-3743-4061-9c87-4c573305ce1d"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37092,6 +38212,16 @@
         "subtitle:f4fe7627-0623-4205-a4a4-7eb99fd547b2"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37120,6 +38250,16 @@
         "subtitle:a7c84a37-365e-496d-a650-1afdda629899"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37148,6 +38288,16 @@
         "subtitle:34381ce4-a1ca-438b-82bc-3565faaed0a6"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37176,6 +38326,16 @@
         "subtitle:8cf186e2-27f4-43e4-b22e-0b75a7b0b82e"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37204,6 +38364,16 @@
         "subtitle:1c591074-85eb-4dbb-bed9-725cb4df4ea3"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37232,6 +38402,16 @@
         "subtitle:d8bf0c9f-c9ee-426e-9a0d-53dafb0e53fb"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37260,6 +38440,16 @@
         "subtitle:725d3ff8-6867-441f-9656-53f3dd2eb86f"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37288,6 +38478,16 @@
         "subtitle:c46d4df2-2530-4cb6-978f-acc91b4ad303"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37316,6 +38516,16 @@
         "subtitle:fe43561c-4423-4730-bd97-ac8fa6e4e5b2"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37344,6 +38554,16 @@
         "subtitle:cb048b16-e689-410e-9c2d-8614fba85d40"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37372,6 +38592,16 @@
         "subtitle:0ba266ff-1318-457f-95f9-e065bf8a7a75"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37400,6 +38630,16 @@
         "subtitle:0d1a4029-ca9c-4ca0-8243-c37db3b0fabf"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37428,6 +38668,16 @@
         "subtitle:7061f579-8eec-4e87-b08d-37a125649321"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,
@@ -37456,6 +38706,16 @@
         "subtitle:62cc046d-0f62-41d1-b70c-4870c485f94a"
       ],
       "in_current_inventory": true,
+      "official_project_context_candidates": [
+        {
+          "official_code": "P4C-012",
+          "official_source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+          "status": "candidate_no_individual_media_proof",
+          "individual_media_release_approved": false
+        }
+      ],
+      "official_project_association_pending": true,
+      "source_collection_assignment_role": "parent_folder_candidate_not_confirmed_P4C040_membership",
       "public_caption_subtitle_ids": [],
       "byte_copy_asset_ids": [],
       "new_public_upload_allowed": false,

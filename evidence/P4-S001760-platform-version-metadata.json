@@ -1,0 +1,29 @@
+{
+  "id": "subtitle:0c770ac6-8107-4c06-b1d5-f167ccba48e0",
+  "accession": "P4-S001760",
+  "title": "既有平台原语字幕版本（审校程度未知）",
+  "source_asset_id": "asset:42a44e7c-809a-4e52-8843-4d2925f49d6f",
+  "source_file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+  "language": "zh",
+  "role": "platform_original_language_legacy",
+  "version_sha256": "65445a4566fa4f7287f2eada51a9aff7bd1ace71299aa69fab78966f5ed36415",
+  "bytes": 195268,
+  "cue_count": 3126,
+  "format_status": "structure_passed",
+  "quality_label": "platform_review_level_unknown",
+  "human_listening_review": "not_recorded",
+  "public_text_status": "withheld_platform_legacy_text_context_review_pending",
+  "platform_video_id": "uQ1HVDVdv6Y",
+  "platform_language_label": "中文",
+  "platform_track_actual_name": "Original language - machine reviewed",
+  "existing_platform_label_is_not_review_evidence": true,
+  "platform_track_observation": {
+    "video_id": "uQ1HVDVdv6Y",
+    "actual_name": "Original language - machine reviewed",
+    "language_label": "中文",
+    "download_sha256": "65445a4566fa4f7287f2eada51a9aff7bd1ace71299aa69fab78966f5ed36415",
+    "unchanged_online": true,
+    "viewer_menu_selectable": true
+  },
+  "privacy_screening_status": "initial_pattern_screen_no_identifying_format_hits_context_review_pending_not_full_review"
+}

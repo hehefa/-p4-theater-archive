@@ -193,11 +193,14 @@ def render_caption_index(root, tables):
     publications = {x["id"]: x for x in tables["publications"]}
     families = [(a, [subs[sid] for sid in a["subtitle_ids"] if subs[sid].get("public_export")]) for a in tables["assets"]]
     families = [(a, s) for a, s in families if s]
-    lines = ["# 公开字幕与翻译", "", f"当前保存 {sum(len(s) for _, s in families)} 份原样 SRT，关联 {len(families)} 个明确来源文件。每个来源保留原语、英文和中英双语三版；原语中可能包含英语段落。", "", "这些版本经过项目上下文与公开文本范围筛查，仍是自动转写、机器翻译稿，尚未全片听校。原始 SRT 字节未改动；每个下载路径绑定对应字幕记录及 SHA-256。字幕在这里可下载，不代表已经上传到 YouTube。", "", "| 项目 | 素材 / 物理文件 | 原语 | English | 中英双语 | 已关联公开视频 | 版本关系与状态 |", "|---|---|---|---|---|---|---|"]
+    lines = ["# 公开字幕与翻译", "", f"当前保存 {sum(len(s) for _, s in families)} 份原样 SRT，关联 {len(families)} 个明确来源文件。当前原语、英文、中英双语三稿与独立保存的旧平台版本分别管理。", "", "三套当前稿标为机器稿，尚未全片听校；旧平台版本的审校程度未知，名称里的 machine reviewed 不是人工听校证据。原字节和版本 SHA-256 保留。线上发布、菜单可选与实际画面渲染分开记录，不能从本地可下载推断线上验证已完成。", "", "| 项目 | 素材 / 物理文件 | 原语 | English | 中英双语 | 已关联公开视频 | 版本关系与状态 |", "|---|---|---|---|---|---|---|"]
     for asset, captions in sorted(families, key=lambda x: x[0]["accession"]):
         project = projects[asset["project_ids"][0]]
         links = {s["role"]: "[" + s["accession"] + "](" + s["public_export"]["path"].removeprefix("captions/") + ")" for s in captions}
         notes = "机器稿；未全片听校"
+        old_tracks = [s for s in captions if s["role"] == "platform_original_language_legacy"]
+        for old in old_tracks:
+            notes += "；旧平台版[" + old["accession"] + "](" + old["public_export"]["path"].removeprefix("captions/") + ")（" + str(old["cue_count"]) + "条，审校未知，未替换新稿）"
         if asset.get("byte_copy_asset_ids"):
             notes += "；另有 " + str(len(asset["byte_copy_asset_ids"])) + " 个同字节位置"
         if asset.get("alternate_representation_review"):

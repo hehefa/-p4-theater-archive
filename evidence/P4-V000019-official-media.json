@@ -1,0 +1,36 @@
+{
+  "schema_version": "p4-official-project-media-evidence-v1",
+  "decision": "confirmed_p4_practice_media",
+  "scope": "item_level_project_or_practice_provenance_only",
+  "asset_id": "asset:4acb1a3e-09d7-44c2-91eb-25b2fff8eb90",
+  "asset_accession": "P4-V000019",
+  "file_id": "file:2a31759b-5f9b-4fac-9b1d-5fc4fe8a7fed",
+  "file_accession": "P4-F000019",
+  "source_filename": "2022-03-28 20-44-22 OUNG 1920x1080 30fps.mov",
+  "source_sha256": "31f0c74ff40398e02fa24d0a656d427876137afcd6b608d77639da7f8d1c2a9b",
+  "project_code": null,
+  "project_slug": null,
+  "official_context": "P4 venue and discussion records / 510 discussion archive; not a formal project; date not inferred from 510",
+  "formal_project_claim": false,
+  "official_event_date": null,
+  "evidence": [
+    {
+      "url": "https://a.p4theater.cn/videos/y_N12G_fey0",
+      "http_status": 200,
+      "retrieved_at": "2026-10-26T15:16:29.8039673+00:00",
+      "html_utf8_sha256": "4726031013132f89f1ee9e2709f48f18cc82fd5c6e1fa7f1971268236d4f9a88",
+      "source_type": "official_video_description",
+      "supports": [
+        "substantive_official_discussion_description_with_exact_source_filename_and_full_sha256",
+        "Full original-source SHA-256 equals the current local file"
+      ],
+      "source_record_snapshot_is_not_used_as_video_hash": true
+    }
+  ],
+  "unsupported_claims": [
+    "No full-video continuous human viewing or dialogue listening review was performed here.",
+    "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+    "No other member of the containing directory or provisional event inherits this item-level decision.",
+    "This evidence cannot override the family/private deny list."
+  ]
+}

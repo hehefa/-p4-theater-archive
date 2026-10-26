@@ -1,0 +1,36 @@
+{
+  "schema_version": "p4-official-project-media-evidence-v1",
+  "decision": "confirmed_p4_practice_media",
+  "scope": "item_level_project_or_practice_provenance_only",
+  "asset_id": "asset:c81d2b69-ac82-4c5e-9e05-9a3b40890a90",
+  "asset_accession": "P4-V000020",
+  "file_id": "file:b5282b3c-3443-4ec7-b8ec-3013f5844afc",
+  "file_accession": "P4-F000020",
+  "source_filename": "2022-03-28 20-46-12 MTI1 1920x1080 30fps.mov",
+  "source_sha256": "9398f87a8a1d12aca584ae81e712cf8335921ae1c964fc655d9205efdb0d3f56",
+  "project_code": null,
+  "project_slug": null,
+  "official_context": "P4 venue and discussion records / 510 discussion archive; not a formal project; date not inferred from 510",
+  "formal_project_claim": false,
+  "official_event_date": null,
+  "evidence": [
+    {
+      "url": "https://a.p4theater.cn/videos/gT0Ki84kQx4",
+      "http_status": 200,
+      "retrieved_at": "2026-10-26T15:16:31.1756842+00:00",
+      "html_utf8_sha256": "3dd1c8e60566904dd4d4c27e3e6884cd397e9f8c38ac0e261b4ed007808f97ed",
+      "source_type": "official_video_description",
+      "supports": [
+        "substantive_official_discussion_description_with_exact_source_filename_and_full_sha256",
+        "Full original-source SHA-256 equals the current local file"
+      ],
+      "source_record_snapshot_is_not_used_as_video_hash": true
+    }
+  ],
+  "unsupported_claims": [
+    "No full-video continuous human viewing or dialogue listening review was performed here.",
+    "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+    "No other member of the containing directory or provisional event inherits this item-level decision.",
+    "This evidence cannot override the family/private deny list."
+  ]
+}

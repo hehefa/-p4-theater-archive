@@ -18,7 +18,7 @@
 
 [视频档案原文](https://a.p4theater.cn/videos/uQ1HVDVdv6Y) / [研究依据原文](https://b.p4theater.cn/questions/glass-self-expression-and-direction)
 
-另有[16条既有 YouTube 元数据关联](../../publications/README.md)。元数据、完整播放和在线字幕分别核验，关联记录不代替后两项检查。
+另有[17条既有 YouTube 元数据关联](../../publications/README.md)。元数据、完整播放和在线字幕分别核验，关联记录不代替后两项检查。
 
 ## 可读字幕
 

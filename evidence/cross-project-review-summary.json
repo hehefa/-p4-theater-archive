@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-10-26T15:29:16.987881+00:00",
+  "reviewed_private_inventory": {
+    "collections": 18,
+    "provisional_event_groups": 124,
+    "video_sources": 1740
+  },
+  "individual_positive_sources": 8,
+  "unresolved_non_denied_sources": 1437,
+  "whole_directory_release_approvals": 0,
+  "family_deny_overrides": 0,
+  "candidate_groups": [
+    {
+      "context": "Duel Club",
+      "official_code": "P4C-012",
+      "source_url": "https://a.p4theater.cn/wechat/projects/duel-club",
+      "source_count": 84,
+      "event_group_count": 3,
+      "status": "child_context_candidate_not_confirmed_P4C040_membership",
+      "publication_allowed": false
+    },
+    {
+      "context": "BODY / 101 Troupe",
+      "source_url": "https://b.p4theater.cn/projects/body",
+      "source_count": 2,
+      "status": "keyword_only_candidate_not_exact_source_identity",
+      "publication_allowed": false
+    },
+    {
+      "context": "external reference material",
+      "source_count": 6,
+      "status": "not_confirmed_as_original_P4_event_footage",
+      "publication_allowed": false
+    }
+  ],
+  "privacy_note": "No private paths or original discussion text reproduced; official item provenance does not clear family/private material."
+}

@@ -205,6 +205,16 @@ class CatalogueTests(unittest.TestCase):
             target.parent.mkdir(parents=True)
             target.write_bytes(caption_body)
             sub.update(public_export={"path": relative, "sha256": sub["version_sha256"], "scope_review_status": "approved_for_public_archive", "quality_label": "machine_draft"}, public_text_status="public_machine_draft", source_file_id=primary["file_id"], source_asset_id=primary["id"], pairing_review={"method": "reviewed_source_stem_association"})
+            old_body = b"1\n00:00:00,000 --> 00:00:01,000\nOld platform cue\n\n2\n00:00:01,000 --> 00:00:02,000\nSeparate old cue\n"
+            old_sha = hashlib.sha256(old_body).hexdigest()
+            legacy = {**sub, "id": "subtitle:legacy-fixture", "accession": "P4-S000002", "role": "platform_original_language_legacy", "version_sha256": old_sha, "bytes": len(old_body), "cue_count": 2, "quality_label": "platform_review_level_unknown", "human_listening_review": "not_recorded", "public_text_status": "public_platform_version_review_unknown", "existing_platform_label_is_not_review_evidence": True, "platform_track_observation": {"video_id": "Fixture_001", "actual_name": "Original language - machine reviewed", "download_sha256": old_sha, "unchanged_online": True}}
+            old_path = "captions/P4-S000002/" + old_sha + "/legacy.srt"
+            legacy["public_export"] = {"path": old_path, "sha256": old_sha, "scope_review_status": "approved_same_official_source_platform_version_preservation", "quality_label": "platform_review_level_unknown"}
+            (public / old_path).parent.mkdir(parents=True)
+            (public / old_path).write_bytes(old_body)
+            captions["items"].append(legacy)
+            primary["subtitle_ids"].append(legacy["id"])
+            primary["platform_subtitle_ids"] = [legacy["id"]]
             module.write_json(public / "catalog/subtitles.json", captions)
             events = module.read_json(public / "catalog/events.json")
             event_ids = [x["id"] for x in events["items"]]
@@ -229,7 +239,12 @@ class CatalogueTests(unittest.TestCase):
             self.assertEqual(updated_captions[0]["pairing_review"], sub["pairing_review"])
             self.assertEqual([x["id"] for x in updated_events], event_ids)
             self.assertEqual(updated_events[0]["project_ids"], [reviewed_project_id])
-            self.assertEqual(module.read_json(public / "catalog/summary.json")["public_caption_export_count"], 1)
+            self.assertEqual(module.read_json(public / "catalog/summary.json")["public_caption_export_count"], 2)
+            preserved_old = next(x for x in updated_captions if x["id"] == legacy["id"])
+            self.assertEqual(preserved_old["cue_count"], 2)
+            self.assertEqual(preserved_old["quality_label"], "platform_review_level_unknown")
+            self.assertEqual(updated_captions[0]["cue_count"], 1)
+            self.assertIn(legacy["id"], updated_assets[0]["subtitle_ids"])
             self.assertIn("legacy-fixture-code", module.read_json(public / "catalog/projects.json")["items"][0]["aliases"])
             self.assertEqual(module.read_json(public / "catalog/publications.json")["items"], [fixture_pub])
             self.assertIn(fixture_pub["id"], updated_assets[0]["youtube_publication_ids"])
