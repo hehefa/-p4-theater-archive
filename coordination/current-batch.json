@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "batch_id": "p4-20261026-catalog-unification-01",
+  "base_commit": "affa15363f8465c8120f9a24562dc6c89ae6a4be",
+  "implementation_branch": "codex/archive-unification-20261026",
+  "status": "ready_for_pc_validation_after_merge",
+  "scope": [
+    "catalogue_contracts_and_version_updates",
+    "public_project_reading_and_caption_search",
+    "historical_publication_receipt_candidates",
+    "cross_device_rules_and_handoff"
+  ],
+  "current_implementation_owner": "mac",
+  "new_entity_allocation": false,
+  "production_private_state_modified": false,
+  "source_media_operations": "none",
+  "pc_handoff": {
+    "status": "pc_validated_staged_integration_awaiting_root_publication",
+    "acknowledgement": "not_received",
+    "next_action": "Root will publish the two-parent merge and verify PR/CI. Mac may consult the PC validation record when it becomes available; no external message has been sent.",
+    "pc_validation_record": "coordination/pc-validation-20261026.json",
+    "acknowledgement_scope": "No Issue comment or Mac acknowledgement is claimed; this repository record states PC local validation only."
+  },
+  "coordination_notice": "This file records a handoff and does not implement a cross-machine lock. No local paths, credentials or private state are stored here.",
+  "initial_base_commit": "c9d50d06307113112799b98f7d3eb81788364b18",
+  "upstream_scope_merge": {
+    "status": "preserved_and_verified",
+    "private_master_files": 1740,
+    "public_selected_files": 1445,
+    "public_caption_files": 3,
+    "existing_platform_metadata_associations": 16
+  },
+  "coordination_issue": "https://github.com/hehefa/-p4-theater-archive/issues/1",
+  "local_checks": {
+    "unit_tests_passed": 71,
+    "catalogue_entities_preserved": 4568,
+    "caption_files_preserved": 3,
+    "existing_platform_metadata_associations_preserved": 16,
+    "generated_reading": "check_passed",
+    "identity_crosswalk": "check_passed",
+    "historical_receipts": "3_source_aggregates_0_unproven_public_candidates"
+  }
+}

@@ -2,29 +2,353 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/p4-public-catalog/v1/catalog.schema.json",
   "title": "P4 public catalogue table v1",
-  "description": "Public catalogue export, separate from the private p4-evidence-v1 research bundle. Accessions are display aliases, not replacements for existing canonical identifiers.",
+  "description": "Public catalogue export, separate from the private p4-evidence-v1 research bundle. Accessions are display aliases, not replacements for existing canonical identifiers. CLI validation enforces these explicit shapes and additionally checks file/asset ownership, source-bound publications, versioned byte-copy relations, and public scope approval hashes.",
   "type": "object",
-  "required": ["schema_version", "items"],
+  "required": [
+    "schema_version",
+    "items"
+  ],
   "properties": {
-    "schema_version": {"const": 1},
-    "items": {"type": "array", "items": {"$ref": "#/$defs/entity"}}
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entity"
+      }
+    }
   },
   "additionalProperties": false,
   "$defs": {
     "entity": {
       "type": "object",
-      "required": ["id", "accession", "kind", "title"],
+      "required": [
+        "id",
+        "accession",
+        "kind",
+        "title"
+      ],
       "properties": {
-        "id": {"type": "string", "minLength": 1},
-        "accession": {"type": "string", "pattern": "^P4-[PCEVFSUH][0-9]{6}$"},
-        "kind": {"enum": ["project", "collection", "event", "asset", "file", "subtitle", "publication", "checksum"]},
-        "title": {"type": "string", "minLength": 1},
-        "sha256": {"anyOf": [{"type": "string", "pattern": "^[a-f0-9]{64}$"}, {"type": "null"}]},
-        "bytes": {"type": "integer", "minimum": 0},
-        "clock": {"const": "source_zero"},
-        "rights_status": {"enum": ["not_established", "documented"]}
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accession": {
+          "type": "string",
+          "pattern": "^P4-[PCEVFSUH][0-9]{6}$"
+        },
+        "kind": {
+          "enum": [
+            "project",
+            "collection",
+            "event",
+            "asset",
+            "file",
+            "subtitle",
+            "publication",
+            "checksum"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "clock": {
+          "const": "source_zero"
+        },
+        "rights_status": {
+          "enum": [
+            "not_established",
+            "documented"
+          ]
+        },
+        "project_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "collection_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "asset_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "file_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "derived_from_file_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "source_file_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "source_asset_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "canonical_byte_source_asset_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "canonical_byte_source_file_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "alternate_representation_candidate_of_asset_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "equivalent_public_export_subtitle_id": {
+          "$ref": "#/$defs/reference"
+        },
+        "project_ids": {
+          "$ref": "#/$defs/references"
+        },
+        "asset_ids": {
+          "$ref": "#/$defs/references"
+        },
+        "event_ids": {
+          "$ref": "#/$defs/references"
+        },
+        "subtitle_ids": {
+          "$ref": "#/$defs/references"
+        },
+        "youtube_publication_ids": {
+          "$ref": "#/$defs/references"
+        },
+        "byte_copy_asset_ids": {
+          "$ref": "#/$defs/references"
+        },
+        "public_caption_subtitle_ids": {
+          "$ref": "#/$defs/references"
+        },
+        "version_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "duration_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "in_current_inventory": {
+          "type": "boolean"
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "algorithm": {
+          "const": "sha256"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "content_scope_review": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "public_export": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256",
+            "scope_review_status",
+            "quality_label"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "minLength": 1
+            },
+            "scope_review_status": {
+              "type": "string",
+              "minLength": 1
+            },
+            "quality_label": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": true
+        }
       },
-      "additionalProperties": true
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "asset"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "project_ids",
+              "collection_id",
+              "event_ids",
+              "file_id",
+              "subtitle_ids"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "file"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "asset_id",
+              "bytes",
+              "sha256"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "subtitle"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "asset_ids",
+              "version_sha256",
+              "bytes",
+              "language",
+              "role",
+              "clock"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "collection"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "project_id"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "event"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "project_ids",
+              "collection_id"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "checksum"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "file_id",
+              "algorithm",
+              "value"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "publication"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "asset_id",
+              "file_id",
+              "subtitle_ids"
+            ]
+          }
+        }
+      ]
+    },
+    "reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
     }
   }
 }

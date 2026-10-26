@@ -11,9 +11,10 @@ from collections import defaultdict
 from pathlib import Path
 
 from archive_catalog import TABLES, aware_timestamp, digest, pathkey, read_json, render_indexes, srt_metadata, validate, write_json
+from catalog_transaction import staged_update
 
 
-def merge_release(root, state, options_path, queue_path):
+def _merge_release(root, state, options_path, queue_path):
     root, state = Path(root).resolve(), Path(state).resolve()
     if (root / ".p4-public-scope.json").exists():
         raise ValueError("Direct caption merge into a scope-projected public tree is blocked; use private master and official-source scope projection")
@@ -177,6 +178,14 @@ def merge_release(root, state, options_path, queue_path):
     return {"caption_files": len(exported), "caption_source_files": len(families), "byte_copy_relations": sum(bool(a.get("canonical_byte_source_asset_id")) for a in tables["assets"]), "source_originals_modified": False, "live_hash_cache_read_or_modified": False, "valid": True}
 
 
+def merge_release(root, state, options_path, queue_path):
+    if (Path(root) / ".p4-public-scope.json").exists():
+        raise ValueError("Direct caption merge into a scope-projected public tree is blocked; use private master and official-source scope projection")
+    # Reviewed staging paths remain relative to the real private state. This
+    # merge reads it only; the shared state lock prevents concurrent reimport.
+    return staged_update(root, lambda candidate, unused: _merge_release(candidate, state, options_path, queue_path), validate, local_state=state)
+
+
 def render_caption_index(root, tables):
     projects = {x["id"]: x for x in tables["projects"]}
     files = {x["id"]: x for x in tables["files"]}
@@ -206,7 +215,7 @@ def render_caption_index(root, tables):
     lines += ["疑似私人信息的原版、归属未知的材料和空识别版本没有在此提供正文。脱敏稿须另建版本并满足当前范围规则；原版保留于私有保存端。", "", "同字节副本通过编号关联规范来源，原有事件组未合并。当前树移除不等于抹除已有 Git 历史。", "", "引用时请保留项目编号、视频编号、物理文件编号、字幕编号及版本 SHA-256。[返回档案目录](../INDEX.md)。", ""]
     target = root / "captions" / "README.md"
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text("\n".join(lines), encoding="utf-8")
+    target.write_text("\n".join(lines), encoding="utf-8", newline="\n")
 
 
 def main():

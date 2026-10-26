@@ -9,17 +9,25 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 import re
 import sys
 import uuid
 from collections import Counter, defaultdict
 from datetime import date, datetime
 from pathlib import Path, PureWindowsPath
+from types import SimpleNamespace
+
+# Support both CLI execution and the existing importlib-based test harness.
+if str(Path(__file__).resolve().parent) not in sys.path:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+from catalog_transaction import staged_update
 
 VERSION = 1
 PREFIX = {"project": "P", "collection": "C", "event": "E", "asset": "V", "file": "F", "subtitle": "S", "publication": "U", "checksum": "H"}
 VIDEO_EXTS = {".mp4", ".mov", ".mts", ".m2ts", ".mpeg", ".mpg", ".avi", ".mkv", ".m4v", ".wmv", ".flv", ".ts", ".3gp", ".webm"}
 TABLES = tuple(k + "s" for k in PREFIX if k != "publication") + ("publications",)
+REFS = {"project_id": "projects", "project_ids": "projects", "collection_id": "collections", "event_ids": "events", "asset_id": "assets", "asset_ids": "assets", "file_id": "files", "subtitle_ids": "subtitles", "derived_from_file_id": "files", "youtube_publication_ids": "publications", "source_file_id": "files", "source_asset_id": "assets", "canonical_byte_source_asset_id": "assets", "canonical_byte_source_file_id": "files", "byte_copy_asset_ids": "assets", "alternate_representation_candidate_of_asset_id": "assets", "public_caption_subtitle_ids": "subtitles", "equivalent_public_export_subtitle_id": "subtitles", "platform_subtitle_ids": "subtitles"}
 
 
 def read_json(path):
@@ -29,7 +37,7 @@ def read_json(path):
 def write_json(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + "\n", encoding="utf-8", newline="\n")
 
 
 def pathkey(path):
@@ -208,7 +216,7 @@ def reusable_hashes(audit, registry):
     return result
 
 
-def import_catalog(args):
+def _import_catalog(args):
     out, state = Path(args.output).resolve(), Path(args.local_state).resolve()
     if (out / ".p4-public-scope.json").exists():
         raise ValueError("Direct import into a scope-projected public tree is blocked; import into the private master and run project_public_scope.py")
@@ -375,9 +383,9 @@ def import_catalog(args):
     # Keep published history and human annotations when a fresh machine inventory
     # is imported. Current source absence is not a request to erase an entity.
     protected_fields = {
-        "assets": ("human_review", "rights_status", "youtube_publication_ids", "publication_status", "youtube_metadata_association_status", "platform_subtitle_ids"),
-        "subtitles": ("human_listening_review", "public_text_status", "public_export", "youtube_caption_status", "pairing_status", "pairing_review", "source_file_id", "source_asset_id", "content_scope_review", "equivalent_public_export_subtitle_id", "quality_label", "platform_track_observations", "platform_track_observation", "platform_origin", "platform_video_id", "platform_language_label", "platform_track_actual_name", "existing_platform_label_is_not_review_evidence"),
-        "files": ("human_continuous_watch", "full_decode_status", "sha256", "checksum_status", "independent_checksum_evidence"),
+        'assets': ('human_review', 'rights_status', 'youtube_publication_ids', 'publication_status', 'youtube_metadata_association_status', 'platform_subtitle_ids', 'version_history', 'relation_history', 'prior_version_review', 'prior_version_content_scope_review'),
+        'subtitles': ('human_listening_review', 'public_text_status', 'public_export', 'youtube_caption_status', 'pairing_status', 'pairing_review', 'source_file_id', 'source_asset_id', 'content_scope_review', 'equivalent_public_export_subtitle_id', 'quality_label', 'platform_track_observations', 'platform_track_observation', 'platform_origin', 'platform_video_id', 'platform_language_label', 'platform_track_actual_name', 'existing_platform_label_is_not_review_evidence', 'equivalent_export_history'),
+        'files': ('human_continuous_watch', 'full_decode_status', 'sha256', 'checksum_status', 'independent_checksum_evidence'),
     }
     for name, items in tables.items():
         older = {x["id"]: x for x in previous[name]}
@@ -406,6 +414,10 @@ def import_catalog(args):
                     if value is not None and value not in ("not_recorded", "not_established", "not_newly_probed", "not_uploaded_in_this_catalogue", "withheld_pending_review", "filename_association_requires_review", "edited_product_pairing_pending", "pending_content_and_publication_review") and not (isinstance(value, str) and value.startswith("hold_")):
                         item[field] = value
                 if name == "assets" and old.get("file_id") != item.get("file_id"):
+                    history = item.setdefault("version_history", [])
+                    if not any(x.get("file_id") == old.get("file_id") for x in history):
+                        fields = ("file_id", "human_review", "content_scope_review", "project_assignment_review", "content_classification", "canonical_byte_source_asset_id", "canonical_byte_source_file_id", "byte_identity_relation", "alternate_representation_candidate_of_asset_id", "alternate_representation_review", "public_caption_subtitle_ids")
+                        history.append({k: old[k] for k in fields if k in old})
                     item["prior_version_review"] = {"file_id": old.get("file_id"), "human_review": old.get("human_review", "not_recorded")}
                     item["human_review"] = "needs_review_source_version_changed"
                     if old.get("youtube_publication_ids"):
@@ -414,12 +426,17 @@ def import_catalog(args):
                     if old.get("content_scope_review"):
                         item["prior_version_content_scope_review"] = old["content_scope_review"]
                         item["content_scope_review"] = {"status": "needs_review_source_version_changed", "source_file_id": item["file_id"], "prior_source_file_id": old.get("file_id"), "human_listening_review": "not_recorded"}
+                    if old.get("project_assignment_review"):
+                        item["project_assignment_review"] = {"status": "needs_review_source_version_changed", "source_file_id": item["file_id"], "prior_source_file_id": old.get("file_id")}
+                    item.pop("alternate_representation_candidate_of_asset_id", None)
+                    item.pop("alternate_representation_review", None)
                     item.pop("public_caption_subtitle_ids", None)
         for item in older.values():
             item["in_current_inventory"] = False
             items.append(item)
     for pub in tables["publications"]:
         pub["in_current_inventory"] = True
+    _refresh_version_relations(tables, previous["assets"])
     subtitle_map = {s["id"]: s for s in tables["subtitles"]}
     for asset in tables["assets"]:
         for sid in asset.get("platform_subtitle_ids", []):
@@ -448,7 +465,58 @@ def import_catalog(args):
     write_json(state / "hash_plan.json", {"schema_version": VERSION, "files": [{"file_id": f["id"], "accession": f["accession"], **private["files"][f["id"]]} for f in current_files if f["sha256"] is None]})
     registry.save()
     render_indexes(out, tables, summary)
+    return summary
+
+
+def _refresh_version_relations(tables, previous_assets):
+    """Keep byte-copy assertions only when the current file versions prove them."""
+    assets = {x["id"]: x for x in tables["assets"]}
+    files = {x["id"]: x for x in tables["files"]}
+    older = {x["id"]: x for x in previous_assets}
+    for asset in tables["assets"]:
+        canonical_id = asset.get("canonical_byte_source_asset_id")
+        if not canonical_id:
+            continue
+        canonical = assets.get(canonical_id)
+        copied = files.get(asset.get("file_id"))
+        original = files.get(canonical.get("file_id")) if canonical else None
+        valid = (copied and original and copied.get("sha256") and copied.get("sha256") == original.get("sha256") and copied.get("asset_id") == asset["id"] and original.get("asset_id") == canonical_id)
+        if valid:
+            asset["canonical_byte_source_file_id"] = original["id"]
+            continue
+        old = older.get(asset["id"], asset)
+        record = {k: old[k] for k in ("file_id", "canonical_byte_source_asset_id", "canonical_byte_source_file_id", "byte_identity_relation") if k in old}
+        record["invalidation_reason"] = "current_file_versions_no_longer_prove_byte_identity"
+        history = asset.setdefault("relation_history", [])
+        if record not in history:
+            history.append(record)
+        for key in ("canonical_byte_source_asset_id", "canonical_byte_source_file_id", "byte_identity_relation"):
+            asset.pop(key, None)
+    for asset in tables["assets"]:
+        copies = [x["id"] for x in tables["assets"] if x.get("canonical_byte_source_asset_id") == asset["id"]]
+        if copies:
+            asset["byte_copy_asset_ids"] = copies
+        else:
+            asset.pop("byte_copy_asset_ids", None)
+    subtitles = {x["id"]: x for x in tables["subtitles"]}
+    for sub in tables["subtitles"]:
+        equivalent = subtitles.get(sub.get("equivalent_public_export_subtitle_id"))
+        if not equivalent:
+            continue
+        valid = any(assets.get(aid, {}).get("canonical_byte_source_asset_id") == equivalent.get("source_asset_id") for aid in sub.get("asset_ids", []))
+        if not valid:
+            sub.setdefault("equivalent_export_history", []).append(sub.pop("equivalent_public_export_subtitle_id"))
+
+
+def import_catalog(args):
+    if (Path(args.output) / ".p4-public-scope.json").exists():
+        raise ValueError("Direct import into a scope-projected public tree is blocked; import into the private master and run project_public_scope.py")
+    def transform(public, private):
+        values = {**vars(args), "output": str(public), "local_state": str(private)}
+        return _import_catalog(SimpleNamespace(**values))
+    summary = staged_update(args.output, transform, validate, local_state=args.local_state)
     print(json.dumps(summary, ensure_ascii=False))
+    return summary
 
 
 def render_indexes(out, tables, summary):
@@ -499,12 +567,99 @@ def render_indexes(out, tables, summary):
     if tables["publications"]:
         lines += ["[已关联的既有 YouTube 视频](publications/README.md)：记录元数据回读范围，播放与线上字幕检查单独保留状态。", ""]
     (out / "INDEX.md").write_text("\n".join(lines), encoding="utf-8")
+    from export_identity_crosswalk import build as build_identity_crosswalk
+    build_identity_crosswalk(out)
+    # Private intake masters may retain older caption annotations without a
+    # public scope policy. Only the explicit projection creates public reading.
+    if (out / ".p4-public-scope.json").exists() or not any(s.get("public_export") for s in tables["subtitles"]):
+        from public_reading import build as build_public_reading
+        build_public_reading(out)
+
+
+def _load_validatable_tables(root):
+    """Enforce the declared catalogue shapes before traversing relationships.
+
+    These are the catalogue's explicit contracts, not a general JSON Schema
+    implementation. Additional editorial/provenance fields remain allowed.
+    """
+    tables, errors = {}, []
+    required = {"assets": ("project_ids", "collection_id", "event_ids", "file_id", "subtitle_ids"), "files": ("asset_id", "bytes", "sha256"), "subtitles": ("asset_ids", "version_sha256", "bytes", "language", "role", "clock"), "collections": ("project_id",), "events": ("project_ids", "collection_id"), "checksums": ("file_id", "algorithm", "value"), "publications": ("asset_id", "file_id", "subtitle_ids")}
+    for name in TABLES:
+        try:
+            table = read_json(root / "catalog" / (name + ".json"))
+        except (OSError, ValueError) as exc:
+            errors.append("Cannot read catalogue table " + name + ": " + type(exc).__name__)
+            tables[name] = []
+            continue
+        if not isinstance(table, dict) or type(table.get("schema_version")) is not int or table.get("schema_version") != VERSION or not isinstance(table.get("items"), list):
+            errors.append("Invalid table shape or schema_version: " + name)
+            tables[name] = []
+            continue
+        if set(table) != {"schema_version", "items"}:
+            errors.append("Unexpected catalogue table properties: " + name)
+        tables[name] = table["items"]
+        expected_kind = "publication" if name == "publications" else name[:-1]
+        for n, item in enumerate(table["items"]):
+            label = name + "[" + str(n) + "]"
+            if not isinstance(item, dict):
+                errors.append("Entity must be an object: " + label)
+                continue
+            for field in ("id", "accession", "kind", "title"):
+                if not isinstance(item.get(field), str) or not item[field].strip():
+                    errors.append("Entity field must be a nonempty string: " + label + ":" + field)
+            if item.get("kind") != expected_kind:
+                errors.append("Entity kind does not match its table: " + label)
+            for field in required.get(name, ()):
+                if field not in item:
+                    errors.append("Required entity field missing: " + label + ":" + field)
+            for field in REFS:
+                if field not in item:
+                    continue
+                value = item[field]
+                valid = isinstance(value, list) and all(isinstance(x, str) and x for x in value) if field.endswith("_ids") else isinstance(value, str) and bool(value)
+                if not valid:
+                    errors.append("Invalid reference field type: " + label + ":" + field)
+            for field in ("language", "role"):
+                if field in item and (not isinstance(item[field], str) or not item[field]):
+                    errors.append("Invalid subtitle string field: " + label + ":" + field)
+            if "bytes" in item and (type(item["bytes"]) is not int or item["bytes"] < 0):
+                errors.append("File/subtitle bytes must be a nonnegative integer: " + label)
+            for field in ("sha256", "version_sha256"):
+                if field in item and not (field == "sha256" and item[field] is None) and (not isinstance(item[field], str) or not re.fullmatch(r"[a-f0-9]{64}", item[field])):
+                    errors.append("Invalid SHA-256 field: " + label + ":" + field)
+            if "clock" in item and item["clock"] != "source_zero":
+                errors.append("Invalid source clock: " + label)
+            if "rights_status" in item and item["rights_status"] not in ("not_established", "documented"):
+                errors.append("Invalid rights_status: " + label)
+            if "in_current_inventory" in item and type(item["in_current_inventory"]) is not bool:
+                errors.append("Invalid inventory presence flag: " + label)
+            duration = item.get("duration_seconds")
+            if duration is not None and (type(duration) not in (int, float) or not math.isfinite(duration) or duration < 0):
+                errors.append("Invalid media duration: " + label)
+            for field in ("content_scope_review", "public_export"):
+                if field in item and not isinstance(item[field], dict):
+                    errors.append("Invalid metadata object: " + label + ":" + field)
+            if name == "publications":
+                for field in ("channel_id", "youtube_video_id", "url", "record_basis", "source_sha256", "description_source_sha256"):
+                    if field in item and not isinstance(item[field], str):
+                        errors.append("Invalid publication string field: " + label + ":" + field)
+                receipt = item.get("observation_receipt")
+                if receipt is not None and (not isinstance(receipt, dict) or not isinstance(receipt.get("sha256"), str)):
+                    errors.append("Invalid publication receipt: " + label)
+            review = item.get("content_scope_review")
+            if isinstance(review, dict) and "status" in review and not isinstance(review["status"], str):
+                errors.append("Invalid review status: " + label)
+            export = item.get("public_export")
+            if isinstance(export, dict) and not all(isinstance(export.get(k), str) and export[k] for k in ("path", "sha256", "scope_review_status", "quality_label")):
+                errors.append("Incomplete public caption export: " + label)
+    return tables, errors
 
 
 def validate(root):
     root = Path(root)
-    errors = []
-    tables = {name: read_json(root / "catalog" / (name + ".json"))["items"] for name in TABLES}
+    tables, errors = _load_validatable_tables(root)
+    if errors:
+        return {"valid": False, "entity_count": sum(len(v) for v in tables.values()), "counts": {k: len(v) for k, v in tables.items()}, "errors": errors}
     all_items = [item for items in tables.values() for item in items]
     ids, accessions = set(), set()
     for item in all_items:
@@ -517,7 +672,7 @@ def validate(root):
         if item["kind"] not in PREFIX or not re.fullmatch("P4-" + PREFIX.get(item["kind"], "?") + r"\d{6}", item["accession"]):
             errors.append("Invalid kind/accession pairing: " + item["accession"])
     by_table = {name: {item["id"] for item in items} for name, items in tables.items()}
-    refs = {"project_id": "projects", "project_ids": "projects", "collection_id": "collections", "event_ids": "events", "asset_id": "assets", "asset_ids": "assets", "file_id": "files", "subtitle_ids": "subtitles", "derived_from_file_id": "files", "youtube_publication_ids": "publications", "source_file_id": "files", "source_asset_id": "assets", "canonical_byte_source_asset_id": "assets", "canonical_byte_source_file_id": "files", "byte_copy_asset_ids": "assets", "alternate_representation_candidate_of_asset_id": "assets", "public_caption_subtitle_ids": "subtitles", "equivalent_public_export_subtitle_id": "subtitles"}
+    refs = REFS
     for item in all_items:
         for key, target in refs.items():
             if key not in item:
@@ -529,6 +684,15 @@ def validate(root):
     for f in tables["files"]:
         if f["sha256"] is not None and not re.fullmatch(r"[a-f0-9]{64}", f["sha256"]):
             errors.append("Invalid SHA-256: " + f["accession"])
+    files_by_id = {x["id"]: x for x in tables["files"]}
+    for asset in tables["assets"]:
+        current_file = files_by_id.get(asset["file_id"])
+        if current_file and current_file.get("asset_id") != asset["id"]:
+            errors.append("Current file belongs to another asset: " + asset["accession"])
+    for checksum in tables["checksums"]:
+        source = files_by_id.get(checksum["file_id"])
+        if checksum["algorithm"] != "sha256" or not isinstance(checksum["value"], str) or not re.fullmatch(r"[a-f0-9]{64}", checksum["value"]) or (source and checksum["value"] != source.get("sha256")):
+            errors.append("Checksum does not match its file version: " + checksum["accession"])
     seen_channel_videos = set()
     for pub in tables["publications"]:
         channel_video = (pub.get("channel_id"), pub.get("youtube_video_id"))
@@ -690,7 +854,13 @@ def validate(root):
                 errors.append("Absolute local path in public file: " + relative)
             if sensitive.search(text):
                 errors.append("Credential-like content in public file: " + relative)
-    summary = read_json(root / "catalog" / "summary.json")
+    try:
+        summary = read_json(root / "catalog" / "summary.json")
+    except (OSError, ValueError):
+        summary = {}
+    if not isinstance(summary, dict) or not isinstance(summary.get("counts"), dict) or any(type(summary["counts"].get(name)) is not int for name in TABLES):
+        errors.append("Invalid catalogue summary counts")
+        summary = {"counts": {name: None for name in TABLES}}
     for name in TABLES:
         if summary["counts"][name] != len(tables[name]):
             errors.append("Summary count mismatch: " + name)
@@ -747,12 +917,18 @@ def validate(root):
             if hashlib.sha256(item["id"].encode()).hexdigest() in forbidden:
                 errors.append("Excluded private identity revived in public catalogue")
         allow_captions = set(policy.get("allowed_caption_subtitle_ids", []))
+        versions = policy.get("allowed_caption_versions")
+        if not isinstance(versions, dict) or set(versions) != allow_captions or any(not isinstance(v, str) or not re.fullmatch(r"[a-f0-9]{64}", v) for v in versions.values()):
+            errors.append("Public caption scope lacks exact approved version hashes")
+            versions = {}
         exports = {x["id"] for x in tables["subtitles"] if x.get("public_export")}
         if exports != allow_captions:
             errors.append("Public captions differ from the explicit official-source allow list")
         for sub in tables["subtitles"]:
             if not sub.get("public_export"):
                 continue
+            if versions.get(sub["id"]) != sub.get("version_sha256"):
+                errors.append("Public caption version differs from its explicit approval: " + sub["accession"])
             owner = assets_by_id.get(sub.get("source_asset_id"))
             proof = owner.get("official_media_evidence", {}) if owner else {}
             source = files_by_id.get(proof.get("file_id"))
