@@ -1,6 +1,7 @@
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -290,6 +291,17 @@ class ReadingTests(unittest.TestCase):
             a = subprocess.run(base + ["苹果"], capture_output=True, check=True)
             b = subprocess.run(base + ["--query", "苹果"], capture_output=True, check=True)
             self.assertEqual(json.loads(a.stdout), json.loads(b.stdout))
+
+    def test_cli_outputs_utf8_json_when_environment_forces_ascii(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp); self.fixture(root); reading.build(root)
+            env = dict(os.environ, PYTHONIOENCODING="ascii", PYTHONUTF8="0")
+            result = subprocess.run([sys.executable, "-B", str(ROOT / "scripts/public_reading.py"),
+                                     "search", "--root", str(root), "--query", "苹果", "--limit", "1"],
+                                    env=env, capture_output=True, check=True)
+            output = result.stdout.decode("utf-8")
+            self.assertIn("苹果", output)
+            self.assertEqual(json.loads(output)[0]["text"], "合成 苹果 讨论")
 
     def test_real_directory_generation_is_current_and_all_public_srt_are_searchable(self):
         # Read-only acceptance over the real generated files and approved exports.
