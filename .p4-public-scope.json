@@ -899,5 +899,10 @@
   "new_material_default": "official_media_affiliation_pending_no_new_public_upload_or_caption_export",
   "private_master_inventory_video_files": 1740,
   "public_selected_video_files": 1445,
-  "git_history_action": "unchanged_current_tree_projection_only"
+  "git_history_action": "unchanged_current_tree_projection_only",
+  "allowed_caption_versions": {
+    "subtitle:3ce0010f-c786-4350-a404-000396e16903": "0deadae5a57560a048565b79c3bb6ebac290dc688faaf903114d13229b282bb8",
+    "subtitle:f12d1eca-79f8-4c2a-9da1-db408c8132cc": "7d46674002a04e5cfd1311eae555b675bf28fea752201bdc0dfc09aa62e41cd0",
+    "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537": "19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f"
+  }
 }

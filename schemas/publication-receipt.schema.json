@@ -1,0 +1,801 @@
+{
+  "$defs": {
+    "binding": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "bytes": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "candidate_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "current_platform_observation": {
+          "$ref": "#/$defs/currentObservation"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "file_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "historical_claim": {
+          "$ref": "#/$defs/historicalClaim"
+        },
+        "historical_platform_observation": {
+          "$ref": "#/$defs/historicalObservation"
+        },
+        "id": {
+          "pattern": "^publication-binding:[a-f0-9-]{36}$",
+          "type": "string"
+        },
+        "identity_basis": {
+          "const": "explicit_mapping_and_matching_recorded_sha256_and_bytes"
+        },
+        "platform": {
+          "const": "youtube"
+        },
+        "public_scope": {
+          "$ref": "#/$defs/candidatePublicScope"
+        },
+        "public_url": {
+          "type": "string"
+        },
+        "relationship": {
+          "const": "same_file_version"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "video_id": {
+          "pattern": "^[A-Za-z0-9_-]{11}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "candidate_id",
+        "source_id",
+        "platform",
+        "video_id",
+        "public_url",
+        "asset_id",
+        "file_id",
+        "sha256",
+        "bytes",
+        "relationship",
+        "identity_basis",
+        "historical_claim",
+        "historical_platform_observation",
+        "current_platform_observation",
+        "evidence",
+        "public_scope"
+      ],
+      "type": "object"
+    },
+    "candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "catalogue_match": {
+          "$ref": "#/$defs/candidateMatch"
+        },
+        "current_platform_observation": {
+          "$ref": "#/$defs/currentObservation"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "external_project_refs": {
+          "items": {
+            "$ref": "#/$defs/externalProject"
+          },
+          "type": "array"
+        },
+        "historical_claim": {
+          "$ref": "#/$defs/historicalClaim"
+        },
+        "historical_platform_observation": {
+          "$ref": "#/$defs/historicalObservation"
+        },
+        "id": {
+          "pattern": "^publication-candidate:[a-f0-9-]{36}$",
+          "type": "string"
+        },
+        "platform": {
+          "const": "youtube"
+        },
+        "project_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "public_scope": {
+          "$ref": "#/$defs/candidatePublicScope"
+        },
+        "public_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "receipt_file_version": {
+          "$ref": "#/$defs/receiptFileVersion"
+        },
+        "source_id": {
+          "pattern": "^[a-z][a-z0-9._-]{1,100}$",
+          "type": "string"
+        },
+        "video_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9_-]{11}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "source_id",
+        "platform",
+        "video_id",
+        "public_url",
+        "project_ids",
+        "external_project_refs",
+        "receipt_file_version",
+        "historical_claim",
+        "historical_platform_observation",
+        "current_platform_observation",
+        "catalogue_match",
+        "evidence",
+        "public_scope"
+      ],
+      "type": "object"
+    },
+    "candidateMatch": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "const": null
+        },
+        "file_id": {
+          "const": null
+        },
+        "reason_codes": {
+          "contains": {
+            "const": "explicit_identity_mapping_required"
+          },
+          "items": {
+            "enum": [
+              "explicit_identity_mapping_required",
+              "no_catalogue_file_with_same_sha256_and_bytes",
+              "platform_video_id_missing",
+              "project_not_attached_to_current_catalogue",
+              "source_version_sha256_missing"
+            ]
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "same_version_file_candidates": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "status": {
+          "const": "candidate_only"
+        }
+      },
+      "required": [
+        "status",
+        "asset_id",
+        "file_id",
+        "same_version_file_candidates",
+        "reason_codes"
+      ],
+      "type": "object"
+    },
+    "candidatePublicScope": {
+      "additionalProperties": false,
+      "properties": {
+        "basis": {
+          "enum": [
+            "no_projection_policy_present",
+            "official_source_version_evidence",
+            "existing_publication_metadata_only"
+          ]
+        },
+        "eligible_file_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "related_publication_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "basis",
+        "related_publication_ids",
+        "eligible_file_ids"
+      ],
+      "type": "object"
+    },
+    "currentObservation": {
+      "const": {
+        "observed_at": null,
+        "status": "not_performed"
+      }
+    },
+    "evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "receipt_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        "record_key": {
+          "pattern": "^assets/ordinal/[0-9]+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "receipt_sha256",
+        "record_key"
+      ],
+      "type": "object"
+    },
+    "externalProject": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "type": "string"
+        },
+        "namespace": {
+          "pattern": "^[A-Za-z0-9_.:-]+$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "namespace",
+        "id"
+      ],
+      "type": "object"
+    },
+    "historicalClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "recorded_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reported_upload_time": {
+          "description": "Exact receipt upload-time claim; a missing timezone remains missing and is never guessed. This is not the platform observation time.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "state": {
+          "enum": [
+            "all_three_public_and_playlist_verified",
+            "blocked",
+            "browser_queued",
+            "failed",
+            "not_recorded",
+            "other_recorded_state",
+            "pending",
+            "prepared",
+            "private",
+            "processing",
+            "public",
+            "public_processed",
+            "public_processed_verified",
+            "queued",
+            "unlisted",
+            "uploaded"
+          ]
+        }
+      },
+      "required": [
+        "state",
+        "recorded_at",
+        "reported_upload_time"
+      ],
+      "type": "object"
+    },
+    "historicalObservation": {
+      "additionalProperties": false,
+      "properties": {
+        "observed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "playback": {
+          "enum": [
+            "not_recorded",
+            "receipt_contains_playback_evidence"
+          ]
+        },
+        "privacy": {
+          "enum": [
+            "not_recorded",
+            "public",
+            "private",
+            "unlisted"
+          ]
+        },
+        "processing": {
+          "enum": [
+            "not_recorded",
+            "processed",
+            "processing",
+            "uploaded",
+            "failed"
+          ]
+        },
+        "status": {
+          "enum": [
+            "not_recorded",
+            "receipt_reports_platform_observation"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "observed_at",
+        "privacy",
+        "processing",
+        "playback"
+      ],
+      "type": "object"
+    },
+    "mapping": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "bytes": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "candidate_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "file_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "identity_confirmed": {
+          "const": true
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "asset_id",
+        "file_id",
+        "sha256",
+        "bytes",
+        "identity_confirmed"
+      ],
+      "type": "object"
+    },
+    "publication_bindings": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/binding"
+          },
+          "type": "array"
+        },
+        "kind": {
+          "const": "publication_bindings"
+        },
+        "schema_version": {
+          "const": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "kind",
+        "items"
+      ],
+      "type": "object"
+    },
+    "publication_candidates": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/candidate"
+          },
+          "type": "array"
+        },
+        "kind": {
+          "const": "publication_candidates"
+        },
+        "schema_version": {
+          "const": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "kind",
+        "items"
+      ],
+      "type": "object"
+    },
+    "publication_mappings": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/mapping"
+          },
+          "type": "array"
+        },
+        "kind": {
+          "const": "publication_mappings"
+        },
+        "schema_version": {
+          "const": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "kind",
+        "items"
+      ],
+      "type": "object"
+    },
+    "publication_sources": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/source"
+          },
+          "type": "array"
+        },
+        "kind": {
+          "const": "publication_sources"
+        },
+        "schema_version": {
+          "const": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "kind",
+        "items"
+      ],
+      "type": "object"
+    },
+    "receiptFileVersion": {
+      "additionalProperties": false,
+      "properties": {
+        "basis": {
+          "enum": [
+            "explicit_receipt_fields_not_media_rehashed",
+            "version_details_withheld_by_current_public_scope"
+          ]
+        },
+        "bytes": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "sha256",
+        "bytes",
+        "basis"
+      ],
+      "type": "object"
+    },
+    "source": {
+      "additionalProperties": false,
+      "properties": {
+        "adapter": {
+          "enum": [
+            "fa",
+            "human-surrender",
+            "vortex"
+          ]
+        },
+        "batch_state": {
+          "enum": [
+            "all_three_public_and_playlist_verified",
+            "blocked",
+            "browser_queued",
+            "failed",
+            "not_recorded",
+            "other_recorded_state",
+            "pending",
+            "prepared",
+            "private",
+            "processing",
+            "public",
+            "public_processed",
+            "public_processed_verified",
+            "queued",
+            "unlisted",
+            "uploaded"
+          ]
+        },
+        "channel_id": {
+          "anyOf": [
+            {
+              "pattern": "^UC[A-Za-z0-9_-]{22}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "external_project_refs": {
+          "items": {
+            "$ref": "#/$defs/externalProject"
+          },
+          "type": "array"
+        },
+        "historical_state_counts": {
+          "additionalProperties": false,
+          "properties": {
+            "all_three_public_and_playlist_verified": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "blocked": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "browser_queued": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "failed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "not_recorded": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "other_recorded_state": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "pending": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "prepared": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "private": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "processing": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "public": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "public_processed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "public_processed_verified": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "queued": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "unlisted": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "uploaded": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "type": "object"
+        },
+        "id": {
+          "pattern": "^[a-z][a-z0-9._-]{1,100}$",
+          "type": "string"
+        },
+        "nonpublic_records_omitted": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "project_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "public_projection_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "public_scope": {
+          "$ref": "#/$defs/sourcePublicScope"
+        },
+        "receipt_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        "receipt_updated_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "recheck": {
+          "const": "locate_private_receipt_by_sha256_then_repreview_no_platform_access_performed"
+        },
+        "record_count": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "title": {
+          "enum": [
+            "VORTEX source archive historical publication ledger",
+            "Human Surrender 5.14 historical upload receipt",
+            "He Fa / Fa re-review historical publication receipt"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "adapter",
+        "title",
+        "receipt_sha256",
+        "channel_id",
+        "receipt_updated_at",
+        "batch_state",
+        "record_count",
+        "public_projection_count",
+        "nonpublic_records_omitted",
+        "project_ids",
+        "external_project_refs",
+        "recheck",
+        "historical_state_counts",
+        "public_scope"
+      ],
+      "type": "object"
+    },
+    "sourcePublicScope": {
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "mandatory_public_projection",
+            "no_projection_policy_present"
+          ]
+        },
+        "policy_sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "withheld_record_count": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "mode",
+        "policy_sha256",
+        "withheld_record_count"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://github.com/hehefa/-p4-theater-archive/schemas/publication-receipt.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Strict public allowlists. Source receipt claims, historical observations and current observations remain distinct. Cross-record identity and hash equality are additionally checked by publication_receipts.py.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/publication_candidates"
+    },
+    {
+      "$ref": "#/$defs/publication_sources"
+    },
+    {
+      "$ref": "#/$defs/publication_mappings"
+    },
+    {
+      "$ref": "#/$defs/publication_bindings"
+    }
+  ],
+  "title": "Offline historical publication receipt projections v1"
+}

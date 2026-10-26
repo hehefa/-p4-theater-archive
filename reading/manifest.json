@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "source_sha256": {
+    ".p4-public-scope.json": "eb9926b508f81a12581113a807426e5b7176019b2b93bb4c3e183d838e3f0c47",
+    "catalog/assets.json": "c6265755bf5591cf4f800121b3b482d8f636a2b8f0a6d80d4a7c98220bd79de5",
+    "catalog/collections.json": "5d5269ca9128e95f2a76386484127148587cb6a77f966443f6d3989381263ce6",
+    "catalog/events.json": "aea0cce58c63f709eb860ed862cd3f38a63c6addef8f7a261fe1b507a9f1a4ed",
+    "catalog/files.json": "433fb74ae5519a098254a68b879c02a30dbbe4476ef7af59199e05e00b3cd9c0",
+    "catalog/projects.json": "a2cfc19d0fa2718fc4281eb6026d1c586553885e21b4dacf7c60ceed9a2dc08d",
+    "catalog/publications.json": "eb88edd4197f478bd2a87b830709a71f630b269ae56494df7aeda074a25f95f3",
+    "catalog/subtitles.json": "7f002b6e8f5e7de8f39e264ce983e1a91afc5f19e6ba39fd4937469700935b20",
+    "content/reading-notes.json": "7ef4a7f54886a8a7ffce107b8e1d43ef9968e034138d4db5bab686def7e53a7b",
+    "evidence/P4-V001069-official-media.json": "b981c7bc4ff53579614dfe1463cf07359549d515aae147cef3ca1ca421e7f303",
+    "registry/official-projects.json": "546d317ddbdd9d82cafed9043d0d2c7ba279f300b3627eea316d4761c3bef9d0"
+  },
+  "public_caption_count": 3,
+  "source_file_count": 1,
+  "sources": [
+    {
+      "asset_id": "asset:42a44e7c-809a-4e52-8843-4d2925f49d6f",
+      "asset_accession": "P4-V001069",
+      "file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+      "file_accession": "P4-F001069",
+      "camera_filename": "IMG_3556.MOV",
+      "projects": [
+        {
+          "id": "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2",
+          "accession": "P4-P000013",
+          "title": "玻璃动物园"
+        }
+      ],
+      "event_ids": [
+        "event:864780a8-6998-4e19-b659-39e56a2ddc71"
+      ],
+      "source_sha256": "21f434764243d5ea77d831cb3a5675a96b9ea78f24e1f2aef3d60687838b63d3",
+      "official_evidence_path": "evidence/P4-V001069-official-media.json",
+      "official_source_urls": [
+        "https://a.p4theater.cn/videos/uQ1HVDVdv6Y",
+        "https://b.p4theater.cn/questions/glass-self-expression-and-direction"
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "id": "subtitle:3ce0010f-c786-4350-a404-000396e16903",
+      "accession": "P4-S000946",
+      "source_file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+      "language": "und",
+      "role": "original_asr",
+      "clock": "source_zero",
+      "sha256": "0deadae5a57560a048565b79c3bb6ebac290dc688faaf903114d13229b282bb8",
+      "path": "captions/P4-S000946/0deadae5a57560a048565b79c3bb6ebac290dc688faaf903114d13229b282bb8/P4-S000946.srt",
+      "quality_label": "machine_draft",
+      "human_listening_review": "not_recorded"
+    },
+    {
+      "id": "subtitle:f12d1eca-79f8-4c2a-9da1-db408c8132cc",
+      "accession": "P4-S000947",
+      "source_file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+      "language": "en",
+      "role": "machine_translation",
+      "clock": "source_zero",
+      "sha256": "7d46674002a04e5cfd1311eae555b675bf28fea752201bdc0dfc09aa62e41cd0",
+      "path": "captions/P4-S000947/7d46674002a04e5cfd1311eae555b675bf28fea752201bdc0dfc09aa62e41cd0/P4-S000947.srt",
+      "quality_label": "machine_draft",
+      "human_listening_review": "not_recorded"
+    },
+    {
+      "id": "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537",
+      "accession": "P4-S000948",
+      "source_file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+      "language": "zh-en",
+      "role": "bilingual_machine_translation",
+      "clock": "source_zero",
+      "sha256": "19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f",
+      "path": "captions/P4-S000948/19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f/P4-S000948.srt",
+      "quality_label": "machine_draft",
+      "human_listening_review": "not_recorded"
+    }
+  ]
+}

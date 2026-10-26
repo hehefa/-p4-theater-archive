@@ -1,24 +1,41 @@
 # 旋转楼梯
 
-项目编号：`P4-P000004`  
-Canonical ID：`project:84801fb9-5021-49e7-99d4-258e9e9ff402`  
-既有档案 ID 对齐：`existing_registry_project_identified_from_directory_label`
+这里从《旋转楼梯》的材料记录进入，按1个资料组查找来源、事件线索与文件版本。
 
-既有或官方编号别名：`P4C-017`。
+[项目材料与研究（B站）](https://b.p4theater.cn/projects/spiral-staircase) · [官方项目原文 · P4C-017](https://a.p4theater.cn/wechat/projects/spiral-staircase) · [English source](https://a.p4theater.cn/en/projects/spiral-staircase) · [可读字幕](#可读字幕) · [资料组与来源](#资料组与来源) · [补充资料](../../CONTRIBUTING.md)
 
-本页按暂定事件组编目。日期只保留目录中明确的年月日标记，均待核实；未从修改时间推断。公开字幕另有文本范围筛查记录，均标为机器稿；文本范围筛查不能替代全片观看或逐句听校。
+项目编号：`P4-P000004` · 既有编号：`P4C-017`
 
-[公开字幕目录](../../captions/README.md)（已开放的版本提供直达链接）。
+## 可读字幕
 
-官方索引：[P4C-017](https://a.p4theater.cn/wechat/projects/spiral-staircase)。此项目级目录对照不证明各视频的内容归属。
+本页当前提供项目、事件与文件索引；已开放的字幕可从[全库字幕入口](../../reading/captions.md)阅读。
 
-## P4-E000006 · 旋转楼梯 · 演出
+## 资料组与来源
 
-日期：2022-04-09；事件边界：暂定目录组。
+日期依来源字段显示；资料组编号保持原有对应。
 
-| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |
-|---|---|---|---:|---:|---|---|---|---|
-| P4-V000033 | P4-F000033 | .mov | 150.99 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000034 | P4-F000034 | .mov | 5455.48 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| 日期线索 | 类型与资料组 | 文件记录 | 可读字幕来源 |
+| --- | --- | ---: | ---: |
+| 2022-04-09〔目录日期线索〕 | [演出 · P4-E000006](#event-p4-e000006) | 2 | 0 |
 
-[返回总目录](../../INDEX.md)
+<details>
+<summary>项目身份与全部文件记录</summary>
+
+Canonical ID：`project:84801fb9-5021-49e7-99d4-258e9e9ff402`
+
+既有档案对照：`existing_registry_project_identified_from_directory_label`
+
+<a id="event-p4-e000006"></a>
+
+### 旋转楼梯 · 演出 · P4-E000006
+
+日期：2022-04-09〔目录日期线索〕
+
+| 视频 / 文件 | 格式 / MB | 可读字幕 | 解码记录 | 发布记录 |
+| --- | --- | --- | --- | --- |
+| <a id="p4-v000033"></a>P4-V000033 / P4-F000033 | .mov / 150.99 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000034"></a>P4-V000034 / P4-F000034 | .mov / 5455.48 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+
+</details>
+
+[补充日期、人物或经过](../../templates/事件记录.md) · [修订字幕](../../templates/字幕修订.md) · [返回资料目录](../../INDEX.md)

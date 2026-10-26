@@ -6,11 +6,18 @@ permissions:
   contents: read
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/archive_catalog.py validate --root .
-      - run: python -m unittest discover -s tests -v
+      - run: python -X utf8 scripts/archive_catalog.py validate --root .
+      - run: python -X utf8 scripts/export_identity_crosswalk.py --root . --check
+      - run: python -X utf8 scripts/public_reading.py check --root .
+      - run: python -X utf8 scripts/publication_receipts.py check --candidates catalog/publication-candidates.json --sources registry/publication-sources.json --catalog-dir catalog
+      - run: python -X utf8 -m unittest discover -s tests -v

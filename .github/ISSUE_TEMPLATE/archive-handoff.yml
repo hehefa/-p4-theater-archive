@@ -1,0 +1,42 @@
+name: 跨端交接
+description: Mac与PC交接一个明确的目录、代码或核验批次
+title: "[交接] "
+body:
+  - type: input
+    id: batch
+    attributes:
+      label: 批次ID与基线提交
+      description: 不填写本机路径或私有登记内容。
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: 负责端
+      options:
+        - Mac
+        - PC
+        - 其他维护端
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 负责文件与完成范围
+      description: 用公开档案编号、提交或批次定位，区分代码、目录、原片核验与平台回读。
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: 验证结果与交付提交
+      description: 未运行、未提交或未发布的步骤如实保留。
+    validations:
+      required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: 下一端与待完成动作
+      description: 写明是否会操作原私有登记；不要附路径、密钥或原始平台响应。
+    validations:
+      required: true

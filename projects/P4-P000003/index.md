@@ -1,28 +1,49 @@
 # 外向的独白
 
-项目编号：`P4-P000003`  
-Canonical ID：`project:48e89665-7ab8-4367-b0f6-b2fc543cac27`  
-既有档案 ID 对齐：`existing_registry_project_identified_from_directory_label`
+这里从《外向的独白》的材料记录进入，按1个资料组查找来源、事件线索与文件版本。
 
-本页按暂定事件组编目。日期只保留目录中明确的年月日标记，均待核实；未从修改时间推断。公开字幕另有文本范围筛查记录，均标为机器稿；文本范围筛查不能替代全片观看或逐句听校。
+[项目材料与研究（B站）](https://b.p4theater.cn/projects/extroverted-monologue) · [可读字幕](#可读字幕) · [资料组与来源](#资料组与来源) · [补充资料](../../CONTRIBUTING.md)
 
-[公开字幕目录](../../captions/README.md)（已开放的版本提供直达链接）。
+项目编号：`P4-P000003`
 
-## P4-E000005 · 外向的独白 · 演出
+## 可读字幕
 
-日期：2022-08-04；事件边界：暂定目录组。
+本页当前提供项目、事件与文件索引；已开放的字幕可从[全库字幕入口](../../reading/captions.md)阅读。
 
-| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |
-|---|---|---|---:|---:|---|---|---|---|
-| P4-V000023 | P4-F000023 | .mp4 | 4092.28 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000024 | P4-F000024 | .mp4 | 4092.23 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000025 | P4-F000025 | .mp4 | 4092.27 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000026 | P4-F000026 | .mp4 | 4092.20 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000027 | P4-F000027 | .mp4 | 4092.21 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000028 | P4-F000028 | .mp4 | 4092.28 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000029 | P4-F000029 | .mp4 | 4092.25 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000030 | P4-F000030 | .mp4 | 4092.51 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000031 | P4-F000031 | .mp4 | 4092.32 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V000032 | P4-F000032 | .mp4 | 3323.41 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+## 资料组与来源
 
-[返回总目录](../../INDEX.md)
+日期依来源字段显示；资料组编号保持原有对应。
+
+| 日期线索 | 类型与资料组 | 文件记录 | 可读字幕来源 |
+| --- | --- | ---: | ---: |
+| 2022-08-04〔目录日期线索〕 | [演出 · P4-E000005](#event-p4-e000005) | 10 | 0 |
+
+<details>
+<summary>项目身份与全部文件记录</summary>
+
+Canonical ID：`project:48e89665-7ab8-4367-b0f6-b2fc543cac27`
+
+既有档案对照：`existing_registry_project_identified_from_directory_label`
+
+<a id="event-p4-e000005"></a>
+
+### 外向的独白 · 演出 · P4-E000005
+
+日期：2022-08-04〔目录日期线索〕
+
+| 视频 / 文件 | 格式 / MB | 可读字幕 | 解码记录 | 发布记录 |
+| --- | --- | --- | --- | --- |
+| <a id="p4-v000023"></a>P4-V000023 / P4-F000023 | .mp4 / 4092.28 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000024"></a>P4-V000024 / P4-F000024 | .mp4 / 4092.23 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000025"></a>P4-V000025 / P4-F000025 | .mp4 / 4092.27 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000026"></a>P4-V000026 / P4-F000026 | .mp4 / 4092.20 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000027"></a>P4-V000027 / P4-F000027 | .mp4 / 4092.21 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000028"></a>P4-V000028 / P4-F000028 | .mp4 / 4092.28 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000029"></a>P4-V000029 / P4-F000029 | .mp4 / 4092.25 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000030"></a>P4-V000030 / P4-F000030 | .mp4 / 4092.51 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000031"></a>P4-V000031 / P4-F000031 | .mp4 / 4092.32 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v000032"></a>P4-V000032 / P4-F000032 | .mp4 / 3323.41 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+
+</details>
+
+[补充日期、人物或经过](../../templates/事件记录.md) · [修订字幕](../../templates/字幕修订.md) · [返回资料目录](../../INDEX.md)

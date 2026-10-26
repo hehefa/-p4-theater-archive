@@ -14,6 +14,7 @@ from collections import Counter
 from pathlib import Path
 
 from archive_catalog import TABLES, digest, publication_summary, read_json, render_indexes, validate, write_json
+from catalog_transaction import staged_update
 from merge_caption_release import render_caption_index
 from merge_youtube_receipts import render_publications
 
@@ -35,7 +36,7 @@ def scrub_removed_ids(value, removed):
     return value
 
 
-def project(public_root, master_root, state, exclusions_path, evidence_paths, allowed_caption_ids):
+def _project(public_root, master_root, state, exclusions_path, evidence_paths, allowed_caption_ids):
     public, master, state = Path(public_root).resolve(), Path(master_root).resolve(), Path(state).resolve()
     if master == public or public in master.parents or state == public or public in state.parents:
         raise ValueError("Private master/state must be outside the public tree")
@@ -159,16 +160,18 @@ def project(public_root, master_root, state, exclusions_path, evidence_paths, al
     summary = dict(original_summary)
     summary.update(counts={name: len(items) for name, items in tables.items()}, current_inventory_counts={name: sum(x.get("in_current_inventory", True) for x in items) for name, items in tables.items()}, private_master_inventory_video_files=master_count, public_selected_video_files=len(tables["assets"]), public_excluded_video_files=master_count-len(tables["assets"]), public_candidate_catalogue_is_upload_authorization=False, video_bytes=sum(x["bytes"] for x in tables["files"]), full_sha256_recorded=sum(x.get("sha256") is not None for x in tables["files"]), full_sha256_pending=sum(x.get("sha256") is None for x in tables["files"]), full_decode_passed_existing_reports=sum(x.get("full_decode_status") == "passed_existing_report" for x in tables["files"]), subtitle_format_status=dict(Counter(x["format_status"] for x in tables["subtitles"])), public_caption_export_count=len(exported_ids), public_caption_source_file_count=len({x["source_file_id"] for x in tables["subtitles"] if x.get("public_export")}), official_media_affiliation_confirmed_assets=len(evidence), official_media_affiliation_pending_assets=len(tables["assets"])-len(evidence), public_export_policy="mandatory_exclusion_projection_and_explicit_official_source_caption_allow_list", scope="Public candidate metadata only; family/mixed candidates and separate official-scope holds excluded. New uploads and caption export require source-level official evidence and must pass family exclusion guards.")
     summary.update(publication_summary(tables["publications"]))
-    policy = {"schema_version": 1, "projection_required": True, "decision_source": deny["decision_source"], "exclusions_sha256": digest(exclusions_path), "excluded_identity_sha256s": sorted(hashlib.sha256(x.encode()).hexdigest() for x in removed), "allowed_caption_subtitle_ids": sorted(exported_ids), "new_material_default": "official_media_affiliation_pending_no_new_public_upload_or_caption_export", "private_master_inventory_video_files": master_count, "public_selected_video_files": len(tables["assets"]), "git_history_action": "unchanged_current_tree_projection_only"}
-    # Build and validate privately before touching the current public tree.
-    staging = state / "public_scope_staging"
-    if staging.exists():
-        if state not in staging.resolve().parents:
-            raise ValueError("Refusing staging cleanup outside private local state")
-        for old in staging.rglob("*"):
-            if old.is_file():
-                old.unlink()
-    staging.mkdir(parents=True, exist_ok=True)
+    policy = {"schema_version": 1, "projection_required": True, "decision_source": deny["decision_source"], "exclusions_sha256": digest(exclusions_path), "excluded_identity_sha256s": sorted(hashlib.sha256(x.encode()).hexdigest() for x in removed), "allowed_caption_subtitle_ids": sorted(exported_ids), "allowed_caption_versions": {s["id"]: s["version_sha256"] for s in tables["subtitles"] if s["id"] in exported_ids}, "new_material_default": "official_media_affiliation_pending_no_new_public_upload_or_caption_export", "private_master_inventory_video_files": master_count, "public_selected_video_files": len(tables["assets"]), "git_history_action": "unchanged_current_tree_projection_only"}
+    # This is already a private, complete candidate supplied by staged_update.
+    # Remove withdrawn text before rendering/validation, preserving SRT bytes.
+    staging = public
+    desired_srt_paths = {destination.resolve() for _, destination in caption_copies}
+    removed_text_paths = []
+    for old in (public / "captions").rglob("*.srt") if (public / "captions").exists() else []:
+        if old.resolve() not in desired_srt_paths:
+            if public not in old.resolve().parents:
+                raise ValueError("Refusing deletion outside public tree")
+            removed_text_paths.append(old.relative_to(public).as_posix())
+            old.unlink()
     for name, items in tables.items():
         write_json(staging / "catalog" / (name + ".json"), {"schema_version": 1, "items": items})
     write_json(staging / "catalog/byte-equality-groups.json", groups)
@@ -189,23 +192,17 @@ def project(public_root, master_root, state, exclusions_path, evidence_paths, al
     result = validate(staging)
     if not result["valid"]:
         raise ValueError("Scope projection is invalid: " + json.dumps(result["errors"], ensure_ascii=False))
-    desired_srt_paths = {destination.resolve() for _, destination in caption_copies}
-    removed_text_paths = []
-    for old in (public / "captions").rglob("*.srt") if (public / "captions").exists() else []:
-        if old.resolve() not in desired_srt_paths:
-            if public not in old.resolve().parents:
-                raise ValueError("Refusing deletion outside public tree")
-            removed_text_paths.append(old.relative_to(public).as_posix())
-            old.unlink()
-    for path in staging.rglob("*"):
-        if path.is_file():
-            target = public / path.relative_to(staging)
-            target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(path, target)
     old_exports = sum(bool(s.get("public_export")) for s in read_json(master / "catalog/subtitles.json")["items"])
     report = {"private_master_inventory_video_files": master_count, "public_selected_video_files": len(tables["assets"]), "excluded_video_files": master_count-len(tables["assets"]), "public_subtitle_records": len(tables["subtitles"]), "public_caption_files": len(exported_ids), "current_tree_srt_files_removed_this_run": len(removed_text_paths), "previously_exported_captions_now_withheld": old_exports-len(exported_ids), "excluded_identity_ids_retained_privately": True, "original_media_or_sidecars_modified": False, "git_history_modified": False, "live_hash_cache_read_or_modified": False, "validation": validate(public)}
     write_json(state / "public_scope_projection_report.json", report)
     return report
+
+
+def project(public_root, master_root, state, exclusions_path, evidence_paths, allowed_caption_ids):
+    public, master, private = Path(public_root).resolve(), Path(master_root).resolve(), Path(state).resolve()
+    if master == public or public in master.parents or private == public or public in private.parents:
+        raise ValueError("Private master/state must be outside the public tree")
+    return staged_update(public, lambda candidate, candidate_state: _project(candidate, master, candidate_state, exclusions_path, evidence_paths, allowed_caption_ids), validate, local_state=private)
 
 
 def main():
