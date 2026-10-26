@@ -1,0 +1,36 @@
+{
+  "schema_version": "p4-official-project-media-evidence-v1",
+  "decision": "confirmed_project_media",
+  "scope": "item_level_project_or_practice_provenance_only",
+  "asset_id": "asset:c3fbb2b9-83e7-42d0-971d-fcb692c97156",
+  "asset_accession": "P4-V000422",
+  "file_id": "file:37ca9b80-1fda-4b1d-8acc-6790cf3fb800",
+  "file_accession": "P4-F000422",
+  "source_filename": "IMG_4199.MOV",
+  "source_sha256": "d8f0775081fda4346cd24c2faa2f8929440e651d5839ff3c34ac753f64f46399",
+  "project_code": "P4C-019",
+  "project_slug": "animal-farm-ecotheatre",
+  "official_context": null,
+  "formal_project_claim": true,
+  "official_event_date": null,
+  "evidence": [
+    {
+      "url": "https://a.p4theater.cn/archive/materials/cv-animal-farm-ecotheatre-d8f0775081fd",
+      "http_status": 200,
+      "retrieved_at": "2026-10-26T15:16:29.5677983+00:00",
+      "html_utf8_sha256": "d72fd37fd36268724b178de2ca7f4a65147b268cfc9264c533e8f08be6feddbc",
+      "source_type": "official_original_source_archive_record",
+      "supports": [
+        "official_original_source_record_explicitly_records_actual_frame_inspection_and_source_sha256",
+        "Full original-source SHA-256 equals the current local file"
+      ],
+      "source_record_snapshot_is_not_used_as_video_hash": true
+    }
+  ],
+  "unsupported_claims": [
+    "No full-video continuous human viewing or dialogue listening review was performed here.",
+    "No independent filming/event date, participant identity, platform playback or caption-publication verification was established.",
+    "No other member of the containing directory or provisional event inherits this item-level decision.",
+    "This evidence cannot override the family/private deny list."
+  ]
+}

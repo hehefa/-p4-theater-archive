@@ -55,7 +55,7 @@ def aware_timestamp(value):
 
 
 def publication_summary(records):
-    metadata_verified = [x for x in records if x.get("platform_readback_verification") == "verified" and x.get("verification_scope") == "metadata_only"]
+    metadata_verified = [x for x in records if x.get("platform_readback_verification") == "verified" and x.get("verification_scope") in ("metadata_only", "metadata_and_caption_menu_with_limited_render_sample")]
     existing = [x for x in metadata_verified if x.get("publication_origin") == "pre_existing"]
     new = [x for x in records if x.get("new_upload_this_batch") is True and x.get("new_upload_completed") is True]
     return {
@@ -68,6 +68,10 @@ def publication_summary(records):
         "youtube_uploads_recorded": len(new),
         "playback_verifications_recorded": sum(x.get("playback_status") == "verified" for x in records),
         "youtube_caption_verifications_recorded": sum(x.get("caption_publication_status") == "verified" for x in records),
+        "new_caption_tracks_published_and_menu_verified": sum(t.get("published_this_update") is True and t.get("viewer_menu_selectable") is True for x in records for t in x.get("caption_tracks", [])),
+        "legacy_platform_tracks_preserved": sum(t.get("legacy_platform_version") is True and t.get("unchanged_online") is True for x in records for t in x.get("caption_tracks", [])),
+        "viewer_menu_verified_caption_tracks": sum(t.get("viewer_menu_selectable") is True for x in records for t in x.get("caption_tracks", [])),
+        "caption_render_sample_observations": sum(len(x.get("caption_render_samples", [])) for x in records),
     }
 
 
@@ -371,9 +375,9 @@ def import_catalog(args):
     # Keep published history and human annotations when a fresh machine inventory
     # is imported. Current source absence is not a request to erase an entity.
     protected_fields = {
-        "assets": ("human_review", "rights_status", "youtube_publication_ids", "publication_status", "youtube_metadata_association_status"),
-        "subtitles": ("human_listening_review", "public_text_status", "public_export", "youtube_caption_status", "pairing_status", "pairing_review", "source_file_id", "source_asset_id", "content_scope_review", "equivalent_public_export_subtitle_id"),
-        "files": ("human_continuous_watch", "full_decode_status"),
+        "assets": ("human_review", "rights_status", "youtube_publication_ids", "publication_status", "youtube_metadata_association_status", "platform_subtitle_ids"),
+        "subtitles": ("human_listening_review", "public_text_status", "public_export", "youtube_caption_status", "pairing_status", "pairing_review", "source_file_id", "source_asset_id", "content_scope_review", "equivalent_public_export_subtitle_id", "quality_label", "platform_track_observations", "platform_track_observation", "platform_origin", "platform_video_id", "platform_language_label", "platform_track_actual_name", "existing_platform_label_is_not_review_evidence"),
+        "files": ("human_continuous_watch", "full_decode_status", "sha256", "checksum_status", "independent_checksum_evidence"),
     }
     for name, items in tables.items():
         older = {x["id"]: x for x in previous[name]}
@@ -386,8 +390,8 @@ def import_catalog(args):
                     if old.get("official_registry_references"):
                         item["official_registry_references"] = old["official_registry_references"]
                 if name == "assets":
-                    reviewed_fields = ("content_scope_review", "project_assignment_review", "project_ids", "content_classification", "canonical_byte_source_asset_id", "canonical_byte_source_file_id", "byte_copy_asset_ids", "byte_identity_relation", "alternate_representation_candidate_of_asset_id", "alternate_representation_review", "public_caption_subtitle_ids")
-                    if old.get("content_scope_review") or old.get("byte_identity_relation") or old.get("alternate_representation_review"):
+                    reviewed_fields = ("content_scope_review", "project_assignment_review", "project_ids", "content_classification", "canonical_byte_source_asset_id", "canonical_byte_source_file_id", "byte_copy_asset_ids", "byte_identity_relation", "alternate_representation_candidate_of_asset_id", "alternate_representation_review", "public_caption_subtitle_ids", "official_project_association_pending", "official_project_context_candidates", "source_collection_assignment_role", "content_role", "original_p4_event_recording_confirmed")
+                    if old.get("content_scope_review") or old.get("byte_identity_relation") or old.get("alternate_representation_review") or old.get("official_project_context_candidates") or old.get("content_role"):
                         for field in reviewed_fields:
                             if field in old:
                                 item[field] = old[field]
@@ -397,6 +401,8 @@ def import_catalog(args):
                             item[field] = old[field]
                 for field in protected_fields.get(name, ()):
                     value = old.get(field)
+                    if name == "files" and field == "sha256" and value is not None and item.get("sha256") is not None and value != item["sha256"]:
+                        raise ValueError("Conflicting complete hashes for an unchanged source fingerprint")
                     if value is not None and value not in ("not_recorded", "not_established", "not_newly_probed", "not_uploaded_in_this_catalogue", "withheld_pending_review", "filename_association_requires_review", "edited_product_pairing_pending", "pending_content_and_publication_review") and not (isinstance(value, str) and value.startswith("hold_")):
                         item[field] = value
                 if name == "assets" and old.get("file_id") != item.get("file_id"):
@@ -414,6 +420,12 @@ def import_catalog(args):
             items.append(item)
     for pub in tables["publications"]:
         pub["in_current_inventory"] = True
+    subtitle_map = {s["id"]: s for s in tables["subtitles"]}
+    for asset in tables["assets"]:
+        for sid in asset.get("platform_subtitle_ids", []):
+            subtitle = subtitle_map.get(sid)
+            if subtitle and subtitle.get("source_file_id") == asset["file_id"] and sid not in asset["subtitle_ids"]:
+                asset["subtitle_ids"].append(sid)
     for name, items in tables.items():
         write_json(out / "catalog" / (name + ".json"), {"schema_version": VERSION, "items": items})
     write_json(out / "catalog" / "byte-equality-groups.json", {"schema_version": VERSION, "items": byte_groups})
@@ -468,7 +480,7 @@ def render_indexes(out, tables, summary):
                 f = files[a["file_id"]]
                 source_asset = all_assets.get(a.get("canonical_byte_source_asset_id"), a)
                 available = [subtitles[sid] for sid in source_asset.get("subtitle_ids", []) if sid in subtitles and subtitles[sid].get("public_export") and subtitles[sid].get("source_file_id", source_asset["file_id"]) == source_asset["file_id"]]
-                labels = {"original_asr": "原语", "machine_translation": "English", "bilingual_machine_translation": "中英"}
+                labels = {"original_asr": "原语", "machine_translation": "English", "bilingual_machine_translation": "中英", "platform_original_language_legacy": "旧平台版（审校未知）"}
                 links = " / ".join("[" + labels.get(s["role"], s["language"]) + "](../../" + s["public_export"]["path"] + ")" for s in available) or "待公开"
                 if source_asset["id"] != a["id"]:
                     links += "；同字节来源 " + source_asset["accession"]
@@ -568,6 +580,36 @@ def validate(root):
                     raise ValueError("Missing observation timestamp status")
             except ValueError:
                 errors.append("Invalid Studio observation/record timestamp: " + pub["accession"])
+        elif basis == "youtube_studio_and_viewer_caption_observation":
+            source = linked_file
+            if pub.get("platform_readback_verification") != "verified" or pub.get("verification_scope") != "metadata_and_caption_menu_with_limited_render_sample":
+                errors.append("Invalid caption observation scope: " + pub["accession"])
+            if not source or pub.get("source_sha256") != source.get("sha256") or pub.get("publication_origin") != "pre_existing" or pub.get("new_upload_this_batch") is not False or pub.get("new_upload_completed") is not False:
+                errors.append("Caption operation cannot become a new video upload: " + pub["accession"])
+            if pub.get("playback_status") != "not_checked" or pub.get("caption_publication_status") != "published_menu_verified_partial_render_only":
+                errors.append("Caption menu observations cannot assert full listening or playback: " + pub["accession"])
+            proof = pub.get("official_source_evidence", {})
+            if proof.get("source_sha256") != pub.get("source_sha256") or proof.get("youtube_video_id") != pub.get("youtube_video_id"):
+                errors.append("Caption publication lacks matching official video/source evidence")
+            receipt = pub.get("observation_receipt", {})
+            if not re.fullmatch(r"[a-f0-9]{64}", receipt.get("sha256", "")) or receipt.get("interface") != "YouTube Studio caption editor and watch-player menu":
+                errors.append("Caption observation receipt provenance is missing")
+            try:
+                aware_timestamp(pub.get("recorded_at"))
+                if pub.get("platform_observed_at") is not None:
+                    aware_timestamp(pub["platform_observed_at"])
+            except ValueError:
+                errors.append("Invalid caption observation timestamp")
+            track_ids = {t.get("subtitle_id") for t in pub.get("caption_tracks", [])}
+            if track_ids != set(pub.get("subtitle_ids", [])):
+                errors.append("Caption observation track references disagree")
+            for track in pub.get("caption_tracks", []):
+                sub = next((s for s in tables["subtitles"] if s["id"] == track.get("subtitle_id")), None)
+                if not sub or sub.get("version_sha256") != track.get("version_sha256") or track.get("human_line_by_line_listening_review") != "not_performed" or track.get("viewer_menu_selectable") is not True or track.get("studio_published") is not True:
+                    errors.append("Caption observation version or review scope mismatch")
+            for sample in pub.get("caption_render_samples", []):
+                if sample.get("subtitle_id") not in track_ids or not isinstance(sample.get("at_seconds"), (int, float)) or sample["at_seconds"] < 0 or sample.get("caption_text_visible") is not True:
+                    errors.append("Invalid limited caption render sample")
         else:
             errors.append("Unknown publication evidence basis: " + pub["accession"])
         asset = next((x for x in tables["assets"] if x["id"] == pub.get("asset_id")), None)
@@ -612,6 +654,12 @@ def validate(root):
         parts = relative.split("/")
         valid_path = (len(parts) == 4 and parts[0] == "captions" and parts[1] == subtitle["accession"] and parts[2] == subtitle.get("version_sha256") and re.fullmatch(r"[A-Za-z0-9_.-]+\.srt", parts[3]) and ".." not in parts)
         approved = (export.get("scope_review_status") in ("approved_for_public_archive", "approved_official_source_and_text_scope") and export.get("quality_label") == "machine_draft" and subtitle.get("public_text_status") == "public_machine_draft")
+        platform_unknown = (export.get("scope_review_status") == "approved_same_official_source_platform_version_preservation" and export.get("quality_label") == "platform_review_level_unknown" and subtitle.get("public_text_status") == "public_platform_version_review_unknown" and subtitle.get("role") == "platform_original_language_legacy" and subtitle.get("human_listening_review") == "not_recorded")
+        if platform_unknown:
+            observed = subtitle.get("platform_track_observation", {})
+            if observed.get("download_sha256") != subtitle.get("version_sha256") or not observed.get("actual_name") or not observed.get("video_id") or observed.get("unchanged_online") is not True or subtitle.get("existing_platform_label_is_not_review_evidence") is not True:
+                platform_unknown = False
+        approved = approved or platform_unknown
         if subtitle.get("content_scope_review", {}).get("status", "").startswith("withheld_"):
             approved = False
         expected_hash = export.get("sha256")
@@ -710,7 +758,7 @@ def validate(root):
             source = files_by_id.get(proof.get("file_id"))
             if not owner or owner.get("official_media_affiliation_status") != "confirmed_official_source_and_project_context" or not source or source.get("sha256") != proof.get("source_sha256") or owner["file_id"] != source["id"] or proof.get("asset_id") != owner["id"]:
                 errors.append("Caption export lacks confirmed official media affiliation")
-            if sub["public_export"].get("scope_review_status") != "approved_official_source_and_text_scope" or sub["public_export"].get("official_evidence_source_sha256") != proof.get("source_sha256"):
+            if sub["public_export"].get("scope_review_status") not in ("approved_official_source_and_text_scope", "approved_same_official_source_platform_version_preservation") or sub["public_export"].get("official_evidence_source_sha256") != proof.get("source_sha256"):
                 errors.append("Caption export is not bound to its official source evidence")
         for asset in tables["assets"]:
             status = asset.get("official_media_affiliation_status")

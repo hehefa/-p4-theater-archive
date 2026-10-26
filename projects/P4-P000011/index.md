@@ -900,7 +900,7 @@ Canonical ID：`project:0d241b4a-d44a-44e6-a69d-7005746c1092`
 | P4-V001029 | P4-F001029 | .mp4 | 607.00 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
 | P4-V001030 | P4-F001030 | .mp4 | 1003.10 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
 | P4-V001031 | P4-F001031 | .mp4 | 398.02 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V001032 | P4-F001032 | .mp4 | 86.17 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V001032 | P4-F001032 | .mp4 | 86.17 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网来源已对应 |
 | P4-V001033 | P4-F001033 | .mp4 | 2195.92 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
 | P4-V001034 | P4-F001034 | .mp4 | 445.82 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
 | P4-V001035 | P4-F001035 | .mp4 | 3580.86 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |

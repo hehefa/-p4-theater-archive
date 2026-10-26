@@ -8,9 +8,9 @@
     "events": 123,
     "assets": 1445,
     "files": 1445,
-    "subtitles": 1463,
-    "checksums": 42,
-    "publications": 16
+    "subtitles": 1464,
+    "checksums": 49,
+    "publications": 17
   },
   "current_inventory_counts": {
     "projects": 16,
@@ -18,16 +18,16 @@
     "events": 123,
     "assets": 1445,
     "files": 1445,
-    "subtitles": 1463,
-    "checksums": 42,
-    "publications": 16
+    "subtitles": 1464,
+    "checksums": 49,
+    "publications": 17
   },
   "video_bytes": 3434208957716,
-  "full_sha256_recorded": 42,
-  "full_sha256_pending": 1403,
+  "full_sha256_recorded": 49,
+  "full_sha256_pending": 1396,
   "full_decode_passed_existing_reports": 10,
   "subtitle_format_status": {
-    "structure_passed": 1293,
+    "structure_passed": 1294,
     "empty_no_recognized_text": 150,
     "not_parsed_ass": 11,
     "needs_review": 9
@@ -40,17 +40,21 @@
   "public_caption_source_file_count": 1,
   "public_caption_quality": "machine_draft_not_full_listening_review",
   "official_public_registry_count": 34,
-  "publication_associations_recorded": 16,
-  "platform_metadata_associations_verified": 16,
-  "pre_existing_video_associations_verified": 16,
-  "public_video_associations_verified": 16,
+  "publication_associations_recorded": 17,
+  "platform_metadata_associations_verified": 17,
+  "pre_existing_video_associations_verified": 17,
+  "public_video_associations_verified": 17,
   "new_uploads_completed_this_batch": 0,
   "playback_verifications_recorded": 0,
   "youtube_caption_verifications_recorded": 0,
+  "new_caption_tracks_published_and_menu_verified": 3,
+  "legacy_platform_tracks_preserved": 1,
+  "viewer_menu_verified_caption_tracks": 4,
+  "caption_render_sample_observations": 1,
   "private_master_inventory_video_files": 1740,
   "public_selected_video_files": 1445,
   "public_excluded_video_files": 295,
   "public_candidate_catalogue_is_upload_authorization": false,
-  "official_media_affiliation_confirmed_assets": 1,
-  "official_media_affiliation_pending_assets": 1444
+  "official_media_affiliation_confirmed_assets": 8,
+  "official_media_affiliation_pending_assets": 1437
 }

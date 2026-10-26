@@ -131,6 +131,19 @@ class PublicScopeTests(unittest.TestCase):
                 self.assertTrue(all(x["existing_video_caption_update_allowed"] is False for x in closed["items"]))
             self.assertTrue(under_prefix("k:/FIXTURE/camera2/NEW.MOV", "K:\\fixture\\Camera2"))
             self.assertFalse(under_prefix("K:/fixture/Camera20/a.mov", "K:\\fixture\\Camera2"))
+            # A future, previously unpublished source can be authorized after
+            # source-bound official-context + content/family + duplicate review;
+            # it need not already have a public video or hash on the website.
+            future = dict(proof)
+            future.pop("youtube_video_id")
+            future["scope"] = "official_context_plus_actual_media_cross_review"
+            future["evidence"] = [proof["evidence"][1]]  # Main archive alone is sufficient.
+            future["actual_content_review"] = {"completed": True, "source_sha256": proof["source_sha256"], "reviewed_at": "2026-10-26T00:00:00Z", "coverage": "synthetic full fixture content review"}
+            authorized_policy = dict(policy)
+            authorized_policy["new_upload_authorizations"] = [{"asset_id": proof["asset_id"], "file_id": proof["file_id"], "source_sha256": proof["source_sha256"], "decision": "approved_for_new_upload", "official_context_verified": True, "actual_content_review_completed": True, "family_privacy_review_passed": True, "duplicate_check_completed": True}]
+            future_queue = apply_guard(queue, authorized_policy, [future], lambda item: True)
+            self.assertTrue(future_queue["items"][0]["new_public_upload_allowed"])
+            self.assertFalse(future_queue["items"][2]["new_public_upload_allowed"])
 
 
 if __name__ == "__main__":

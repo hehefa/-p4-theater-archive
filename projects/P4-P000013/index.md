@@ -16,7 +16,7 @@ Canonical ID：`project:b9646e51-0563-4d96-9b12-d9cd7c7172d2`
 
 | 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |
 |---|---|---|---:|---:|---|---|---|---|
-| P4-V001069 | P4-F001069 | .mov | 3918.13 | 3 | [原语](../../captions/P4-S000946/0deadae5a57560a048565b79c3bb6ebac290dc688faaf903114d13229b282bb8/P4-S000946.srt) / [English](../../captions/P4-S000947/7d46674002a04e5cfd1311eae555b675bf28fea752201bdc0dfc09aa62e41cd0/P4-S000947.srt) / [中英](../../captions/P4-S000948/19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f/P4-S000948.srt) | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网来源已对应 |
+| P4-V001069 | P4-F001069 | .mov | 3918.13 | 4 | [原语](../../captions/P4-S000946/0deadae5a57560a048565b79c3bb6ebac290dc688faaf903114d13229b282bb8/P4-S000946.srt) / [English](../../captions/P4-S000947/7d46674002a04e5cfd1311eae555b675bf28fea752201bdc0dfc09aa62e41cd0/P4-S000947.srt) / [中英](../../captions/P4-S000948/19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f/P4-S000948.srt) | [YouTube](https://www.youtube.com/watch?v=uQ1HVDVdv6Y) | not_recorded | pending_content_and_publication_review; 官网来源已对应 |
 | P4-V001070 | P4-F001070 | .mov | 36.50 | 3 | 待公开 | [YouTube](https://www.youtube.com/watch?v=VAjQSfiYvuM) | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
 | P4-V001071 | P4-F001071 | .mov | 7.45 | 3 | 待公开 | [YouTube](https://www.youtube.com/watch?v=65nbwiNHcLQ) | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
 | P4-V001072 | P4-F001072 | .mov | 219.33 | 3 | 待公开 | [YouTube](https://www.youtube.com/watch?v=VqdMarAylaU) | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
@@ -83,7 +83,7 @@ Canonical ID：`project:b9646e51-0563-4d96-9b12-d9cd7c7172d2`
 
 | 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |
 |---|---|---|---:|---:|---|---|---|---|
-| P4-V001102 | P4-F001102 | .mov | 3918.13 | 3 | [原语](../../captions/P4-S000946/0deadae5a57560a048565b79c3bb6ebac290dc688faaf903114d13229b282bb8/P4-S000946.srt) / [English](../../captions/P4-S000947/7d46674002a04e5cfd1311eae555b675bf28fea752201bdc0dfc09aa62e41cd0/P4-S000947.srt) / [中英](../../captions/P4-S000948/19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f/P4-S000948.srt)；同字节来源 P4-V001069 | 未建立已核验关联 | not_recorded | hold_verified_byte_copy_use_canonical_source; 官网逐项关联待核实 |
+| P4-V001102 | P4-F001102 | .mov | 3918.13 | 3 | [原语](../../captions/P4-S000946/0deadae5a57560a048565b79c3bb6ebac290dc688faaf903114d13229b282bb8/P4-S000946.srt) / [English](../../captions/P4-S000947/7d46674002a04e5cfd1311eae555b675bf28fea752201bdc0dfc09aa62e41cd0/P4-S000947.srt) / [中英](../../captions/P4-S000948/19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f/P4-S000948.srt)；同字节来源 P4-V001069 | [YouTube](https://www.youtube.com/watch?v=uQ1HVDVdv6Y)（规范来源） | not_recorded | hold_verified_byte_copy_use_canonical_source; 官网逐项关联待核实 |
 | P4-V001103 | P4-F001103 | .mov | 36.50 | 3 | 待公开；同字节来源 P4-V001070 | [YouTube](https://www.youtube.com/watch?v=VAjQSfiYvuM)（规范来源） | not_recorded | hold_verified_byte_copy_use_canonical_source; 官网逐项关联待核实 |
 | P4-V001104 | P4-F001104 | .mov | 7.45 | 3 | 待公开；同字节来源 P4-V001071 | [YouTube](https://www.youtube.com/watch?v=65nbwiNHcLQ)（规范来源） | not_recorded | hold_verified_byte_copy_use_canonical_source; 官网逐项关联待核实 |
 | P4-V001105 | P4-F001105 | .mov | 219.33 | 3 | 待公开；同字节来源 P4-V001072 | [YouTube](https://www.youtube.com/watch?v=VqdMarAylaU)（规范来源） | not_recorded | hold_verified_byte_copy_use_canonical_source; 官网逐项关联待核实 |

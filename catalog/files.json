@@ -341,8 +341,8 @@
       "asset_id": "asset:02dfbbbb-4a2a-4254-9d02-e5f2bb59ce60",
       "extension": ".mov",
       "bytes": 40272040,
-      "sha256": null,
-      "checksum_status": "pending_full_sha256",
+      "sha256": "c00d7f0e56e8292a477ef70f0ee2e35e5780aa429a5aad05a2e4b5b1523c1d13",
+      "checksum_status": "recorded_full_sha256",
       "storage_status": "local_master_location_recorded_privately",
       "media_probe_status": "not_newly_probed",
       "full_decode_status": "not_recorded",
@@ -350,7 +350,8 @@
       "human_continuous_watch": "not_recorded",
       "derivative_candidate": false,
       "project_copy_candidate": false,
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "independent_checksum_evidence": "official_item_review_complete_source_hash_with_unchanged_fingerprint"
     },
     {
       "id": "file:2a31759b-5f9b-4fac-9b1d-5fc4fe8a7fed",
@@ -360,8 +361,8 @@
       "asset_id": "asset:4acb1a3e-09d7-44c2-91eb-25b2fff8eb90",
       "extension": ".mov",
       "bytes": 77891229,
-      "sha256": null,
-      "checksum_status": "pending_full_sha256",
+      "sha256": "31f0c74ff40398e02fa24d0a656d427876137afcd6b608d77639da7f8d1c2a9b",
+      "checksum_status": "recorded_full_sha256",
       "storage_status": "local_master_location_recorded_privately",
       "media_probe_status": "not_newly_probed",
       "full_decode_status": "not_recorded",
@@ -369,7 +370,8 @@
       "human_continuous_watch": "not_recorded",
       "derivative_candidate": false,
       "project_copy_candidate": false,
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "independent_checksum_evidence": "official_item_review_complete_source_hash_with_unchanged_fingerprint"
     },
     {
       "id": "file:b5282b3c-3443-4ec7-b8ec-3013f5844afc",
@@ -379,8 +381,8 @@
       "asset_id": "asset:c81d2b69-ac82-4c5e-9e05-9a3b40890a90",
       "extension": ".mov",
       "bytes": 1626218016,
-      "sha256": null,
-      "checksum_status": "pending_full_sha256",
+      "sha256": "9398f87a8a1d12aca584ae81e712cf8335921ae1c964fc655d9205efdb0d3f56",
+      "checksum_status": "recorded_full_sha256",
       "storage_status": "local_master_location_recorded_privately",
       "media_probe_status": "not_newly_probed",
       "full_decode_status": "not_recorded",
@@ -388,7 +390,8 @@
       "human_continuous_watch": "not_recorded",
       "derivative_candidate": false,
       "project_copy_candidate": false,
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "independent_checksum_evidence": "official_item_review_complete_source_hash_with_unchanged_fingerprint"
     },
     {
       "id": "file:843f4299-55d5-4e06-b2b2-0b6432b624ff",
@@ -398,8 +401,8 @@
       "asset_id": "asset:702b73a7-1030-40a2-902b-2f2bc97daa74",
       "extension": ".mov",
       "bytes": 5206417441,
-      "sha256": null,
-      "checksum_status": "pending_full_sha256",
+      "sha256": "62d045be5f6fe406d32e71d15eecb69284985566e9a2614bd882f18deed94d21",
+      "checksum_status": "recorded_full_sha256",
       "storage_status": "local_master_location_recorded_privately",
       "media_probe_status": "not_newly_probed",
       "full_decode_status": "not_recorded",
@@ -407,7 +410,8 @@
       "human_continuous_watch": "not_recorded",
       "derivative_candidate": false,
       "project_copy_candidate": false,
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "independent_checksum_evidence": "official_item_review_complete_source_hash_with_unchanged_fingerprint"
     },
     {
       "id": "file:c86a5253-05c0-44db-afd9-5bd7712fc094",
@@ -417,8 +421,8 @@
       "asset_id": "asset:79e51309-98d5-4a12-b7c1-ea5531476b71",
       "extension": ".mov",
       "bytes": 2927061659,
-      "sha256": null,
-      "checksum_status": "pending_full_sha256",
+      "sha256": "4cb3b3ff96ae5f5a286606ce78c1ff8103b8c43d23c993df6781c8181a42e862",
+      "checksum_status": "recorded_full_sha256",
       "storage_status": "local_master_location_recorded_privately",
       "media_probe_status": "not_newly_probed",
       "full_decode_status": "not_recorded",
@@ -426,7 +430,8 @@
       "human_continuous_watch": "not_recorded",
       "derivative_candidate": false,
       "project_copy_candidate": false,
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "independent_checksum_evidence": "official_item_review_complete_source_hash_with_unchanged_fingerprint"
     },
     {
       "id": "file:4eb8951a-19f4-4265-aa50-ad5b3ef3acbc",
@@ -8436,8 +8441,8 @@
       "asset_id": "asset:c3fbb2b9-83e7-42d0-971d-fcb692c97156",
       "extension": ".mov",
       "bytes": 53585331,
-      "sha256": null,
-      "checksum_status": "pending_full_sha256",
+      "sha256": "d8f0775081fda4346cd24c2faa2f8929440e651d5839ff3c34ac753f64f46399",
+      "checksum_status": "recorded_full_sha256",
       "storage_status": "local_master_location_recorded_privately",
       "media_probe_status": "not_newly_probed",
       "full_decode_status": "not_recorded",
@@ -8446,7 +8451,8 @@
       "derivative_candidate": false,
       "project_copy_candidate": false,
       "camera_filename": "IMG_4199.MOV",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "independent_checksum_evidence": "official_item_review_complete_source_hash_with_unchanged_fingerprint"
     },
     {
       "id": "file:c348ab1d-e733-4a49-9267-a27d54edc4d1",
@@ -20620,8 +20626,8 @@
       "asset_id": "asset:4c7bc626-a3cb-4a24-b6db-8228eb695083",
       "extension": ".mp4",
       "bytes": 86168032,
-      "sha256": null,
-      "checksum_status": "pending_full_sha256",
+      "sha256": "27b24a123dfdf069fae2e2a564839596a3203c5e4f564fe248c30d9c34ae4da9",
+      "checksum_status": "recorded_full_sha256",
       "storage_status": "local_master_location_recorded_privately",
       "media_probe_status": "not_newly_probed",
       "full_decode_status": "not_recorded",
@@ -20630,7 +20636,8 @@
       "derivative_candidate": false,
       "project_copy_candidate": false,
       "camera_filename": "DJI_0064.MP4",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "independent_checksum_evidence": "official_item_review_complete_source_hash_with_unchanged_fingerprint"
     },
     {
       "id": "file:43c6fd2d-7899-4608-b968-4e0d3110efa9",

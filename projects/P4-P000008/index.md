@@ -77,7 +77,7 @@ Canonical ID：`project:95944c9f-8288-41da-bceb-85255f11cf4e`
 
 | 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |
 |---|---|---|---:|---:|---|---|---|---|
-| P4-V000422 | P4-F000422 | .mov | 53.59 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000422 | P4-F000422 | .mov | 53.59 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网来源已对应 |
 | P4-V000423 | P4-F000423 | .mov | 5202.08 | 1 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
 
 ## P4-E000034 · 动物农场 · 排练

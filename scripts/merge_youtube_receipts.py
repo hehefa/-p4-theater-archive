@@ -100,10 +100,15 @@ def render_publications(root, tables):
     assets = {x["id"]: x for x in tables["assets"]}
     files = {x["id"]: x for x in tables["files"]}
     verified = [x for x in tables["publications"] if x.get("platform_readback_verification") == "verified"]
-    lines = ["# 已关联的既有 YouTube 视频", "", f"当前有 {len(verified)} 个既有公开视频，已从目标频道的 YouTube Studio 表格回读可见性，并把描述中的完整源 SHA-256 与本地可信完整哈希核对。", "", "这只是频道、视频 ID、可见性及描述源哈希的元数据关联，不是对线上转码流做哈希，也不是全片播放或字幕可用性核验。本轮新上传完成数仍为 0。精确观测时刻未随原始回读材料保存，因此条目保留空值；记录时间没有代替观测时间。", "", "| 视频档案 | 物理文件 | 公共播放页 | 来源 | 播放 / 在线字幕 |", "|---|---|---|---|---|"]
+    studio_only = sum(x.get("record_basis") == "youtube_studio_metadata_readback" for x in verified)
+    caption_ops = len(verified) - studio_only
+    lines = ["# 已关联的既有 YouTube 视频", "", f"当前关联 {len(verified)} 个既有公开视频：{studio_only} 条由 Studio 描述源哈希建立映射，{caption_ops} 条另有官网原片哈希、目标视频身份及字幕操作观察。", "", "映射不是对线上转码流做哈希，也不是全片播放或逐句听校。本轮新视频上传完成数仍为 0。精确观测时刻没有随原始材料保存时保留空值，记录时间没有代替观测时间。", "", "| 视频档案 | 物理文件 | 公共播放页 | 来源 | 播放 / 在线字幕 |", "|---|---|---|---|---|"]
     for pub in sorted(verified, key=lambda x: assets[x["asset_id"]]["accession"]):
         asset, source = assets[pub["asset_id"]], files[pub["file_id"]]
-        lines.append("| " + asset["accession"] + " | " + source["accession"] + " | [" + pub["youtube_video_id"] + "](" + pub["url"] + ") | 频道既有视频；描述源 SHA 匹配 | 均未检查 |")
+        scoped_captions = pub.get("record_basis") == "youtube_studio_and_viewer_caption_observation"
+        source_basis = "官网完整源 SHA 与同一目标视频" if scoped_captions else "频道既有视频；描述源 SHA 匹配"
+        caption_scope = "3新轨及旧轨菜单可选；仅新中文00:12渲染；其他样本未完成" if scoped_captions else "均未检查"
+        lines.append("| " + asset["accession"] + " | " + source["accession"] + " | [" + pub["youtube_video_id"] + "](" + pub["url"] + ") | " + source_basis + " | " + caption_scope + " |")
     lines += ["", "这些既有平台元数据关联不证明视频内容属于某个 P4 项目，不能作为新的上传白名单。官网实质项目关联仍须逐项核实，家庭排除规则优先。", "", "机器可读证据、回读范围和私有来源收据的 SHA-256 见 [发布记录](../catalog/publications.json)。这些链接不自动解除素材的内容审阅或其他保留状态。", "", "[返回档案目录](../INDEX.md) · [本地公开字幕](../captions/README.md)", ""]
     target = root / "publications/README.md"
     target.parent.mkdir(parents=True, exist_ok=True)
