@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "inventory_snapshot_at": "2026-10-26T05:47:46.219068-07:00",
-  "public_export_policy": "metadata_only_no_video_or_unreviewed_transcript_text",
+  "public_export_policy": "metadata_and_explicit_scope_reviewed_machine_draft_captions_no_video",
   "counts": {
     "projects": 16,
     "collections": 18,
@@ -35,5 +35,9 @@
   "publication_reports_recorded": 0,
   "youtube_uploads_recorded": 0,
   "human_review_status": "not_recorded",
-  "scope": "18 selected theatre/event collections; personal/system backup roots excluded; collection inclusion does not establish publication clearance"
+  "scope": "18 selected theatre/event collections; personal/system backup roots excluded; collection inclusion does not establish publication clearance",
+  "public_caption_export_count": 99,
+  "public_caption_source_file_count": 33,
+  "public_caption_quality": "machine_draft_not_full_listening_review",
+  "official_public_registry_count": 34
 }

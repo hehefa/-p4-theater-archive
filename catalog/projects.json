@@ -62,7 +62,9 @@
       "title": "旋转楼梯",
       "classification_status": "candidate_from_archive_inventory",
       "legacy_reconciliation": "existing_registry_project_identified_from_directory_label",
-      "aliases": [],
+      "aliases": [
+        "P4C-017"
+      ],
       "date": {
         "value": null,
         "precision": "unknown",
@@ -77,7 +79,19 @@
         }
       ],
       "related_public_project_page": "https://b.p4theater.cn/projects/spiral-staircase",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "official_registry_references": [
+        {
+          "official_project_code": "P4C-017",
+          "official_code_namespace": "a.p4theater.cn:project-code",
+          "official_project_slug": "spiral-staircase",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/spiral-staircase",
+          "project_url_en": "https://a.p4theater.cn/en/projects/spiral-staircase",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        }
+      ]
     },
     {
       "id": "project:5fba24e0-b4e8-4f46-993c-1b769502ed80",
@@ -125,7 +139,9 @@
       "title": "中间派",
       "classification_status": "candidate_from_archive_inventory",
       "legacy_reconciliation": "existing_registry_project_identified_from_directory_label",
-      "aliases": [],
+      "aliases": [
+        "P4C-008"
+      ],
       "date": {
         "value": null,
         "precision": "unknown",
@@ -140,7 +156,19 @@
         }
       ],
       "related_public_project_page": "https://b.p4theater.cn/projects/middle-party-love-rescue",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "official_registry_references": [
+        {
+          "official_project_code": "P4C-008",
+          "official_code_namespace": "a.p4theater.cn:project-code",
+          "official_project_slug": "middle-party-love-rescue",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/middle-party-love-rescue",
+          "project_url_en": "https://a.p4theater.cn/en/projects/middle-party-love-rescue",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        }
+      ]
     },
     {
       "id": "project:95944c9f-8288-41da-bceb-85255f11cf4e",
@@ -173,7 +201,9 @@
       "title": "北风剧社旋涡",
       "classification_status": "candidate_from_archive_inventory",
       "legacy_reconciliation": "existing_registry_project_identified_from_directory_label",
-      "aliases": [],
+      "aliases": [
+        "P4C-014"
+      ],
       "date": {
         "value": null,
         "precision": "unknown",
@@ -188,7 +218,19 @@
         }
       ],
       "related_public_project_page": "https://b.p4theater.cn/projects/vortex",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "official_registry_references": [
+        {
+          "official_project_code": "P4C-014",
+          "official_code_namespace": "a.p4theater.cn:project-code",
+          "official_project_slug": "vortex",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/vortex",
+          "project_url_en": "https://a.p4theater.cn/en/projects/vortex",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        }
+      ]
     },
     {
       "id": "project:84b57ddb-bc8c-4f7c-97b7-06b2b174309b",
@@ -221,7 +263,9 @@
       "title": "波菲利娅",
       "classification_status": "candidate_from_archive_inventory",
       "legacy_reconciliation": "existing_registry_project_identified_from_directory_label",
-      "aliases": [],
+      "aliases": [
+        "P4C-020"
+      ],
       "date": {
         "value": null,
         "precision": "unknown",
@@ -236,7 +280,19 @@
         }
       ],
       "related_public_project_page": "https://b.p4theater.cn/projects/porphyria",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "official_registry_references": [
+        {
+          "official_project_code": "P4C-020",
+          "official_code_namespace": "a.p4theater.cn:project-code",
+          "official_project_slug": "porphyria",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/porphyria",
+          "project_url_en": "https://a.p4theater.cn/en/projects/porphyria",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        }
+      ]
     },
     {
       "id": "project:5202b1af-e84e-4afd-84ea-c9cca70e0419",
@@ -286,7 +342,9 @@
       "title": "紫色行动",
       "classification_status": "candidate_from_archive_inventory",
       "legacy_reconciliation": "existing_registry_project_identified_from_directory_label",
-      "aliases": [],
+      "aliases": [
+        "P4C-040"
+      ],
       "date": {
         "value": null,
         "precision": "unknown",
@@ -301,7 +359,19 @@
         }
       ],
       "related_public_project_page": "https://b.p4theater.cn/projects/purple-action",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "official_registry_references": [
+        {
+          "official_project_code": "P4C-040",
+          "official_code_namespace": "a.p4theater.cn:project-code",
+          "official_project_slug": "purple-action",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/purple-action",
+          "project_url_en": "https://a.p4theater.cn/en/projects/purple-action",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        }
+      ]
     },
     {
       "id": "project:6e85f688-ad72-44aa-8595-92984a744ad8",

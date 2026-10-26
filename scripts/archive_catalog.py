@@ -353,7 +353,7 @@ def import_catalog(args):
     # is imported. Current source absence is not a request to erase an entity.
     protected_fields = {
         "assets": ("human_review", "rights_status", "youtube_publication_ids", "publication_status"),
-        "subtitles": ("human_listening_review", "public_text_status", "public_export", "youtube_caption_status", "pairing_status"),
+        "subtitles": ("human_listening_review", "public_text_status", "public_export", "youtube_caption_status", "pairing_status", "pairing_review", "source_file_id", "source_asset_id", "content_scope_review", "equivalent_public_export_subtitle_id"),
         "files": ("human_continuous_watch", "full_decode_status"),
     }
     for name, items in tables.items():
@@ -362,6 +362,20 @@ def import_catalog(args):
             item["in_current_inventory"] = True
             old = older.pop(item["id"], None)
             if old:
+                if name == "projects":
+                    item["aliases"] = list(dict.fromkeys(item.get("aliases", []) + old.get("aliases", [])))
+                    if old.get("official_registry_references"):
+                        item["official_registry_references"] = old["official_registry_references"]
+                if name == "assets":
+                    reviewed_fields = ("content_scope_review", "project_assignment_review", "project_ids", "content_classification", "canonical_byte_source_asset_id", "canonical_byte_source_file_id", "byte_copy_asset_ids", "byte_identity_relation", "alternate_representation_candidate_of_asset_id", "alternate_representation_review", "public_caption_subtitle_ids")
+                    if old.get("content_scope_review") or old.get("byte_identity_relation") or old.get("alternate_representation_review"):
+                        for field in reviewed_fields:
+                            if field in old:
+                                item[field] = old[field]
+                if name == "events" and old.get("content_scope_review"):
+                    for field in ("content_scope_review", "project_ids", "title", "classification_status", "event_type", "description"):
+                        if field in old:
+                            item[field] = old[field]
                 for field in protected_fields.get(name, ()):
                     value = old.get(field)
                     if value is not None and value not in ("not_recorded", "not_established", "not_newly_probed", "not_uploaded_in_this_catalogue", "withheld_pending_review", "filename_association_requires_review", "edited_product_pairing_pending", "pending_content_and_publication_review") and not (isinstance(value, str) and value.startswith("hold_")):
@@ -371,6 +385,10 @@ def import_catalog(args):
                     item["human_review"] = "needs_review_source_version_changed"
                     if old.get("youtube_publication_ids"):
                         item["publication_status"] = "previous_version_publication_recorded"
+                    if old.get("content_scope_review"):
+                        item["prior_version_content_scope_review"] = old["content_scope_review"]
+                        item["content_scope_review"] = {"status": "needs_review_source_version_changed", "source_file_id": item["file_id"], "prior_source_file_id": old.get("file_id"), "human_listening_review": "not_recorded"}
+                    item.pop("public_caption_subtitle_ids", None)
         for item in older.values():
             item["in_current_inventory"] = False
             items.append(item)
@@ -381,6 +399,13 @@ def import_catalog(args):
     write_json(out / "catalog" / "byte-equality-groups.json", {"schema_version": VERSION, "items": byte_groups})
     current_files = [x for x in tables["files"] if x["in_current_inventory"]]
     summary = {"schema_version": VERSION, "inventory_snapshot_at": audit["generated_at"], "public_export_policy": "metadata_only_no_video_or_unreviewed_transcript_text", "counts": {name: len(items) for name, items in tables.items()}, "current_inventory_counts": {name: sum(x["in_current_inventory"] for x in items) for name, items in tables.items()}, "video_bytes": sum(x["bytes"] for x in current_files), "full_sha256_recorded": sum(f["sha256"] is not None for f in current_files), "full_sha256_pending": sum(f["sha256"] is None for f in current_files), "full_decode_passed_existing_reports": sum(f["full_decode_status"] == "passed_existing_report" for f in current_files), "subtitle_format_status": dict(Counter(x["format_status"] for x in tables["subtitles"])), "publication_reports_recorded": len(tables["publications"]), "youtube_uploads_recorded": sum(x.get("platform_readback_verification") == "verified" for x in tables["publications"]), "human_review_status": "not_recorded", "scope": "18 selected theatre/event collections; personal/system backup roots excluded; collection inclusion does not establish publication clearance"}
+    summary["public_caption_export_count"] = sum(bool(x.get("public_export")) for x in tables["subtitles"])
+    if summary["public_caption_export_count"]:
+        summary["public_export_policy"] = "metadata_and_explicit_scope_reviewed_machine_draft_captions_no_video"
+        summary["public_caption_source_file_count"] = len({x["source_file_id"] for x in tables["subtitles"] if x.get("public_export") and x.get("source_file_id")})
+        summary["public_caption_quality"] = "machine_draft_not_full_listening_review"
+    if (out / "registry" / "official-projects.json").exists():
+        summary["official_public_registry_count"] = len(read_json(out / "registry" / "official-projects.json")["items"])
     write_json(out / "catalog" / "summary.json", summary)
     if (state / "mapping.json").exists():
         old_private = read_json(state / "mapping.json")
@@ -396,25 +421,40 @@ def import_catalog(args):
 def render_indexes(out, tables, summary):
     counts = summary["counts"]
     lines = ["# P4 项目与素材目录", "", f"当前登记 {counts['projects']} 个候选项目、{counts['collections']} 个来源批次、{counts['events']} 个暂定事件组、{counts['files']} 个视频文件位置。", "", "编号为长期引用别名，实体主键为 canonical ID。来源目录与原始文件名的私有映射保存在维护端；公开目录不含未审核台词或原片。", "", "| 项目编号 | 项目 | 文件数 | 事件组 |", "|---|---|---:|---:|"]
+    if (out / "registry" / "official-projects.json").exists():
+        registry = read_json(out / "registry" / "official-projects.json")
+        lines[2:2] = [f"另见 [官方公开项目索引快照](registry/README.md)：当前 {len(registry['items'])} 条公开项目条目。该注册表与本批本地视频目录分开；数量不能相加或视为全部历史项目总数。", ""]
     for p in tables["projects"]:
         assets = [a for a in tables["assets"] if p["id"] in a["project_ids"]]
         events = [e for e in tables["events"] if p["id"] in e["project_ids"]]
         lines.append(f"| {p['accession']} | [{p['title']}](projects/{p['accession']}/index.md) | {len(assets)} | {len(events)} |")
-        page = [f"# {p['title']}", "", f"项目编号：`{p['accession']}`  ", f"Canonical ID：`{p['id']}`  ", f"既有档案 ID 对齐：`{p['legacy_reconciliation']}`", "", "本页按暂定事件组编目。日期只保留目录中明确的年月日标记，均待核实；未从修改时间推断。视频与字幕尚需逐条内容审阅和发布状态核对。", ""]
+        page = [f"# {p['title']}", "", f"项目编号：`{p['accession']}`  ", f"Canonical ID：`{p['id']}`  ", f"既有档案 ID 对齐：`{p['legacy_reconciliation']}`", "", "本页按暂定事件组编目。日期只保留目录中明确的年月日标记，均待核实；未从修改时间推断。公开字幕另有文本范围筛查记录，均标为机器稿；文本范围筛查不能替代全片观看或逐句听校。", "", "[公开字幕目录](../../captions/README.md)（已开放的版本提供直达链接）。", ""]
+        if p.get("aliases"):
+            page[6:6] = ["既有或官方编号别名：" + "、".join("`" + x + "`" for x in p["aliases"]) + "。", ""]
+        if p.get("official_registry_references"):
+            page += ["官方索引：" + " / ".join("[" + x["official_project_code"] + "](" + x["project_url_zh"] + ")" for x in p["official_registry_references"]) + "。此项目级目录对照不证明各视频的内容归属。", ""]
         files = {f["id"]: f for f in tables["files"]}
+        subtitles = {s["id"]: s for s in tables["subtitles"]}
+        all_assets = {a["id"]: a for a in tables["assets"]}
         for event in events:
-            page += [f"## {event['accession']} · {event['title']}", "", "日期：" + (event["date"]["value"] or "尚未确定") + "；事件边界：暂定目录组。", "", "| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 完整解码 | 发布状态 |", "|---|---|---|---:|---:|---|---|"]
+            page += [f"## {event['accession']} · {event['title']}", "", "日期：" + (event["date"]["value"] or "尚未确定") + "；事件边界：暂定目录组。", "", "| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 完整解码 | 发布状态 |", "|---|---|---|---:|---:|---|---|---|"]
             for a in assets:
                 if event["id"] not in a["event_ids"]:
                     continue
                 f = files[a["file_id"]]
-                page.append(f"| {a['accession']} | {f['accession']} | {f['extension']} | {f['bytes'] / 1_000_000:.2f} | {len(a['subtitle_ids'])} | {f['full_decode_status']} | {a['publication_status']} |")
+                source_asset = all_assets.get(a.get("canonical_byte_source_asset_id"), a)
+                available = [subtitles[sid] for sid in source_asset.get("subtitle_ids", []) if sid in subtitles and subtitles[sid].get("public_export") and subtitles[sid].get("source_file_id", source_asset["file_id"]) == source_asset["file_id"]]
+                labels = {"original_asr": "原语", "machine_translation": "English", "bilingual_machine_translation": "中英"}
+                links = " / ".join("[" + labels.get(s["role"], s["language"]) + "](../../" + s["public_export"]["path"] + ")" for s in available) or "待公开"
+                if source_asset["id"] != a["id"]:
+                    links += "；同字节来源 " + source_asset["accession"]
+                page.append(f"| {a['accession']} | {f['accession']} | {f['extension']} | {f['bytes'] / 1_000_000:.2f} | {len(a['subtitle_ids'])} | {links} | {f['full_decode_status']} | {a['publication_status']} |")
             page.append("")
         page += ["[返回总目录](../../INDEX.md)", ""]
         target = out / "projects" / p["accession"] / "index.md"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text("\n".join(page), encoding="utf-8")
-    lines += ["", "机器可读数据：[目录摘要](catalog/summary.json)、[项目](catalog/projects.json)、[事件](catalog/events.json)、[视频](catalog/assets.json)、[文件版本](catalog/files.json)、[字幕记录](catalog/subtitles.json)、[YouTube 发布记录](catalog/publications.json)。", ""]
+    lines += ["", "[公开字幕与翻译目录](captions/README.md)：按源素材和版本下载原语、英文、中英双语机器稿。", "", "机器可读数据：[目录摘要](catalog/summary.json)、[项目](catalog/projects.json)、[事件](catalog/events.json)、[视频](catalog/assets.json)、[文件版本](catalog/files.json)、[字幕记录](catalog/subtitles.json)、[YouTube 发布记录](catalog/publications.json)。", ""]
     (out / "INDEX.md").write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -434,7 +474,7 @@ def validate(root):
         if item["kind"] not in PREFIX or not re.fullmatch("P4-" + PREFIX.get(item["kind"], "?") + r"\d{6}", item["accession"]):
             errors.append("Invalid kind/accession pairing: " + item["accession"])
     by_table = {name: {item["id"] for item in items} for name, items in tables.items()}
-    refs = {"project_id": "projects", "project_ids": "projects", "collection_id": "collections", "event_ids": "events", "asset_id": "assets", "asset_ids": "assets", "file_id": "files", "subtitle_ids": "subtitles", "derived_from_file_id": "files", "youtube_publication_ids": "publications"}
+    refs = {"project_id": "projects", "project_ids": "projects", "collection_id": "collections", "event_ids": "events", "asset_id": "assets", "asset_ids": "assets", "file_id": "files", "subtitle_ids": "subtitles", "derived_from_file_id": "files", "youtube_publication_ids": "publications", "source_file_id": "files", "source_asset_id": "assets", "canonical_byte_source_asset_id": "assets", "canonical_byte_source_file_id": "files", "byte_copy_asset_ids": "assets", "alternate_representation_candidate_of_asset_id": "assets", "public_caption_subtitle_ids": "subtitles", "equivalent_public_export_subtitle_id": "subtitles"}
     for item in all_items:
         for key, target in refs.items():
             if key not in item:
@@ -472,6 +512,28 @@ def validate(root):
         for reference in group.get("file_ids", []):
             if reference not in files_by_id or files_by_id[reference].get("sha256") != group.get("sha256"):
                 errors.append("Invalid byte-equality group reference or hash")
+    assets_by_id = {x["id"]: x for x in tables["assets"]}
+    subtitles_by_id = {x["id"]: x for x in tables["subtitles"]}
+    for asset in tables["assets"]:
+        canonical_id = asset.get("canonical_byte_source_asset_id")
+        if canonical_id:
+            canonical = assets_by_id.get(canonical_id)
+            original = files_by_id.get(asset.get("canonical_byte_source_file_id"))
+            copied = files_by_id.get(asset["file_id"])
+            if not canonical or not original or not copied or canonical["file_id"] != original["id"] or not original.get("sha256") or copied.get("sha256") != original["sha256"]:
+                errors.append("Invalid canonical byte-copy relation: " + asset["accession"])
+    for subtitle in tables["subtitles"]:
+        if subtitle.get("source_file_id"):
+            source_file = files_by_id.get(subtitle["source_file_id"])
+            source_asset = assets_by_id.get(subtitle.get("source_asset_id"))
+            if not source_file or not source_asset or source_file["asset_id"] != source_asset["id"] or source_asset["id"] not in subtitle["asset_ids"]:
+                errors.append("Invalid subtitle source-file association: " + subtitle["accession"])
+        equivalent_id = subtitle.get("equivalent_public_export_subtitle_id")
+        if equivalent_id:
+            equivalent = subtitles_by_id.get(equivalent_id)
+            valid_source = equivalent and any(assets_by_id[aid].get("canonical_byte_source_asset_id") == equivalent.get("source_asset_id") for aid in subtitle["asset_ids"] if aid in assets_by_id)
+            if not equivalent or not equivalent.get("public_export") or equivalent.get("version_sha256") != subtitle.get("version_sha256") or equivalent.get("role") != subtitle.get("role") or not valid_source:
+                errors.append("Invalid equivalent public caption relation: " + subtitle["accession"])
     caption_exports = {}
     for subtitle in tables["subtitles"]:
         export = subtitle.get("public_export")
@@ -481,6 +543,8 @@ def validate(root):
         parts = relative.split("/")
         valid_path = (len(parts) == 4 and parts[0] == "captions" and parts[1] == subtitle["accession"] and parts[2] == subtitle.get("version_sha256") and re.fullmatch(r"[A-Za-z0-9_.-]+\.srt", parts[3]) and ".." not in parts)
         approved = (export.get("scope_review_status") == "approved_for_public_archive" and export.get("quality_label") == "machine_draft" and subtitle.get("public_text_status") == "public_machine_draft")
+        if subtitle.get("content_scope_review", {}).get("status", "").startswith("withheld_"):
+            approved = False
         expected_hash = export.get("sha256")
         if not valid_path or not approved or expected_hash != subtitle.get("version_sha256") or not re.fullmatch(r"[a-f0-9]{64}", expected_hash or ""):
             errors.append("Invalid public caption export declaration: " + subtitle["accession"])
@@ -503,7 +567,7 @@ def validate(root):
             errors.append("Prohibited media/transcript/database file: " + relative)
         if path.stat().st_size > 20 * 1024 * 1024:
             errors.append("Unexpected large public file: " + relative)
-        if path.suffix in {".json", ".md", ".yml", ".yaml", ".txt"}:
+        if path.suffix in {".json", ".md", ".yml", ".yaml", ".txt", ".srt"}:
             text = path.read_text(encoding="utf-8-sig")
             if absolute.search(text):
                 errors.append("Absolute local path in public file: " + relative)
@@ -513,6 +577,46 @@ def validate(root):
     for name in TABLES:
         if summary["counts"][name] != len(tables[name]):
             errors.append("Summary count mismatch: " + name)
+    registry_path = root / "registry" / "official-projects.json"
+    if registry_path.exists():
+        registry = read_json(registry_path)
+        codes, slugs = set(), set()
+        projects_by_id = {x["id"]: x for x in tables["projects"]}
+        source_urls = {x["url"] for x in registry.get("sources", [])}
+        for source in registry.get("sources", []):
+            if not source["url"].startswith("https://a.p4theater.cn/") or source.get("http_status") != 200 or not re.fullmatch(r"[a-f0-9]{64}", source.get("html_utf8_sha256", "")):
+                errors.append("Invalid official registry source provenance")
+        for entry in registry.get("items", []):
+            code, slug = entry.get("official_project_code", ""), entry.get("official_project_slug", "")
+            if code in codes or not re.fullmatch(r"P4[CE]-\d{3}", code):
+                errors.append("Duplicate or invalid official project code: " + code)
+            if slug in slugs or not re.fullmatch(r"[a-z0-9-]+", slug):
+                errors.append("Duplicate or invalid official project slug: " + slug)
+            codes.add(code)
+            slugs.add(slug)
+            if entry.get("official_code_namespace") != "a.p4theater.cn:project-code" or entry.get("official_slug_namespace") != "a.p4theater.cn:project-slug":
+                errors.append("Invalid official identifier namespace: " + code)
+            if entry.get("project_url_zh") not in ("https://a.p4theater.cn/wechat/projects/" + slug, "https://a.p4theater.cn/works/" + slug) or entry.get("project_url_en") != "https://a.p4theater.cn/en/projects/" + slug:
+                errors.append("Invalid official project source URL: " + code)
+            if not set(entry.get("source_index_urls", [])).issubset(source_urls) or not entry.get("source_index_urls"):
+                errors.append("Official project source-index reference missing: " + code)
+            matched = entry.get("current_video_catalogue_matches", [])
+            candidates = entry.get("candidate_current_video_catalogue_matches", [])
+            if entry.get("video_absence_claim") is not False or entry.get("current_video_inventory_attached") != bool(matched):
+                errors.append("Invalid official registry media coverage claim: " + code)
+            for link in matched + candidates:
+                project = projects_by_id.get(link.get("id"))
+                if not project or project["accession"] != link.get("accession") or link.get("asset_membership_verified") is not False:
+                    errors.append("Broken or overstated official registry project reference: " + code)
+                    continue
+                if link in matched:
+                    existing_slugs = {x["value"] for x in project.get("existing_registry_identifiers", [])}
+                    if slug not in existing_slugs or code not in project.get("aliases", []):
+                        errors.append("Official registry direct-match evidence or alias mismatch: " + code)
+                elif link.get("same_as_established") is not False:
+                    errors.append("Official registry title candidate cannot assert identity: " + code)
+        if registry.get("summary", {}).get("official_public_index_items") != len(registry.get("items", [])) or summary.get("official_public_registry_count") != len(registry.get("items", [])):
+            errors.append("Official registry summary count mismatch")
     return {"valid": not errors, "entity_count": len(all_items), "counts": {k: len(v) for k, v in tables.items()}, "errors": errors}
 
 

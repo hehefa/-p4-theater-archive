@@ -1,0 +1,839 @@
+{
+  "schema_version": 1,
+  "snapshot_at": "2026-10-26T13:41:41.863Z",
+  "scope": "All 34 items present in both live official public Chinese and English project indices at this snapshot. This is not a claim to cover all historical P4 projects.",
+  "sources": [
+    {
+      "url": "https://a.p4theater.cn/wechat/projects",
+      "http_status": 200,
+      "retrieved_at": "2026-10-26T13:38:37.3087156+00:00",
+      "declared_item_count": 34,
+      "parsed_item_count": 34,
+      "html_utf8_sha256": "602e6e10b78f4cdd8aa83efbf6dfb38c71bf99568b46b1c5923c848131902165",
+      "extraction": "JSON-LD mainEntity ItemList identifiers, names, type and project URLs only"
+    },
+    {
+      "url": "https://a.p4theater.cn/en/projects",
+      "http_status": 200,
+      "retrieved_at": "2026-10-26T13:37:49.3580785+00:00",
+      "declared_item_count": 34,
+      "parsed_item_count": 34,
+      "html_utf8_sha256": "72b1ed6dd22fef503135bb06fec103dec9cd2a079eeb9d1017446a5810023a45",
+      "extraction": "JSON-LD mainEntity ItemList identifiers, names, type and project URLs only"
+    }
+  ],
+  "summary": {
+    "official_public_index_items": 34,
+    "code_sets_agree": true,
+    "existing_candidate_project_slug_matches": 5,
+    "title_only_candidate_matches": 1,
+    "registry_only_items": 29,
+    "complete_historical_p4_project_total": "not_established"
+  },
+  "preservation_rules": [
+    "Keep all assigned P4-P accessions and UUIDs unchanged.",
+    "Official P4C/P4E codes are scoped external identifiers/aliases, not replacement UUIDs.",
+    "Registry-only means no verified mapping to this intake's video files, not that a project has no videos.",
+    "Keep Northwind Theater P4C-061 separate from Vortex P4C-014, and Duel Club P4C-012 separate from Purple Action P4C-040.",
+    "Glass Menagerie P4C-018 is evidenced in the research registry but absent from this public-index snapshot; retain the existing alias and do not substitute Glass Theater P4C-064.",
+    "A match at project-directory level does not establish membership, event identity, publication clearance, media playback or subtitle correctness for any individual asset."
+  ],
+  "items": [
+    {
+      "official_project_code": "P4C-004",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "shi-xiang",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "实像",
+      "title_en": "Real Image",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/shi-xiang",
+      "project_url_en": "https://a.p4theater.cn/en/projects/shi-xiang",
+      "published_temporal_coverage": "2020",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-038",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "p4u",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "p4U 计划",
+      "title_en": "p4U",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/p4u",
+      "project_url_en": "https://a.p4theater.cn/en/projects/p4u",
+      "published_temporal_coverage": "2020",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-061",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "northwind-theater",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "北风剧社",
+      "title_en": "北风剧社",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/northwind-theater",
+      "project_url_en": "https://a.p4theater.cn/en/projects/northwind-theater",
+      "published_temporal_coverage": "2021",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-007",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "howler-rooftop",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "天台上的嚎叫者",
+      "title_en": "Howlers on the Rooftop",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/howler-rooftop",
+      "project_url_en": "https://a.p4theater.cn/en/projects/howler-rooftop",
+      "published_temporal_coverage": "2020/2021",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-006",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "jian-fang",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "茧房",
+      "title_en": "Cocoon",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/jian-fang",
+      "project_url_en": "https://a.p4theater.cn/en/projects/jian-fang",
+      "published_temporal_coverage": "2020",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-040",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "purple-action",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "紫色行动",
+      "title_en": "Purples / Purple Action",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/purple-action",
+      "project_url_en": "https://a.p4theater.cn/en/projects/purple-action",
+      "published_temporal_coverage": "2021",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "linked_to_candidate_video_catalogue",
+      "current_video_catalogue_matches": [
+        {
+          "id": "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8",
+          "accession": "P4-P000014",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "underlying_directory_mapping": "title_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": true,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4E-001",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "iceberg",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "冰山",
+      "title_en": "Iceberg",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/iceberg",
+      "project_url_en": "https://a.p4theater.cn/en/projects/iceberg",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4E-002",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "human-surrender",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "人类投降派",
+      "title_en": "Human Surrender / Shoot Self with You",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/human-surrender",
+      "project_url_en": "https://a.p4theater.cn/en/projects/human-surrender",
+      "published_temporal_coverage": "2023/2026",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-060",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "3p-group",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "3P 小组",
+      "title_en": "3P 小组",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/3p-group",
+      "project_url_en": "https://a.p4theater.cn/en/projects/3p-group",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [
+        {
+          "id": "project:23878b5b-0b42-4ad0-9811-22c504006a9b",
+          "accession": "P4-P000001",
+          "mapping_basis": "normalized_public_title_only",
+          "same_as_established": false,
+          "asset_membership_verified": false
+        }
+      ],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-009",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "kill-the-rose",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "杀死那朵玫瑰花",
+      "title_en": "杀死那朵玫瑰花",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/kill-the-rose",
+      "project_url_en": "https://a.p4theater.cn/en/projects/kill-the-rose",
+      "published_temporal_coverage": "2021",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-030",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "last-rehearsal",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "最后的排练",
+      "title_en": "The Last Rehearsal",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/last-rehearsal",
+      "project_url_en": "https://a.p4theater.cn/en/projects/last-rehearsal",
+      "published_temporal_coverage": "2023",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-020",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "porphyria",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "波菲利娅",
+      "title_en": "波菲利娅",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/porphyria",
+      "project_url_en": "https://a.p4theater.cn/en/projects/porphyria",
+      "published_temporal_coverage": "2022",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "linked_to_candidate_video_catalogue",
+      "current_video_catalogue_matches": [
+        {
+          "id": "project:0d241b4a-d44a-44e6-a69d-7005746c1092",
+          "accession": "P4-P000011",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "underlying_directory_mapping": "title_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": true,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-005",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "zhi-huan",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "致幻",
+      "title_en": "致幻",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/zhi-huan",
+      "project_url_en": "https://a.p4theater.cn/en/projects/zhi-huan",
+      "published_temporal_coverage": "2020",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-012",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "duel-club",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "决斗俱乐部",
+      "title_en": "决斗俱乐部",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/duel-club",
+      "project_url_en": "https://a.p4theater.cn/en/projects/duel-club",
+      "published_temporal_coverage": "2021",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-008",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "middle-party-love-rescue",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "控诉爱情失败后的中间派自救指南",
+      "title_en": "控诉爱情失败后的中间派自救指南",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/middle-party-love-rescue",
+      "project_url_en": "https://a.p4theater.cn/en/projects/middle-party-love-rescue",
+      "published_temporal_coverage": "2021",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "linked_to_candidate_video_catalogue",
+      "current_video_catalogue_matches": [
+        {
+          "id": "project:2e7bd4db-2b53-499e-b7fd-d7204328f489",
+          "accession": "P4-P000007",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "underlying_directory_mapping": "title_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": true,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-050",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "happiness-kingdom",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "幸福王国",
+      "title_en": "幸福王国",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/happiness-kingdom",
+      "project_url_en": "https://a.p4theater.cn/en/projects/happiness-kingdom",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-049",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "personal-zine",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "个人志",
+      "title_en": "个人志",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/personal-zine",
+      "project_url_en": "https://a.p4theater.cn/en/projects/personal-zine",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-025",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "love-theater",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "恋爱戏剧",
+      "title_en": "恋爱戏剧",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/love-theater",
+      "project_url_en": "https://a.p4theater.cn/en/projects/love-theater",
+      "published_temporal_coverage": "2022",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-024",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "meat-grinder",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "绞肉机",
+      "title_en": "绞肉机",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/meat-grinder",
+      "project_url_en": "https://a.p4theater.cn/en/projects/meat-grinder",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-055",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "mousetrap",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "捕鼠器",
+      "title_en": "捕鼠器",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/mousetrap",
+      "project_url_en": "https://a.p4theater.cn/en/projects/mousetrap",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-027",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "sail-through-wind",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "成风破浪",
+      "title_en": "成风破浪",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/sail-through-wind",
+      "project_url_en": "https://a.p4theater.cn/en/projects/sail-through-wind",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-039",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "p4x",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "p4X 挑战",
+      "title_en": "p4X 挑战",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/p4x",
+      "project_url_en": "https://a.p4theater.cn/en/projects/p4x",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-036",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "twin-breeding",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "孽生繁殖",
+      "title_en": "Twin Breeding",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/twin-breeding",
+      "project_url_en": "https://a.p4theater.cn/en/projects/twin-breeding",
+      "published_temporal_coverage": "2024",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-064",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "glass-theater",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "玻璃剧团",
+      "title_en": "玻璃剧团",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/glass-theater",
+      "project_url_en": "https://a.p4theater.cn/en/projects/glass-theater",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-029",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "out-of-daily-life",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "走出日常",
+      "title_en": "走出日常",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/out-of-daily-life",
+      "project_url_en": "https://a.p4theater.cn/en/projects/out-of-daily-life",
+      "published_temporal_coverage": "2023",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-026",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "kiss-you-kill-me",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "Kiss You, Kill Me",
+      "title_en": "Kiss You, Kill Me",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/kiss-you-kill-me",
+      "project_url_en": "https://a.p4theater.cn/en/projects/kiss-you-kill-me",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-056",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "dialectical-theater",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "辩证戏剧",
+      "title_en": "辩证戏剧",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/dialectical-theater",
+      "project_url_en": "https://a.p4theater.cn/en/projects/dialectical-theater",
+      "published_temporal_coverage": null,
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-088",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "killing-mother",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "杀死母亲",
+      "title_en": "Killing Mother",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/killing-mother",
+      "project_url_en": "https://a.p4theater.cn/en/projects/killing-mother",
+      "published_temporal_coverage": "2023",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-028",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "four-eyes",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "四目",
+      "title_en": "四目",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/four-eyes",
+      "project_url_en": "https://a.p4theater.cn/en/projects/four-eyes",
+      "published_temporal_coverage": "2023",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-071",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "agt",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "行动者生成拓扑学",
+      "title_en": "行动者生成拓扑学",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/works/agt",
+      "project_url_en": "https://a.p4theater.cn/en/projects/agt",
+      "published_temporal_coverage": "2025/2026",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-017",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "spiral-staircase",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "旋转楼梯",
+      "title_en": "旋转楼梯",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/spiral-staircase",
+      "project_url_en": "https://a.p4theater.cn/en/projects/spiral-staircase",
+      "published_temporal_coverage": "2022",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "linked_to_candidate_video_catalogue",
+      "current_video_catalogue_matches": [
+        {
+          "id": "project:84801fb9-5021-49e7-99d4-258e9e9ff402",
+          "accession": "P4-P000004",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "underlying_directory_mapping": "title_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": true,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-014",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "vortex",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "漩涡",
+      "title_en": "VORTEX",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/vortex",
+      "project_url_en": "https://a.p4theater.cn/en/projects/vortex",
+      "published_temporal_coverage": "2022",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "linked_to_candidate_video_catalogue",
+      "current_video_catalogue_matches": [
+        {
+          "id": "project:c559eef1-ec1c-41c6-b829-9c1471d27278",
+          "accession": "P4-P000009",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "underlying_directory_mapping": "title_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": true,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-001",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "shadow-counterpoint",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "影子对位法",
+      "title_en": "影子对位法",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/shadow-counterpoint",
+      "project_url_en": "https://a.p4theater.cn/en/projects/shadow-counterpoint",
+      "published_temporal_coverage": "2016",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    },
+    {
+      "official_project_code": "P4C-003",
+      "official_code_namespace": "a.p4theater.cn:project-code",
+      "official_project_slug": "pixel-echo-xiii",
+      "official_slug_namespace": "a.p4theater.cn:project-slug",
+      "title_zh": "Pixel Echo XIII",
+      "title_en": "Pixel Echo XIII",
+      "source_type": "CreativeWork",
+      "project_url_zh": "https://a.p4theater.cn/wechat/projects/pixel-echo-xiii",
+      "project_url_en": "https://a.p4theater.cn/en/projects/pixel-echo-xiii",
+      "published_temporal_coverage": "2016",
+      "p4_relation_evidence": "listed_in_official_p4_public_project_index",
+      "catalogue_status": "registry_only",
+      "current_video_catalogue_matches": [],
+      "candidate_current_video_catalogue_matches": [],
+      "current_video_inventory_attached": false,
+      "video_absence_claim": false,
+      "source_index_urls": [
+        "https://a.p4theater.cn/wechat/projects",
+        "https://a.p4theater.cn/en/projects"
+      ]
+    }
+  ]
+}

@@ -1965,21 +1965,28 @@
       "id": "event:c5eae3df-75bc-4e6a-b1ab-6f62fc918722",
       "accession": "P4-E000099",
       "kind": "event",
-      "title": "玻璃动物园 · 待辨识事件",
+      "title": "荧火空间 · 多项目来源组",
       "project_ids": [
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e",
         "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
       ],
       "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
       "event_type": "unclassified",
-      "classification_status": "provisional_folder_group",
+      "classification_status": "mixed_project_folder_group_not_confirmed_single_event",
       "date": {
         "value": null,
         "precision": "unknown",
         "basis": "not_established",
         "verification": "unverified"
       },
-      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
-      "in_current_inventory": true
+      "description": "此暂定目录组包含动物农场招募或试演及玻璃动物园排练素材；目录共置不能证明属于同一项目或同一事件。",
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "mixed_project_context_supported",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_analysis",
+        "is_human_listening_review": false
+      }
     },
     {
       "id": "event:ec21e00c-2a12-4ae3-aef7-f3bf1ce314fe",

@@ -273,6 +273,10 @@ def main():
     args = parser.parse_args()
     if args.limit < 0 or args.probe_timeout < 1:
         parser.error("limit must be nonnegative and probe-timeout positive")
+    public_root = Path(args.root).resolve()
+    for private in (Path(args.local_state).resolve(), Path(args.job_dir).resolve()):
+        if private == public_root or public_root in private.parents:
+            parser.error("Private job/local-state must be outside the public repository")
     with ProcessLock(Path(args.local_state) / "library_verification.lock", args.job_dir):
         job = VerificationJob(args)
         report = job.run()

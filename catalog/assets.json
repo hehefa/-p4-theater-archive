@@ -24332,7 +24332,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24342,7 +24342,32 @@
         "subtitle:f12d1eca-79f8-4c2a-9da1-db408c8132cc",
         "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:b5a9f1d4-e9b9-4d75-bf55-a2645f46981f"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:3ce0010f-c786-4350-a404-000396e16903",
+        "subtitle:f12d1eca-79f8-4c2a-9da1-db408c8132cc",
+        "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537"
+      ]
     },
     {
       "id": "asset:b6334d9c-52c7-4457-a9df-b3e8aa2f99f4",
@@ -24357,7 +24382,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:dc5a6789-1881-4979-8851-6f4f5316b240",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24367,7 +24392,32 @@
         "subtitle:6dc2f1e6-431b-4603-ab4d-b073257289ba",
         "subtitle:5685e667-1ec5-4b38-86c3-eea0a12f3e34"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:dc5a6789-1881-4979-8851-6f4f5316b240",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:f2b06a1e-fbd4-4fb8-8528-437343ef33c4"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:8566df12-508e-42e4-a347-36ae082c1c6f",
+        "subtitle:6dc2f1e6-431b-4603-ab4d-b073257289ba",
+        "subtitle:5685e667-1ec5-4b38-86c3-eea0a12f3e34"
+      ]
     },
     {
       "id": "asset:de4755a2-6c38-43ec-8cb1-50866c8222c6",
@@ -24382,7 +24432,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:ce6100e6-aea6-466c-9738-71c7654ea7b7",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24392,7 +24442,32 @@
         "subtitle:191c0419-6149-40ae-97e4-3fca17ca125b",
         "subtitle:f8ed466a-bbb6-4aa6-9681-0b9d4a420ae5"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:ce6100e6-aea6-466c-9738-71c7654ea7b7",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:826dda97-1a8d-4fec-a7e0-d7b484c2c7ce"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:997f2b9e-93b3-43a9-a862-a2d83a1bdc72",
+        "subtitle:191c0419-6149-40ae-97e4-3fca17ca125b",
+        "subtitle:f8ed466a-bbb6-4aa6-9681-0b9d4a420ae5"
+      ]
     },
     {
       "id": "asset:a69306fd-b6e9-41d6-9aa6-345e8cdf031e",
@@ -24407,7 +24482,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:9089a67c-a772-4461-8dbe-432e705ebe83",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24417,7 +24492,32 @@
         "subtitle:adf14fcb-68b5-453c-aa90-bb55037b1e1a",
         "subtitle:88dc1b9b-da6d-4642-80e7-a9f85fb3239e"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:9089a67c-a772-4461-8dbe-432e705ebe83",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:204cd28d-0d2a-4d1f-a503-833041796d3f"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:800dba7f-ed7d-4b14-8ee3-f18347c4c2bc",
+        "subtitle:adf14fcb-68b5-453c-aa90-bb55037b1e1a",
+        "subtitle:88dc1b9b-da6d-4642-80e7-a9f85fb3239e"
+      ]
     },
     {
       "id": "asset:3483bc97-712b-4951-9dbf-fe48e0f4db94",
@@ -24432,7 +24532,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:ac7987f1-22c9-4460-96c5-082aee708cad",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24442,7 +24542,32 @@
         "subtitle:34231d81-5f06-424a-9c88-41f337640d14",
         "subtitle:a22713b2-8471-415e-93d1-4ee047e1b0b4"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:ac7987f1-22c9-4460-96c5-082aee708cad",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:114992d9-b1dc-484b-80ff-ff024aabbeef"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:959a8935-4bd4-4065-a4f1-aeb7e65ba7b3",
+        "subtitle:34231d81-5f06-424a-9c88-41f337640d14",
+        "subtitle:a22713b2-8471-415e-93d1-4ee047e1b0b4"
+      ]
     },
     {
       "id": "asset:44e1a1fe-2728-4077-b7d9-8575501a7808",
@@ -24457,7 +24582,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:719b97e8-4071-4d17-b9a5-9814036e8e17",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24467,7 +24592,32 @@
         "subtitle:44429675-9c6e-422d-8e57-86cfcb75a040",
         "subtitle:c558723c-8bbf-449f-b389-9384947a56e0"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:719b97e8-4071-4d17-b9a5-9814036e8e17",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:18adf765-75f8-4778-8b68-08ec4cd08675"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:69278223-7c2a-4f78-88d9-760d4e668b52",
+        "subtitle:44429675-9c6e-422d-8e57-86cfcb75a040",
+        "subtitle:c558723c-8bbf-449f-b389-9384947a56e0"
+      ]
     },
     {
       "id": "asset:f902200d-96b7-4c97-92e9-498d62e7d459",
@@ -24482,7 +24632,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:188963ed-5d8a-4b37-9297-6d1dbdf5d80b",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24492,7 +24642,32 @@
         "subtitle:9362fcbc-5d73-484f-8643-d3710aa4af70",
         "subtitle:8aae1fe2-da07-4dd7-8e98-cba8e73c5b24"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:188963ed-5d8a-4b37-9297-6d1dbdf5d80b",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:4adc0d66-7160-400e-bf56-5dc7f1ebd235"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:1a53f11f-0cc4-458c-9082-093fd1b6967e",
+        "subtitle:9362fcbc-5d73-484f-8643-d3710aa4af70",
+        "subtitle:8aae1fe2-da07-4dd7-8e98-cba8e73c5b24"
+      ]
     },
     {
       "id": "asset:d084387b-6fca-457a-8787-97cd6299001d",
@@ -24507,7 +24682,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:8615381f-6d49-492e-81ae-1bb49f6eb2b6",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24517,7 +24692,32 @@
         "subtitle:33ac65de-857e-4c8e-b6d5-645ad703720d",
         "subtitle:bdbc5ffd-8184-4e98-9e1f-721194b36f79"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:8615381f-6d49-492e-81ae-1bb49f6eb2b6",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:0f0468e6-ecc4-4822-8649-b2edc3074a80"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:ab54ebc0-6d13-4e42-9d48-e661bee2804b",
+        "subtitle:33ac65de-857e-4c8e-b6d5-645ad703720d",
+        "subtitle:bdbc5ffd-8184-4e98-9e1f-721194b36f79"
+      ]
     },
     {
       "id": "asset:59379fc8-1755-4521-8c43-7efdb5522937",
@@ -24532,7 +24732,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:0c393094-72df-48df-a950-5a9636ca5d5c",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24542,7 +24742,32 @@
         "subtitle:abfbcabc-37a3-4dd8-b0bc-f3eb199b2d9d",
         "subtitle:2c0c4c6c-843f-441a-86ed-274dcf8f9b07"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:0c393094-72df-48df-a950-5a9636ca5d5c",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:b14a7fce-94f0-4723-a255-c9d465c43405"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:bc198a76-5888-4924-95ca-524c4990a9ce",
+        "subtitle:abfbcabc-37a3-4dd8-b0bc-f3eb199b2d9d",
+        "subtitle:2c0c4c6c-843f-441a-86ed-274dcf8f9b07"
+      ]
     },
     {
       "id": "asset:419486ea-2ca1-408b-9fb5-960df47eea31",
@@ -24557,7 +24782,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:76d4be7a-7e12-4999-9cfe-0525064dae47",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24567,7 +24792,32 @@
         "subtitle:e89bec1e-de67-4455-a91d-4f2da56a3903",
         "subtitle:3151ddc4-74af-4588-8de8-d9e5e668291d"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:76d4be7a-7e12-4999-9cfe-0525064dae47",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:06d4add2-18ae-4713-8e1c-9037ca0017b9"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:3eff055c-a27e-4d3b-acda-2ee843704e8e",
+        "subtitle:e89bec1e-de67-4455-a91d-4f2da56a3903",
+        "subtitle:3151ddc4-74af-4588-8de8-d9e5e668291d"
+      ]
     },
     {
       "id": "asset:7c4024f1-cff0-4cab-8142-96ae211f2872",
@@ -24582,7 +24832,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:03349720-5ca7-4b9c-8fa5-7e3f08f1d286",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24592,7 +24842,32 @@
         "subtitle:05a76d41-e27c-4d53-83fd-5c589e1a8d65",
         "subtitle:84b9c57e-94b3-4604-aed5-0921d90ca597"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:03349720-5ca7-4b9c-8fa5-7e3f08f1d286",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:063359bc-7ffb-4cb4-b3fe-0c8c751e03ea"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:0f4ac7a1-0e63-4305-81d8-1742d0a05b36",
+        "subtitle:05a76d41-e27c-4d53-83fd-5c589e1a8d65",
+        "subtitle:84b9c57e-94b3-4604-aed5-0921d90ca597"
+      ]
     },
     {
       "id": "asset:48284c64-dddc-469c-af26-621ae87795d5",
@@ -24607,7 +24882,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:a8737574-83c3-4788-8a98-cf14a9692e2b",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24617,7 +24892,32 @@
         "subtitle:ba1d825f-ba52-4021-b47d-4a18146c6ccb",
         "subtitle:cf5a7aa8-d12d-4c9a-a928-01f2988dc5e1"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:a8737574-83c3-4788-8a98-cf14a9692e2b",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:692411ab-ab45-4d7b-9ca3-45d669ad7bb9"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:f1958558-44f6-41e2-a5b3-cbaffb6d51f1",
+        "subtitle:ba1d825f-ba52-4021-b47d-4a18146c6ccb",
+        "subtitle:cf5a7aa8-d12d-4c9a-a928-01f2988dc5e1"
+      ]
     },
     {
       "id": "asset:51165a2e-8ab4-4303-bcb5-dde4fb6c9601",
@@ -24632,7 +24932,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:b340b92a-5a77-49d0-85a2-1088b4b23e07",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24642,7 +24942,32 @@
         "subtitle:36a98e53-a5cb-424a-84f3-639dcb06134e",
         "subtitle:5d123757-cbbc-40f6-98d0-3de357a01dc9"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:b340b92a-5a77-49d0-85a2-1088b4b23e07",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:2d0faed9-869e-415d-8a52-7bde386ea36b"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:d255c9a9-24ed-4f8c-9271-e6fc3d0e51d6",
+        "subtitle:36a98e53-a5cb-424a-84f3-639dcb06134e",
+        "subtitle:5d123757-cbbc-40f6-98d0-3de357a01dc9"
+      ]
     },
     {
       "id": "asset:b4819ae4-8094-43ad-abaf-f472b2cfcf6a",
@@ -24657,7 +24982,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:9a97b095-478e-4567-9937-30121090c1fb",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24667,7 +24992,27 @@
         "subtitle:097d29c2-8f93-4397-a268-1ea5b491d506",
         "subtitle:3aa2d08f-1d2a-40c3-b5a7-b7a3676cb10b"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:9a97b095-478e-4567-9937-30121090c1fb",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:deb9a1c6-981d-48b3-ac2b-ccb1d5efc486"
+      ]
     },
     {
       "id": "asset:a3b27924-4fc2-4805-ba6c-2ff21e006ef2",
@@ -24682,7 +25027,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:7ec83850-c0d9-4721-ab81-2e1facb35f38",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24692,7 +25037,32 @@
         "subtitle:9e14678e-c9a4-456e-b7c1-5a554cdc7a96",
         "subtitle:0cedc4cd-cdbc-468c-a274-492ccf878c6b"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:7ec83850-c0d9-4721-ab81-2e1facb35f38",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:25b0285b-f1eb-4c69-8c81-0b3440b6359e"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:914db57b-00c0-47a5-87cf-be14ea8345ee",
+        "subtitle:9e14678e-c9a4-456e-b7c1-5a554cdc7a96",
+        "subtitle:0cedc4cd-cdbc-468c-a274-492ccf878c6b"
+      ]
     },
     {
       "id": "asset:ae40890b-1131-4e1c-a09a-ee72d91abc6b",
@@ -24707,7 +25077,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:dcb04532-88b3-42e8-a15b-339e62d2f763",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24717,7 +25087,32 @@
         "subtitle:d43c5da1-517a-41da-b4d4-9ddb961d171a",
         "subtitle:1f0ac160-3418-4353-9f72-1cad6707880a"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:dcb04532-88b3-42e8-a15b-339e62d2f763",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:f4017e96-be6a-478e-8fe1-8fce42a2ac60"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:e4c15c74-8a91-4638-85a3-8fe42dc50c6a",
+        "subtitle:d43c5da1-517a-41da-b4d4-9ddb961d171a",
+        "subtitle:1f0ac160-3418-4353-9f72-1cad6707880a"
+      ]
     },
     {
       "id": "asset:b3e03e63-51f6-4b4e-81da-660fcf9cad39",
@@ -24732,7 +25127,7 @@
         "event:864780a8-6998-4e19-b659-39e56a2ddc71"
       ],
       "file_id": "file:41bb0803-c51e-4c06-be6a-942e7750e421",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24742,7 +25137,32 @@
         "subtitle:b9381be3-5d57-4d1f-94bc-7962cebf1d3a",
         "subtitle:960c6825-ee86-403b-a40c-8e0e9f5518ac"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:41bb0803-c51e-4c06-be6a-942e7750e421",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "byte_copy_asset_ids": [
+        "asset:3eff4663-308d-49a5-84fd-ff8fe017be13"
+      ],
+      "public_caption_subtitle_ids": [
+        "subtitle:b2f851e3-dff0-41f3-a0a4-a9e813ca6833",
+        "subtitle:b9381be3-5d57-4d1f-94bc-7962cebf1d3a",
+        "subtitle:960c6825-ee86-403b-a40c-8e0e9f5518ac"
+      ]
     },
     {
       "id": "asset:2e38953e-63c2-4b24-b305-ae26c3ad8e07",
@@ -24757,8 +25177,8 @@
         "event:759c6236-ce45-432d-996c-84dc3cbe5bb8"
       ],
       "file_id": "file:6b0c1e63-04cc-4e0e-bd12-22ceae31a1e0",
-      "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "content_classification": "p4_project_context_supported",
+      "publication_status": "deferred_alternate_file_version_comparison",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -24767,7 +25187,35 @@
         "subtitle:6af4cb2e-42a2-430b-8e7e-70e9c6c20dd8",
         "subtitle:9e61fba8-9c6a-409d-bc0a-b32ebf81587b"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:6b0c1e63-04cc-4e0e-bd12-22ceae31a1e0",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "alternate_representation_candidate_of_asset_id": "asset:42a44e7c-809a-4e52-8843-4d2925f49d6f",
+      "alternate_representation_review": {
+        "status": "pending_content_and_encoding_comparison",
+        "basis": "matching_camera_name_and_duration_in_existing_manifest",
+        "byte_equality_asserted": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:98b78885-44cb-46e1-938f-a4c9e2e30e1a",
+        "subtitle:6af4cb2e-42a2-430b-8e7e-70e9c6c20dd8",
+        "subtitle:9e61fba8-9c6a-409d-bc0a-b32ebf81587b"
+      ]
     },
     {
       "id": "asset:4cbf6f0b-af31-41da-8197-0632002b2f0b",
@@ -24782,7 +25230,7 @@
         "event:759c6236-ce45-432d-996c-84dc3cbe5bb8"
       ],
       "file_id": "file:abf03390-1425-4406-9598-eaf652696f5c",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24792,7 +25240,29 @@
         "subtitle:f83d540d-3b97-4de9-b01a-0150928ba5f0",
         "subtitle:4a977b82-a37a-4cb7-b879-864022aa4176"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:abf03390-1425-4406-9598-eaf652696f5c",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:b89ae5a0-c97d-406f-a81f-8e3c7408a03e",
+        "subtitle:f83d540d-3b97-4de9-b01a-0150928ba5f0",
+        "subtitle:4a977b82-a37a-4cb7-b879-864022aa4176"
+      ]
     },
     {
       "id": "asset:3bee7990-a124-4aa2-8c0a-6d1627895d6a",
@@ -24807,7 +25277,7 @@
         "event:759c6236-ce45-432d-996c-84dc3cbe5bb8"
       ],
       "file_id": "file:87583d6a-94cb-44ca-b1db-b7bde11a9fe9",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24817,7 +25287,29 @@
         "subtitle:b18204cb-5df5-4ad3-be84-47dfbc836450",
         "subtitle:50262786-aa33-49f8-ad12-ef3962eb9626"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:87583d6a-94cb-44ca-b1db-b7bde11a9fe9",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:bab6c578-f495-4e56-a140-237ced590443",
+        "subtitle:b18204cb-5df5-4ad3-be84-47dfbc836450",
+        "subtitle:50262786-aa33-49f8-ad12-ef3962eb9626"
+      ]
     },
     {
       "id": "asset:19963e0a-101d-481b-830d-7d4dfa148daa",
@@ -24832,7 +25324,7 @@
         "event:759c6236-ce45-432d-996c-84dc3cbe5bb8"
       ],
       "file_id": "file:5d73524a-230b-4a55-b0dd-25c96afbdcb1",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24842,7 +25334,29 @@
         "subtitle:844b3a04-f161-4d27-accd-3d0d27c19d16",
         "subtitle:7194c5c6-c5fc-4f01-b8e7-1a7fa5727768"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:5d73524a-230b-4a55-b0dd-25c96afbdcb1",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:ea21323a-a441-48e3-869c-318759ae96f6",
+        "subtitle:844b3a04-f161-4d27-accd-3d0d27c19d16",
+        "subtitle:7194c5c6-c5fc-4f01-b8e7-1a7fa5727768"
+      ]
     },
     {
       "id": "asset:65b4512c-c674-4848-afe1-a406dfd7a7bc",
@@ -24857,7 +25371,7 @@
         "event:759c6236-ce45-432d-996c-84dc3cbe5bb8"
       ],
       "file_id": "file:8b9a5186-7069-452f-b7ed-3849218d121f",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24867,7 +25381,29 @@
         "subtitle:232095e4-6cd0-496b-9a4b-2af8bb83eb65",
         "subtitle:4588a685-45f1-455d-84e0-71219e46d9b8"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:8b9a5186-7069-452f-b7ed-3849218d121f",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:699b53d3-98b0-4cc6-b204-efa9f4f13e81",
+        "subtitle:232095e4-6cd0-496b-9a4b-2af8bb83eb65",
+        "subtitle:4588a685-45f1-455d-84e0-71219e46d9b8"
+      ]
     },
     {
       "id": "asset:251f1aa2-be6b-44ec-834a-1c65790cd272",
@@ -24883,7 +25419,7 @@
       ],
       "file_id": "file:e6adc39f-37d9-4882-a427-b7ef37c5f88e",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_sensitive_content_redaction_required",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -24892,7 +25428,15 @@
         "subtitle:6a2cfd53-cba4-4287-a5a6-9a31431ed71d",
         "subtitle:d5b43e6d-e364-44fa-a620-b714ec5c0f10"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_possible_device_passcode",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:e6adc39f-37d9-4882-a427-b7ef37c5f88e",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      }
     },
     {
       "id": "asset:7a816d8c-3739-4838-8b1b-641ced214434",
@@ -24907,7 +25451,7 @@
         "event:b27b52d9-0845-43f9-be3c-9b020d8cd5b2"
       ],
       "file_id": "file:69160743-dbfa-4179-a419-863e4967e361",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24917,7 +25461,29 @@
         "subtitle:53b2a8ed-53c6-49d5-aca3-22b24b8692a0",
         "subtitle:6cb9e7a9-1a92-426d-ad52-5868094e1e4e"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:69160743-dbfa-4179-a419-863e4967e361",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:6bc27a60-ff13-4e26-84d2-bec9126d45b5",
+        "subtitle:53b2a8ed-53c6-49d5-aca3-22b24b8692a0",
+        "subtitle:6cb9e7a9-1a92-426d-ad52-5868094e1e4e"
+      ]
     },
     {
       "id": "asset:f72845ce-2d40-4f51-982a-e546adcdeb5e",
@@ -24932,7 +25498,7 @@
         "event:b27b52d9-0845-43f9-be3c-9b020d8cd5b2"
       ],
       "file_id": "file:857b387a-bd6c-4ca9-900f-596c1b82060e",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24942,7 +25508,29 @@
         "subtitle:5d07eeb3-a386-468f-b26f-090bce38dbc0",
         "subtitle:f4ae7457-5635-4646-9a3a-6e59788dbdc7"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:857b387a-bd6c-4ca9-900f-596c1b82060e",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:cd33cc32-c1ed-4a71-a9ca-08e158d3882f",
+        "subtitle:5d07eeb3-a386-468f-b26f-090bce38dbc0",
+        "subtitle:f4ae7457-5635-4646-9a3a-6e59788dbdc7"
+      ]
     },
     {
       "id": "asset:0434dc59-8099-4003-9b7c-6e007aebe596",
@@ -24957,7 +25545,7 @@
         "event:b27b52d9-0845-43f9-be3c-9b020d8cd5b2"
       ],
       "file_id": "file:05eaeefe-6727-4edb-99a7-4de40fa6392a",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24967,7 +25555,29 @@
         "subtitle:2de3ab12-2af3-4bac-a85a-847bebb242b2",
         "subtitle:642751b4-5c62-4ed0-9b29-3fc46dd282e3"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:05eaeefe-6727-4edb-99a7-4de40fa6392a",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:b5ed4cd1-70ee-44df-8260-3f00d1848b07",
+        "subtitle:2de3ab12-2af3-4bac-a85a-847bebb242b2",
+        "subtitle:642751b4-5c62-4ed0-9b29-3fc46dd282e3"
+      ]
     },
     {
       "id": "asset:149fcf06-da3c-40a2-9947-b3e82cb0ba5c",
@@ -24982,7 +25592,7 @@
         "event:faeac653-1ae7-4bac-bdcd-dca27cff13b6"
       ],
       "file_id": "file:b7d762a6-7865-4afe-bca8-b1679de49b82",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -24992,7 +25602,29 @@
         "subtitle:997c553f-fbbd-480d-845c-1396f79e4d5c",
         "subtitle:78fdb276-30c6-4850-b8ba-867512d67796"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:b7d762a6-7865-4afe-bca8-b1679de49b82",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:e9741463-1787-4e07-9a77-0f31b4b4073c",
+        "subtitle:997c553f-fbbd-480d-845c-1396f79e4d5c",
+        "subtitle:78fdb276-30c6-4850-b8ba-867512d67796"
+      ]
     },
     {
       "id": "asset:7e230196-bd62-468d-a49b-71ed94b83df6",
@@ -25007,7 +25639,7 @@
         "event:faeac653-1ae7-4bac-bdcd-dca27cff13b6"
       ],
       "file_id": "file:4a818118-c00f-4d39-831d-86bf36d4986f",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -25017,7 +25649,29 @@
         "subtitle:9e9a10f3-af7d-41d2-8456-92b2da64b173",
         "subtitle:4dd73c00-7d08-4aad-b416-51127aaf3ac4"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:4a818118-c00f-4d39-831d-86bf36d4986f",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:93b83f53-cbe4-4199-888a-685858b2679e",
+        "subtitle:9e9a10f3-af7d-41d2-8456-92b2da64b173",
+        "subtitle:4dd73c00-7d08-4aad-b416-51127aaf3ac4"
+      ]
     },
     {
       "id": "asset:bddf9fbb-e435-4527-ab63-c77de88b87bf",
@@ -25032,7 +25686,7 @@
         "event:faeac653-1ae7-4bac-bdcd-dca27cff13b6"
       ],
       "file_id": "file:a0aafdb3-10e2-4364-b2b2-1f5f5a86ecf3",
-      "content_classification": "project_candidate",
+      "content_classification": "p4_project_context_supported",
       "publication_status": "pending_content_and_publication_review",
       "human_review": "not_recorded",
       "rights_status": "not_established",
@@ -25042,7 +25696,29 @@
         "subtitle:c845579d-3502-46d0-a270-e4cbb69dfc28",
         "subtitle:f8ecd727-5843-4f1f-97fa-2f381df3b20a"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:a0aafdb3-10e2-4364-b2b2-1f5f5a86ecf3",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "p4_project_archive_context_supported",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:19bf6ed9-91f6-4804-9331-1975b8f55eed",
+        "subtitle:c845579d-3502-46d0-a270-e4cbb69dfc28",
+        "subtitle:f8ecd727-5843-4f1f-97fa-2f381df3b20a"
+      ]
     },
     {
       "id": "asset:32c722e9-f0b7-4a47-91b1-06cbcf9a3dcd",
@@ -25058,7 +25734,7 @@
       ],
       "file_id": "file:2cfe3544-f361-42ff-b750-8e4f70222fd7",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_project_attribution_unresolved",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25067,7 +25743,15 @@
         "subtitle:2ac44e5f-4e7a-4c8e-934a-ad297a6dee49",
         "subtitle:8a92e77b-c278-44d4-a193-b090bf738e51"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:2cfe3544-f361-42ff-b750-8e4f70222fd7",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      }
     },
     {
       "id": "asset:fa4598f0-499f-4e3a-8ffe-d73e115a77e3",
@@ -25083,7 +25767,7 @@
       ],
       "file_id": "file:097c3ada-5bee-4743-bfc5-e5b4c7db5dac",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_project_attribution_unresolved",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25092,7 +25776,15 @@
         "subtitle:ab887f8b-921c-4035-86ea-b3cf8faf158b",
         "subtitle:77aa5409-6265-4145-81ba-1fcc6ab776cc"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:097c3ada-5bee-4743-bfc5-e5b4c7db5dac",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      }
     },
     {
       "id": "asset:a1f36725-f8da-499a-af56-69a64dfe21d6",
@@ -25108,7 +25800,7 @@
       ],
       "file_id": "file:14cb1c7b-a80e-48c8-b82d-d0fd857b7f29",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_project_attribution_unresolved",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25117,7 +25809,15 @@
         "subtitle:1172c5e6-10fe-4f89-bb60-6468e5febc09",
         "subtitle:4306645a-0396-42c9-b367-d0425874d138"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:14cb1c7b-a80e-48c8-b82d-d0fd857b7f29",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      }
     },
     {
       "id": "asset:3478bf10-9bd0-4a67-b15a-633b28809560",
@@ -25133,7 +25833,7 @@
       ],
       "file_id": "file:987a58f6-04d1-4ac6-af8b-33dc8ef26d1b",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_project_attribution_unresolved",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25142,7 +25842,15 @@
         "subtitle:c8289520-256f-4026-937a-f5689597d89a",
         "subtitle:8029af64-7ffa-468f-bc76-e1624c1d9f9f"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:987a58f6-04d1-4ac6-af8b-33dc8ef26d1b",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      }
     },
     {
       "id": "asset:b5a9f1d4-e9b9-4d75-bf55-a2645f46981f",
@@ -25158,7 +25866,7 @@
       ],
       "file_id": "file:a68f47cd-eda3-4f2f-b55a-54aa6829ef3c",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25167,7 +25875,14 @@
         "subtitle:757651bc-223e-4bb3-af59-2a8289bf63eb",
         "subtitle:afbc2c9b-18c6-40cf-818e-784bfc174a6b"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:42a44e7c-809a-4e52-8843-4d2925f49d6f",
+      "canonical_byte_source_file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "21f434764243d5ea77d831cb3a5675a96b9ea78f24e1f2aef3d60687838b63d3",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:f2b06a1e-fbd4-4fb8-8528-437343ef33c4",
@@ -25183,7 +25898,7 @@
       ],
       "file_id": "file:9a4b43d6-b4e0-4afd-8893-9603d104908c",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25192,7 +25907,14 @@
         "subtitle:133ed745-950d-4953-8a52-79d750aeeda5",
         "subtitle:c2f355e1-71be-4127-aba6-6c99e08f9259"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:b6334d9c-52c7-4457-a9df-b3e8aa2f99f4",
+      "canonical_byte_source_file_id": "file:dc5a6789-1881-4979-8851-6f4f5316b240",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "762f416ab2c4600badc9882357edc5ecb668bd62367440336806eef1b615467e",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:826dda97-1a8d-4fec-a7e0-d7b484c2c7ce",
@@ -25208,7 +25930,7 @@
       ],
       "file_id": "file:37fc48eb-dd07-491c-a199-c1fba0b3bcaf",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25217,7 +25939,14 @@
         "subtitle:cc8b3c17-2f66-4041-8f89-4bac473c822b",
         "subtitle:d2ee7248-1722-43f5-af81-0b02f5534f0c"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:de4755a2-6c38-43ec-8cb1-50866c8222c6",
+      "canonical_byte_source_file_id": "file:ce6100e6-aea6-466c-9738-71c7654ea7b7",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "52c93c561a8b06eda9981f10aa00e7df1346300fa30853250631191ae10af1e1",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:204cd28d-0d2a-4d1f-a503-833041796d3f",
@@ -25233,7 +25962,7 @@
       ],
       "file_id": "file:3c770724-6fab-48c6-93f1-c0e3edfe10ed",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25242,7 +25971,14 @@
         "subtitle:bb22f686-23a1-410c-b67d-8f9f37e517ca",
         "subtitle:54c9feb0-8323-404b-857b-fdb0fc606344"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:a69306fd-b6e9-41d6-9aa6-345e8cdf031e",
+      "canonical_byte_source_file_id": "file:9089a67c-a772-4461-8dbe-432e705ebe83",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "767bd1181e9df79cf49bd419bef681be97751e3f28df8c6d7f5d89b5f792643e",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:114992d9-b1dc-484b-80ff-ff024aabbeef",
@@ -25258,7 +25994,7 @@
       ],
       "file_id": "file:2c41df87-d87d-4251-b2dd-0f4dfcd755c3",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25267,7 +26003,14 @@
         "subtitle:51d04c28-ae82-4392-965e-04f3e23af178",
         "subtitle:d73f2e28-63ea-40eb-9b09-3d44732db520"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:3483bc97-712b-4951-9dbf-fe48e0f4db94",
+      "canonical_byte_source_file_id": "file:ac7987f1-22c9-4460-96c5-082aee708cad",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "3969a55c11134a8bfc848fb3b85773f0e244991a337dd28e675aa647eb3bc874",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:18adf765-75f8-4778-8b68-08ec4cd08675",
@@ -25283,7 +26026,7 @@
       ],
       "file_id": "file:e473cc76-2670-4012-b89f-0bce677c669a",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25292,7 +26035,14 @@
         "subtitle:d99a0a0a-030a-4879-b721-e852648d5c5d",
         "subtitle:ad74f7cb-5269-4bd4-8c90-601b009fde64"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:44e1a1fe-2728-4077-b7d9-8575501a7808",
+      "canonical_byte_source_file_id": "file:719b97e8-4071-4d17-b9a5-9814036e8e17",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "672a42f2c46a1ea8ce30ad14607f5aa3a86deb2bc7313e6a7532f17d0371b402",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:4adc0d66-7160-400e-bf56-5dc7f1ebd235",
@@ -25308,7 +26058,7 @@
       ],
       "file_id": "file:27084b5d-e262-4903-8bbd-cb0dc87b56c4",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25317,7 +26067,14 @@
         "subtitle:573e1b13-3079-47a2-ba81-3cdcca110d06",
         "subtitle:d7af8e90-d8af-4b21-b39b-34bccc3442ef"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:f902200d-96b7-4c97-92e9-498d62e7d459",
+      "canonical_byte_source_file_id": "file:188963ed-5d8a-4b37-9297-6d1dbdf5d80b",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "0b669e3cc8d8a0cc21c8c00de6f848c620f97853973ae95785712fadeccde621",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:0f0468e6-ecc4-4822-8649-b2edc3074a80",
@@ -25333,7 +26090,7 @@
       ],
       "file_id": "file:8c2924d9-d074-43f3-ae1c-38a9f2cf2a2a",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25342,7 +26099,14 @@
         "subtitle:62ac060a-7639-43b4-84f5-13b5d70fd42d",
         "subtitle:e9798d66-df2a-4a81-8c88-9a87c5a3e47c"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:d084387b-6fca-457a-8787-97cd6299001d",
+      "canonical_byte_source_file_id": "file:8615381f-6d49-492e-81ae-1bb49f6eb2b6",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "d5a05eeff05e976b81ed21cde58eaf89aca35d3f6f3c07459f6a1d59ea1fe970",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:b14a7fce-94f0-4723-a255-c9d465c43405",
@@ -25358,7 +26122,7 @@
       ],
       "file_id": "file:3ee49db3-82b9-4420-b30f-51761a2066a7",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25367,7 +26131,14 @@
         "subtitle:7986effe-185a-4e5b-87a9-93fc2078c916",
         "subtitle:3debe62a-32ee-4abb-9419-2d00fcd91c7c"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:59379fc8-1755-4521-8c43-7efdb5522937",
+      "canonical_byte_source_file_id": "file:0c393094-72df-48df-a950-5a9636ca5d5c",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "4bb9d3427583f4080025d035ac5257fa7d9b0b2f6613c9e264d97060d1ad8078",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:06d4add2-18ae-4713-8e1c-9037ca0017b9",
@@ -25383,7 +26154,7 @@
       ],
       "file_id": "file:08a11cdb-631e-4c66-811e-c34c6be4a89b",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25392,7 +26163,14 @@
         "subtitle:3ba6a251-12ac-47fc-ad11-22da045b89a5",
         "subtitle:8aaaaf70-2901-4e6a-abc4-8a1730e8cfdf"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:419486ea-2ca1-408b-9fb5-960df47eea31",
+      "canonical_byte_source_file_id": "file:76d4be7a-7e12-4999-9cfe-0525064dae47",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "c546f2ca716548e79c7157d5191212d7c6251df3724493d7a2860f644f240956",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:063359bc-7ffb-4cb4-b3fe-0c8c751e03ea",
@@ -25408,7 +26186,7 @@
       ],
       "file_id": "file:c8fba0e3-5bf5-48b1-8c65-22f45f86eec7",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25417,7 +26195,14 @@
         "subtitle:cbd205c9-98fd-40f4-a4f7-81554bce10dd",
         "subtitle:39f848ff-8cf1-476c-acfb-450e1c645d2d"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:7c4024f1-cff0-4cab-8142-96ae211f2872",
+      "canonical_byte_source_file_id": "file:03349720-5ca7-4b9c-8fa5-7e3f08f1d286",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "5e1ce100732d8e4dd682a02726a9b850c2435a594561729485edc871cd16bd0b",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:692411ab-ab45-4d7b-9ca3-45d669ad7bb9",
@@ -25433,7 +26218,7 @@
       ],
       "file_id": "file:c9fbc9d2-d4dd-40bd-bc6a-bd26cbeb8bde",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25442,7 +26227,14 @@
         "subtitle:b0a42e97-770d-4a24-a092-387f05ecf8f8",
         "subtitle:88d26bfe-61c0-48f6-8bba-ec219bb29ff7"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:48284c64-dddc-469c-af26-621ae87795d5",
+      "canonical_byte_source_file_id": "file:a8737574-83c3-4788-8a98-cf14a9692e2b",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "624492524e0ace13e1bd06e59251f5c1165196c8230ad74c1eb3b30cfe6c6732",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:2d0faed9-869e-415d-8a52-7bde386ea36b",
@@ -25458,7 +26250,7 @@
       ],
       "file_id": "file:c018e4f0-53e3-479e-aa8c-d4cea8ef1ca3",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25467,7 +26259,14 @@
         "subtitle:6e096c27-6802-4f03-b311-431b6075520f",
         "subtitle:4b8bd5ab-050f-4d0c-8328-1816ef616c3c"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:51165a2e-8ab4-4303-bcb5-dde4fb6c9601",
+      "canonical_byte_source_file_id": "file:b340b92a-5a77-49d0-85a2-1088b4b23e07",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "9b3603452ca8bae358b4ebdbabeba3efe1e632d3951e522d57df53573ed3c7c9",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:deb9a1c6-981d-48b3-ac2b-ccb1d5efc486",
@@ -25483,7 +26282,7 @@
       ],
       "file_id": "file:5c948941-2013-443b-a0a8-7ab2b13c4317",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25492,7 +26291,14 @@
         "subtitle:ee4eaa86-5fec-4f04-9666-995f0c1e3658",
         "subtitle:0fbc38b5-7d28-4803-a107-5f03e4ba12a4"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:b4819ae4-8094-43ad-abaf-f472b2cfcf6a",
+      "canonical_byte_source_file_id": "file:9a97b095-478e-4567-9937-30121090c1fb",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "025935b58cd6c03be6fd075f997759fea9118e4a736a2e8e8250c3650c41a9a8",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:25b0285b-f1eb-4c69-8c81-0b3440b6359e",
@@ -25508,7 +26314,7 @@
       ],
       "file_id": "file:97c9e7c3-ead7-4561-9393-cd5e500fa7ca",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25517,7 +26323,14 @@
         "subtitle:e19d129d-182f-489b-ba2d-d2161bbaf317",
         "subtitle:92809ad4-8ef5-476d-8028-f7010aa0399b"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:a3b27924-4fc2-4805-ba6c-2ff21e006ef2",
+      "canonical_byte_source_file_id": "file:7ec83850-c0d9-4721-ab81-2e1facb35f38",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "c7381a58b881b3a4543cda3505dfcbad45ff8f182610bdcff279cff5d608d5c2",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:f4017e96-be6a-478e-8fe1-8fce42a2ac60",
@@ -25533,7 +26346,7 @@
       ],
       "file_id": "file:3126af79-c6d9-4d6a-a844-dff4f5095a57",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25542,7 +26355,14 @@
         "subtitle:691aeba0-aabb-4eff-8cd8-c58c1e80a60a",
         "subtitle:d2438e37-45ae-4942-9e1b-58e01724cd15"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:ae40890b-1131-4e1c-a09a-ee72d91abc6b",
+      "canonical_byte_source_file_id": "file:dcb04532-88b3-42e8-a15b-339e62d2f763",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "99d34160589bc3418f146b9caae6b84d047a1f72f2222df442758dc63b8b4635",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:3eff4663-308d-49a5-84fd-ff8fe017be13",
@@ -25558,7 +26378,7 @@
       ],
       "file_id": "file:4ddc39fb-1ba9-476f-a0c0-4d0fb49eb9cf",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25567,7 +26387,14 @@
         "subtitle:01cb1036-94e8-484b-9276-104a72f3f86b",
         "subtitle:cb413e93-0c79-454f-b9a1-eacca696cad8"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:b3e03e63-51f6-4b4e-81da-660fcf9cad39",
+      "canonical_byte_source_file_id": "file:41bb0803-c51e-4c06-be6a-942e7750e421",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "c780c897a44da6dfb447e530bb3e7ab380fd28b0e5c32282c6784a603ecd8e88",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      }
     },
     {
       "id": "asset:dd862d42-7df3-4a85-805e-6050a1c05685",
@@ -25583,7 +26410,7 @@
       ],
       "file_id": "file:1127192b-66e5-4ed7-9f7a-742ac897f948",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25592,7 +26419,22 @@
         "subtitle:fbabbe46-06de-4c08-99e2-6329241b476d",
         "subtitle:6bfa62b1-3450-4796-a328-c86993015c07"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:3308f6eb-f60c-4c9c-8e00-17ff77aa03f6",
+      "canonical_byte_source_file_id": "file:5f20adc4-d981-4586-9179-e0e78e1a62cf",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "73f574acdf7139ad8b47821f64b2c022b0bb2b728dab47caf38f8c0402b3cd80",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      },
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "basis": "same_full_sha256_as_reviewed_canonical_source",
+        "source_file_id": "file:1127192b-66e5-4ed7-9f7a-742ac897f948",
+        "canonical_source_asset_id": "asset:3308f6eb-f60c-4c9c-8e00-17ff77aa03f6",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "human_listening_review": "not_recorded"
+      }
     },
     {
       "id": "asset:b5b87f13-d69a-4d59-b1ac-6aebc1450396",
@@ -25608,7 +26450,7 @@
       ],
       "file_id": "file:fbd01f27-40be-46fb-869b-52ba9f92f759",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_verified_byte_copy_use_canonical_source",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25617,7 +26459,22 @@
         "subtitle:10134363-6919-4bf7-8183-90cf22c81896",
         "subtitle:ab0a9dbe-76f3-46a4-80a1-748652997748"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "canonical_byte_source_asset_id": "asset:4a87a932-d822-4f6f-8063-e9c8149bb922",
+      "canonical_byte_source_file_id": "file:5b5ad10d-8172-47ed-b369-79d0f45e4b18",
+      "byte_identity_relation": {
+        "status": "full_sha256_equal",
+        "sha256": "acc8d82e9b402336c568493b12827bfc89114ae3baf5b65af0693edd28d7fd3a",
+        "meaning": "same_bytes_at_separate_registered_locations_event_identity_not_merged"
+      },
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "basis": "same_full_sha256_as_reviewed_canonical_source",
+        "source_file_id": "file:fbd01f27-40be-46fb-869b-52ba9f92f759",
+        "canonical_source_asset_id": "asset:4a87a932-d822-4f6f-8063-e9c8149bb922",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "human_listening_review": "not_recorded"
+      }
     },
     {
       "id": "asset:5027d4c0-2ded-4a12-a6d7-88ec03d32588",
@@ -25633,7 +26490,7 @@
       ],
       "file_id": "file:1a4a1feb-e0c8-4438-ab8a-2bf5a1f488ad",
       "content_classification": "mixed_project_context",
-      "publication_status": "hold_project_assignment_review",
+      "publication_status": "hold_project_attribution_unresolved",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25642,7 +26499,15 @@
         "subtitle:a8b70c45-e6ea-48fd-ab27-715374d222fd",
         "subtitle:49433f37-043c-498e-8f9b-a02fe1ce5ed2"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:1a4a1feb-e0c8-4438-ab8a-2bf5a1f488ad",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      }
     },
     {
       "id": "asset:8b2909c7-e160-4d6e-bda9-b81726cabe4f",
@@ -25650,15 +26515,15 @@
       "kind": "asset",
       "title": "视频 P4-V001122",
       "project_ids": [
-        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
       ],
       "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
       "event_ids": [
         "event:c5eae3df-75bc-4e6a-b1ab-6f62fc918722"
       ],
       "file_id": "file:63433f37-b1fd-49eb-bf7f-59324c8ee310",
-      "content_classification": "mixed_project_context",
-      "publication_status": "hold_project_assignment_review",
+      "content_classification": "p4_project_context_supported",
+      "publication_status": "pending_media_and_channel_publication_checks",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25667,11 +26532,38 @@
         "subtitle:fb7e5b50-0a7f-453e-a331-f3f3b94f4027",
         "subtitle:f66dec90-b115-4832-bcdf-1c0527299965"
       ],
-      "project_assignment_note": "目录内既有内容索引提示与《动物农场》招募或试演相关，需逐条复核。",
-      "related_project_titles": [
-        "动物农场"
-      ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:63433f37-b1fd-49eb-bf7f-59324c8ee310",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "evidence_supported_animal_farm",
+        "project_ids": [
+          "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false,
+        "evidence": [
+          {
+            "subtitle_id": "subtitle:65244f98-1684-4724-b8fc-74c49fd1bf44",
+            "clock": "source_zero",
+            "start_seconds": 473,
+            "end_seconds": 486,
+            "description": "字幕及既有目录分析将内容指向动物农场招募或试演。"
+          }
+        ]
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:65244f98-1684-4724-b8fc-74c49fd1bf44",
+        "subtitle:fb7e5b50-0a7f-453e-a331-f3f3b94f4027",
+        "subtitle:f66dec90-b115-4832-bcdf-1c0527299965"
+      ]
     },
     {
       "id": "asset:3efa29a1-33ea-4056-bd48-7bc1c21bac79",
@@ -25687,7 +26579,7 @@
       ],
       "file_id": "file:1d549a68-efeb-478c-81c1-52a8840c96a8",
       "content_classification": "mixed_project_context",
-      "publication_status": "hold_project_assignment_review",
+      "publication_status": "hold_project_attribution_unresolved",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25696,7 +26588,15 @@
         "subtitle:db5c4522-da9b-410d-ab66-e40b9f492818",
         "subtitle:7ce9aed5-cd38-4ee6-acf0-1ee539771cc3"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:1d549a68-efeb-478c-81c1-52a8840c96a8",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      }
     },
     {
       "id": "asset:a982931d-ed72-484c-9aae-405e33e89684",
@@ -25712,7 +26612,7 @@
       ],
       "file_id": "file:bb0b7a13-c5ad-4e1f-b232-2e8300fd5e31",
       "content_classification": "mixed_project_context",
-      "publication_status": "hold_project_assignment_review",
+      "publication_status": "hold_project_attribution_unresolved",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25721,7 +26621,15 @@
         "subtitle:de0fb42f-3b7c-4d4d-83fa-13c707db06af",
         "subtitle:4abf2943-8dd2-4374-9983-67e6a91c75f7"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:bb0b7a13-c5ad-4e1f-b232-2e8300fd5e31",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      }
     },
     {
       "id": "asset:29e3b15d-e835-48d0-a482-9d4030f772d6",
@@ -25729,15 +26637,15 @@
       "kind": "asset",
       "title": "视频 P4-V001125",
       "project_ids": [
-        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
       ],
       "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
       "event_ids": [
         "event:c5eae3df-75bc-4e6a-b1ab-6f62fc918722"
       ],
       "file_id": "file:b6a36be9-47f0-4d14-b502-4cc877eacd65",
-      "content_classification": "mixed_project_context",
-      "publication_status": "hold_project_assignment_review",
+      "content_classification": "p4_project_context_supported",
+      "publication_status": "pending_media_and_channel_publication_checks",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25746,11 +26654,38 @@
         "subtitle:155f0ddd-b1e4-413e-a49d-4bb3ae4bf116",
         "subtitle:1fbd6a71-841d-4d65-9c96-a6e754ed4f74"
       ],
-      "project_assignment_note": "目录内既有内容索引提示与《动物农场》招募或试演相关，需逐条复核。",
-      "related_project_titles": [
-        "动物农场"
-      ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:b6a36be9-47f0-4d14-b502-4cc877eacd65",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "evidence_supported_animal_farm",
+        "project_ids": [
+          "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false,
+        "evidence": [
+          {
+            "subtitle_id": "subtitle:f3845618-def2-44d9-a4ed-20aa267d5fcd",
+            "clock": "source_zero",
+            "start_seconds": 1,
+            "end_seconds": 108,
+            "description": "字幕及既有目录分析将内容指向动物农场招募或试演。"
+          }
+        ]
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:f3845618-def2-44d9-a4ed-20aa267d5fcd",
+        "subtitle:155f0ddd-b1e4-413e-a49d-4bb3ae4bf116",
+        "subtitle:1fbd6a71-841d-4d65-9c96-a6e754ed4f74"
+      ]
     },
     {
       "id": "asset:d85015fc-8a10-40a3-ae34-85a9de21af62",
@@ -25765,8 +26700,8 @@
         "event:c5eae3df-75bc-4e6a-b1ab-6f62fc918722"
       ],
       "file_id": "file:4077c740-8ecb-4740-8f98-a233a852110d",
-      "content_classification": "mixed_project_context",
-      "publication_status": "hold_project_assignment_review",
+      "content_classification": "p4_project_context_supported",
+      "publication_status": "pending_media_and_channel_publication_checks",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25776,7 +26711,29 @@
         "subtitle:22657435-071e-419d-bf7e-8f74aadc6342"
       ],
       "project_assignment_note": "目录内既有内容索引提示与《玻璃动物园》排练相关，需逐条复核。",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:4077c740-8ecb-4740-8f98-a233a852110d",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "evidence_supported_glass_menagerie",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:1fa8e2a5-0d3b-4eaf-b31f-f0f3137f2831",
+        "subtitle:a227841b-d3c6-4283-80fa-701bd3713a6d",
+        "subtitle:22657435-071e-419d-bf7e-8f74aadc6342"
+      ]
     },
     {
       "id": "asset:a8b7e374-3660-4767-b4bb-f7693679023a",
@@ -25791,8 +26748,8 @@
         "event:c5eae3df-75bc-4e6a-b1ab-6f62fc918722"
       ],
       "file_id": "file:411fd689-fedb-447e-891a-c4906c724165",
-      "content_classification": "mixed_project_context",
-      "publication_status": "hold_project_assignment_review",
+      "content_classification": "p4_project_context_supported",
+      "publication_status": "pending_media_and_channel_publication_checks",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25802,7 +26759,29 @@
         "subtitle:45da0261-d9cb-40df-b42f-32db009c8b22"
       ],
       "project_assignment_note": "目录内既有内容索引提示与《玻璃动物园》排练相关，需逐条复核。",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:411fd689-fedb-447e-891a-c4906c724165",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "evidence_supported_glass_menagerie",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:8f4ed79f-2781-46c5-86d8-6b64c3e6d936",
+        "subtitle:ed0c8c6b-d7f6-48df-b4c0-3be22609a374",
+        "subtitle:45da0261-d9cb-40df-b42f-32db009c8b22"
+      ]
     },
     {
       "id": "asset:4c496260-a960-4140-bec2-5a6271509afd",
@@ -25817,8 +26796,8 @@
         "event:c5eae3df-75bc-4e6a-b1ab-6f62fc918722"
       ],
       "file_id": "file:185b93a1-3973-438e-87b9-f724fe85fe97",
-      "content_classification": "mixed_project_context",
-      "publication_status": "hold_project_assignment_review",
+      "content_classification": "p4_project_context_supported",
+      "publication_status": "pending_media_and_channel_publication_checks",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25828,7 +26807,29 @@
         "subtitle:df8aa6d2-b07a-47d0-a5cd-a16dfdabdc39"
       ],
       "project_assignment_note": "目录内既有内容索引提示与《玻璃动物园》排练相关，需逐条复核。",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:185b93a1-3973-438e-87b9-f724fe85fe97",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "evidence_supported_glass_menagerie",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:cff30893-c98c-41d7-ae32-a4f8728fd10c",
+        "subtitle:39f6d09d-b972-4936-9c63-f294a50b41ee",
+        "subtitle:df8aa6d2-b07a-47d0-a5cd-a16dfdabdc39"
+      ]
     },
     {
       "id": "asset:e81e81b6-3c83-48f9-98ad-1eb689174cdb",
@@ -25843,8 +26844,8 @@
         "event:c5eae3df-75bc-4e6a-b1ab-6f62fc918722"
       ],
       "file_id": "file:52c1d67c-c8a8-4a53-bd09-6a77df7fe3c2",
-      "content_classification": "mixed_project_context",
-      "publication_status": "hold_project_assignment_review",
+      "content_classification": "p4_project_context_supported",
+      "publication_status": "pending_media_and_channel_publication_checks",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25854,7 +26855,29 @@
         "subtitle:5fe7a884-909b-439e-a05c-92bed82ea003"
       ],
       "project_assignment_note": "目录内既有内容索引提示与《玻璃动物园》排练相关，需逐条复核。",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "approved_for_public_archive",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:52c1d67c-c8a8-4a53-bd09-6a77df7fe3c2",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "project_assignment_review": {
+        "status": "evidence_supported_glass_menagerie",
+        "project_ids": [
+          "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+        ],
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "method": "caption_text_and_existing_folder_content_analysis",
+        "is_human_listening_review": false
+      },
+      "public_caption_subtitle_ids": [
+        "subtitle:a24ff3dd-6a3c-4b0d-a059-9b912c4889ad",
+        "subtitle:03d1f52b-fd1a-4dad-811b-eaeced196673",
+        "subtitle:5fe7a884-909b-439e-a05c-92bed82ea003"
+      ]
     },
     {
       "id": "asset:3308f6eb-f60c-4c9c-8e00-17ff77aa03f6",
@@ -25870,7 +26893,7 @@
       ],
       "file_id": "file:5f20adc4-d981-4586-9179-e0e78e1a62cf",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_project_attribution_unresolved",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25879,7 +26902,18 @@
         "subtitle:97ca6a19-5a0d-45df-aac1-e9ee9709c81e",
         "subtitle:538faabe-45f0-4985-99a7-2dd5fe61c767"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:5f20adc4-d981-4586-9179-e0e78e1a62cf",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "byte_copy_asset_ids": [
+        "asset:dd862d42-7df3-4a85-805e-6050a1c05685"
+      ]
     },
     {
       "id": "asset:4a87a932-d822-4f6f-8063-e9c8149bb922",
@@ -25895,7 +26929,7 @@
       ],
       "file_id": "file:5b5ad10d-8172-47ed-b369-79d0f45e4b18",
       "content_classification": "project_candidate",
-      "publication_status": "pending_content_and_publication_review",
+      "publication_status": "hold_project_attribution_unresolved",
       "human_review": "not_recorded",
       "rights_status": "not_established",
       "youtube_publication_ids": [],
@@ -25904,7 +26938,18 @@
         "subtitle:b5eebf57-2f11-4c18-8928-60187aca5724",
         "subtitle:4c4cd2f5-9d6e-4f9b-8dfb-f072862556d0"
       ],
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "content_scope_review": {
+        "status": "withheld_project_attribution_unresolved",
+        "reviewed_at": "2026-10-26T06:28:21.429252-07:00",
+        "source_file_id": "file:5b5ad10d-8172-47ed-b369-79d0f45e4b18",
+        "method": "existing_folder_content_analysis_and_three_caption_variant_screening",
+        "human_listening_review": "not_recorded",
+        "human_continuous_watch": "not_recorded"
+      },
+      "byte_copy_asset_ids": [
+        "asset:b5b87f13-d69a-4d59-b1ac-6aebc1450396"
+      ]
     },
     {
       "id": "asset:eae8b9c4-1b0d-4aeb-8569-a423d55aa783",

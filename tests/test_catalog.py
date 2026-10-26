@@ -97,6 +97,8 @@ class CatalogueTests(unittest.TestCase):
             work = Path(tmp)
             public = work / "public"
             shutil.copytree(ROOT / "catalog", public / "catalog")
+            if (ROOT / "captions").exists():
+                shutil.copytree(ROOT / "captions", public / "captions")
             assets = module.read_json(public / "catalog/assets.json")["items"]
             files = {x["id"]: x for x in module.read_json(public / "catalog/files.json")["items"]}
             asset = next(x for x in assets if x["publication_status"].startswith("hold_") and files[x["file_id"]]["bytes"] > 0 and x["subtitle_ids"])
@@ -133,6 +135,7 @@ class CatalogueTests(unittest.TestCase):
             table = module.read_json(public / "catalog/subtitles.json")
             for record in table["items"]:
                 record.pop("public_export", None)
+                record.pop("equivalent_public_export_subtitle_id", None)
             sub = table["items"][0]
             content = b"1\n00:00:01,000 --> 00:00:02,000\nSynthetic fixture\n"
             sha = hashlib.sha256(content).hexdigest()
@@ -150,6 +153,97 @@ class CatalogueTests(unittest.TestCase):
             caption.write_bytes(content)
             (public / "captions/rogue.srt").write_bytes(content)
             self.assertTrue(any("Prohibited media" in x for x in module.validate(public)["errors"]))
+
+    def test_incremental_import_preserves_caption_release_and_reviewed_project_correction(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            public, private = work / "public", work / "private"
+            roots = [work / "source-a", work / "source-b"]
+            caption_body = b"1\n00:00:01,000 --> 00:00:02,000\nSynthetic caption\n"
+            audit = {"generated_at": "2026-01-01T00:00:00Z", "projects": []}
+            cache = {"schema_version": 1, "files": {}}
+            for folder, label in zip(roots, ("3P小组 2020", "动物农场")):
+                folder.mkdir()
+                video = folder / "IMG_0001.MOV"
+                video.write_bytes(b"identical video fixture bytes")
+                stat = video.stat()
+                cache["files"][module.pathkey(video)] = {"path": str(video), "bytes": stat.st_size, "mtime_ns": stat.st_mtime_ns, "sha256": hashlib.sha256(video.read_bytes()).hexdigest(), "verified_at": "2026-01-01T00:00:00Z"}
+                audit["projects"].append({"directory_label": label, "project_root": str(folder), "videos": [{"path": str(video), "relative_path": video.name, "bytes": stat.st_size, "extension": ".MOV", "derived_candidate": False, "project_media_copy_candidate": False}]})
+            (roots[0] / "IMG_0001.srt").write_bytes(caption_body)
+            module.write_json(private / "hash_results.json", cache)
+            module.write_json(work / "audit.json", audit)
+            args = SimpleNamespace(output=str(public), local_state=str(private), audit=str(work / "audit.json"), quality=None, crosswalk=None)
+            with contextlib.redirect_stdout(io.StringIO()):
+                module.import_catalog(args)
+            assets = module.read_json(public / "catalog/assets.json")
+            primary, copy = assets["items"]
+            reviewed_project_id = copy["project_ids"][0]
+            primary["project_ids"] = [reviewed_project_id]
+            primary["content_scope_review"] = {"status": "approved_for_public_archive", "source_file_id": primary["file_id"]}
+            primary["project_assignment_review"] = {"status": "evidence_supported_project_correction"}
+            primary["byte_copy_asset_ids"] = [copy["id"]]
+            copy["canonical_byte_source_asset_id"] = primary["id"]
+            copy["canonical_byte_source_file_id"] = primary["file_id"]
+            copy["byte_identity_relation"] = {"status": "full_sha256_equal"}
+            module.write_json(public / "catalog/assets.json", assets)
+            captions = module.read_json(public / "catalog/subtitles.json")
+            sub = captions["items"][0]
+            relative = "captions/" + sub["accession"] + "/" + sub["version_sha256"] + "/original.srt"
+            target = public / relative
+            target.parent.mkdir(parents=True)
+            target.write_bytes(caption_body)
+            sub.update(public_export={"path": relative, "sha256": sub["version_sha256"], "scope_review_status": "approved_for_public_archive", "quality_label": "machine_draft"}, public_text_status="public_machine_draft", source_file_id=primary["file_id"], source_asset_id=primary["id"], pairing_review={"method": "reviewed_source_stem_association"})
+            module.write_json(public / "catalog/subtitles.json", captions)
+            events = module.read_json(public / "catalog/events.json")
+            event_ids = [x["id"] for x in events["items"]]
+            events["items"][0].update(project_ids=[reviewed_project_id], content_scope_review={"status": "reviewed_mixed_source_group"})
+            module.write_json(public / "catalog/events.json", events)
+            project_table = module.read_json(public / "catalog/projects.json")
+            project_table["items"][0]["aliases"].append("legacy-fixture-code")
+            module.write_json(public / "catalog/projects.json", project_table)
+            with contextlib.redirect_stdout(io.StringIO()):
+                module.import_catalog(args)
+            updated_assets = module.read_json(public / "catalog/assets.json")["items"]
+            updated_captions = module.read_json(public / "catalog/subtitles.json")["items"]
+            updated_events = module.read_json(public / "catalog/events.json")["items"]
+            self.assertEqual(updated_assets[0]["project_ids"], [reviewed_project_id])
+            self.assertEqual(updated_assets[1]["canonical_byte_source_asset_id"], primary["id"])
+            self.assertEqual(updated_captions[0]["public_export"], sub["public_export"])
+            self.assertEqual(updated_captions[0]["pairing_review"], sub["pairing_review"])
+            self.assertEqual([x["id"] for x in updated_events], event_ids)
+            self.assertEqual(updated_events[0]["project_ids"], [reviewed_project_id])
+            self.assertEqual(module.read_json(public / "catalog/summary.json")["public_caption_export_count"], 1)
+            self.assertIn("legacy-fixture-code", module.read_json(public / "catalog/projects.json")["items"][0]["aliases"])
+            self.assertTrue(module.validate(public)["valid"], module.validate(public)["errors"])
+
+    def test_official_registry_duplicates_references_and_path_leaks_are_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            import shutil
+            public = Path(tmp) / "public"
+            for folder in ("catalog", "captions", "registry"):
+                if (ROOT / folder).exists():
+                    shutil.copytree(ROOT / folder, public / folder)
+            registry_path = public / "registry/official-projects.json"
+            self.assertTrue(module.validate(public)["valid"])
+            baseline = module.read_json(registry_path)
+            broken = json.loads(json.dumps(baseline))
+            broken["items"].append(broken["items"][0])
+            module.write_json(registry_path, broken)
+            self.assertTrue(any("Duplicate or invalid official project code" in x for x in module.validate(public)["errors"]))
+            broken = json.loads(json.dumps(baseline))
+            linked = next(x for x in broken["items"] if x["current_video_catalogue_matches"])
+            linked["current_video_catalogue_matches"][0]["id"] = "project:missing"
+            module.write_json(registry_path, broken)
+            self.assertTrue(any("Broken or overstated official registry project reference" in x for x in module.validate(public)["errors"]))
+            broken = json.loads(json.dumps(baseline))
+            candidate = next(x for x in broken["items"] if x["candidate_current_video_catalogue_matches"])
+            candidate["candidate_current_video_catalogue_matches"][0]["same_as_established"] = True
+            module.write_json(registry_path, broken)
+            self.assertTrue(any("title candidate cannot assert identity" in x for x in module.validate(public)["errors"]))
+            broken = json.loads(json.dumps(baseline))
+            broken["items"][0]["private_path"] = chr(67) + ":" + chr(92) + "private" + chr(92) + "fixture"
+            module.write_json(registry_path, broken)
+            self.assertTrue(any("Absolute local path" in x for x in module.validate(public)["errors"]))
 
     def test_public_catalogue_references_and_privacy_guard(self):
         self.assertTrue(module.validate(ROOT)["valid"], module.validate(ROOT)["errors"])
