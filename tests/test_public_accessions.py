@@ -230,8 +230,12 @@ class PublicAccessionTests(unittest.TestCase):
         git(self.root, "config", "user.email", "fixture@example.invalid")
         git(self.root, "config", "user.name", "Initial main fixture")
         git(self.root, "config", "core.hooksPath", os.devnull)
+        git(self.root, "config", "core.autocrlf", "true")
+        # Match the real repository's byte rules before committing the fixture.
+        shutil.copyfile(ROOT / ".gitattributes", self.root / ".gitattributes")
         accessions.assign(self.root, initialize=True)
         self.assertTrue(accessions.check(self.root)["valid"])
+        bound_bytes = {path: (self.root / path).read_bytes() for path in ("published/manifest.json", accessions.REGISTRY, accessions.INDEX)}
         git(self.root, "add", ".")
         git(self.root, "-c", "commit.gpgsign=false", "commit", "-qm", "First main numbering")
         git(self.root, "branch", "-M", "main")
@@ -239,7 +243,9 @@ class PublicAccessionTests(unittest.TestCase):
         self.assertTrue(committed["valid"], committed)
         self.assertEqual(committed["append_only_baseline"], "git_committed_history")
         clone = self.root.parent / "ci-clone"
-        subprocess.run(["git", "-c", "protocol.file.allow=always", "clone", "--depth=1", self.root.as_uri(), str(clone)], capture_output=True, text=True, encoding="utf-8", check=True)
+        subprocess.run(["git", "-c", "protocol.file.allow=always", "-c", "core.autocrlf=true", "clone", "--depth=1", self.root.as_uri(), str(clone)], capture_output=True, text=True, encoding="utf-8", check=True)
+        for path, expected in bound_bytes.items():
+            self.assertEqual((clone / path).read_bytes(), expected, path)
         shallow = accessions.check(clone)
         self.assertFalse(shallow["valid"])
         self.assertTrue(any("shallow" in error for error in shallow["errors"]), shallow)
