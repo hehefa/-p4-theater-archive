@@ -1,32 +1,56 @@
 # 致命玩笑
 
-项目编号：`P4-P000015`  
-Canonical ID：`project:6e85f688-ad72-44aa-8595-92984a744ad8`  
-既有档案 ID 对齐：`pending`
+这里从《致命玩笑》的材料记录进入，按2个资料组查找来源、事件线索与文件版本。
 
-本页按暂定事件组编目。日期只保留目录中明确的年月日标记，均待核实；未从修改时间推断。公开字幕另有文本范围筛查记录，均标为机器稿；文本范围筛查不能替代全片观看或逐句听校。
+[可读字幕](#可读字幕) · [资料组与来源](#资料组与来源) · [补充资料](../../CONTRIBUTING.md)
 
-[公开字幕目录](../../captions/README.md)（已开放的版本提供直达链接）。
+项目编号：`P4-P000015`
 
-## P4-E000122 · 致命玩笑 · 待辨识事件
+## 可读字幕
 
-日期：2022-03-19；事件边界：暂定目录组。
+本页当前提供项目、事件与文件索引；已开放的字幕可从[全库字幕入口](../../reading/captions.md)阅读。
 
-| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |
-|---|---|---|---:|---:|---|---|---|---|
-| P4-V001720 | P4-F001720 | .mov | 8907.76 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V001721 | P4-F001721 | .mov | 34627.85 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V001722 | P4-F001722 | .mov | 3352.06 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+## 资料组与来源
 
-## P4-E000123 · 致命玩笑 · 待辨识事件
+日期依来源字段显示；资料组编号保持原有对应。
 
-日期：2022-04-01；事件边界：暂定目录组。
+| 日期线索 | 类型与资料组 | 文件记录 | 可读字幕来源 |
+| --- | --- | ---: | ---: |
+| 2022-03-19〔目录日期线索〕 | [资料组 · P4-E000122](#event-p4-e000122) | 3 | 0 |
+| 2022-04-01〔目录日期线索〕 | [资料组 · P4-E000123](#event-p4-e000123) | 4 | 0 |
 
-| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |
-|---|---|---|---:|---:|---|---|---|---|
-| P4-V001723 | P4-F001723 | .mov | 10466.93 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V001724 | P4-F001724 | .mov | 38.52 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V001725 | P4-F001725 | .mov | 6671.89 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
-| P4-V001726 | P4-F001726 | .mov | 6294.55 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+<details>
+<summary>项目身份与全部文件记录</summary>
 
-[返回总目录](../../INDEX.md)
+Canonical ID：`project:6e85f688-ad72-44aa-8595-92984a744ad8`
+
+既有档案对照：`pending`
+
+<a id="event-p4-e000122"></a>
+
+### 致命玩笑 · 待辨识事件 · P4-E000122
+
+日期：2022-03-19〔目录日期线索〕
+
+| 视频 / 文件 | 格式 / MB | 可读字幕 | 解码记录 | 发布记录 |
+| --- | --- | --- | --- | --- |
+| <a id="p4-v001720"></a>P4-V001720 / P4-F001720 | .mov / 8907.76 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v001721"></a>P4-V001721 / P4-F001721 | .mov / 34627.85 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v001722"></a>P4-V001722 / P4-F001722 | .mov / 3352.06 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+
+<a id="event-p4-e000123"></a>
+
+### 致命玩笑 · 待辨识事件 · P4-E000123
+
+日期：2022-04-01〔目录日期线索〕
+
+| 视频 / 文件 | 格式 / MB | 可读字幕 | 解码记录 | 发布记录 |
+| --- | --- | --- | --- | --- |
+| <a id="p4-v001723"></a>P4-V001723 / P4-F001723 | .mov / 10466.93 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v001724"></a>P4-V001724 / P4-F001724 | .mov / 38.52 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v001725"></a>P4-V001725 / P4-F001725 | .mov / 6671.89 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+| <a id="p4-v001726"></a>P4-V001726 / P4-F001726 | .mov / 6294.55 | 暂无公开文本 | `not_recorded` | `pending_content_and_publication_review` |
+
+</details>
+
+[补充日期、人物或经过](../../templates/事件记录.md) · [修订字幕](../../templates/字幕修订.md) · [返回资料目录](../../INDEX.md)

@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "adapter": "fa",
+      "batch_state": "all_three_public_and_playlist_verified",
+      "channel_id": "UCp_LyzepcrZX6Cgzv2Qit4w",
+      "external_project_refs": [],
+      "historical_state_counts": {
+        "public_processed_verified": 3
+      },
+      "id": "hefa-fa-rereview-20261024",
+      "nonpublic_records_omitted": 0,
+      "project_ids": [],
+      "public_projection_count": 0,
+      "public_scope": {
+        "mode": "mandatory_public_projection",
+        "policy_sha256": "21b3318bff9be4a1e7f607111975738f32c8290cdbd042830cb6b8cdc601b7b9",
+        "withheld_record_count": 3
+      },
+      "receipt_sha256": "999ee0e9945c39067585f346018b246622e28a564e0bbb050d5bc8eb641eba54",
+      "receipt_updated_at": "2026-10-24T17:07:38.039779Z",
+      "recheck": "locate_private_receipt_by_sha256_then_repreview_no_platform_access_performed",
+      "record_count": 3,
+      "title": "He Fa / Fa re-review historical publication receipt"
+    },
+    {
+      "adapter": "human-surrender",
+      "batch_state": "blocked",
+      "channel_id": "UCp_LyzepcrZX6Cgzv2Qit4w",
+      "external_project_refs": [
+        {
+          "id": "P4E-002",
+          "namespace": "a.p4theater.cn:project-code"
+        }
+      ],
+      "historical_state_counts": {
+        "browser_queued": 3,
+        "public_processed": 35
+      },
+      "id": "human-surrender-514-20261002",
+      "nonpublic_records_omitted": 1,
+      "project_ids": [],
+      "public_projection_count": 0,
+      "public_scope": {
+        "mode": "mandatory_public_projection",
+        "policy_sha256": "21b3318bff9be4a1e7f607111975738f32c8290cdbd042830cb6b8cdc601b7b9",
+        "withheld_record_count": 37
+      },
+      "receipt_sha256": "d766970c4f7f92022da512a2212bcc8029ef7c0c0776307d0f70a55003a02dae",
+      "receipt_updated_at": "2026-10-03T04:02:05.614354Z",
+      "recheck": "locate_private_receipt_by_sha256_then_repreview_no_platform_access_performed",
+      "record_count": 38,
+      "title": "Human Surrender 5.14 historical upload receipt"
+    },
+    {
+      "adapter": "vortex",
+      "batch_state": "not_recorded",
+      "channel_id": "UCp_LyzepcrZX6Cgzv2Qit4w",
+      "external_project_refs": [
+        {
+          "id": "P4C-014",
+          "namespace": "a.p4theater.cn:project-code"
+        }
+      ],
+      "historical_state_counts": {
+        "public": 12
+      },
+      "id": "vortex-source-archive-20261022",
+      "nonpublic_records_omitted": 0,
+      "project_ids": [
+        "project:c559eef1-ec1c-41c6-b829-9c1471d27278"
+      ],
+      "public_projection_count": 0,
+      "public_scope": {
+        "mode": "mandatory_public_projection",
+        "policy_sha256": "21b3318bff9be4a1e7f607111975738f32c8290cdbd042830cb6b8cdc601b7b9",
+        "withheld_record_count": 12
+      },
+      "receipt_sha256": "5cf7aa900f5c81c2ab8dc80e2e8693b37ed580185ce1d5e21277e2fff9216fb4",
+      "receipt_updated_at": "2026-10-22T13:24:22.050150Z",
+      "recheck": "locate_private_receipt_by_sha256_then_repreview_no_platform_access_performed",
+      "record_count": 12,
+      "title": "VORTEX source archive historical publication ledger"
+    }
+  ],
+  "kind": "publication_sources",
+  "schema_version": 1
+}

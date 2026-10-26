@@ -2,6 +2,23 @@
 
 从 [项目与素材目录](INDEX.md) 浏览编号、来源关系和待核实状态。这里的候选目录帮助继续核对材料；登记在目录中不表示可以公开上传。
 
+P4始于北京，以表演、摄影、影像和写作展开现场实践。[认识P4](https://p4theater.cn/about/p4-theater/) · [当前官网](https://p4theater.cn/) · [公共档案](https://a.p4theater.cn/) · [研究文献库](https://b.p4theater.cn/)。
+
+## 从这里开始
+
+- **认识项目：** [官方项目索引](registry/README.md)，从项目原文进入P4。
+- **读一段材料：** [玻璃动物园阅读样板](projects/P4-P000013/index.md) · [当前公开字幕](reading/captions.md)。
+- **查来源与版本：** [档案总目录](INDEX.md) · [身份对照](docs/身份对照.md) · [已有视频关联](publications/README.md)。
+- **补充与协作：** [增补指南](CONTRIBUTING.md) · [Mac/PC协作规则](docs/跨端协作.md) · [本轮交接](coordination/current-batch.json)。
+
+公开字幕可在本地按关键词查找，结果保留字幕版本、cue、源零点时间和原文链接：
+
+```sh
+python -X utf8 scripts/public_reading.py search --root . --query "剧本"
+```
+
+见 [阅读与检索](docs/阅读与检索.md)、[既有成果接入](docs/既有成果接入.md)。本仓负责公开目录与文本版本，[P4 Archive Toolkit](https://github.com/hehefa/p4-archive-toolkit)提供本地文献、来源和修订工具。
+
 ## 当前公开范围
 
 私有主目录保留首轮盘点的 **1,740 个物理视频文件**及永久编号。当前公开投影保留 **1,445 个候选视频文件、16 个候选项目、18 个来源集合**；295 项家庭混合候选或单独官网关联待核实材料已移出当前公开目录。它们不是全部已确认为家庭录像，原文件也没有被搬动或删除。

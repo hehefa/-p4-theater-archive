@@ -20,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from archive_catalog import pathkey, read_json
+from catalog_transaction import PENDING
 
 
 def now():
@@ -30,7 +31,7 @@ def atomic_json(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.name + ".tmp-" + str(os.getpid()))
-    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + "\n", encoding="utf-8", newline="\n")
     for attempt in range(31):
         try:
             os.replace(temporary, path)
@@ -66,6 +67,9 @@ class ProcessLock:
             self.handle.close()
             self.handle = None
             raise RuntimeError("Another verification process holds the local-state lock") from exc
+        if (self.path.parent / PENDING).exists():
+            self.__exit__()
+            raise RuntimeError("An incomplete catalogue batch must be recovered with its original local state before verification")
         self._owner(True)
         return self
 
@@ -153,7 +157,12 @@ class VerificationJob:
                 source = Path(item["path"])
                 unchanged = source.exists() and same_fingerprint(source.stat(), item)
                 still_missing = not source.exists() and previous.get("status") == "missing_source"
-                if previous.get("fingerprint") == {"bytes": item["bytes"], "mtime_ns": item["mtime_ns"]} and (unchanged or still_missing):
+                same_snapshot = previous.get("fingerprint") == {"bytes": item["bytes"], "mtime_ns": item["mtime_ns"]}
+                # A restored mount is a new attempt, even with the same snapshot.
+                # Other findings remain visible until explicitly retried.
+                restored = unchanged and previous.get("status") == "missing_source"
+                retry = getattr(args, "retry_failed", False) and previous.get("status") != "hash_and_metadata_readable"
+                if same_snapshot and (unchanged or still_missing) and not restored and not retry:
                     self.results[item["file_id"]] = previous
         self.hashes = read_json(self.state / "hash_results.json") if (self.state / "hash_results.json").exists() else {"schema_version": 1, "files": {}}
         self.probes = read_json(self.state / "probe_results.json") if (self.state / "probe_results.json").exists() else {"schema_version": 1, "files": {}}
@@ -163,7 +172,7 @@ class VerificationJob:
 
     def event(self, action, **details):
         record = {"at": now(), "event": action, **details}
-        with (self.job / "events.jsonl").open("a", encoding="utf-8") as handle:
+        with (self.job / "events.jsonl").open("a", encoding="utf-8", newline="\n") as handle:
             handle.write(json.dumps(record, ensure_ascii=False) + "\n")
         print(json.dumps(record, ensure_ascii=False), flush=True)
 
@@ -269,6 +278,7 @@ def main():
     parser.add_argument("--ffprobe", default="ffprobe")
     parser.add_argument("--probe-timeout", type=int, default=60)
     parser.add_argument("--limit", type=int, default=0, help="Maximum new files this invocation; 0 means all selected files")
+    parser.add_argument("--retry-failed", action="store_true", help="Retry saved findings/timeouts/errors; successful results with unchanged fingerprints remain reusable")
     parser.add_argument("--only-file", action="append", default=[], help="Optional representative file ID or accession; use a separate sample job directory")
     args = parser.parse_args()
     if args.limit < 0 or args.probe_timeout < 1:

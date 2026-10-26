@@ -10,10 +10,11 @@ import json
 from pathlib import Path
 
 from archive_catalog import Registry, TABLES, aware_timestamp, digest, publication_summary, read_json, render_indexes, validate, write_json
+from catalog_transaction import staged_update
 from merge_caption_release import render_caption_index
 
 
-def merge_receipts(root, state, receipt_path):
+def _merge_receipts(root, state, receipt_path):
     root, state = Path(root).resolve(), Path(state).resolve()
     if root == state or root in state.parents:
         raise ValueError("Private state must be outside the public repository")
@@ -96,6 +97,10 @@ def merge_receipts(root, state, receipt_path):
     return {**publication_summary(tables["publications"]), "source_holds_and_content_reviews_changed": False, "live_hash_cache_read_or_modified": False, "valid": True}
 
 
+def merge_receipts(root, state, receipt_path):
+    return staged_update(root, lambda candidate, private: _merge_receipts(candidate, private, receipt_path), validate, local_state=state)
+
+
 def render_publications(root, tables):
     assets = {x["id"]: x for x in tables["assets"]}
     files = {x["id"]: x for x in tables["files"]}
@@ -107,7 +112,7 @@ def render_publications(root, tables):
     lines += ["", "这些既有平台元数据关联不证明视频内容属于某个 P4 项目，不能作为新的上传白名单。官网实质项目关联仍须逐项核实，家庭排除规则优先。", "", "机器可读证据、回读范围和私有来源收据的 SHA-256 见 [发布记录](../catalog/publications.json)。这些链接不自动解除素材的内容审阅或其他保留状态。", "", "[返回档案目录](../INDEX.md) · [本地公开字幕](../captions/README.md)", ""]
     target = root / "publications/README.md"
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text("\n".join(lines), encoding="utf-8")
+    target.write_text("\n".join(lines), encoding="utf-8", newline="\n")
 
 
 def main():

@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "generated_from": "catalog/projects.json",
+  "purpose": "Portable existing-ID crosswalk for Mac, PC and source adapters; no new identities or matching claims.",
+  "project_count": 16,
+  "items": [
+    {
+      "catalogue_id": "project:23878b5b-0b42-4ad0-9811-22c504006a9b",
+      "accession": "P4-P000001",
+      "title": "3P小组",
+      "reconciliation_status": "pending",
+      "legacy_aliases": [],
+      "external_identifiers": [],
+      "related_public_project_page": null,
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:4bfce452-39ce-4289-96f0-0bc18b76fb68",
+      "accession": "P4-P000002",
+      "title": "510讨论出路",
+      "reconciliation_status": "pending",
+      "legacy_aliases": [],
+      "external_identifiers": [],
+      "related_public_project_page": null,
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:48e89665-7ab8-4367-b0f6-b2fc543cac27",
+      "accession": "P4-P000003",
+      "title": "外向的独白",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [],
+      "external_identifiers": [
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "extroverted-monologue",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/extroverted-monologue",
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:84801fb9-5021-49e7-99d4-258e9e9ff402",
+      "accession": "P4-P000004",
+      "title": "旋转楼梯",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [
+        "P4C-017"
+      ],
+      "external_identifiers": [
+        {
+          "namespace": "a.p4theater.cn:project-code",
+          "value": "P4C-017",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        },
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "spiral-staircase",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/spiral-staircase",
+      "official_project_pages": [
+        {
+          "official_project_code": "P4C-017",
+          "official_project_slug": "spiral-staircase",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/spiral-staircase",
+          "project_url_en": "https://a.p4theater.cn/en/projects/spiral-staircase"
+        }
+      ],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:5fba24e0-b4e8-4f46-993c-1b769502ed80",
+      "accession": "P4-P000005",
+      "title": "相逢（另一独立记录批次）",
+      "reconciliation_status": "pending",
+      "legacy_aliases": [],
+      "external_identifiers": [],
+      "related_public_project_page": null,
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:2305a413-7d61-40a1-ac1c-f2cf044d4fae",
+      "accession": "P4-P000006",
+      "title": "让时间过去",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [],
+      "external_identifiers": [
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "let-time-pass",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/let-time-pass",
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:2e7bd4db-2b53-499e-b7fd-d7204328f489",
+      "accession": "P4-P000007",
+      "title": "中间派",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [
+        "P4C-008"
+      ],
+      "external_identifiers": [
+        {
+          "namespace": "a.p4theater.cn:project-code",
+          "value": "P4C-008",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        },
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "middle-party-love-rescue",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/middle-party-love-rescue",
+      "official_project_pages": [
+        {
+          "official_project_code": "P4C-008",
+          "official_project_slug": "middle-party-love-rescue",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/middle-party-love-rescue",
+          "project_url_en": "https://a.p4theater.cn/en/projects/middle-party-love-rescue"
+        }
+      ],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:95944c9f-8288-41da-bceb-85255f11cf4e",
+      "accession": "P4-P000008",
+      "title": "动物农场",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [],
+      "external_identifiers": [
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "animal-farm-ecotheatre",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/animal-farm-ecotheatre",
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:c559eef1-ec1c-41c6-b829-9c1471d27278",
+      "accession": "P4-P000009",
+      "title": "北风剧社旋涡",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [
+        "P4C-014"
+      ],
+      "external_identifiers": [
+        {
+          "namespace": "a.p4theater.cn:project-code",
+          "value": "P4C-014",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        },
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "vortex",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/vortex",
+      "official_project_pages": [
+        {
+          "official_project_code": "P4C-014",
+          "official_project_slug": "vortex",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/vortex",
+          "project_url_en": "https://a.p4theater.cn/en/projects/vortex"
+        }
+      ],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:84b57ddb-bc8c-4f7c-97b7-06b2b174309b",
+      "accession": "P4-P000010",
+      "title": "死物骑士",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [],
+      "external_identifiers": [
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "dead-object-knight",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/dead-object-knight",
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:0d241b4a-d44a-44e6-a69d-7005746c1092",
+      "accession": "P4-P000011",
+      "title": "波菲利娅",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [
+        "P4C-020"
+      ],
+      "external_identifiers": [
+        {
+          "namespace": "a.p4theater.cn:project-code",
+          "value": "P4C-020",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        },
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "porphyria",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/porphyria",
+      "official_project_pages": [
+        {
+          "official_project_code": "P4C-020",
+          "official_project_slug": "porphyria",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/porphyria",
+          "project_url_en": "https://a.p4theater.cn/en/projects/porphyria"
+        }
+      ],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:5202b1af-e84e-4afd-84ea-c9cca70e0419",
+      "accession": "P4-P000012",
+      "title": "爱丽丝湖",
+      "reconciliation_status": "pending",
+      "legacy_aliases": [],
+      "external_identifiers": [],
+      "related_public_project_page": null,
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2",
+      "accession": "P4-P000013",
+      "title": "玻璃动物园",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [
+        "P4C-018"
+      ],
+      "external_identifiers": [
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "glass-menagerie",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/glass-menagerie",
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8",
+      "accession": "P4-P000014",
+      "title": "紫色行动",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [
+        "P4C-040"
+      ],
+      "external_identifiers": [
+        {
+          "namespace": "a.p4theater.cn:project-code",
+          "value": "P4C-040",
+          "mapping_basis": "existing_scoped_registry_slug_and_official_index_slug_match",
+          "asset_membership_verified": false
+        },
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "purple-action",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/purple-action",
+      "official_project_pages": [
+        {
+          "official_project_code": "P4C-040",
+          "official_project_slug": "purple-action",
+          "snapshot_at": "2026-10-26T13:41:41.863Z",
+          "project_url_zh": "https://a.p4theater.cn/wechat/projects/purple-action",
+          "project_url_en": "https://a.p4theater.cn/en/projects/purple-action"
+        }
+      ],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:6e85f688-ad72-44aa-8595-92984a744ad8",
+      "accession": "P4-P000015",
+      "title": "致命玩笑",
+      "reconciliation_status": "pending",
+      "legacy_aliases": [],
+      "external_identifiers": [],
+      "related_public_project_page": null,
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    },
+    {
+      "catalogue_id": "project:d3e4e7a5-dce8-4bcb-8818-94b35220296f",
+      "accession": "P4-P000016",
+      "title": "相逢（虫洞剧团记录批次）",
+      "reconciliation_status": "existing_registry_project_identified_from_directory_label",
+      "legacy_aliases": [],
+      "external_identifiers": [
+        {
+          "namespace": "hehefa/p4-research-library:projects[].id",
+          "value": "encounter-wormhole",
+          "mapping_basis": "directory_title_match_only",
+          "asset_membership_verified": false
+        }
+      ],
+      "related_public_project_page": "https://b.p4theater.cn/projects/encounter-wormhole",
+      "official_project_pages": [],
+      "scope": "existing_project_level_references_only_not_file_membership_or_identity_merger"
+    }
+  ]
+}
