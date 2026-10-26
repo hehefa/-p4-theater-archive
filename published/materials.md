@@ -1,10 +1,10 @@
 # 已公开文稿与研究
 
-113条官方材料及64条已发表研究。75份有文字下载的材料保留MD和TXT两版；38条影音材料保存说明与原站文件链接。
+177项文稿、影音材料说明与研究，按实际公开版本保留署名、时间依据和原文链接。
 
-采用官网已经编辑公开的访问版，保留署名、日期依据、摘录范围和限制；内部原稿与完整研究底账不在此包。
+公众号原文与备份文本另见[公众号目录](wechat.md)。影音原文件从原站观看或下载。
 
-| 材料 | 本地阅读或下载 | 原文 |
+| 材料 | 阅读或下载 | 原文 |
 | --- | --- | --- |
 | 自下而上的造型设计：DOC版本方法正文 | [TXT](materials/a-bottom-up-design-doc.txt) · [MD](materials/a-bottom-up-design-doc.md) | [原文](https://a.p4theater.cn/archive/disk/bottom-up-design-doc) |
 | 自下而上的造型设计：TXT版本方法正文 | [TXT](materials/a-bottom-up-design-text.txt) · [MD](materials/a-bottom-up-design-text.md) | [原文](https://a.p4theater.cn/archive/disk/bottom-up-design-text) |
@@ -184,4 +184,4 @@
 | 玫瑰花：剧本与发布权怎样协作 | [zh](materials/b-research_dossier-rose-script-and-publication.zh.md) | [原文](https://b.p4theater.cn/questions/rose-script-and-publication) |
 | 实像：相遇怎样被安排成产品 | [zh](materials/b-research_dossier-shixiang-experience-and-product.zh.md) | [原文](https://b.p4theater.cn/questions/shixiang-experience-and-product) |
 
-[字幕下载](captions.md) · [本批说明](README.md)
+[字幕](captions.md) · [公众号原文](wechat.md) · [打卡进度](../PROGRESS.md)

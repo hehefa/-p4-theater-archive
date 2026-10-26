@@ -849,8 +849,18 @@ def validate(root):
                     caption_exports[record["path"]] = record["sha256"]
         except (ValueError, OSError, TypeError, KeyError, UnicodeError) as exc:
             errors.append("Invalid official editions: " + str(exc))
-    absolute = re.compile(r"(?i)(?:(?<![a-z0-9])[a-z]:[\\/]|file://|\\\\[^\\\s]+\\|/Users/|/home/)")
+    absolute = re.compile(r"(?i)(?:(?<![a-z0-9])[a-z]:[\\/]|file://|\\\\[^\\\s]+\\|/Users/|/Volumes/|/home/)")
     sensitive = re.compile(r"(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AIza[A-Za-z0-9_-]{25,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)")
+    def strings(value):
+        if isinstance(value, str):
+            yield value
+        elif isinstance(value, list):
+            for child in value:
+                yield from strings(child)
+        elif isinstance(value, dict):
+            for key, child in value.items():
+                yield key
+                yield from strings(child)
     for path in root.rglob("*"):
         if not path.is_file() or ".git" in path.parts:
             continue
@@ -862,7 +872,17 @@ def validate(root):
             errors.append("Unexpected large public file: " + relative)
         if path.suffix in {".json", ".md", ".yml", ".yaml", ".txt", ".srt"}:
             text = path.read_text(encoding="utf-8-sig")
-            if absolute.search(text):
+            # Inspect actual JSON strings. A title containing literal \n markers
+            # is serialized as \\n, which is not a Windows network source path.
+            if path.suffix == ".json":
+                try:
+                    path_values = strings(json.loads(text))
+                except ValueError:
+                    errors.append("Invalid JSON in public file: " + relative)
+                    path_values = (text,)
+            else:
+                path_values = (text,)
+            if any(absolute.search(value) for value in path_values):
                 errors.append("Absolute local path in public file: " + relative)
             if sensitive.search(text):
                 errors.append("Credential-like content in public file: " + relative)

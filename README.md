@@ -6,9 +6,11 @@ P4始于北京，以表演、摄影、影像和写作展开现场实践。[认�
 
 ## 从这里开始
 
+- **查看打卡与缺口：** [档案进度](PROGRESS.md)，按固定批次显示完成数、分母、证据和下一步。
 - **认识项目：** [官方项目索引](registry/README.md)，从项目原文进入P4。
 - **读一段材料：** [玻璃动物园阅读样板](projects/P4-P000013/index.md) · [当前公开字幕](reading/captions.md)。
 - **下载已完成资料：** [作品发行版字幕](published/captions.md) · [公开文稿与研究](published/materials.md)，逐项保留出处、原文链接和版本。
+- **查公众号与旧文：** [公众号原文及公开备份文本](published/wechat.md)，保存文字和仅目录记录分别标明。
 - **查来源与版本：** [档案总目录](INDEX.md) · [身份对照](docs/身份对照.md) · [已有视频关联](publications/README.md)。
 - **补充与协作：** [增补指南](CONTRIBUTING.md) · [Mac/PC协作规则](docs/跨端协作.md) · [本轮交接](coordination/current-batch.json)。
 

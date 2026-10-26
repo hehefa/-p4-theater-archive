@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "batch_id": "p4-20261026-archive-progress-02",
+  "base_commit": "fec3e16d16ad8618255d58957564538fc7b7c678",
+  "owner": "mac",
+  "recorded_at": "2026-10-26T17:34:06.673977+00:00",
+  "status": "validated_for_github_publication",
+  "scope": "Official public editions and evidence-based progress; not a new media upload batch.",
+  "new_caption_versions": 177,
+  "new_document_records": 572,
+  "new_saved_text_documents": 556,
+  "new_metadata_only_document_cards": 16,
+  "public_counts": {
+    "caption": 487,
+    "document": 685,
+    "research": 64
+  },
+  "public_registered_body_files": 1363,
+  "progress_batches": 7,
+  "progress_leads": 6,
+  "caption_target_slots": 240,
+  "caption_versions_recorded": 199,
+  "caption_source_versions_unresolved": 41,
+  "wechat_records": 554,
+  "wechat_with_saved_text": 538,
+  "wechat_without_saved_text": 16,
+  "raw_source_changes": "none",
+  "raw_catalogue_or_exclusion_policy_changes": "none",
+  "withdrawn_raw_captions_restored": 0,
+  "new_youtube_video_uploads": 0,
+  "new_youtube_caption_uploads": 0,
+  "private_registry_mapping_or_original_media_modified": false,
+  "checks": {
+    "unit_tests_passed": 100,
+    "previous_public_edition_items_preserved": 487,
+    "previous_primary_caption_files_preserved": 48,
+    "checked_local_links": 1419
+  },
+  "next_action": "Pull current main; update only the named batch, exact edition evidence and coverage ledger. Regenerate official indexes and progress together; unknown status stays unknown, excluded sources stay excluded."
+}

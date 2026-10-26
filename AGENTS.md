@@ -31,6 +31,8 @@
 
 ## 验证与交付
 
+- `progress/work-items.json`是批次打卡的唯一人工输入。批次固定ID、分母、单位、阶段和证据；未知用null，家庭范围排除不入待发布分母，不给无边界的全库总完成率。更新后运行`archive_progress.py build`，不要手改`PROGRESS.md`或`progress/summary.json`。
+- 发行版条目更新后运行`official_publications.py build-indexes`和`archive_progress.py build`，再检查。已有批次的snapshot.ids冻结原清单；新材料另建批次，不能通过扩大旧分母改写历史完成状态。字幕槽位对账按coverage_source逐项绑定准确版本；缺出处或版本的轨道保留未核实。
 - 运行目录校验、既有测试及变更对应检查。候选数据验证通过后才替换正式输出；失败保留原目录。
 - 原文件编号、字幕正文和版本路径默认保持；增补有来源，修订保留历史。
 - Git提交/推送、CI、网站部署和平台发布是不同状态。以真实远端回读交付，不把本地通过写成已经上线。

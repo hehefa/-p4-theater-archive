@@ -327,6 +327,11 @@ class CatalogueTests(unittest.TestCase):
                 shutil.copytree(ROOT / folder, work / folder)
             shutil.copyfile(ROOT / ".p4-public-scope.json", work / ".p4-public-scope.json")
             self.assertTrue(module.validate(work)["valid"])
+            module.write_json(work / "public-note.json", {"title": r"First\nSecond\nThird"})
+            self.assertTrue(module.validate(work)["valid"])
+            module.write_json(work / "public-note.json", {"source": r"\\server\private\source.mov"})
+            self.assertTrue(any("Absolute local path" in e for e in module.validate(work)["errors"]))
+            (work / "public-note.json").unlink()
             (work / "published/captions/unregistered.srt").write_text(
                 "1\n00:00:00,000 --> 00:00:01,000\nUnapproved\n", encoding="utf-8")
             errors = module.validate(work)["errors"]

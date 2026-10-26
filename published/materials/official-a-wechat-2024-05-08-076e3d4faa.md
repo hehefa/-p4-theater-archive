@@ -1,0 +1,102 @@
+# p4展览｜“ 屎家庭 ” —— 被遗弃的唐山少年
+
+[A站保存原文](<https://a.p4theater.cn/wechat/wechat-2024-05-08-076e3d4faa>)
+
+原发布账号：p4剧场和你
+原记录日期：2024-05-08 19:17
+来源编号：`wechat-2024-05-08-076e3d4faa`
+
+[公众号原文链接](<https://mp.weixin.qq.com/s?__biz=MzIzMjM4OTI2OA==&mid=2247489786&idx=1&sn=a4313bd3b69832f659c10a8587a7678b&chksm=e96fdadc6ba3faffe9d83a5375170adb9727cc4d5c6fd68b5b9d301af1fe94f06055586a980a#rd>)
+
+分类：展览 / 画廊 · 现场
+
+原站关联标签：孽生繁殖
+
+同一保存正文的其他发布记录：[2024-05-08 00:30 · p4剧场](<https://a.p4theater.cn/wechat/wechat-2024-05-08-649a162693>)
+
+## 保存正文
+
+《 孽生繁殖 》
+ 时代创伤下的个人挣扎与救赎
+
+ 做 p4 剧场的这些年，我接触到了很多很多的年轻人，他们大多数是刚刚从学校毕业或是还在上学的学生，史佳廷是尤为特别的一个，听他的故事让我感到发自内心的难受，一种无形的压迫在周围肆意的漫延，他敏感却根本找不到方向。
+
+ 史佳廷的新展《孽生繁殖》是一次对个人经历和时代困境的深刻剖析。他用＂屎家庭＂的隐喻表达了一代年轻人在急剧变革时代中的迷惘、焦虑和挣扎。这种挣扎源于个人，却也折射出整个时代的创伤。
+
+ 史佳廷曾经历过孤僻压抑的阶段内心充满困惑和否定。这种状态如同许多年轻人在现实重压下的窒息和无力。 ＂屎家庭＂的孽生源于外界的漠视和个人的迷失。当社会缺乏包容和引导，个体难以找到自我认同和价值感，就更容易陷入自我放逐。
+
+ 作为一名即将毕业的艺术生，史佳廷本应憧憬未来，但现实的艰难让梦想变得奢侈。他的绘画天赋本可以在艺术道路上走得更远，却不得不为生计发愁。这种困境并非个例，许多年轻人怀揣梦想，却在残酷现实面前感到迷茫。
+
+ 我们需要以更多理解、包容和爱去看待彼此。要打破年轻人面临的窘境，需要营造鼓励梦想、宽容失败的环境，而不是将压力和焦虑归咎于个人。对史佳廷这样的年轻艺术家，更需给予特别的关注和帮助，让他们能重拾信心，在艺术道路上继续探索。
+
+ 《孽生繁殖》带着强烈的反思意味，引发我们重新思考个人在时代中的处境，探寻人性和社会的出路。这是发自内心的呐喊，更是送给这个时代的礼物。
+
+ PS：史佳廷曾将自己从小到大的成长经历写成了四篇文章发表在 p4 剧场和你 的公众号上，点击下方文字跳转
+
+ 《唐山少年暴力史 1-4 》
+
+ 跳蚤对于维持整个生态链的稳定毫无作用，如果屎家庭被全部消灭，对于其所在的生物圈只有好处，没有坏处。而屎家庭的繁殖方式叫做孽生繁殖，即找到水源丰富的孽生地，在水中产下自己的孽障，孵化生长。
+
+ 孽生繁殖记录短片（同步展出） ：
+
+ 找到孽生地是消灭跳蚤有效的办法。如果找到屎家庭的孽生地，他的罪孽就不会再蔓延。
+ 屎家庭从未真正将人格给予他人，从未以真诚的面貌帮助别人，却永远在祈求他人的垂怜。一旦屎家庭发现有人可以保护他这个羸弱不堪的个体，就会紧紧地跳上去抓住对方。
+ 在这之后，屎家庭立刻就开始了繁殖。无数个屎家庭的面貌涌向了四面八方，无数个屎家庭开始了机械的跳跃活动。多于一束的光可以产生多于一片的影子，而屎家庭层层叠叠，鱼贯而行，靠皮肤散发的丁酸来寻人，靠人体产生的温度来判断跳跃的位置，一旦得手，就完成他吸收营养的使命。屎家庭形成了群落，开始大肆造成危害。
+ 我们不能再被这种跳蚤所操纵和伤害，我们找到了屎家庭的孽生地，抓住了这些恶心的屎家庭，我们可以庄重宣告孽生繁殖正在被消灭。通过这样的仪式，就可以从源头解决问题，对现实世界造成影响，真正消灭屎家庭。这是结束长久苦难的开始。
+
+ 屎家庭说：“所谓善良的我，从未以自己的意愿伤害过别人，也从未做出远远逾越在自己原则之外的事情。我满足于自己给自己编织的名叫“认同”的襁褓。“
+
+ 屎家庭介绍
+
+ 屎家庭，骗子，流氓，正宗大傻逼，臭虫，跳蚤，虱子。屎家庭是垃圾，是本该被烧掉发电，但是工作人员却忘了扔进焚烧炉里的那一堆垃圾。屎家庭是一味毒药，被屎家庭沾染的地方都会腐烂变得恶臭，令人不停作呕。屎家庭最喜欢钻入地下少光的地方，比如地下车库，地下通道，地下室，地库。屎家庭喜欢尽可能降低自己的海拔，无耻地躺在黑暗里。他声称只有在黑暗的地下，“才能安心接受呼吸这里的空气”。
+
+ 展览信息：
+ 时间：2024.05.10-2024.06.01
+ 地点：北京市朝阳区望花路东里1号楼
+ 展览预约：扫码下面艺术家个人微信
+
+ PS：此次展览开幕将有 即兴活动与艺术家个人行为艺术表演 ，如果想参与和史佳廷近距离交流与互动或是想一起聊聊自己，请加机长微信，我们会发邀请函给你
+
+ 《孽生繁殖》开幕沙龙
+
+ 活动：《孽生繁殖》史佳廷个展开幕式即兴表演
+
+ 时间：2024.5.10（周五）19:00-21:30
+
+ 地点：北京市朝阳区望花路东里 1 号楼 510
+
+ 费用：10 元
+
+ 招募人数：15人
+
+ 报名：加机长（p4theater03）
+
+## 原文图像
+
+![原文图像 1](<https://mmbiz.qpic.cn/sz_mmbiz_jpg/LHiamKLP0C5kX00IPJNxXRA17qc68p2M5z1DK1ibYfX9PKcgDE2ZWm7N85dw9xAA4xBl9h8tHDNPKIeFlT9rUkGw/0?wx_fmt=jpeg&from=appmsg>)
+
+![原文图像 2](<https://mmbiz.qpic.cn/sz_mmbiz_jpg/LHiamKLP0C5kX00IPJNxXRA17qc68p2M5ibPlEtBj2P58L1cvr6V7icXRLTYvSstbiaZ6Ut6EIhI2pksaUXURp9Zxg/640?wx_fmt=jpeg>)
+
+![原文图像 3](<https://mmbiz.qpic.cn/sz_mmbiz_jpg/LHiamKLP0C5kX00IPJNxXRA17qc68p2M5pdHiaHwSqVsZqtgXiaYTK6tbYDCE97kE4t9lPMLrOhtjne7Pmkq9Blsg/640?wx_fmt=jpeg&from=appmsg>)
+
+![原文图像 4](<https://mmbiz.qpic.cn/sz_mmbiz_jpg/LHiamKLP0C5kX00IPJNxXRA17qc68p2M525QVPfXLL34uQLtC0qP5rG2MKLOB15ZgKxpBw6cOcrKYOYQPH57N8w/0?wx_fmt=jpeg&from=appmsg>)
+
+![原文图像 5](<https://mmbiz.qpic.cn/sz_mmbiz_jpg/LHiamKLP0C5kX00IPJNxXRA17qc68p2M59fa36oEfdUlmefDicGichiauRtPyd7UTsAFCNwdloSNhQ2khdc4cnK0sQ/640?wx_fmt=jpeg>)
+
+![原文图像 6](<https://mmbiz.qpic.cn/sz_mmbiz_png/LHiamKLP0C5l47iaPYO4YhrLk7ZzAdKstR7tX9vfjEA6bzexyLzQVGCiawS4boceKELoWYhHZJibNmG3bz5ZCrTickg/640?wx_fmt=png&from=appmsg>)
+
+![原文图像 7](<https://mmbiz.qpic.cn/mmbiz_png/VobIqplpic0qmgCib6ibnicdmPnAjYzR6Jz3Bx0CX2sJvJxiaMmUukfylRJpJRUFGJ1UJNA8QTYiauLJ6EY81wHju5HQ/640?wx_fmt=png&from=appmsg>)
+
+![原文图像 8](<https://mmbiz.qpic.cn/sz_mmbiz_jpg/LHiamKLP0C5l47iaPYO4YhrLk7ZzAdKstR92JZRkW1TOYic94nGaAIdwBFtZDT28npCftYjgDyaM8b3RvXXZgOCyw/640?wx_fmt=jpeg&from=appmsg>)
+
+![原文图像 9](<https://mmbiz.qpic.cn/sz_mmbiz_jpg/LHiamKLP0C5kX00IPJNxXRA17qc68p2M5YCLMbEqeh0rh5nRiaO3ia3ckibKv6yic5h2fjDXXjFrJbn5M3lDfjO0DWQ/0?wx_fmt=jpeg&from=appmsg>)
+
+![原文图像 10](<https://mmbiz.qpic.cn/sz_mmbiz_jpg/LHiamKLP0C5kX00IPJNxXRA17qc68p2M5iceMKaOdp7AynLn1bN7jRIygoeGmnud28uDwm1icrkMfgR5d4QdMzHNg/640?wx_fmt=jpeg>)
+
+![原文图像 11](<https://mmbiz.qpic.cn/mmbiz_jpg/LHiamKLP0C5nyVYQn1ibbnLzrSUd3HPWVibEepZe5nmLBxrHxKOVDViaRLnsjccapF6CI4LjX5zbVxugGoHwNZVZSA/640?wx_fmt=jpeg>)
+
+## 来源与版本
+
+- 官方来源：[原文页](<https://a.p4theater.cn/wechat/wechat-2024-05-08-076e3d4faa>)
+- 保存正文 SHA-256：`7fe6e30482285938e402d2ccc06c1836e8c5ac8871eb46fed9a008f1a26b091b`
+- 记录版本 SHA-256：`2183c4d945ec7c9091a5f0934a273e8b6cb75fcc11ba0314eb02626c7a3a0b96`
