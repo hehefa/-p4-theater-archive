@@ -302,6 +302,26 @@ class CatalogueTests(unittest.TestCase):
                 module.write_json(path, broken)
                 self.assertTrue(any(message in error for error in module.validate(public)["errors"]), changes)
 
+    def test_home_path_guard_allows_relative_media_and_rejects_real_local_paths(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            for name in module.TABLES:
+                module.write_json(work / "catalog" / (name + ".json"), {"schema_version": 1, "items": []})
+            module.write_json(work / "catalog/summary.json", {"schema_version": 1, "counts": {name: 0 for name in module.TABLES}})
+            public_values = ["media/home/hero.webp", "published/packaged-images/bundle/media/home/hero.webp", "https://hefa.p4theater.cn/media/home/hero.webp", "/media/home/hero.webp", "content: media/home/hero.webp"]
+            local_values = ["/home/user", "source: /home/user/source.mov", "/Users/hefa/source.mov", "/Volumes/Drive/source.mov", r"C:\Users\fixture\source.mov", r"source: D:\media\source.mov", r"\\server\share\source.mov", "file:///tmp/source.mov"]
+            for values, expected in ((public_values, False), (local_values, True)):
+                for value in values:
+                    for name in ("source.json", "source.md"):
+                        with self.subTest(value=value, filename=name):
+                            if name.endswith(".json"):
+                                module.write_json(work / name, {"source": value})
+                            else:
+                                (work / name).write_text(value, encoding="utf-8", newline="\n")
+                            errors = module.validate(work)["errors"]
+                            self.assertEqual(any("Absolute local path" in error for error in errors), expected, errors)
+                            (work / name).unlink()
+
     def test_public_catalogue_references_and_privacy_guard(self):
         self.assertTrue(module.validate(ROOT)["valid"], module.validate(ROOT)["errors"])
         with tempfile.TemporaryDirectory() as tmp:

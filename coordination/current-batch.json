@@ -39,5 +39,11 @@
     "generated_reading": "check_passed",
     "identity_crosswalk": "check_passed",
     "historical_receipts": "3_source_aggregates_0_unproven_public_candidates"
+  },
+  "public_editions_update": {
+    "record": "coordination/public-media-release-20261026.json",
+    "namespace": "public-edition-accession:v1",
+    "initialization": "first_allocation_only",
+    "original_private_numbering_state_modified": false
   }
 }

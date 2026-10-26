@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "batch_id": "public-text-images-numbering-20261026",
+  "base_commit": "9b45902b08cd8a64c485f5b80bc82aa186e2c5c9",
+  "implementation_branch": "codex/all-public-text-images-numbering-20261026",
+  "status": "github_public_archive_handoff",
+  "namespace": "public-edition-accession:v1",
+  "material_counts": {
+    "caption": 487,
+    "document": 1227,
+    "image": 1326,
+    "research": 64
+  },
+  "material_total": 3104,
+  "file_locations": 11199,
+  "file_accessions": 10840,
+  "actual_git_files": 2959,
+  "release_members": 8240,
+  "release_url": "https://github.com/hehefa/-p4-theater-archive/releases/tag/public-images-20261026-v2",
+  "image_scope": "Existing public editions only; held identities and five held content SHA values remain excluded, including cross-site copies.",
+  "original_inventory_counter_modified": false,
+  "source_media_operations": "read_only",
+  "production_sites_modified": false,
+  "rules": [
+    "Keep existing P4, hf-img and website identities; AR is an independent public-edition namespace.",
+    "Fetch full Git history before numbering; assign appends/reuses, never renumbers.",
+    "Do not run --initialize again after first published allocation.",
+    "Git files are exact bytes; release members are virtual paths with actual download_url and archive_path.",
+    "New records require exact source/context observations and matching files/approvals; do not turn public excerpts into private original manuscripts."
+  ],
+  "maintenance_commands": [
+    "git fetch origin",
+    "python -X utf8 scripts/official_publications.py check --root .",
+    "python -X utf8 scripts/public_accessions.py assign --root .",
+    "python -X utf8 scripts/official_publications.py build-indexes --root .",
+    "python -X utf8 scripts/archive_progress.py build --root .",
+    "python -X utf8 scripts/public_accessions.py check --root ."
+  ],
+  "coordination_issue": "https://github.com/hehefa/-p4-theater-archive/issues/1",
+  "pc_acknowledgement": "not_received",
+  "observed_at": "2026-10-26T18:26:03.495657+00:00",
+  "verification": {
+    "local_source_file_image_and_numbering_checks": "passed",
+    "local_unit_tests": 129,
+    "release_assets_current_readback": "4 published assets; size/digest/URL matched",
+    "final_git_main_readback": "reported in coordination Issue 1 after merge"
+  }
+}

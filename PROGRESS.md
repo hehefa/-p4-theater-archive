@@ -1,6 +1,6 @@
 # 档案进度
 
-截至：2026-10-26T17:32:38.037644+00:00
+截至：2026-10-26T18:23:00.305087+00:00
 
 仅统计已明确的固定批次；同一材料可有目录和正文两个观察口径，批次有重叠，不能相加为整体完成率。字幕、文章、视频与仓库各按自己的单位计算。家庭及范围排除单列，不当作待发布积压。
 
@@ -19,6 +19,11 @@
 | 公众号保存文字覆盖（篇文章） | 538/554（97.1%） | 538/554（97.1%） | 538/554（97.1%） |
 | 微信备份中的明确公开文本（项文本） | 18/18（100.0%） | 18/18（100.0%） | 18/18（100.0%） |
 | 既有公开工具、导览、评论与总导航（个仓库） | 4/4（100.0%） | 4/4（100.0%） | 未核定/4（未核定） |
+| 公开图像统一归档（条公开材料记录） | 1326/1326（100.0%） | 1326/1326（100.0%） | 未核定/1326（未核定） |
+| 何发站公开文字导出（条公开材料记录） | 418/418（100.0%） | 418/418（100.0%） | 未核定/418（未核定） |
+| B站公开来源正文（条公开材料记录） | 122/122（100.0%） | 122/122（100.0%） | 未核定/122（未核定） |
+| 批准图像目录导出（条公开材料记录） | 2/2（100.0%） | 2/2（100.0%） | 未核定/2（未核定） |
+| 本轮公开成品与文件总清单（条公开材料记录） | 3104/3104（100.0%） | 3104/3104（100.0%） | 未核定/3104（未核定） |
 
 ## 当前原片工序
 
@@ -138,6 +143,81 @@
 下一步：沿各项目自己的维护源与发布流程继续更新。
 
 [证据1](https://github.com/hehefa/he-fa-critical-monograph) · [证据2](https://github.com/hehefa/p4-archive-toolkit) · [证据3](https://github.com/hehefa/openai-agents-starter-python) · [证据4](https://github.com/hehefa/p4-theater)
+
+### 公开图像统一归档
+
+范围：何发746条、A站及关联图像480条、B站100条。按图像材料身份计数；切片、缩略图和格式不是独立作品。；单位：条公开材料记录。
+
+状态：GitHub已归档并编号
+
+- [x] 已整理：1326/1326（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据3](https://github.com/hehefa/-p4-theater-archive/releases/tag/public-images-20261026-v2)
+- [x] GitHub已发布：1326/1326（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据3](https://github.com/hehefa/-p4-theater-archive/releases/tag/public-images-20261026-v2)
+- [ ] 平台已发布：未核定/1326（未核定） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据3](https://github.com/hehefa/-p4-theater-archive/releases/tag/public-images-20261026-v2)
+  本批发布目的地为GitHub，不据此宣称YouTube或其他平台的新发布。
+
+下一步：后续新增材料另建固定批次；保留现有编号、来源和文件版本。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据3](https://github.com/hehefa/-p4-theater-archive/releases/tag/public-images-20261026-v2)
+
+### 何发站公开文字导出
+
+范围：固定418份中英文公开Markdown；PDF、Word、阅读链接版附在对应材料内，不另算文章。；单位：条公开材料记录。
+
+状态：GitHub已归档并编号
+
+- [x] 已整理：418/418（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [x] GitHub已发布：418/418（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [ ] 平台已发布：未核定/418（未核定） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+  本批发布目的地为GitHub，不据此宣称YouTube或其他平台的新发布。
+
+下一步：后续新增材料另建固定批次；保留现有编号、来源和文件版本。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+
+### B站公开来源正文
+
+范围：新增122条已公开编辑正文，保留摘述、节选和原稿未公开的边界。；单位：条公开材料记录。
+
+状态：GitHub已归档并编号
+
+- [x] 已整理：122/122（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [x] GitHub已发布：122/122（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [ ] 平台已发布：未核定/122（未核定） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+  本批发布目的地为GitHub，不据此宣称YouTube或其他平台的新发布。
+
+下一步：后续新增材料另建固定批次；保留现有编号、来源和文件版本。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+
+### 批准图像目录导出
+
+范围：746条批准图像的JSON与CSV导出；原749条目录保留在私有证据中，不公开已暂缓记录。；单位：条公开材料记录。
+
+状态：GitHub已归档并编号
+
+- [x] 已整理：2/2（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [x] GitHub已发布：2/2（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [ ] 平台已发布：未核定/2（未核定） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+  本批发布目的地为GitHub，不据此宣称YouTube或其他平台的新发布。
+
+下一步：后续新增材料另建固定批次；保留现有编号、来源和文件版本。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+
+### 本轮公开成品与文件总清单
+
+范围：固定3104条公开材料记录、11199个文件位置；AR编号与原片P4编号分开，339个附加浏览图与3DZI各按角色标明。；单位：条公开材料记录。
+
+状态：GitHub已归档并编号
+
+- [x] 已整理：3104/3104（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [x] GitHub已发布：3104/3104（100.0%） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [ ] 平台已发布：未核定/3104（未核定） 条公开材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+  本批发布目的地为GitHub，不据此宣称YouTube或其他平台的新发布。
+
+下一步：后续新增材料另建固定批次；保留现有编号、来源和文件版本。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
 
 ## 后续线索
 

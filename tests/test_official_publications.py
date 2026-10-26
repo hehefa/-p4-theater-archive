@@ -2,12 +2,15 @@
 import copy
 import hashlib
 import json
+import io
 from pathlib import Path
 import shutil
 import subprocess
 import sys
 import tempfile
 import unittest
+from unittest import mock
+import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -24,10 +27,10 @@ EXCLUDED = "asset:synthetic-hard-excluded"
 class OfficialPublicationTests(unittest.TestCase):
     def fixture(self, work):
         # Copy only the already public three SRTs, never source media or private state.
-        policy = json.loads((ROOT / ".p4-public-scope.json").read_text())
+        policy = json.loads((ROOT / ".p4-public-scope.json").read_text(encoding="utf-8"))
         policy["excluded_identity_sha256s"].append(hashlib.sha256(EXCLUDED.encode()).hexdigest())
         write_json(work / ".p4-public-scope.json", policy)
-        raw = json.loads((ROOT / "catalog/subtitles.json").read_text())["items"]
+        raw = json.loads((ROOT / "catalog/subtitles.json").read_text(encoding="utf-8"))["items"]
         keep = [s for s in raw if s["id"] in published.RAW_APPROVED_VERSIONS]
         for sub in keep:
             target = work / sub["public_export"]["path"]
@@ -65,7 +68,7 @@ class OfficialPublicationTests(unittest.TestCase):
             self.assertEqual((match["cue"], match["clock"], match["start_ms"]), (1, "edition_zero", 1000))
             self.assertEqual(match["source_url"], item["source_url"])
             self.assertEqual(match["sha256"], item["files"][0]["sha256"])
-            cli = subprocess.run([sys.executable, str(ROOT / "scripts/official_publications.py"), "check", "--root", str(work)], capture_output=True, text=True)
+            cli = subprocess.run([sys.executable, str(ROOT / "scripts/official_publications.py"), "check", "--root", str(work)], capture_output=True, text=True, encoding="utf-8")
             self.assertEqual(cli.returncode, 0, cli.stderr)
             self.assertTrue(json.loads(cli.stdout)["valid"])
 
@@ -168,7 +171,7 @@ class OfficialPublicationTests(unittest.TestCase):
             approval["source_media_review"] = {"decision": "approved_official_public_edition_after_scope_review", "source_media_sha256": MEDIA_SHA, "official_context_url": item["official_context_url"], "reviewed_at": "2026-10-26T17:00:00Z"}
             self.save(work, [item], [approval])
             self.assertTrue(published.check(work)["valid"])
-            files = json.loads((work / "catalog/files.json").read_text())
+            files = json.loads((work / "catalog/files.json").read_text(encoding="utf-8"))
             files["items"].append({"id": "file:hard-excluded", "asset_id": EXCLUDED, "sha256": MEDIA_SHA})
             write_json(work / "catalog/files.json", files)
             self.assertFalse(published.check(work)["valid"])
@@ -218,9 +221,9 @@ class OfficialPublicationTests(unittest.TestCase):
             item["source_media_sha256"] = approval["source_media_sha256"] = "0" * 64
             self.save(work, [item], [approval])
             self.assertFalse(published.check(work)["valid"])
-            assets = json.loads((work / "catalog/assets.json").read_text())
+            assets = json.loads((work / "catalog/assets.json").read_text(encoding="utf-8"))
             assets["items"].append({"id": "asset:other", "file_id": "file:other"})
-            files = json.loads((work / "catalog/files.json").read_text())
+            files = json.loads((work / "catalog/files.json").read_text(encoding="utf-8"))
             files["items"].append({"id": "file:other", "asset_id": "asset:other", "sha256": "0" * 64})
             write_json(work / "catalog/assets.json", assets)
             write_json(work / "catalog/files.json", files)
@@ -243,9 +246,127 @@ class OfficialPublicationTests(unittest.TestCase):
             write_json(policy, scope)
             self.assertFalse(published.check(work)["valid"])
             policy.write_bytes(old)
-            raw = json.loads((work / "catalog/subtitles.json").read_text())["items"][0]
+            raw = json.loads((work / "catalog/subtitles.json").read_text(encoding="utf-8"))["items"][0]
             (work / raw["public_export"]["path"]).write_bytes(b"changed raw caption")
             self.assertFalse(published.check(work)["valid"])
+
+    def image_fixture(self, work):
+        caption, old_approval = self.fixture(work)
+        body = b"\x89PNG\r\n\x1a\nsynthetic image bytes"
+        preview = self.file(work, "published/images/fixture/preview.png", body)
+        preview.update(storage="git", role="repo_preview", mime="image/png", width=1, height=1)
+        members = [{"path": "published/packaged-images/fixture-bundle/tiles/" + str(i) + ".jpg", "storage": "release", "bundle_id": "fixture-bundle", "archive_path": "tiles/" + str(i) + ".jpg", "download_url": "https://github.com/example/archive/releases/download/v1/fixture.zip", "asset_id": 123, "sha256": hashlib.sha256(("tile " + str(i)).encode()).hexdigest(), "bytes": 6, "mime": "image/jpeg", "width": 1, "height": 1, "role": "tile"} for i in (1, 2)]
+        image = {"id": "official-image:fixture", "original_id": "hf-img-fixture", "kind": "image", "title": "Reference portrait fixture", "source_url": "https://hefa.p4theater.cn/images/fixture", "official_context_url": caption["official_context_url"], "image_classification": "reference", "keywords": ["portrait"], "previewURL": preview["path"], "files": [preview, *members]}
+        approval = {key: copy.deepcopy(image[key]) for key in ("id", "kind", "source_url", "official_context_url", "files")}
+        approval.update(decision="mirror_verified_official_public_edition", observed_at=old_approval["observed_at"], evidence=copy.deepcopy(old_approval["evidence"]))
+        self.save(work, [caption, image], [old_approval, approval])
+        return caption, old_approval, image, approval
+
+    def fake_image_store(self, work):
+        store = mock.Mock()
+        def identity(item):
+            if item.get("original_id") == "hf-img-held":
+                raise ValueError("Excluded image identity")
+        def file(record):
+            if record.get("storage") == "release":
+                if record.get("bundle_id") != "fixture-bundle" or record.get("asset_id") != 123:
+                    raise ValueError("Unverified bundle/member receipt")
+                return None
+            return (work / record["path"]).read_bytes()
+        store.validate_identity.side_effect = identity
+        store.validate_file.side_effect = file
+        return store
+
+    def test_images_use_verified_storage_search_once_and_index_real_downloads(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            caption, old_approval, image, approval = self.image_fixture(work)
+            tile_download = "https://github.com/example/archive/releases/download/v1/separate-tiles.zip"
+            image["files"][2]["download_url"] = tile_download
+            approval["files"] = copy.deepcopy(image["files"])
+            self.save(work, [caption, image], [old_approval, approval])
+            store = self.fake_image_store(work)
+            with mock.patch.object(published, "_image_store", return_value=store):
+                result = published.check(work)
+                self.assertTrue(result["valid"], result)
+                self.assertEqual((result["image_item_count"], result["image_access_file_count"], result["image_tile_file_count"]), (1, 1, 2))
+                self.assertEqual(store.validate_identity.call_count, 1)
+                self.assertEqual(store.validate_file.call_count, 3)
+                matches = published.search(work, "portrait")["matches"]
+                self.assertEqual(len(matches), 1)
+                self.assertEqual(matches[0]["tile_count"], 2)
+                self.assertEqual(matches[0]["id"], image["id"])
+                self.assertTrue(published.build_indexes(work)["valid"])
+                self.assertTrue(published.build_indexes(work, check_only=True)["valid"])
+                images = (work / "published/images.md").read_text(encoding="utf-8")
+                self.assertIn("hf-img-fixture", images)
+                self.assertIn("reference", images)
+                self.assertIn(tile_download, images)
+                self.assertNotIn("![]", images)
+                self.assertNotIn("](packaged-images/", images)
+                self.assertNotIn(image["title"], (work / "published/materials.md").read_text(encoding="utf-8"))
+                # A Release-only image has an actual package URL, never a fake repo member link.
+                image["files"] = image["files"][1:]
+                image.pop("previewURL")
+                approval["files"] = copy.deepcopy(image["files"])
+                (work / "published/images/fixture/preview.png").unlink()
+                self.save(work, [caption, image], [old_approval, approval])
+                published.build_indexes(work)
+                self.assertIn(image["files"][0]["download_url"], (work / "published/images.md").read_text(encoding="utf-8"))
+
+    def test_image_fake_bundle_hold_identity_and_unregistered_preview_fail(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            caption, old_approval, image, approval = self.image_fixture(work)
+            store = self.fake_image_store(work)
+            with mock.patch.object(published, "_image_store", return_value=store):
+                image["files"][1]["bundle_id"] = "fabricated-bundle"
+                approval["files"] = copy.deepcopy(image["files"])
+                self.save(work, [caption, image], [old_approval, approval])
+                self.assertFalse(published.check(work)["valid"])
+                image["files"][1]["bundle_id"] = "fixture-bundle"
+                approval["files"] = copy.deepcopy(image["files"])
+                image["original_id"] = "hf-img-held"
+                self.save(work, [caption, image], [old_approval, approval])
+                self.assertFalse(published.check(work)["valid"])
+                image["original_id"] = "hf-img-fixture"
+                image["previewURL"] = "https://hefa.p4theater.cn/unregistered-image.png"
+                self.save(work, [caption, image], [old_approval, approval])
+                self.assertFalse(published.check(work)["valid"])
+
+    def test_binary_documents_and_structured_exports_delegate_signatures_and_parse(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            caption, old_approval = self.fixture(work)
+            docx = io.BytesIO()
+            with zipfile.ZipFile(docx, "w") as archive:
+                archive.writestr("[Content_Types].xml", "<Types/>")
+                archive.writestr("word/document.xml", "<document/>")
+            files = [self.file(work, "published/materials/doc/file.pdf", b"%PDF-1.4\nsynthetic document\n%%EOF"), self.file(work, "published/materials/doc/file.docx", docx.getvalue()), self.file(work, "published/materials/doc/data.json", b'{"public_record":"fixture"}'), self.file(work, "published/materials/doc/data.csv", b"id,title\n1,public\n")]
+            document = {"id": "official-document:binary", "kind": "document", "title": "Public document downloads", "source_url": caption["source_url"], "official_context_url": caption["official_context_url"], "files": files}
+            approved = {key: copy.deepcopy(document[key]) for key in ("id", "kind", "source_url", "official_context_url", "files")}
+            approved.update(decision="mirror_verified_official_public_edition", observed_at=old_approval["observed_at"], evidence=copy.deepcopy(old_approval["evidence"]))
+            self.save(work, [caption, document], [old_approval, approved])
+            def signature(record, body):
+                if record["path"].endswith(".pdf") and not body.startswith(b"%PDF-"):
+                    raise ValueError("Invalid public PDF signature")
+                if record["path"].endswith(".docx") and not zipfile.is_zipfile(io.BytesIO(body)):
+                    raise ValueError("Invalid public DOCX signature")
+            with mock.patch.object(published, "_document_bytes", side_effect=signature) as helper:
+                result = published.check(work)
+                self.assertTrue(result["valid"], result)
+                self.assertEqual(helper.call_count, 2)
+                for index, body in ((0, b"<!doctype html>fake PDF"), (2, b"not valid JSON"), (3, b'id,title\n1,"unterminated')):
+                    old = copy.deepcopy(files[index])
+                    files[index] = self.file(work, old["path"], body)
+                    approved["files"] = copy.deepcopy(files)
+                    self.save(work, [caption, document], [old_approval, approved])
+                    self.assertFalse(published.check(work)["valid"])
+                    files[index] = old
+                    # Rewrite original bytes so each next subcase starts from valid sources.
+                    originals = [b"%PDF-1.4\nsynthetic document\n%%EOF", docx.getvalue(), b'{"public_record":"fixture"}', b"id,title\n1,public\n"]
+                    (work / old["path"]).write_bytes(originals[index])
+                    approved["files"] = copy.deepcopy(files)
 
     def test_prepared_caption_retains_machine_draft_and_documents_are_searchable(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -274,6 +395,16 @@ class OfficialPublicationTests(unittest.TestCase):
             approved["decision"] = "publish_prepared_caption_for_verified_public_work"
             self.save(work, [item, document], [approval, approved])
             self.assertFalse(published.check(work)["valid"])
+
+
+class PublicMetadataPathTests(unittest.TestCase):
+    def test_public_nested_home_folder_is_not_a_local_home_path(self):
+        published._public_metadata({"path": "published/packaged-images/bundle/media/home/hero.webp"})
+        published._public_metadata({"archive_path": "media/home/hero.webp"})
+        published._public_metadata({"source_url": "https://hefa.p4theater.cn/media/home/hero.webp"})
+        for value in ("/home/user/private.txt", "source: /home/user/private.txt", "/Users/test/x", "/Volumes/archive/x"):
+            with self.assertRaises(ValueError):
+                published._public_metadata({"source": value})
 
 
 if __name__ == "__main__":

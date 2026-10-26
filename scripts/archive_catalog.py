@@ -849,7 +849,7 @@ def validate(root):
                     caption_exports[record["path"]] = record["sha256"]
         except (ValueError, OSError, TypeError, KeyError, UnicodeError) as exc:
             errors.append("Invalid official editions: " + str(exc))
-    absolute = re.compile(r"(?i)(?:(?<![a-z0-9])[a-z]:[\\/]|file://|\\\\[^\\\s]+\\|/Users/|/Volumes/|/home/)")
+    absolute = re.compile(r"(?i)(?:(?<![a-z0-9])[a-z]:[\\/]|file://|\\\\[^\\\s]+\\|/Users/|/Volumes/|(?<![a-z0-9/_-])/home/)")
     sensitive = re.compile(r"(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AIza[A-Za-z0-9_-]{25,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)")
     def strings(value):
         if isinstance(value, str):
