@@ -1,0 +1,40 @@
+# Local source paths, credentials and private research never enter this repository.
+local_state/
+_private/
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+*cookies*
+*token*
+__pycache__/
+*.pyc
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.mts
+*.MTS
+*.m2ts
+*.mpeg
+*.mpg
+*.avi
+*.mkv
+*.m4v
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aac
+# Caption text requires a reviewed publication export, not a raw sidecar copy.
+*.srt
+*.vtt
+*.ass
+*.sub
+*.zip
+*.7z
+*.tar
+*.gz
+# Only reviewed-scope, version-hash-bound caption exports are admitted by validator.
+!captions/**/*.srt

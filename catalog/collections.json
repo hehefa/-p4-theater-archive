@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "collection:4ab65289-098b-476c-a467-b35b031e3e69",
+      "accession": "P4-C000001",
+      "kind": "collection",
+      "title": "3P小组 · 记录批次",
+      "project_id": "project:23878b5b-0b42-4ad0-9811-22c504006a9b",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 17,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:f22f6b40-fefa-42a2-af2e-7dd9b67809c7",
+      "accession": "P4-C000002",
+      "kind": "collection",
+      "title": "510讨论出路 · 记录批次",
+      "project_id": "project:4bfce452-39ce-4289-96f0-0bc18b76fb68",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 5,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:771fd6b9-9ec7-4811-b4c9-de38d6bbc2f6",
+      "accession": "P4-C000003",
+      "kind": "collection",
+      "title": "外向的独白 · 记录批次",
+      "project_id": "project:48e89665-7ab8-4367-b0f6-b2fc543cac27",
+      "date": {
+        "value": "2022-08-04",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 10,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:a732a6e1-f6a9-4e2d-8566-0f30dc4c6325",
+      "accession": "P4-C000004",
+      "kind": "collection",
+      "title": "旋转楼梯 · 记录批次",
+      "project_id": "project:84801fb9-5021-49e7-99d4-258e9e9ff402",
+      "date": {
+        "value": "2022-04-09",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 2,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:9e314d00-9c44-415c-82b4-40eaffff221b",
+      "accession": "P4-C000005",
+      "kind": "collection",
+      "title": "相逢（另一独立记录批次） · 记录批次",
+      "project_id": "project:5fba24e0-b4e8-4f46-993c-1b769502ed80",
+      "date": {
+        "value": "2022-08-28",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 10,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:9d1ab832-b62f-4a49-b69a-790f7fc508c0",
+      "accession": "P4-C000006",
+      "kind": "collection",
+      "title": "让时间过去 · 记录批次",
+      "project_id": "project:2305a413-7d61-40a1-ac1c-f2cf044d4fae",
+      "date": {
+        "value": "2022-08-18",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 11,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:63178edf-78df-4f66-8217-0d82b9da15d7",
+      "accession": "P4-C000007",
+      "kind": "collection",
+      "title": "让时间过去 · 记录批次",
+      "project_id": "project:2305a413-7d61-40a1-ac1c-f2cf044d4fae",
+      "date": {
+        "value": "2022-08-22",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 15,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:15857fcf-f592-486e-ac63-6f97ed43dd49",
+      "accession": "P4-C000008",
+      "kind": "collection",
+      "title": "让时间过去 · 记录批次",
+      "project_id": "project:2305a413-7d61-40a1-ac1c-f2cf044d4fae",
+      "date": {
+        "value": "2022-08-17",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 9,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "accession": "P4-C000009",
+      "kind": "collection",
+      "title": "中间派 · 记录批次",
+      "project_id": "project:2e7bd4db-2b53-499e-b7fd-d7204328f489",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 307,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
+      "accession": "P4-C000010",
+      "kind": "collection",
+      "title": "动物农场 · 记录批次",
+      "project_id": "project:95944c9f-8288-41da-bceb-85255f11cf4e",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 57,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:56a1df9a-82ca-4a56-adaa-325d58762b73",
+      "accession": "P4-C000011",
+      "kind": "collection",
+      "title": "北风剧社旋涡 · 记录批次",
+      "project_id": "project:c559eef1-ec1c-41c6-b829-9c1471d27278",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 25,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:c8f1d989-d120-4476-bf25-20f0b3dcdcb7",
+      "accession": "P4-C000012",
+      "kind": "collection",
+      "title": "死物骑士 · 记录批次",
+      "project_id": "project:84b57ddb-bc8c-4f7c-97b7-06b2b174309b",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 10,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "accession": "P4-C000013",
+      "kind": "collection",
+      "title": "波菲利娅 · 记录批次",
+      "project_id": "project:0d241b4a-d44a-44e6-a69d-7005746c1092",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 573,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:3dec63aa-5253-4172-a803-3924a91c9d5c",
+      "accession": "P4-C000014",
+      "kind": "collection",
+      "title": "爱丽丝湖 · 记录批次",
+      "project_id": "project:5202b1af-e84e-4afd-84ea-c9cca70e0419",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 17,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "accession": "P4-C000015",
+      "kind": "collection",
+      "title": "玻璃动物园 · 记录批次",
+      "project_id": "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 63,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "accession": "P4-C000016",
+      "kind": "collection",
+      "title": "紫色行动 · 记录批次",
+      "project_id": "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 588,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:05c655e3-339b-4d7f-8539-16fdb7245e1d",
+      "accession": "P4-C000017",
+      "kind": "collection",
+      "title": "致命玩笑 · 记录批次",
+      "project_id": "project:6e85f688-ad72-44aa-8595-92984a744ad8",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 7,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    },
+    {
+      "id": "collection:89a5ab83-be56-41bc-b77a-9d36e6f3a228",
+      "accession": "P4-C000018",
+      "kind": "collection",
+      "title": "相逢（虫洞剧团记录批次） · 记录批次",
+      "project_id": "project:d3e4e7a5-dce8-4bcb-8818-94b35220296f",
+      "date": {
+        "value": "2022-08-21",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "inventory_file_count": 14,
+      "classification_status": "candidate",
+      "in_current_inventory": true
+    }
+  ]
+}

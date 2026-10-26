@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/p4-public-catalog/v1/catalog.schema.json",
+  "title": "P4 public catalogue table v1",
+  "description": "Public catalogue export, separate from the private p4-evidence-v1 research bundle. Accessions are display aliases, not replacements for existing canonical identifiers.",
+  "type": "object",
+  "required": ["schema_version", "items"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "items": {"type": "array", "items": {"$ref": "#/$defs/entity"}}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "entity": {
+      "type": "object",
+      "required": ["id", "accession", "kind", "title"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "accession": {"type": "string", "pattern": "^P4-[PCEVFSUH][0-9]{6}$"},
+        "kind": {"enum": ["project", "collection", "event", "asset", "file", "subtitle", "publication", "checksum"]},
+        "title": {"type": "string", "minLength": 1},
+        "sha256": {"anyOf": [{"type": "string", "pattern": "^[a-f0-9]{64}$"}, {"type": "null"}]},
+        "bytes": {"type": "integer", "minimum": 0},
+        "clock": {"const": "source_zero"},
+        "rights_status": {"enum": ["not_established", "documented"]}
+      },
+      "additionalProperties": true
+    }
+  }
+}

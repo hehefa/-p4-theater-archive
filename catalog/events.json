@@ -1,0 +1,2485 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "event:0a96c14c-f7f7-45e2-a88e-f3ec13f4bc86",
+      "accession": "P4-E000001",
+      "kind": "event",
+      "title": "3P小组 · 待辨识事件",
+      "project_ids": [
+        "project:23878b5b-0b42-4ad0-9811-22c504006a9b"
+      ],
+      "collection_id": "collection:4ab65289-098b-476c-a467-b35b031e3e69",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:1b762519-6076-4f01-a0dc-4984ccd917db",
+      "accession": "P4-E000002",
+      "kind": "event",
+      "title": "3P小组 · 待辨识事件",
+      "project_ids": [
+        "project:23878b5b-0b42-4ad0-9811-22c504006a9b"
+      ],
+      "collection_id": "collection:4ab65289-098b-476c-a467-b35b031e3e69",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:20d391b0-646c-4812-92d5-2ec909f2e30e",
+      "accession": "P4-E000003",
+      "kind": "event",
+      "title": "3P小组 · 讨论",
+      "project_ids": [
+        "project:23878b5b-0b42-4ad0-9811-22c504006a9b"
+      ],
+      "collection_id": "collection:4ab65289-098b-476c-a467-b35b031e3e69",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:7b80d8de-2a34-4875-af35-5e90657645a8",
+      "accession": "P4-E000004",
+      "kind": "event",
+      "title": "510讨论出路 · 讨论",
+      "project_ids": [
+        "project:4bfce452-39ce-4289-96f0-0bc18b76fb68"
+      ],
+      "collection_id": "collection:f22f6b40-fefa-42a2-af2e-7dd9b67809c7",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:1f7206f3-5d9d-4e00-9288-24420651eabd",
+      "accession": "P4-E000005",
+      "kind": "event",
+      "title": "外向的独白 · 演出",
+      "project_ids": [
+        "project:48e89665-7ab8-4367-b0f6-b2fc543cac27"
+      ],
+      "collection_id": "collection:771fd6b9-9ec7-4811-b4c9-de38d6bbc2f6",
+      "event_type": "performance",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-04",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:80fe9e5f-51cf-4359-838b-c74a9b621872",
+      "accession": "P4-E000006",
+      "kind": "event",
+      "title": "旋转楼梯 · 演出",
+      "project_ids": [
+        "project:84801fb9-5021-49e7-99d4-258e9e9ff402"
+      ],
+      "collection_id": "collection:a732a6e1-f6a9-4e2d-8566-0f30dc4c6325",
+      "event_type": "performance",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-04-09",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:41c06993-d0be-4a0e-a4bd-57d7d60a53ad",
+      "accession": "P4-E000007",
+      "kind": "event",
+      "title": "相逢（另一独立记录批次） · 待辨识事件",
+      "project_ids": [
+        "project:5fba24e0-b4e8-4f46-993c-1b769502ed80"
+      ],
+      "collection_id": "collection:9e314d00-9c44-415c-82b4-40eaffff221b",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-28",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:ccdb872d-8f5f-4168-b34b-1ef5ace0776f",
+      "accession": "P4-E000008",
+      "kind": "event",
+      "title": "让时间过去 · 排练",
+      "project_ids": [
+        "project:2305a413-7d61-40a1-ac1c-f2cf044d4fae"
+      ],
+      "collection_id": "collection:9d1ab832-b62f-4a49-b69a-790f7fc508c0",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-18",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:f3aceeec-b69d-4fae-98dc-4ac562739353",
+      "accession": "P4-E000009",
+      "kind": "event",
+      "title": "让时间过去 · 排练",
+      "project_ids": [
+        "project:2305a413-7d61-40a1-ac1c-f2cf044d4fae"
+      ],
+      "collection_id": "collection:63178edf-78df-4f66-8217-0d82b9da15d7",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-22",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:df9abff3-1098-43ef-9012-3ffb8927f1c7",
+      "accession": "P4-E000010",
+      "kind": "event",
+      "title": "让时间过去 · 待辨识事件",
+      "project_ids": [
+        "project:2305a413-7d61-40a1-ac1c-f2cf044d4fae"
+      ],
+      "collection_id": "collection:15857fcf-f592-486e-ac63-6f97ed43dd49",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-17",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:6646ee5c-080b-425c-b382-ff7637f3caa1",
+      "accession": "P4-E000011",
+      "kind": "event",
+      "title": "中间派 · 待辨识事件",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:f68bf856-e0cd-4577-b81b-761c9b947b46",
+      "accession": "P4-E000012",
+      "kind": "event",
+      "title": "中间派 · 待辨识事件",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:1847cbc4-e3e0-4ee9-b7ae-093e93a25bc1",
+      "accession": "P4-E000013",
+      "kind": "event",
+      "title": "中间派 · 待辨识事件",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:3809198a-2bab-4d37-8dbd-12462ed7b97d",
+      "accession": "P4-E000014",
+      "kind": "event",
+      "title": "中间派 · 待辨识事件",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:3434cdf1-7dd7-4e71-a7a7-017a3c69a8fe",
+      "accession": "P4-E000015",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:d950663d-74bf-4b94-871f-a0b976027d88",
+      "accession": "P4-E000016",
+      "kind": "event",
+      "title": "中间派 · 排练",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:96e45bc4-a85a-4fe1-895d-26bab4063504",
+      "accession": "P4-E000017",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:dda50e23-b12e-47fe-9f1c-4ab3881a36e4",
+      "accession": "P4-E000018",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:8fa59575-c40e-4daf-b00d-18655c0c069b",
+      "accession": "P4-E000019",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:b8764f06-101d-40d4-9ad3-7f49c4c4e8be",
+      "accession": "P4-E000020",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:218d9b72-96dd-42b0-a65f-c16d252350a2",
+      "accession": "P4-E000021",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:478310e6-cadd-411b-bf63-54a5dffd811b",
+      "accession": "P4-E000022",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:674f2039-4c0d-40d9-9e42-e6226c61c70b",
+      "accession": "P4-E000023",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:8ce170b0-a94e-411d-a0fd-62c44108ade6",
+      "accession": "P4-E000024",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:04e889af-2fd5-4050-979e-4cf94b38bbd0",
+      "accession": "P4-E000025",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:2958cf2e-3ac6-4b15-ade3-6d9f4a128eee",
+      "accession": "P4-E000026",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:3e734cb4-7a79-4a3e-843f-b27aaf487b86",
+      "accession": "P4-E000027",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:9a5feb5c-da67-4f50-b00b-2a788307729f",
+      "accession": "P4-E000028",
+      "kind": "event",
+      "title": "中间派 · 讨论",
+      "project_ids": [
+        "project:2e7bd4db-2b53-499e-b7fd-d7204328f489"
+      ],
+      "collection_id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
+      "event_type": "discussion",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:57cdbae3-b09d-476d-9d45-081474cec475",
+      "accession": "P4-E000029",
+      "kind": "event",
+      "title": "动物农场 · 待辨识事件",
+      "project_ids": [
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+      ],
+      "collection_id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-05-18",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:9bce32bc-4d62-48f0-8519-e0c3d7917295",
+      "accession": "P4-E000030",
+      "kind": "event",
+      "title": "动物农场 · 待辨识事件",
+      "project_ids": [
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+      ],
+      "collection_id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-06-02",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:b2bbe322-d329-4600-8c03-1c3b47e862d6",
+      "accession": "P4-E000031",
+      "kind": "event",
+      "title": "动物农场 · 待辨识事件",
+      "project_ids": [
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+      ],
+      "collection_id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-06-06",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:24e164fc-ef2d-4817-ba99-8ec3192002a9",
+      "accession": "P4-E000032",
+      "kind": "event",
+      "title": "动物农场 · 待辨识事件",
+      "project_ids": [
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+      ],
+      "collection_id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-06-06",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:40ec6f16-45d0-4d03-8b69-4b0ccb0d6e26",
+      "accession": "P4-E000033",
+      "kind": "event",
+      "title": "动物农场 · 待辨识事件",
+      "project_ids": [
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+      ],
+      "collection_id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-06-26",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:8e1b0182-46a1-402d-b003-74ed1d0a34dd",
+      "accession": "P4-E000034",
+      "kind": "event",
+      "title": "动物农场 · 排练",
+      "project_ids": [
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+      ],
+      "collection_id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:63a595ee-0dca-446c-949e-3cc14c4b9cbe",
+      "accession": "P4-E000035",
+      "kind": "event",
+      "title": "动物农场 · 待辨识事件",
+      "project_ids": [
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+      ],
+      "collection_id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:13b5e5e4-be80-4dea-acbc-99f7728c2227",
+      "accession": "P4-E000036",
+      "kind": "event",
+      "title": "动物农场 · 待辨识事件",
+      "project_ids": [
+        "project:95944c9f-8288-41da-bceb-85255f11cf4e"
+      ],
+      "collection_id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:4c42fed7-7d05-4d9d-8064-c21939c283b3",
+      "accession": "P4-E000037",
+      "kind": "event",
+      "title": "北风剧社旋涡 · 待辨识事件",
+      "project_ids": [
+        "project:c559eef1-ec1c-41c6-b829-9c1471d27278"
+      ],
+      "collection_id": "collection:56a1df9a-82ca-4a56-adaa-325d58762b73",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:1373b45c-2ced-414a-876d-f08c3fe94d10",
+      "accession": "P4-E000038",
+      "kind": "event",
+      "title": "北风剧社旋涡 · 待辨识事件",
+      "project_ids": [
+        "project:c559eef1-ec1c-41c6-b829-9c1471d27278"
+      ],
+      "collection_id": "collection:56a1df9a-82ca-4a56-adaa-325d58762b73",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-02-26",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:c677690f-52aa-4a5e-a364-a4bceac1a2ab",
+      "accession": "P4-E000039",
+      "kind": "event",
+      "title": "北风剧社旋涡 · 待辨识事件",
+      "project_ids": [
+        "project:c559eef1-ec1c-41c6-b829-9c1471d27278"
+      ],
+      "collection_id": "collection:56a1df9a-82ca-4a56-adaa-325d58762b73",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-03-01",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:4bd73ccc-3161-4f3f-9ac5-fd50a510e9e6",
+      "accession": "P4-E000040",
+      "kind": "event",
+      "title": "死物骑士 · 待辨识事件",
+      "project_ids": [
+        "project:84b57ddb-bc8c-4f7c-97b7-06b2b174309b"
+      ],
+      "collection_id": "collection:c8f1d989-d120-4476-bf25-20f0b3dcdcb7",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:ec898e27-c2ae-4fd1-836d-0c83912cc51a",
+      "accession": "P4-E000041",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-31",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:a04dd9ec-817b-4f7f-aeed-fa039356b640",
+      "accession": "P4-E000042",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-03",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:691d8593-8755-4164-a657-e87b460e7260",
+      "accession": "P4-E000043",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-05",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:99e70cdd-0d0f-4e1f-9749-3d635e3502b3",
+      "accession": "P4-E000044",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-07",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:0bef2f13-8661-4df5-8cd4-21d4109a32fb",
+      "accession": "P4-E000045",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-08",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:0979e06c-c47a-4548-b740-48f5bbf9185c",
+      "accession": "P4-E000046",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-09",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:c00bb146-8cb6-4899-9a6a-6bd2ec36a4d6",
+      "accession": "P4-E000047",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-09",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:70e2e5f7-a27e-4dfb-babd-02b3623c40e0",
+      "accession": "P4-E000048",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-11",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:86d0105a-b544-45b2-b360-e984cb272dd2",
+      "accession": "P4-E000049",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-12",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:40101d37-a7be-4c1e-876e-40e2659ee4f7",
+      "accession": "P4-E000050",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-13",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:a4ac4b7a-bb79-4f99-8376-811da7dbcf3f",
+      "accession": "P4-E000051",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-15",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:f367f917-6c95-4a17-95a0-2d285b441059",
+      "accession": "P4-E000052",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-16",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:ecc963da-790f-415f-9a81-fb93c75dde4a",
+      "accession": "P4-E000053",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-19",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:331d7e11-5779-4cd0-9d7e-ae25a87fff4b",
+      "accession": "P4-E000054",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-23",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:a01faae4-e3a5-4e75-9536-b9582b7aef72",
+      "accession": "P4-E000055",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-23",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:29f60c66-4461-4710-928d-af102c52c3c4",
+      "accession": "P4-E000056",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-24",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:40c01227-3d22-457f-85d2-f233dae341a0",
+      "accession": "P4-E000057",
+      "kind": "event",
+      "title": "波菲利娅 · 演出",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "performance",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-25",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:40267ff9-a923-4bb6-9926-f0d43058dd08",
+      "accession": "P4-E000058",
+      "kind": "event",
+      "title": "波菲利娅 · 演出",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "performance",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-27",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:be87fa0c-06c1-4348-b6a6-5ad5041ba735",
+      "accession": "P4-E000059",
+      "kind": "event",
+      "title": "波菲利娅 · 演出",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "performance",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-27",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:d4fb13d3-94db-4e54-ba11-2d74f15a694a",
+      "accession": "P4-E000060",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-06-25",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:57888a5d-01cd-4c65-be29-0e86fd64efd4",
+      "accession": "P4-E000061",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-14",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:88489343-d16b-42e1-949a-4cd9ccec171d",
+      "accession": "P4-E000062",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-16",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:1e5f9282-90af-4d3a-bd51-ba978b66f68e",
+      "accession": "P4-E000063",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-18",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:4637708a-68f5-4da6-b2e5-cf02d9a2c98c",
+      "accession": "P4-E000064",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-19",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:272cad14-eb03-4258-a64b-6cc6ca16f836",
+      "accession": "P4-E000065",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-21",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:32b8fd30-36c7-4cff-9aa2-3729a6ceb6cd",
+      "accession": "P4-E000066",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-22",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:a3b824ff-8cd3-4ae7-99b4-998259873c88",
+      "accession": "P4-E000067",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-24",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:8c59fb92-b8d4-4882-87ec-df191c2a90ff",
+      "accession": "P4-E000068",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-24",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:d7589253-a715-4696-9553-c2197892a838",
+      "accession": "P4-E000069",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-26",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:bf6fc9a5-8b8e-4db9-a7c9-d465d487beee",
+      "accession": "P4-E000070",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-07-29",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:93a38f85-8bd0-4730-81dc-1919126e857e",
+      "accession": "P4-E000071",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:fe5eeb6f-d16e-4c5e-9e77-2a016319bb7b",
+      "accession": "P4-E000072",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:11254c80-1751-4955-a7fe-02e2e6e48301",
+      "accession": "P4-E000073",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:412a53d6-de4b-4366-939a-f64bea1759ab",
+      "accession": "P4-E000074",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:a05f855d-ba72-4927-99d9-e02da5b9f68f",
+      "accession": "P4-E000075",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:3a57cef3-fce3-4450-9148-2d8260265119",
+      "accession": "P4-E000076",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:8f3c056c-60f2-457e-859e-2ac7de0d120d",
+      "accession": "P4-E000077",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:89f7bcf8-c78d-41c7-9c32-6a3eb9809d8b",
+      "accession": "P4-E000078",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:4261a16b-31f1-4563-9fe0-65c448c52c96",
+      "accession": "P4-E000079",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:a51ee04c-10fd-489d-9149-4ed2b803932d",
+      "accession": "P4-E000080",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:c68d5605-8d5b-41cf-94cd-dc7d0e5258e3",
+      "accession": "P4-E000081",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:7cf0d44d-7da3-402c-954e-07ce663e07ad",
+      "accession": "P4-E000082",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:62c81a8e-7f97-4de6-bd4a-0459db9bbd57",
+      "accession": "P4-E000083",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:2dc16767-b722-43c1-8be1-b8527690ee42",
+      "accession": "P4-E000084",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2026-07-19",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:b7018aca-e8ca-42d7-8999-9c2a0f0822fa",
+      "accession": "P4-E000085",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:b667e275-08d5-4add-ae7c-30ed655cbc7c",
+      "accession": "P4-E000086",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:b3dd3489-a066-4e84-a1c9-c248f7c995d0",
+      "accession": "P4-E000087",
+      "kind": "event",
+      "title": "波菲利娅 · 待辨识事件",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:f5962576-51df-4d53-af9a-0dbc26683589",
+      "accession": "P4-E000088",
+      "kind": "event",
+      "title": "波菲利娅 · 排练",
+      "project_ids": [
+        "project:0d241b4a-d44a-44e6-a69d-7005746c1092"
+      ],
+      "collection_id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:ba99e4bf-651f-4636-8e5d-0c75582ef526",
+      "accession": "P4-E000089",
+      "kind": "event",
+      "title": "爱丽丝湖 · 待辨识事件",
+      "project_ids": [
+        "project:5202b1af-e84e-4afd-84ea-c9cca70e0419"
+      ],
+      "collection_id": "collection:3dec63aa-5253-4172-a803-3924a91c9d5c",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:c10a02dd-8aaf-47da-8ab2-0648646e8a63",
+      "accession": "P4-E000090",
+      "kind": "event",
+      "title": "爱丽丝湖 · 待辨识事件",
+      "project_ids": [
+        "project:5202b1af-e84e-4afd-84ea-c9cca70e0419"
+      ],
+      "collection_id": "collection:3dec63aa-5253-4172-a803-3924a91c9d5c",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:75fbcc6b-5f87-4de1-95ea-519a24796fdb",
+      "accession": "P4-E000091",
+      "kind": "event",
+      "title": "爱丽丝湖 · 待辨识事件",
+      "project_ids": [
+        "project:5202b1af-e84e-4afd-84ea-c9cca70e0419"
+      ],
+      "collection_id": "collection:3dec63aa-5253-4172-a803-3924a91c9d5c",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:864780a8-6998-4e19-b659-39e56a2ddc71",
+      "accession": "P4-E000092",
+      "kind": "event",
+      "title": "玻璃动物园 · 待辨识事件",
+      "project_ids": [
+        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+      ],
+      "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:759c6236-ce45-432d-996c-84dc3cbe5bb8",
+      "accession": "P4-E000093",
+      "kind": "event",
+      "title": "玻璃动物园 · 待辨识事件",
+      "project_ids": [
+        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+      ],
+      "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-05-15",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:b27b52d9-0845-43f9-be3c-9b020d8cd5b2",
+      "accession": "P4-E000094",
+      "kind": "event",
+      "title": "玻璃动物园 · 待辨识事件",
+      "project_ids": [
+        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+      ],
+      "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-05-16",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:faeac653-1ae7-4bac-bdcd-dca27cff13b6",
+      "accession": "P4-E000095",
+      "kind": "event",
+      "title": "玻璃动物园 · 待辨识事件",
+      "project_ids": [
+        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+      ],
+      "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-05-17",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:fbb9852b-bedf-4bc4-961f-c3958711d5e4",
+      "accession": "P4-E000096",
+      "kind": "event",
+      "title": "玻璃动物园 · 待辨识事件",
+      "project_ids": [
+        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+      ],
+      "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:4292a9c1-d089-4c11-81ab-89e2fd06b5e0",
+      "accession": "P4-E000097",
+      "kind": "event",
+      "title": "玻璃动物园 · 待辨识事件",
+      "project_ids": [
+        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+      ],
+      "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:437a288f-54ee-45e8-9abf-475d1e868aa7",
+      "accession": "P4-E000098",
+      "kind": "event",
+      "title": "玻璃动物园 · 待辨识事件",
+      "project_ids": [
+        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+      ],
+      "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:c5eae3df-75bc-4e6a-b1ab-6f62fc918722",
+      "accession": "P4-E000099",
+      "kind": "event",
+      "title": "玻璃动物园 · 待辨识事件",
+      "project_ids": [
+        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+      ],
+      "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:ec21e00c-2a12-4ae3-aef7-f3bf1ce314fe",
+      "accession": "P4-E000100",
+      "kind": "event",
+      "title": "玻璃动物园 · 待辨识事件",
+      "project_ids": [
+        "project:b9646e51-0563-4d96-9b12-d9cd7c7172d2"
+      ],
+      "collection_id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:1f8cda24-3376-42b0-b733-4e61284275f3",
+      "accession": "P4-E000101",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:d2495514-1ddc-495d-99dc-2cdc0425350a",
+      "accession": "P4-E000102",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:16665d27-6aa0-4489-a453-c1a6fb93c342",
+      "accession": "P4-E000103",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:dfe717f7-3127-44d0-a5a7-7c5a9c63b70c",
+      "accession": "P4-E000104",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:ca699412-af5f-4489-8971-30cf07f33e0d",
+      "accession": "P4-E000105",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:c3458fcf-bb1c-4804-8f00-7f0298c80aec",
+      "accession": "P4-E000106",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:a09ebc76-84fe-47f7-8f7b-45067bd0357e",
+      "accession": "P4-E000107",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:bf90ceb3-704b-4ff6-bbc6-0d02caccd728",
+      "accession": "P4-E000108",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:2358f325-3839-44c4-af4d-bb8219786384",
+      "accession": "P4-E000109",
+      "kind": "event",
+      "title": "紫色行动 · 排练",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:97e298ac-c20e-4f69-8bd1-169fb821a216",
+      "accession": "P4-E000110",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:95544bc1-d9b2-49c5-af66-4d70cecbcdfd",
+      "accession": "P4-E000111",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:1acc1103-829c-4d1f-b53b-24da0e23c175",
+      "accession": "P4-E000112",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:99cf18ea-b388-4432-8f62-a9864850bc99",
+      "accession": "P4-E000113",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:878037ae-6634-4ee0-9d6e-bbeb4853ed52",
+      "accession": "P4-E000114",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:8238adc6-22bc-4cb3-9e5b-59eff08a669f",
+      "accession": "P4-E000115",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:cd5caa7e-2462-44f0-9ad1-34de12fd15f4",
+      "accession": "P4-E000116",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:1b94f234-80f4-4e17-b312-6929aa1efebd",
+      "accession": "P4-E000117",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:e72d9a16-03f2-45a6-ada3-15ab8beae7d2",
+      "accession": "P4-E000118",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:2754e1b6-81fe-4068-bd0e-1b15d1d0fab1",
+      "accession": "P4-E000119",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:f63f02f0-6537-4c4b-a6bd-805968d437b9",
+      "accession": "P4-E000120",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:c7f5e6b3-ed8c-4315-9414-d9bf7d6eec91",
+      "accession": "P4-E000121",
+      "kind": "event",
+      "title": "紫色行动 · 待辨识事件",
+      "project_ids": [
+        "project:4d71d8fd-c1db-448b-b1a8-dc8caf3179b8"
+      ],
+      "collection_id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "not_established",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:9623a107-b821-4186-acbd-93be226340ba",
+      "accession": "P4-E000122",
+      "kind": "event",
+      "title": "致命玩笑 · 待辨识事件",
+      "project_ids": [
+        "project:6e85f688-ad72-44aa-8595-92984a744ad8"
+      ],
+      "collection_id": "collection:05c655e3-339b-4d7f-8539-16fdb7245e1d",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-03-19",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:cf29f2a8-e9dd-4eb2-9115-52d3f1c9aa16",
+      "accession": "P4-E000123",
+      "kind": "event",
+      "title": "致命玩笑 · 待辨识事件",
+      "project_ids": [
+        "project:6e85f688-ad72-44aa-8595-92984a744ad8"
+      ],
+      "collection_id": "collection:05c655e3-339b-4d7f-8539-16fdb7245e1d",
+      "event_type": "unclassified",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-04-01",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    },
+    {
+      "id": "event:1bd90e83-6da3-4780-8f39-bbf55e623419",
+      "accession": "P4-E000124",
+      "kind": "event",
+      "title": "相逢（虫洞剧团记录批次） · 排练",
+      "project_ids": [
+        "project:d3e4e7a5-dce8-4bcb-8818-94b35220296f"
+      ],
+      "collection_id": "collection:89a5ab83-be56-41bc-b77a-9d36e6f3a228",
+      "event_type": "rehearsal",
+      "classification_status": "provisional_folder_group",
+      "date": {
+        "value": "2022-08-21",
+        "precision": "day",
+        "basis": "source_folder_label",
+        "verification": "unverified"
+      },
+      "description": "按来源目录建立的暂定事件组；需结合录像与外部资料复核事件边界。",
+      "in_current_inventory": true
+    }
+  ]
+}

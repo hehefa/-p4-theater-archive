@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "inventory_snapshot_at": "2026-10-26T05:47:46.219068-07:00",
+  "public_export_policy": "metadata_only_no_video_or_unreviewed_transcript_text",
+  "counts": {
+    "projects": 16,
+    "collections": 18,
+    "events": 124,
+    "assets": 1740,
+    "files": 1740,
+    "subtitles": 1759,
+    "checksums": 42,
+    "publications": 0
+  },
+  "current_inventory_counts": {
+    "projects": 16,
+    "collections": 18,
+    "events": 124,
+    "assets": 1740,
+    "files": 1740,
+    "subtitles": 1759,
+    "checksums": 42,
+    "publications": 0
+  },
+  "video_bytes": 3498480941824,
+  "full_sha256_recorded": 42,
+  "full_sha256_pending": 1698,
+  "full_decode_passed_existing_reports": 10,
+  "subtitle_format_status": {
+    "structure_passed": 1537,
+    "empty_no_recognized_text": 202,
+    "not_parsed_ass": 11,
+    "needs_review": 9
+  },
+  "publication_reports_recorded": 0,
+  "youtube_uploads_recorded": 0,
+  "human_review_status": "not_recorded",
+  "scope": "18 selected theatre/event collections; personal/system backup roots excluded; collection inclusion does not establish publication clearance"
+}
