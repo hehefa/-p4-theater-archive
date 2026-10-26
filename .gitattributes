@@ -6,3 +6,5 @@
 *.yaml text eol=lf
 # Published captions are byte-bound originals, including their original newlines.
 *.srt -text
+# Official text downloads are also bound to their original response bytes.
+published/materials/*.txt -text
