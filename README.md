@@ -8,6 +8,7 @@ P4始于北京，以表演、摄影、影像和写作展开现场实践。[认�
 
 - **认识项目：** [官方项目索引](registry/README.md)，从项目原文进入P4。
 - **读一段材料：** [玻璃动物园阅读样板](projects/P4-P000013/index.md) · [当前公开字幕](reading/captions.md)。
+- **下载已完成资料：** [作品发行版字幕](published/captions.md) · [公开文稿与研究](published/materials.md)，逐项保留出处、原文链接和版本。
 - **查来源与版本：** [档案总目录](INDEX.md) · [身份对照](docs/身份对照.md) · [已有视频关联](publications/README.md)。
 - **补充与协作：** [增补指南](CONTRIBUTING.md) · [Mac/PC协作规则](docs/跨端协作.md) · [本轮交接](coordination/current-batch.json)。
 
@@ -25,7 +26,9 @@ python -X utf8 scripts/public_reading.py search --root . --query "剧本"
 
 [官方公开项目注册表](registry/README.md) 另存中英文官网共同列出的 **34 条项目条目**。它与本批本地视频目录用途不同，不能相加，也不能作为 P4 全部历史项目的总数。
 
-当前字幕正文只保留 **3 份 SRT、1 个来源**：P4-V001069 / IMG_3556.MOV 的原语、英文、中英双语机器稿。官方 A 站列出相同原片完整 SHA-256，B 主档案正文提供玻璃动物园围桌读本的实质上下文；见 [字幕目录](captions/README.md) 和该素材的官方证据。它们尚未逐句听校。
+原片候选目录的字幕正文保留 **3 份 SRT、1 个来源**：P4-V001069 / IMG_3556.MOV 的原语、英文、中英双语机器稿。官方 A 站列出相同原片完整 SHA-256，B 主档案正文提供玻璃动物园围桌读本的实质上下文；见 [字幕目录](captions/README.md) 和该素材的官方证据。它们尚未逐句听校。
+
+[已完成资料包](published/README.md) 另按准确发行版收录官网已公开字幕、文稿和研究，以及有来源对应的完整字幕成品。它使用官网材料ID、YouTube ID及版本SHA，不推定与原片候选相同，不把这些数量并入原片盘点。
 
 该视频的三版独立命名字幕已在既有视频上发布，观看端菜单可选择；仅新中文在 00:12 实际渲染得到抽验，英文、双语及首中尾样本尚未完成。原有 3,126 条平台字幕未覆盖，新原语稿为 1,728 条；旧版以 [P4-S001760 元数据](evidence/P4-S001760-platform-version-metadata.json) 单独登记，原件留私有端，本轮不公开第 4 份正文。旧名中的 machine reviewed 不构成人工听校证明。
 

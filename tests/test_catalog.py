@@ -318,6 +318,21 @@ class CatalogueTests(unittest.TestCase):
             self.assertTrue(any("Absolute local path" in e for e in errors))
             self.assertTrue(any("Prohibited media" in e for e in errors))
 
+    def test_official_edition_directory_does_not_whitelist_extra_transcripts(self):
+        import shutil
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp) / "public"
+            work.mkdir()
+            for folder in ("catalog", "captions", "registry", "evidence", "published"):
+                shutil.copytree(ROOT / folder, work / folder)
+            shutil.copyfile(ROOT / ".p4-public-scope.json", work / ".p4-public-scope.json")
+            self.assertTrue(module.validate(work)["valid"])
+            (work / "published/captions/unregistered.srt").write_text(
+                "1\n00:00:00,000 --> 00:00:01,000\nUnapproved\n", encoding="utf-8")
+            errors = module.validate(work)["errors"]
+            self.assertTrue(any("Invalid official editions" in e for e in errors))
+            self.assertTrue(any("Prohibited media" in e and "unregistered.srt" in e for e in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

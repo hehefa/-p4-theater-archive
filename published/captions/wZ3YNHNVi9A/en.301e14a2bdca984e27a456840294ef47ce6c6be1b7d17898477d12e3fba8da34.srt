@@ -1,0 +1,51 @@
+1
+00:00:00,000 --> 00:00:01,480
+Have him write some solution articles
+
+2
+00:00:01,480 --> 00:00:04,320
+Yes
+
+3
+00:00:04,320 --> 00:00:07,920
+These things seem hollow to us
+
+4
+00:00:07,920 --> 00:00:12,600
+But its hollowness actually can
+
+5
+00:00:12,600 --> 00:00:14,000
+Hollowness is fine
+
+6
+00:00:14,000 --> 00:00:15,520
+Yes, hollowness is complete
+
+7
+00:00:15,520 --> 00:00:16,640
+Bidding
+
+8
+00:00:16,640 --> 00:00:18,160
+Bidding is purely hollow
+
+9
+00:00:18,160 --> 00:00:19,400
+Its language
+
+10
+00:00:19,400 --> 00:00:21,600
+Its language isn't necessarily its own
+
+11
+00:00:21,600 --> 00:00:23,640
+But its performance just needs to maintain emptiness
+
+12
+00:00:23,640 --> 00:00:28,720
+We can make language hollow
+
+13
+00:00:28,720 --> 00:00:30,000
+But performance can layer upon layer

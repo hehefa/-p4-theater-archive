@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:04,000
+A boundary changes the movie,
+not just dialogue.
+
+2
+00:00:04,000 --> 00:00:08,000
+It changes blocking, camera, rhythm,
+and cut.
+
+3
+00:00:08,000 --> 00:00:14,000
+Blocking: change position, distance,
+movement, or leave the frame.
+
+4
+00:00:14,000 --> 00:00:20,000
+Camera: reframe, move away, or stop
+recording when the boundary changes.
+
+5
+00:00:20,000 --> 00:00:26,000
+Rhythm: wait, slow down, or end
+the take. Continuity can wait.
+
+6
+00:00:26,000 --> 00:00:32,000
+Cut: remove an image that no longer
+fits the boundary.
+
+7
+00:00:32,000 --> 00:00:38,000
+This is a P4 film-craft reading,
+not proof of off-camera experience.
+
+8
+00:00:38,000 --> 00:00:43,000
+If all four stay fixed,
+nothing changes onscreen.
+
+9
+00:00:43,000 --> 00:00:48,000
+For the full P4 film essay,
+tap the Related video.
