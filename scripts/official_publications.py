@@ -4,13 +4,16 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter, defaultdict
+import csv
+import io
 from datetime import datetime
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import re
+import sys
 import unicodedata
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 
 from public_reading import _parse_srt
 
@@ -24,9 +27,9 @@ RAW_APPROVED_VERSIONS = {
     "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537": "19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f",
 }
 BINDINGS = ("source_asset_ids", "source_file_ids", "source_subtitle_ids", "source_media_sha256")
-INDEXES = frozenset(("published/README.md", "published/captions.md", "published/materials.md", "published/wechat.md"))
+INDEXES = frozenset(("published/README.md", "published/captions.md", "published/materials.md", "published/wechat.md", "published/images.md"))
 PRIVATE_KEY = re.compile(r"private|local_path|access_token|refresh_token|client_secret|upload_session|upload_url|session_uri|cookie", re.I)
-LOCAL_VALUE = re.compile(r"(?i)(?:/Users/|/Volumes/|/home/|file://|(?<![a-z0-9])[a-z]:[\\/])")
+LOCAL_VALUE = re.compile(r"(?i)(?:/Users/|/Volumes/|(?<![a-z0-9/_-])/home/|file://|(?<![a-z0-9])[a-z]:[\\/])")
 
 
 def _require(condition, message):
@@ -54,12 +57,16 @@ def _hash(value):
     return isinstance(value, str) and HEX.fullmatch(value) is not None
 
 
-def _path(root, relative, prefix):
+def _path_parts(relative, prefix):
     _require(isinstance(relative, str) and "\\" not in relative and ":" not in relative and "\x00" not in relative, "Invalid public path")
     parts = relative.split("/")
     _require(parts and parts[0] == prefix and all(p not in ("", ".", "..") for p in parts) and not PurePosixPath(relative).is_absolute(), "Path must remain inside " + prefix)
+    return parts
+
+
+def _path(root, relative, prefix):
     target = root
-    for part in parts:
+    for part in _path_parts(relative, prefix):
         target = target / part
         _require(not target.is_symlink(), "Symlinks are not accepted in public editions")
     _require(target.is_file(), "Registered public file is missing: " + relative)
@@ -91,6 +98,50 @@ def _timestamp(value):
     except (ValueError, AttributeError):
         raise ValueError("Approval timestamp must include a timezone") from None
     _require(stamp.tzinfo is not None and stamp.utcoffset() is not None, "Approval timestamp must include a timezone")
+
+
+def _image_store(root):
+    try:
+        from public_images import ImageStore
+    except ImportError:
+        raise ValueError("Public image validation helper is unavailable") from None
+    return ImageStore(root)
+
+
+def _document_bytes(record, body):
+    try:
+        from public_images import validate_document_bytes
+    except ImportError:
+        raise ValueError("Public document validation helper is unavailable") from None
+    validate_document_bytes(record, body)
+
+
+def _image_role(record):
+    if Path(record["path"]).suffix.lower() == ".dzi":
+        return "auxiliary"
+    return "tile" if "tile" in str(record.get("role", "")).casefold() else "access"
+
+
+def _download_target(record):
+    value = record["download_url"] if record.get("storage", "git") == "release" else record["path"].removeprefix("published/")
+    return quote(value, safe=":/?#&=%._-~")
+
+
+def _image_preview(root, item):
+    values = [item[key] for key in ("preview_url", "previewURL") if key in item]
+    if not values:
+        return None
+    _require(all(isinstance(v, str) and v for v in values) and len(set(values)) == 1, "Invalid or conflicting image preview URL")
+    preview = values[0]
+    if preview.startswith("https://"):
+        _url(preview)
+        sources = {item["source_url"]} | {f.get(k) for f in item["files"] for k in ("url", "source_url") if isinstance(f.get(k), str)}
+        _require(preview in sources, "Image preview must use an existing declared source")
+        return preview
+    relative = preview if preview.startswith("published/") else "published/" + preview
+    _require(any(f["path"] == relative and f.get("storage", "git") == "git" for f in item["files"]), "Repo preview must be an actually validated image file")
+    _path(root, relative, "published")
+    return quote(relative.removeprefix("published/"), safe="/._-~")
 
 
 def _raw_scope(root):
@@ -142,6 +193,7 @@ def _load_verified(root):
         _require(isinstance(identity, str) and identity and identity not in approved, "Duplicate or missing approval identity")
         approved[identity] = approval
     seen, paths, folded_paths, verified, cue_count = set(), set(), set(), [], 0
+    image_store = None
     for item in manifest:
         identity = item.get("id")
         _require(isinstance(identity, str) and identity and identity not in seen, "Duplicate or missing edition identity")
@@ -150,7 +202,7 @@ def _load_verified(root):
         _require(approval is not None, "Edition lacks a matching approval: " + identity)
         _require(isinstance(item.get("title"), str) and item["title"].strip(), "Edition title is required")
         kind = item.get("kind")
-        _require(kind in ("caption", "document", "research"), "Unsupported official edition kind")
+        _require(kind in ("caption", "document", "research", "image"), "Unsupported official edition kind")
         for field in ("id", "kind", "source_url", "official_context_url", "files", "clock", *BINDINGS):
             _require(item.get(field) == approval.get(field), "Manifest/approval fields differ: " + field)
         _url(item.get("source_url")); _url(item.get("official_context_url"))
@@ -206,43 +258,71 @@ def _load_verified(root):
                 review = approval.get("source_media_review", {})
                 _require(isinstance(review, dict) and review.get("decision") == "approved_official_public_edition_after_scope_review" and review.get("source_media_sha256") == media_sha and review.get("official_context_url") == item["official_context_url"], "Withheld source media requires an explicit edition scope review")
                 _timestamp(review.get("reviewed_at"))
+        if kind == "image":
+            if image_store is None:
+                image_store = _image_store(root)
+            image_store.validate_identity(item)
         records = item.get("files")
         _require(isinstance(records, list) and records, "Edition must register at least one versioned file")
         for record in records:
             _require(isinstance(record, dict) and _hash(record.get("sha256")) and type(record.get("bytes")) is int and record["bytes"] > 0, "Invalid edition file hash or bytes")
             relative = record.get("path")
-            target = _path(root, relative, "published")
+            _path_parts(relative, "published")
             _require(relative.casefold() not in folded_paths and relative not in INDEXES, "Duplicate file or index registered as edition text")
-            suffix = target.suffix.lower()
-            expected = "published/captions/" if kind == "caption" else "published/materials/"
-            _require(relative.startswith(expected) and suffix in ((".srt",) if kind == "caption" else (".md", ".txt")), "Edition file kind and path disagree")
-            body = target.read_bytes()
-            _require(len(body) == record["bytes"] and _sha(body) == record["sha256"], "Edition bytes/hash differ from approval: " + relative)
-            text = body.decode("utf-8-sig")
-            _require(bool(text.strip()), "Edition text is empty")
+            suffix = Path(relative).suffix.lower()
             _require(record["sha256"] not in withheld_versions, "Withheld raw caption version cannot enter official editions")
-            cues = []
-            if kind == "caption":
-                cues = _parse_srt(body, identity)
-                _require(bool(cues), "Caption edition must contain at least one cue")
-                cue_count += len(cues)
+            text, cues = "", []
+            if kind == "image":
+                _require(relative.startswith(("published/images/", "published/packaged-images/")), "Image file is outside image storage")
+                # Helper checks repo bytes or exact registered Release member and receipts.
+                body = image_store.validate_file(record)
+                if record.get("storage", "git") == "release":
+                    _require(body is None and not (root / relative).exists(), "Release member must remain an explicit virtual file")
+                else:
+                    _require(isinstance(body, bytes) and len(body) == record["bytes"] and _sha(body) == record["sha256"], "Image helper returned mismatching repo bytes")
+            else:
+                _require(record.get("storage", "git") == "git", "Text/document editions must use actual repo files")
+                target = _path(root, relative, "published")
+                expected = "published/captions/" if kind == "caption" else "published/materials/"
+                supported = (".srt",) if kind == "caption" else (".md", ".txt", ".pdf", ".docx", ".json", ".csv")
+                _require(relative.startswith(expected) and suffix in supported, "Edition file kind and path disagree")
+                body = target.read_bytes()
+                _require(len(body) == record["bytes"] and _sha(body) == record["sha256"], "Edition bytes/hash differ from approval: " + relative)
+                if suffix in (".pdf", ".docx"):
+                    _document_bytes(record, body)
+                else:
+                    text = body.decode("utf-8-sig")
+                    _require(bool(text.strip()), "Edition text is empty")
+                    if suffix == ".json":
+                        value = json.loads(text, parse_constant=lambda unused: (_ for _ in ()).throw(ValueError("Non-finite public JSON export")))
+                        _public_metadata(value)
+                    elif suffix == ".csv":
+                        rows = list(csv.reader(io.StringIO(text, newline=""), strict=True))
+                        _require(rows and any(any(cell.strip() for cell in row) for row in rows), "Empty public CSV export")
+                if kind == "caption":
+                    cues = _parse_srt(body, identity)
+                    _require(bool(cues), "Caption edition must contain at least one cue")
+                    cue_count += len(cues)
             paths.add(relative)
             folded_paths.add(relative.casefold())
             verified.append((item, record, text, cues))
+        if kind == "image":
+            _image_preview(root, item)
     _require(seen == set(approved), "Manifest and approval identity sets differ")
     for path in (root / "published").rglob("*"):
         _require(not path.is_symlink(), "Symlinks are not accepted in public editions")
-        if path.is_file() and path.suffix.lower() in (".srt", ".md", ".txt"):
+        if path.is_file() and path.suffix.lower() in (".srt", ".md", ".txt", ".pdf", ".docx", ".csv", ".json", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg", ".dzi"):
             relative = path.relative_to(root).as_posix()
-            _require(relative in paths or relative in INDEXES, "Unregistered official edition text: " + relative)
-    return {"valid": True, "errors": [], "item_count": len(manifest), "file_count": len(paths), "caption_cue_count": cue_count, "preserved_raw_caption_count": len(RAW_APPROVED_VERSIONS)}, verified
+            _require(relative in paths or relative in INDEXES or relative in ("published/manifest.json", "published/approvals.json"), "Unregistered official edition text/file: " + relative)
+    images = [v for v in verified if v[0]["kind"] == "image"]
+    return {"valid": True, "errors": [], "item_count": len(manifest), "file_count": len(paths), "caption_cue_count": cue_count, "preserved_raw_caption_count": len(RAW_APPROVED_VERSIONS), "image_item_count": sum(i["kind"] == "image" for i in manifest), "image_access_file_count": sum(_image_role(v[1]) == "access" for v in images), "image_tile_file_count": sum(_image_role(v[1]) == "tile" for v in images), "image_auxiliary_file_count": sum(_image_role(v[1]) == "auxiliary" for v in images), "release_file_count": sum(v[1].get("storage") == "release" for v in verified)}, verified
 
 
 def check(root):
     try:
         result, unused = _load_verified(root)
         return result
-    except (ValueError, OSError, UnicodeError) as exc:
+    except (ValueError, OSError, UnicodeError, csv.Error) as exc:
         return {"valid": False, "errors": [str(exc)]}
     except (TypeError, KeyError):
         return {"valid": False, "errors": ["Invalid official publication data shape"]}
@@ -253,7 +333,8 @@ def _label(value):
 
 
 def _edition_indexes(root):
-    unused, verified = _load_verified(root)
+    summary, verified = _load_verified(root)
+    root = Path(root).resolve()
     items = {}
     for item, record, unused_text, unused_cues in verified:
         items[item["id"]] = item
@@ -263,13 +344,14 @@ def _edition_indexes(root):
         if item["kind"] == "caption":
             captions[item.get("youtube_id", item["id"])].append(item)
     wechat = [item for item in items.values() if item.get("subtype") in ("wechat_article", "wechat_backup_material")]
-    other = [item for item in items.values() if item["kind"] != "caption" and item not in wechat]
+    images = [item for item in items.values() if item["kind"] == "image"]
+    other = [item for item in items.values() if item["kind"] in ("document", "research") and item not in wechat]
 
     def files(item):
         links = []
         for record in item["files"]:
             language = record.get("language", Path(record["path"]).suffix[1:].upper())
-            links.append("[" + _label(language) + "](" + record["path"].removeprefix("published/") + ")")
+            links.append("[" + _label(language) + "](" + _download_target(record) + ")")
         return " · ".join(links)
 
     lines = ["# 已完成的作品字幕", "", f"{counts['caption']}份SRT，{len(captions)}个准确视频版本。文件数量包括独立语言和另存的字节版本，不是作品总数。", "",
@@ -285,7 +367,7 @@ def _edition_indexes(root):
             language = item.get("language", "und")
             label = language if versions[language] == 1 else language + " " + item["files"][0]["sha256"][:8]
             for record in item["files"]:
-                links.append("[" + _label(label) + "](" + record["path"].removeprefix("published/") + ")")
+                links.append("[" + _label(label) + "](" + _download_target(record) + ")")
         lines.append("| [" + _label(title) + "](" + target + ") | " + " · ".join(links) + " | [原文](" + first["official_context_url"] + ") |")
     lines += ["", "[文稿与研究](materials.md) · [公众号原文](wechat.md) · [打卡进度](../PROGRESS.md) · [资料说明](README.md)", ""]
     output = {"published/captions.md": "\n".join(lines)}
@@ -311,12 +393,43 @@ def _edition_indexes(root):
         lines += [""]
     lines += ["[字幕](captions.md) · [文稿与研究](materials.md) · [打卡进度](../PROGRESS.md)", ""]
     output["published/wechat.md"] = "\n".join(lines)
-    lines = ["# P4与何发：公开文字资料", "", "[字幕下载](captions.md) · [文稿与研究](materials.md) · [公众号原文](wechat.md) · [打卡进度](../PROGRESS.md)", "",
-             f"当前收录{counts['caption']}份字幕、{counts['document']}项文稿／资料记录、{counts['research']}项研究。不同语言、字节版本、文章、素材和作品分别登记，数量不混作作品总数。", "",
-             "文字保留原字节或有来源的公开访问版、准确署名与原文链接。何发个人作品保持个人归属。大型影音保留官方观看／下载入口，内部底稿、原片与私有运维信息不在公开包。", "",
+    lines = ["# 已公开图像记录", "", f"{len(images)}条图像记录；{summary['image_access_file_count']}个访问图片文件位置、{summary['image_tile_file_count']}个瓦片位置、{summary['image_auxiliary_file_count']}个辅助文件位置。图像、版本、缩略图和tiles分别记录，文件数量不是作品数量。", "",
+             "保留原ID、出处、署名和原站图像类型；参考图像保留参考身份，不能因收录网站或频道相同就视作何发原创。Release链接指实际归档包，包内路径与逐文件SHA见清单；虚拟成员路径不作为本地下载链接。", "",
+             "| 图像与原ID | 原站类型/关系 | 访问/瓦片/辅助位置 | 查看或下载 |", "|---|---|---|---|"]
+    for item in sorted(images, key=lambda i: i["id"]):
+        metadata = item.get("metadata_as_recorded", {})
+        metadata = metadata if isinstance(metadata, dict) else {}
+        classification = item.get("image_classification") or item.get("image_type") or metadata.get("image_type") or metadata.get("kind") or "依原站记录"
+        if isinstance(classification, (dict, list)):
+            classification = json.dumps(classification, ensure_ascii=False, sort_keys=True)
+        roles = Counter(_image_role(f) for f in item["files"])
+        access = [f for f in item["files"] if _image_role(f) == "access"]
+        candidates = list(access[:3] if access else item["files"][:1])
+        # A deep-zoom record can span a core package and a separate tile package.
+        # Expose every package even when its members are outside the preview sample.
+        candidates.extend(f for f in item["files"] if f.get("storage") == "release")
+        downloads, seen_urls = [], set()
+        preview = _image_preview(root, item)
+        if preview:
+            downloads.append("[预览](" + preview + ")")
+            seen_urls.add(preview)
+        for record in candidates:
+            url = _download_target(record)
+            if url not in seen_urls:
+                label = "Release包" if record.get("storage", "git") == "release" else record.get("role", "图像文件")
+                downloads.append("[" + _label(label) + "](" + url + ")")
+                seen_urls.add(url)
+        downloads += ["[原文](" + item["source_url"] + ")"]
+        original = item.get("original_id", item.get("anchor_id", item["id"]))
+        lines.append("| " + _label(item["title"]) + " · `" + _label(original) + "` | " + _label(classification) + " | " + "/".join(str(roles[k]) for k in ("access", "tile", "auxiliary")) + " | " + " · ".join(downloads) + " |")
+    lines += ["", "[完整逐文件版本与包内路径](manifest.json) · [公开成品及文件编号](../NUMBERED_INDEX.md) · [文字资料](materials.md) · [打卡进度](../PROGRESS.md)", ""]
+    output["published/images.md"] = "\n".join(lines)
+    lines = ["# P4与何发：公开资料", "", "[字幕下载](captions.md) · [文稿与研究](materials.md) · [公众号原文](wechat.md) · [图像索引](images.md) · [公开成品编号](../NUMBERED_INDEX.md) · [打卡进度](../PROGRESS.md)", "",
+             f"当前收录{counts['caption']}份字幕、{counts['document']}项文稿／资料记录、{counts['research']}项研究、{counts['image']}条图像记录。不同语言、字节版本、文章、素材与作品分别登记，数量不混作作品总数。", "",
+             "文字保留原字节或有来源的公开访问版、准确署名与原文链接。何发个人作品保持个人归属，参考图像与共同项目保留原站关系。大型影音保留官方观看／下载入口，内部底稿、原片与私有运维信息不在公开包。", "",
              "[逐项来源与版本](manifest.json) · [版本批准记录](approvals.json) · [公开范围规则](../docs/公开范围投影.md)", "",
              "## 检查与检索", "", "```sh", "python -X utf8 scripts/official_publications.py check --root .", "python -X utf8 scripts/official_publications.py build-indexes --root .", "python -X utf8 scripts/official_publications.py search \"剧本\" --root .", "```", "",
-             "检索带原文链接、字幕cue、版本SHA与相应时间轴。公开访问不授予统一开放许可；权利和核验范围沿用原资料。", ""]
+             "检索带原文链接、字幕cue、版本SHA与相应时间轴；图像只匹配记录标题和元数据，不把tiles重复计为文本结果。公开访问不授予统一开放许可；权利和核验范围沿用原资料。", ""]
     output["published/README.md"] = "\n".join(lines)
     return output
 
@@ -339,10 +452,18 @@ def search(root, query, limit=20):
     _require(isinstance(query, str) and query.strip() and type(limit) is int and 0 < limit <= 100, "Search needs text and a limit from 1 to 100")
     result, editions = _load_verified(root)
     normalize = lambda s: unicodedata.normalize("NFKC", s).casefold()
-    needle, matches = normalize(query), []
+    needle, matches, seen_images = normalize(query), [], set()
     for item, file, text, cues in editions:
         base = {"id": item["id"], "kind": item["kind"], "title": item["title"], "path": file["path"], "sha256": file["sha256"], "source_url": item["source_url"], "official_context_url": item["official_context_url"], "quality_label": item.get("quality_label", "not_recorded")}
-        if cues:
+        if item["kind"] == "image":
+            if item["id"] in seen_images:
+                continue
+            seen_images.add(item["id"])
+            fields = ("title", "caption", "description", "keywords", "image_classification", "image_type", "metadata_as_recorded", "metadata", "original_id", "original_ids", "aliases")
+            searchable = json.dumps({k: item[k] for k in fields if k in item}, ensure_ascii=False, sort_keys=True)
+            if needle in normalize(searchable):
+                matches.append({**base, "text": item["title"], "download_url": file["download_url"] if file.get("storage", "git") == "release" else file["path"], "file_count": len(item["files"]), "tile_count": sum(_image_role(f) == "tile" for f in item["files"])})
+        elif cues:
             for cue in cues:
                 if needle in normalize(cue["text"]):
                     matches.append({**base, "clock": item.get("clock", "edition_zero"), "cue": cue["cue"], "start_ms": cue["start_ms"], "end_ms": cue["end_ms"], "text": cue["text"]})
@@ -354,6 +475,8 @@ def search(root, query, limit=20):
 
 
 def main():
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("check").add_argument("--root", default=".")
@@ -371,7 +494,7 @@ def main():
             result = build_indexes(args.root, check_only=args.command == "check-indexes")
         else:
             result = search(args.root, args.query, args.limit)
-    except (ValueError, OSError, UnicodeError) as exc:
+    except (ValueError, OSError, UnicodeError, csv.Error) as exc:
         result = {"valid": False, "errors": [str(exc)]}
     except (TypeError, KeyError):
         result = {"valid": False, "errors": ["Invalid official publication data shape"]}

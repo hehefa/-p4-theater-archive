@@ -15,7 +15,7 @@ from urllib.parse import quote, urlsplit
 
 STAGES = {"prepared": "已整理", "github_published": "GitHub已发布", "platform_published": "平台已发布"}
 METRICS = {"full_sha256_recorded": "完整SHA登记", "full_decode_passed_existing_reports": "既有完整解码记录", "official_media_affiliation_confirmed_assets": "官方逐项关联"}
-KINDS = {"all", "caption", "document", "research"}
+KINDS = {"all", "caption", "document", "research", "image"}
 MEASURES = {"items", "files", "video_versions"}
 
 

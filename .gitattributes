@@ -8,3 +8,13 @@
 *.srt -text
 # Official text downloads are also bound to their original response bytes.
 published/materials/*.txt -text
+published/materials/** -text
+*.jpg -text
+*.jpeg -text
+*.png -text
+*.webp -text
+*.gif -text
+*.svg -text
+*.dzi -text
+*.pdf -text
+*.docx -text

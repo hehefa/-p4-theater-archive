@@ -79,6 +79,30 @@ class ArchiveProgressTests(unittest.TestCase):
             self.assertIsNone(summary["batches"][0]["stages"]["prepared"]["percent"])
             self.assertIn("5/未核定（未核定）", (root / "PROGRESS.md").read_text(encoding="utf-8"))
 
+    def test_image_materials_and_file_locations_use_separate_units(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data, manifest = self.fixture(root)
+            manifest['items'].append({'id': 'image:one', 'kind': 'image', 'files': [
+                {'path': 'published/images/one.jpg'},
+                {'path': 'published/packaged-images/bundle/one.jpg'},
+                {'path': 'published/packaged-images/bundle/one-tile.jpg'}]})
+            write_json(root / 'published/manifest.json', manifest)
+            batch = data['batches'][0]
+            batch.update(total=1, unit='条图像材料')
+            batch['stages']['prepared']['count'] = batch['stages']['github_published']['count'] = 1
+            batch['snapshot'].update(kind='image', measure='items', ids=['image:one'])
+            self.save(root, data)
+            self.assertTrue(progress.build(root)['valid'])
+            self.assertEqual(self.summary(root)['batches'][0]['total'], 1)
+            batch['snapshot']['measure'] = 'files'
+            self.save(root, data)
+            self.assertFalse(progress.check(root)['valid'])
+            batch['total'] = 3
+            batch['stages']['prepared']['count'] = batch['stages']['github_published']['count'] = 3
+            self.save(root, data)
+            self.assertTrue(progress.build(root)['valid'])
+
     def test_snapshot_ids_freeze_cohort_when_new_items_arrive(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

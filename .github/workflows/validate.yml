@@ -13,6 +13,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -21,6 +23,7 @@ jobs:
       - run: python -X utf8 scripts/public_reading.py check --root .
       - run: python -X utf8 scripts/official_publications.py check --root .
       - run: python -X utf8 scripts/official_publications.py check-indexes --root .
+      - run: python -X utf8 scripts/public_accessions.py check --root .
       - run: python -X utf8 scripts/archive_progress.py check --root .
       - run: python -X utf8 scripts/publication_receipts.py check --candidates catalog/publication-candidates.json --sources registry/publication-sources.json --catalog-dir catalog
       - run: python -X utf8 -m unittest discover -s tests -v
