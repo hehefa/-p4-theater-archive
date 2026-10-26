@@ -837,6 +837,18 @@ def validate(root):
         if relative in caption_exports:
             errors.append("Duplicate public caption export path: " + relative)
         caption_exports[relative] = expected_hash
+    # Additional official editions must pass their own exact-version and
+    # exclusion checks before any SRT is admitted by the global file guard.
+    # A directory name alone must never whitelist arbitrary transcripts.
+    if (root / "published").exists():
+        from official_publications import _load_verified
+        try:
+            unused, editions = _load_verified(root)
+            for item, record, unused_text, unused_cues in editions:
+                if item["kind"] == "caption":
+                    caption_exports[record["path"]] = record["sha256"]
+        except (ValueError, OSError, TypeError, KeyError, UnicodeError) as exc:
+            errors.append("Invalid official editions: " + str(exc))
     absolute = re.compile(r"(?i)(?:(?<![a-z0-9])[a-z]:[\\/]|file://|\\\\[^\\\s]+\\|/Users/|/home/)")
     sensitive = re.compile(r"(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AIza[A-Za-z0-9_-]{25,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)")
     for path in root.rglob("*"):

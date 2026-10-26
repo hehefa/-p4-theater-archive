@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "batch_id": "official-completed-materials-20261026",
+  "base_commit": "226d67d6809f1829a4fac193c2897f415dfe7fe2",
+  "owner": "mac",
+  "recorded_at": "2026-10-26T17:00:25.122001+00:00",
+  "status": "verified_prepared_for_github_publication",
+  "destination": "https://github.com/hehefa/-p4-theater-archive",
+  "counts": {
+    "caption": 310,
+    "document": 113,
+    "research": 64
+  },
+  "registered_files": 614,
+  "caption_video_editions": 112,
+  "completed_original_caption_files_preserved": 48,
+  "source_media_operations": "none",
+  "raw_catalogue_mutation": false,
+  "private_master_or_state_modified": false,
+  "existing_raw_caption_versions_preserved": 3,
+  "withdrawn_raw_captions_restored": 0,
+  "new_youtube_uploads": 0,
+  "youtube_caption_uploads_this_batch": 0,
+  "official_web_readbacks": {
+    "a_site_requests": 631,
+    "b_site_requests": 116,
+    "all_returned_200": true
+  },
+  "withheld": {
+    "credit_only_placeholder_without_substantive_context": 1
+  },
+  "next_pc_action": "Pull current main in a clean checkout; retain private master and existing IDs. Validate the raw catalogue and official editions independently. Do not import these edition IDs as raw sources or restore withheld caption text."
+}

@@ -38,3 +38,5 @@ __pycache__/
 *.gz
 # Only reviewed-scope, version-hash-bound caption exports are admitted by validator.
 !captions/**/*.srt
+# Official viewing editions also require their exact manifest/approval check.
+!published/captions/**/*.srt
