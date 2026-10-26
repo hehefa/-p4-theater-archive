@@ -1,0 +1,49 @@
+{
+  "schema_version": "p4-official-project-media-evidence-v1",
+  "decision": "confirmed_project_media",
+  "scope": "project_media_provenance_only",
+  "asset_id": "asset:42a44e7c-809a-4e52-8843-4d2925f49d6f",
+  "asset_accession": "P4-V001069",
+  "file_id": "file:c0ad419a-e5f3-40da-a810-71a58b3b150a",
+  "file_accession": "P4-F001069",
+  "source_filename": "IMG_3556.MOV",
+  "source_sha256": "21f434764243d5ea77d831cb3a5675a96b9ea78f24e1f2aef3d60687838b63d3",
+  "project_code": "P4C-018",
+  "project_slug": "glass-menagerie",
+  "official_event_description": "Creative meeting and table read of The Glass Menagerie",
+  "official_event_date": null,
+  "youtube_video_id": "uQ1HVDVdv6Y",
+  "evidence": [
+    {
+      "url": "https://a.p4theater.cn/videos/uQ1HVDVdv6Y",
+      "http_status": 200,
+      "retrieved_at": "2026-10-26T15:00:36.9951718+00:00",
+      "html_utf8_sha256": "09b8c5d1330f7390acf1773626ccc7b18067f6054f87c65ad7766275edbe0fd0",
+      "source_type": "official_video_archive_page",
+      "supports": [
+        "Exact original filename and full source SHA-256",
+        "Explicit P4 Theater creative meeting and group table-read description"
+      ],
+      "folder_only_assignment_disclaimer": false
+    },
+    {
+      "url": "https://b.p4theater.cn/questions/glass-self-expression-and-direction",
+      "http_status": 200,
+      "retrieved_at": "2026-10-26T15:02:35.5676900+00:00",
+      "html_utf8_sha256": "77d3b1f65b8e1985c5909f0ed04beaf9b198ce4974d47c8443de301259cd54d6",
+      "source_type": "official_research_dossier",
+      "supports": [
+        "Project code P4C-018",
+        "Same full original-source SHA-256",
+        "Explicit The Glass Menagerie table-read context"
+      ],
+      "source_record_snapshot_is_not_used_as_video_hash": true
+    }
+  ],
+  "unsupported_claims": [
+    "No independent event date was established.",
+    "No full-video family/privacy review, continuous playback review or human subtitle listening review was performed by this provenance check.",
+    "No claim that the YouTube transcoded stream has the same byte hash as the original file.",
+    "No identity assignment to speakers or performers."
+  ]
+}

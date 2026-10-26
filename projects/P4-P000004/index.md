@@ -16,9 +16,9 @@ Canonical ID：`project:84801fb9-5021-49e7-99d4-258e9e9ff402`
 
 日期：2022-04-09；事件边界：暂定目录组。
 
-| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 完整解码 | 发布状态 |
-|---|---|---|---:|---:|---|---|---|
-| P4-V000033 | P4-F000033 | .mov | 150.99 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000034 | P4-F000034 | .mov | 5455.48 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
+| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |
+|---|---|---|---:|---:|---|---|---|---|
+| P4-V000033 | P4-F000033 | .mov | 150.99 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000034 | P4-F000034 | .mov | 5455.48 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
 
 [返回总目录](../../INDEX.md)

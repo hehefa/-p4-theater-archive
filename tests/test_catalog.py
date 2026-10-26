@@ -16,6 +16,10 @@ module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
 
+def metadata_receipt_fixture(asset, source_sha):
+    return {"id": "publication:fixture", "accession": "P4-U000001", "kind": "publication", "title": "Synthetic metadata receipt fixture", "asset_id": asset["id"], "file_id": asset["file_id"], "channel_id": "UCp_LyzepcrZX6Cgzv2Qit4w", "youtube_video_id": "Fixture_001", "url": "https://www.youtube.com/watch?v=Fixture_001", "visibility": "public", "record_basis": "youtube_studio_metadata_readback", "platform_readback_verification": "verified", "verification_scope": "metadata_only", "source_sha256": source_sha, "description_source_sha256": source_sha, "source_mapping_status": "exact_description_source_sha256_match", "uploaded_stream_hash_verified": False, "publication_origin": "pre_existing", "new_upload_this_batch": False, "new_upload_completed": False, "playback_status": "not_checked", "caption_publication_status": "not_checked", "subtitle_ids": [], "recorded_at": "2026-10-26T06:00:00-07:00", "platform_observed_at": None, "observation_timestamp_status": "not_supplied_by_source_receipt", "observation_receipt": {"sha256": hashlib.sha256(b"synthetic-receipt").hexdigest(), "interface": "YouTube Studio videos and shorts table DOM"}, "in_current_inventory": True}
+
+
 class CatalogueTests(unittest.TestCase):
     def test_registry_append_does_not_renumber_existing(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -101,6 +105,10 @@ class CatalogueTests(unittest.TestCase):
                 shutil.copytree(ROOT / "captions", public / "captions")
             assets = module.read_json(public / "catalog/assets.json")["items"]
             files = {x["id"]: x for x in module.read_json(public / "catalog/files.json")["items"]}
+            existing_publications = module.read_json(public / "catalog/publications.json")["items"]
+            registry = module.Registry(work / "private")
+            registry.data["counters"]["publication"] = max((int(x["accession"].removeprefix("P4-U")) for x in existing_publications), default=0)
+            registry.save()
             asset = next(x for x in assets if x["publication_status"].startswith("hold_") and files[x["file_id"]]["bytes"] > 0 and x["subtitle_ids"])
             original_hold = asset["publication_status"]
             options = dict(root=str(public), local_state=str(work / "private"), asset=asset["id"], channel="UCp_LyzepcrZX6Cgzv2Qit4w", video="Fixture_001", visibility="public", observed_at="2026-10-26T06:00:00-07:00", playback_status="operator_reported_playable", caption_status="not_recorded", subtitle=[])
@@ -114,7 +122,7 @@ class CatalogueTests(unittest.TestCase):
             summary = module.read_json(public / "catalog/summary.json")
             self.assertEqual(summary["publication_reports_recorded"], 1)
             self.assertEqual(summary["youtube_uploads_recorded"], 0)
-            pub = module.read_json(public / "catalog/publications.json")["items"][0]
+            pub = next(x for x in module.read_json(public / "catalog/publications.json")["items"] if x["youtube_video_id"] == "Fixture_001")
             self.assertEqual(pub["record_basis"], "operator_reported")
             self.assertEqual(pub["platform_readback_verification"], "not_recorded")
             other = next(x for x in assets if x["id"] != asset["id"] and files[x["file_id"]]["bytes"] > 0)
@@ -123,6 +131,10 @@ class CatalogueTests(unittest.TestCase):
             empty = next(x for x in assets if files[x["file_id"]]["bytes"] == 0)
             with self.assertRaises(ValueError):
                 module.record_publication(SimpleNamespace(**{**options, "asset": empty["id"], "video": "Fixture_002"}))
+            if existing_publications:
+                verified = next(x for x in existing_publications if x.get("platform_readback_verification") == "verified")
+                with self.assertRaisesRegex(ValueError, "cannot overwrite"):
+                    module.record_publication(SimpleNamespace(**{**options, "asset": verified["asset_id"], "video": verified["youtube_video_id"]}))
             self.assertTrue(module.validate(public)["valid"])
 
     def test_only_scope_reviewed_hash_bound_caption_export_is_allowed(self):
@@ -201,6 +213,11 @@ class CatalogueTests(unittest.TestCase):
             project_table = module.read_json(public / "catalog/projects.json")
             project_table["items"][0]["aliases"].append("legacy-fixture-code")
             module.write_json(public / "catalog/projects.json", project_table)
+            fixture_pub = metadata_receipt_fixture(primary, cache["files"][module.pathkey(roots[0] / "IMG_0001.MOV")]["sha256"])
+            module.write_json(public / "catalog/publications.json", {"schema_version": 1, "items": [fixture_pub]})
+            primary["youtube_publication_ids"].append(fixture_pub["id"])
+            primary["youtube_metadata_association_status"] = "pre_existing_public_video_source_description_sha256_matched"
+            module.write_json(public / "catalog/assets.json", assets)
             with contextlib.redirect_stdout(io.StringIO()):
                 module.import_catalog(args)
             updated_assets = module.read_json(public / "catalog/assets.json")["items"]
@@ -214,6 +231,12 @@ class CatalogueTests(unittest.TestCase):
             self.assertEqual(updated_events[0]["project_ids"], [reviewed_project_id])
             self.assertEqual(module.read_json(public / "catalog/summary.json")["public_caption_export_count"], 1)
             self.assertIn("legacy-fixture-code", module.read_json(public / "catalog/projects.json")["items"][0]["aliases"])
+            self.assertEqual(module.read_json(public / "catalog/publications.json")["items"], [fixture_pub])
+            self.assertIn(fixture_pub["id"], updated_assets[0]["youtube_publication_ids"])
+            summary = module.read_json(public / "catalog/summary.json")
+            self.assertEqual(summary["pre_existing_video_associations_verified"], 1)
+            self.assertEqual(summary["new_uploads_completed_this_batch"], 0)
+            self.assertEqual(summary["playback_verifications_recorded"], 0)
             self.assertTrue(module.validate(public)["valid"], module.validate(public)["errors"])
 
     def test_official_registry_duplicates_references_and_path_leaks_are_rejected(self):
@@ -244,6 +267,25 @@ class CatalogueTests(unittest.TestCase):
             broken["items"][0]["private_path"] = chr(67) + ":" + chr(92) + "private" + chr(92) + "fixture"
             module.write_json(registry_path, broken)
             self.assertTrue(any("Absolute local path" in x for x in module.validate(public)["errors"]))
+
+    def test_metadata_receipt_cannot_overstate_playback_new_upload_or_source_hash(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            import shutil
+            public = Path(tmp) / "public"
+            for folder in ("catalog", "captions", "registry"):
+                if (ROOT / folder).exists():
+                    shutil.copytree(ROOT / folder, public / folder)
+            path = public / "catalog/publications.json"
+            baseline = module.read_json(path)
+            metadata = next(x for x in baseline["items"] if x.get("record_basis") == "youtube_studio_metadata_readback")
+            self.assertTrue(module.validate(public)["valid"])
+            cases = [({"playback_status": "verified"}, "cannot assert playback"), ({"new_upload_this_batch": True, "new_upload_completed": True}, "cannot count as a new upload"), ({"description_source_sha256": "0" * 64}, "does not match catalogued source"), ({"recorded_at": "yesterday"}, "Invalid Studio observation"), ({"record_basis": "operator_reported"}, "cannot assert platform verification")]
+            for changes, message in cases:
+                broken = json.loads(json.dumps(baseline))
+                target = next(x for x in broken["items"] if x["id"] == metadata["id"])
+                target.update(changes)
+                module.write_json(path, broken)
+                self.assertTrue(any(message in error for error in module.validate(public)["errors"]), changes)
 
     def test_public_catalogue_references_and_privacy_guard(self):
         self.assertTrue(module.validate(ROOT)["valid"], module.validate(ROOT)["errors"])

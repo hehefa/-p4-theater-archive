@@ -15,6 +15,8 @@ from archive_catalog import TABLES, aware_timestamp, digest, pathkey, read_json,
 
 def merge_release(root, state, options_path, queue_path):
     root, state = Path(root).resolve(), Path(state).resolve()
+    if (root / ".p4-public-scope.json").exists():
+        raise ValueError("Direct caption merge into a scope-projected public tree is blocked; use private master and official-source scope projection")
     if root == state or root in state.parents:
         raise ValueError("Private state must be outside the public repository")
     options, queue = read_json(options_path), read_json(queue_path)
@@ -179,9 +181,10 @@ def render_caption_index(root, tables):
     projects = {x["id"]: x for x in tables["projects"]}
     files = {x["id"]: x for x in tables["files"]}
     subs = {x["id"]: x for x in tables["subtitles"]}
+    publications = {x["id"]: x for x in tables["publications"]}
     families = [(a, [subs[sid] for sid in a["subtitle_ids"] if subs[sid].get("public_export")]) for a in tables["assets"]]
     families = [(a, s) for a, s in families if s]
-    lines = ["# 公开字幕与翻译", "", f"当前保存 {sum(len(s) for _, s in families)} 份原样 SRT，关联 {len(families)} 个明确来源文件。每个来源保留原语、英文和中英双语三版；原语中可能包含英语段落。", "", "这些版本经过项目上下文与公开文本范围筛查，仍是自动转写、机器翻译稿，尚未全片听校。原始 SRT 字节未改动；每个下载路径绑定对应字幕记录及 SHA-256。字幕在这里可下载，不代表已经上传到 YouTube。", "", "| 项目 | 素材 / 物理文件 | 原语 | English | 中英双语 | 版本关系与状态 |", "|---|---|---|---|---|---|"]
+    lines = ["# 公开字幕与翻译", "", f"当前保存 {sum(len(s) for _, s in families)} 份原样 SRT，关联 {len(families)} 个明确来源文件。每个来源保留原语、英文和中英双语三版；原语中可能包含英语段落。", "", "这些版本经过项目上下文与公开文本范围筛查，仍是自动转写、机器翻译稿，尚未全片听校。原始 SRT 字节未改动；每个下载路径绑定对应字幕记录及 SHA-256。字幕在这里可下载，不代表已经上传到 YouTube。", "", "| 项目 | 素材 / 物理文件 | 原语 | English | 中英双语 | 已关联公开视频 | 版本关系与状态 |", "|---|---|---|---|---|---|---|"]
     for asset, captions in sorted(families, key=lambda x: x[0]["accession"]):
         project = projects[asset["project_ids"][0]]
         links = {s["role"]: "[" + s["accession"] + "](" + s["public_export"]["path"].removeprefix("captions/") + ")" for s in captions}
@@ -190,8 +193,14 @@ def render_caption_index(root, tables):
             notes += "；另有 " + str(len(asset["byte_copy_asset_ids"])) + " 个同字节位置"
         if asset.get("alternate_representation_review"):
             notes += "；另一编码候选，YouTube 上传暂缓比较"
-        lines.append("| [" + project["title"] + "](../projects/" + project["accession"] + "/index.md) | " + asset["accession"] + " / " + files[asset["file_id"]]["accession"] + " | " + links.get("original_asr", "—") + " | " + links.get("machine_translation", "—") + " | " + links.get("bilingual_machine_translation", "—") + " | " + notes + " |")
-    lines += ["", "来源归属按素材判断。荧火空间 DJI_0002、DJI_0005 的字幕归入动物农场，其来源集合仍保留原有玻璃动物园资料批次；其他未定归属条目继续待核实。", "", "疑似私人信息的原版、归属未知的材料和空识别版本没有在此提供正文。已审核的脱敏选项须另建版本后再公开；原版保留于私有保存端。", "", "同字节副本通过视频与文件编号关联到规范来源，原有事件组未合并。同内容或同长度的另一编码只记候选关系，不能当作 SHA-256 相同。", "", "引用时请保留项目编号、视频编号、物理文件编号、字幕编号及版本 SHA-256。[返回档案目录](../INDEX.md)。", ""]
+        videos = [publications[pid] for pid in asset.get("youtube_publication_ids", []) if pid in publications and publications[pid].get("platform_readback_verification") == "verified" and publications[pid].get("visibility") == "public" and publications[pid].get("file_id") == asset["file_id"]]
+        video_links = " / ".join("[YouTube](" + pub["url"] + ")" for pub in videos) or "未建立已核验关联"
+        lines.append("| [" + project["title"] + "](../projects/" + project["accession"] + "/index.md) | " + asset["accession"] + " / " + files[asset["file_id"]]["accession"] + " | " + links.get("original_asr", "—") + " | " + links.get("machine_translation", "—") + " | " + links.get("bilingual_machine_translation", "—") + " | " + video_links + " | " + notes + " |")
+    lines += ["", "当前正文只保留具有官网完整原片 SHA 对应和主档案实质项目上下文的明确来源。其他先前文本已移到私有主目录，等待官网逐项核实；这不把未确认素材判为家庭录像。文本筛查与官方项目关联均不能代替全片听校或连续观看。", ""]
+    for asset, _ in families:
+        if asset.get("official_media_evidence"):
+            lines += ["[" + asset["accession"] + " 官方来源证据](../evidence/" + asset["accession"] + "-official-media.json)", ""]
+    lines += ["疑似私人信息的原版、归属未知的材料和空识别版本没有在此提供正文。脱敏稿须另建版本并满足当前范围规则；原版保留于私有保存端。", "", "同字节副本通过编号关联规范来源，原有事件组未合并。当前树移除不等于抹除已有 Git 历史。", "", "引用时请保留项目编号、视频编号、物理文件编号、字幕编号及版本 SHA-256。[返回档案目录](../INDEX.md)。", ""]
     target = root / "captions" / "README.md"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text("\n".join(lines), encoding="utf-8")

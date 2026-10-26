@@ -1,4 +1,0 @@
-﻿1
-00:00:01,298 --> 00:00:05,589
-这边有一个人,那边有那个是这样的
-There's a man over here. There's that one over there.

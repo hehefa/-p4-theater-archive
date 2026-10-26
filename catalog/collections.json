@@ -15,7 +15,8 @@
       },
       "inventory_file_count": 17,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:f22f6b40-fefa-42a2-af2e-7dd9b67809c7",
@@ -31,7 +32,8 @@
       },
       "inventory_file_count": 5,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:771fd6b9-9ec7-4811-b4c9-de38d6bbc2f6",
@@ -47,7 +49,8 @@
       },
       "inventory_file_count": 10,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:a732a6e1-f6a9-4e2d-8566-0f30dc4c6325",
@@ -63,7 +66,8 @@
       },
       "inventory_file_count": 2,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:9e314d00-9c44-415c-82b4-40eaffff221b",
@@ -79,7 +83,8 @@
       },
       "inventory_file_count": 10,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:9d1ab832-b62f-4a49-b69a-790f7fc508c0",
@@ -95,7 +100,8 @@
       },
       "inventory_file_count": 11,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:63178edf-78df-4f66-8217-0d82b9da15d7",
@@ -111,7 +117,8 @@
       },
       "inventory_file_count": 15,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:15857fcf-f592-486e-ac63-6f97ed43dd49",
@@ -127,7 +134,8 @@
       },
       "inventory_file_count": 9,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:2cd1878d-f231-4cf3-8ffc-91f145e84006",
@@ -143,7 +151,8 @@
       },
       "inventory_file_count": 307,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:31172a39-f052-44d9-ae8c-832cb2a942e8",
@@ -159,7 +168,8 @@
       },
       "inventory_file_count": 57,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:56a1df9a-82ca-4a56-adaa-325d58762b73",
@@ -175,7 +185,8 @@
       },
       "inventory_file_count": 25,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:c8f1d989-d120-4476-bf25-20f0b3dcdcb7",
@@ -191,7 +202,8 @@
       },
       "inventory_file_count": 10,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:05c3007d-d94e-44ec-92af-ca18ac79bf8a",
@@ -207,7 +219,8 @@
       },
       "inventory_file_count": 573,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:3dec63aa-5253-4172-a803-3924a91c9d5c",
@@ -223,7 +236,8 @@
       },
       "inventory_file_count": 17,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:fdd547d6-653f-457e-815f-87e016f93789",
@@ -237,9 +251,10 @@
         "basis": "not_established",
         "verification": "unverified"
       },
-      "inventory_file_count": 63,
+      "inventory_file_count": 62,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:d9a74466-3513-4961-a4fb-12a892cdd362",
@@ -253,9 +268,10 @@
         "basis": "not_established",
         "verification": "unverified"
       },
-      "inventory_file_count": 588,
+      "inventory_file_count": 294,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:05c655e3-339b-4d7f-8539-16fdb7245e1d",
@@ -271,7 +287,8 @@
       },
       "inventory_file_count": 7,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     },
     {
       "id": "collection:89a5ab83-be56-41bc-b77a-9d36e6f3a228",
@@ -287,7 +304,8 @@
       },
       "inventory_file_count": 14,
       "classification_status": "candidate",
-      "in_current_inventory": true
+      "in_current_inventory": true,
+      "count_scope": "public_selected_candidates_only"
     }
   ]
 }

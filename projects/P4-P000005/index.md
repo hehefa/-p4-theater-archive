@@ -12,17 +12,17 @@ Canonical ID：`project:5fba24e0-b4e8-4f46-993c-1b769502ed80`
 
 日期：2022-08-28；事件边界：暂定目录组。
 
-| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 完整解码 | 发布状态 |
-|---|---|---|---:|---:|---|---|---|
-| P4-V000035 | P4-F000035 | .mp4 | 652.37 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000036 | P4-F000036 | .mp4 | 4092.28 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000037 | P4-F000037 | .mp4 | 1322.54 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000038 | P4-F000038 | .mp4 | 36.17 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000039 | P4-F000039 | .mp4 | 4092.48 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000040 | P4-F000040 | .mp4 | 4092.25 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000041 | P4-F000041 | .mp4 | 4092.44 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000042 | P4-F000042 | .mp4 | 695.60 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000043 | P4-F000043 | .mp4 | 1481.38 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
-| P4-V000044 | P4-F000044 | .mp4 | 3638.80 | 0 | 待公开 | not_recorded | pending_content_and_publication_review |
+| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |
+|---|---|---|---:|---:|---|---|---|---|
+| P4-V000035 | P4-F000035 | .mp4 | 652.37 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000036 | P4-F000036 | .mp4 | 4092.28 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000037 | P4-F000037 | .mp4 | 1322.54 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000038 | P4-F000038 | .mp4 | 36.17 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000039 | P4-F000039 | .mp4 | 4092.48 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000040 | P4-F000040 | .mp4 | 4092.25 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000041 | P4-F000041 | .mp4 | 4092.44 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000042 | P4-F000042 | .mp4 | 695.60 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000043 | P4-F000043 | .mp4 | 1481.38 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
+| P4-V000044 | P4-F000044 | .mp4 | 3638.80 | 0 | 待公开 | 未建立已核验关联 | not_recorded | pending_content_and_publication_review; 官网逐项关联待核实 |
 
 [返回总目录](../../INDEX.md)

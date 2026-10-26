@@ -54,6 +54,23 @@ def aware_timestamp(value):
     return stamp.isoformat()
 
 
+def publication_summary(records):
+    metadata_verified = [x for x in records if x.get("platform_readback_verification") == "verified" and x.get("verification_scope") == "metadata_only"]
+    existing = [x for x in metadata_verified if x.get("publication_origin") == "pre_existing"]
+    new = [x for x in records if x.get("new_upload_this_batch") is True and x.get("new_upload_completed") is True]
+    return {
+        "publication_associations_recorded": len(records),
+        "publication_reports_recorded": sum(x.get("record_basis") == "operator_reported" for x in records),
+        "platform_metadata_associations_verified": len(metadata_verified),
+        "pre_existing_video_associations_verified": len(existing),
+        "public_video_associations_verified": sum(x.get("visibility") == "public" for x in metadata_verified),
+        "new_uploads_completed_this_batch": len(new),
+        "youtube_uploads_recorded": len(new),
+        "playback_verifications_recorded": sum(x.get("playback_status") == "verified" for x in records),
+        "youtube_caption_verifications_recorded": sum(x.get("caption_publication_status") == "verified" for x in records),
+    }
+
+
 class Registry:
     def __init__(self, directory):
         self.directory = Path(directory)
@@ -189,6 +206,8 @@ def reusable_hashes(audit, registry):
 
 def import_catalog(args):
     out, state = Path(args.output).resolve(), Path(args.local_state).resolve()
+    if (out / ".p4-public-scope.json").exists():
+        raise ValueError("Direct import into a scope-projected public tree is blocked; import into the private master and run project_public_scope.py")
     if out == state or out in state.parents:
         raise ValueError("Private local state must be outside public output")
     audit = read_json(args.audit)
@@ -352,7 +371,7 @@ def import_catalog(args):
     # Keep published history and human annotations when a fresh machine inventory
     # is imported. Current source absence is not a request to erase an entity.
     protected_fields = {
-        "assets": ("human_review", "rights_status", "youtube_publication_ids", "publication_status"),
+        "assets": ("human_review", "rights_status", "youtube_publication_ids", "publication_status", "youtube_metadata_association_status"),
         "subtitles": ("human_listening_review", "public_text_status", "public_export", "youtube_caption_status", "pairing_status", "pairing_review", "source_file_id", "source_asset_id", "content_scope_review", "equivalent_public_export_subtitle_id"),
         "files": ("human_continuous_watch", "full_decode_status"),
     }
@@ -385,6 +404,7 @@ def import_catalog(args):
                     item["human_review"] = "needs_review_source_version_changed"
                     if old.get("youtube_publication_ids"):
                         item["publication_status"] = "previous_version_publication_recorded"
+                        item["youtube_metadata_association_status"] = "previous_file_version_only"
                     if old.get("content_scope_review"):
                         item["prior_version_content_scope_review"] = old["content_scope_review"]
                         item["content_scope_review"] = {"status": "needs_review_source_version_changed", "source_file_id": item["file_id"], "prior_source_file_id": old.get("file_id"), "human_listening_review": "not_recorded"}
@@ -400,6 +420,7 @@ def import_catalog(args):
     current_files = [x for x in tables["files"] if x["in_current_inventory"]]
     summary = {"schema_version": VERSION, "inventory_snapshot_at": audit["generated_at"], "public_export_policy": "metadata_only_no_video_or_unreviewed_transcript_text", "counts": {name: len(items) for name, items in tables.items()}, "current_inventory_counts": {name: sum(x["in_current_inventory"] for x in items) for name, items in tables.items()}, "video_bytes": sum(x["bytes"] for x in current_files), "full_sha256_recorded": sum(f["sha256"] is not None for f in current_files), "full_sha256_pending": sum(f["sha256"] is None for f in current_files), "full_decode_passed_existing_reports": sum(f["full_decode_status"] == "passed_existing_report" for f in current_files), "subtitle_format_status": dict(Counter(x["format_status"] for x in tables["subtitles"])), "publication_reports_recorded": len(tables["publications"]), "youtube_uploads_recorded": sum(x.get("platform_readback_verification") == "verified" for x in tables["publications"]), "human_review_status": "not_recorded", "scope": "18 selected theatre/event collections; personal/system backup roots excluded; collection inclusion does not establish publication clearance"}
     summary["public_caption_export_count"] = sum(bool(x.get("public_export")) for x in tables["subtitles"])
+    summary.update(publication_summary(tables["publications"]))
     if summary["public_caption_export_count"]:
         summary["public_export_policy"] = "metadata_and_explicit_scope_reviewed_machine_draft_captions_no_video"
         summary["public_caption_source_file_count"] = len({x["source_file_id"] for x in tables["subtitles"] if x.get("public_export") and x.get("source_file_id")})
@@ -424,6 +445,8 @@ def render_indexes(out, tables, summary):
     if (out / "registry" / "official-projects.json").exists():
         registry = read_json(out / "registry" / "official-projects.json")
         lines[2:2] = [f"另见 [官方公开项目索引快照](registry/README.md)：当前 {len(registry['items'])} 条公开项目条目。该注册表与本批本地视频目录分开；数量不能相加或视为全部历史项目总数。", ""]
+    if "private_master_inventory_video_files" in summary:
+        lines[2:2] = [f"私有主盘点保留 {summary['private_master_inventory_video_files']} 个视频文件；当前公开候选投影为 {summary['public_selected_video_files']} 个，排除 {summary['public_excluded_video_files']} 个。候选目录不是上传授权；正文只按官方精确来源白名单公开。", ""]
     for p in tables["projects"]:
         assets = [a for a in tables["assets"] if p["id"] in a["project_ids"]]
         events = [e for e in tables["events"] if p["id"] in e["project_ids"]]
@@ -436,8 +459,9 @@ def render_indexes(out, tables, summary):
         files = {f["id"]: f for f in tables["files"]}
         subtitles = {s["id"]: s for s in tables["subtitles"]}
         all_assets = {a["id"]: a for a in tables["assets"]}
+        publications = {u["id"]: u for u in tables["publications"]}
         for event in events:
-            page += [f"## {event['accession']} · {event['title']}", "", "日期：" + (event["date"]["value"] or "尚未确定") + "；事件边界：暂定目录组。", "", "| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 完整解码 | 发布状态 |", "|---|---|---|---:|---:|---|---|---|"]
+            page += [f"## {event['accession']} · {event['title']}", "", "日期：" + (event["date"]["value"] or "尚未确定") + "；事件边界：暂定目录组。", "", "| 视频编号 | 文件编号 | 格式 | 大小 MB | 字幕版本 | 公开字幕 | 已关联公开视频 | 完整解码 | 内容与发布待办 |", "|---|---|---|---:|---:|---|---|---|---|"]
             for a in assets:
                 if event["id"] not in a["event_ids"]:
                     continue
@@ -448,13 +472,20 @@ def render_indexes(out, tables, summary):
                 links = " / ".join("[" + labels.get(s["role"], s["language"]) + "](../../" + s["public_export"]["path"] + ")" for s in available) or "待公开"
                 if source_asset["id"] != a["id"]:
                     links += "；同字节来源 " + source_asset["accession"]
-                page.append(f"| {a['accession']} | {f['accession']} | {f['extension']} | {f['bytes'] / 1_000_000:.2f} | {len(a['subtitle_ids'])} | {links} | {f['full_decode_status']} | {a['publication_status']} |")
+                public_videos = [publications[pid] for pid in source_asset.get("youtube_publication_ids", []) if pid in publications and publications[pid].get("platform_readback_verification") == "verified" and publications[pid].get("visibility") == "public" and publications[pid].get("file_id") == source_asset["file_id"]]
+                video_links = " / ".join("[YouTube](" + u["url"] + ")" for u in public_videos) or "未建立已核验关联"
+                if public_videos and source_asset["id"] != a["id"]:
+                    video_links += "（规范来源）"
+                affiliation = "官网来源已对应" if a.get("official_media_affiliation_status") == "confirmed_official_source_and_project_context" else "官网逐项关联待核实"
+                page.append(f"| {a['accession']} | {f['accession']} | {f['extension']} | {f['bytes'] / 1_000_000:.2f} | {len(a['subtitle_ids'])} | {links} | {video_links} | {f['full_decode_status']} | {a['publication_status']}; {affiliation} |")
             page.append("")
         page += ["[返回总目录](../../INDEX.md)", ""]
         target = out / "projects" / p["accession"] / "index.md"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text("\n".join(page), encoding="utf-8")
     lines += ["", "[公开字幕与翻译目录](captions/README.md)：按源素材和版本下载原语、英文、中英双语机器稿。", "", "机器可读数据：[目录摘要](catalog/summary.json)、[项目](catalog/projects.json)、[事件](catalog/events.json)、[视频](catalog/assets.json)、[文件版本](catalog/files.json)、[字幕记录](catalog/subtitles.json)、[YouTube 发布记录](catalog/publications.json)。", ""]
+    if tables["publications"]:
+        lines += ["[已关联的既有 YouTube 视频](publications/README.md)：记录元数据回读范围，播放与线上字幕检查单独保留状态。", ""]
     (out / "INDEX.md").write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -486,21 +517,59 @@ def validate(root):
     for f in tables["files"]:
         if f["sha256"] is not None and not re.fullmatch(r"[a-f0-9]{64}", f["sha256"]):
             errors.append("Invalid SHA-256: " + f["accession"])
+    seen_channel_videos = set()
     for pub in tables["publications"]:
+        channel_video = (pub.get("channel_id"), pub.get("youtube_video_id"))
+        if channel_video in seen_channel_videos:
+            errors.append("Duplicate channel/video publication association: " + pub["accession"])
+        seen_channel_videos.add(channel_video)
         if pub.get("channel_id") != "UCp_LyzepcrZX6Cgzv2Qit4w":
             errors.append("Unexpected archive YouTube channel: " + pub["accession"])
         if not re.fullmatch(r"[A-Za-z0-9_-]{11}", pub.get("youtube_video_id", "")):
             errors.append("Invalid YouTube video ID: " + pub["accession"])
         if pub.get("visibility") not in ("public", "unlisted", "private", "unknown"):
             errors.append("Invalid YouTube visibility: " + pub["accession"])
-        if pub.get("record_basis") != "operator_reported" or pub.get("platform_readback_verification") != "not_recorded":
-            errors.append("Publication report cannot assert platform verification: " + pub["accession"])
-        try:
-            aware_timestamp(pub.get("reported_observation_at"))
-        except ValueError:
-            errors.append("Invalid publication report timestamp: " + pub["accession"])
-        if pub.get("reported_caption_status") != "not_recorded" and not pub.get("subtitle_ids"):
-            errors.append("Reported caption status requires subtitle references: " + pub["accession"])
+        linked_file = next((x for x in tables["files"] if x["id"] == pub.get("file_id")), None)
+        if not linked_file or linked_file["asset_id"] != pub.get("asset_id"):
+            errors.append("Publication source file/asset mismatch: " + pub["accession"])
+        if pub.get("url") != "https://www.youtube.com/watch?v=" + pub.get("youtube_video_id", ""):
+            errors.append("Publication URL/video-ID mismatch: " + pub["accession"])
+        basis = pub.get("record_basis")
+        if basis == "operator_reported":
+            if pub.get("platform_readback_verification") != "not_recorded":
+                errors.append("Publication report cannot assert platform verification: " + pub["accession"])
+            try:
+                aware_timestamp(pub.get("reported_observation_at"))
+            except ValueError:
+                errors.append("Invalid publication report timestamp: " + pub["accession"])
+            if pub.get("reported_caption_status") != "not_recorded" and not pub.get("subtitle_ids"):
+                errors.append("Reported caption status requires subtitle references: " + pub["accession"])
+        elif basis == "youtube_studio_metadata_readback":
+            source = next((x for x in tables["files"] if x["id"] == pub.get("file_id")), None)
+            sha = pub.get("source_sha256")
+            if pub.get("platform_readback_verification") != "verified" or pub.get("verification_scope") != "metadata_only":
+                errors.append("Invalid Studio metadata verification scope: " + pub["accession"])
+            if not source or not re.fullmatch(r"[a-f0-9]{64}", sha or "") or source.get("sha256") != sha or pub.get("description_source_sha256") != sha:
+                errors.append("Studio source-description hash does not match catalogued source: " + pub["accession"])
+            if pub.get("source_mapping_status") != "exact_description_source_sha256_match" or pub.get("uploaded_stream_hash_verified") is not False:
+                errors.append("Overstated Studio source mapping: " + pub["accession"])
+            if pub.get("publication_origin") != "pre_existing" or pub.get("new_upload_this_batch") is not False or pub.get("new_upload_completed") is not False:
+                errors.append("Pre-existing mapping cannot count as a new upload: " + pub["accession"])
+            if pub.get("playback_status") != "not_checked" or pub.get("caption_publication_status") != "not_checked" or pub.get("subtitle_ids"):
+                errors.append("Metadata-only receipt cannot assert playback or caption verification: " + pub["accession"])
+            receipt = pub.get("observation_receipt", {})
+            if not re.fullmatch(r"[a-f0-9]{64}", receipt.get("sha256", "")) or receipt.get("interface") != "YouTube Studio videos and shorts table DOM":
+                errors.append("Invalid Studio observation receipt provenance: " + pub["accession"])
+            try:
+                aware_timestamp(pub.get("recorded_at"))
+                if pub.get("platform_observed_at") is not None:
+                    aware_timestamp(pub["platform_observed_at"])
+                elif pub.get("observation_timestamp_status") != "not_supplied_by_source_receipt":
+                    raise ValueError("Missing observation timestamp status")
+            except ValueError:
+                errors.append("Invalid Studio observation/record timestamp: " + pub["accession"])
+        else:
+            errors.append("Unknown publication evidence basis: " + pub["accession"])
         asset = next((x for x in tables["assets"] if x["id"] == pub.get("asset_id")), None)
         for subtitle_id in pub.get("subtitle_ids", []):
             sub = next((x for x in tables["subtitles"] if x["id"] == subtitle_id), None)
@@ -542,7 +611,7 @@ def validate(root):
         relative = export.get("path", "")
         parts = relative.split("/")
         valid_path = (len(parts) == 4 and parts[0] == "captions" and parts[1] == subtitle["accession"] and parts[2] == subtitle.get("version_sha256") and re.fullmatch(r"[A-Za-z0-9_.-]+\.srt", parts[3]) and ".." not in parts)
-        approved = (export.get("scope_review_status") == "approved_for_public_archive" and export.get("quality_label") == "machine_draft" and subtitle.get("public_text_status") == "public_machine_draft")
+        approved = (export.get("scope_review_status") in ("approved_for_public_archive", "approved_official_source_and_text_scope") and export.get("quality_label") == "machine_draft" and subtitle.get("public_text_status") == "public_machine_draft")
         if subtitle.get("content_scope_review", {}).get("status", "").startswith("withheld_"):
             approved = False
         expected_hash = export.get("sha256")
@@ -577,6 +646,9 @@ def validate(root):
     for name in TABLES:
         if summary["counts"][name] != len(tables[name]):
             errors.append("Summary count mismatch: " + name)
+    for field, expected in publication_summary(tables["publications"]).items():
+        if field in summary and summary[field] != expected:
+            errors.append("Publication summary count mismatch: " + field)
     registry_path = root / "registry" / "official-projects.json"
     if registry_path.exists():
         registry = read_json(registry_path)
@@ -617,6 +689,37 @@ def validate(root):
                     errors.append("Official registry title candidate cannot assert identity: " + code)
         if registry.get("summary", {}).get("official_public_index_items") != len(registry.get("items", [])) or summary.get("official_public_registry_count") != len(registry.get("items", [])):
             errors.append("Official registry summary count mismatch")
+    scope_path = root / ".p4-public-scope.json"
+    if scope_path.exists():
+        policy = read_json(scope_path)
+        forbidden = set(policy.get("excluded_identity_sha256s", []))
+        if policy.get("projection_required") is not True:
+            errors.append("Public scope projection guard must remain enabled")
+        for item in all_items:
+            if hashlib.sha256(item["id"].encode()).hexdigest() in forbidden:
+                errors.append("Excluded private identity revived in public catalogue")
+        allow_captions = set(policy.get("allowed_caption_subtitle_ids", []))
+        exports = {x["id"] for x in tables["subtitles"] if x.get("public_export")}
+        if exports != allow_captions:
+            errors.append("Public captions differ from the explicit official-source allow list")
+        for sub in tables["subtitles"]:
+            if not sub.get("public_export"):
+                continue
+            owner = assets_by_id.get(sub.get("source_asset_id"))
+            proof = owner.get("official_media_evidence", {}) if owner else {}
+            source = files_by_id.get(proof.get("file_id"))
+            if not owner or owner.get("official_media_affiliation_status") != "confirmed_official_source_and_project_context" or not source or source.get("sha256") != proof.get("source_sha256") or owner["file_id"] != source["id"] or proof.get("asset_id") != owner["id"]:
+                errors.append("Caption export lacks confirmed official media affiliation")
+            if sub["public_export"].get("scope_review_status") != "approved_official_source_and_text_scope" or sub["public_export"].get("official_evidence_source_sha256") != proof.get("source_sha256"):
+                errors.append("Caption export is not bound to its official source evidence")
+        for asset in tables["assets"]:
+            status = asset.get("official_media_affiliation_status")
+            if status not in ("confirmed_official_source_and_project_context", "official_media_affiliation_pending"):
+                errors.append("Public candidate is missing its official-affiliation status")
+            if status != "confirmed_official_source_and_project_context" and asset.get("new_public_upload_allowed") is not False:
+                errors.append("Pending official affiliation cannot authorize a new public upload")
+        if summary.get("private_master_inventory_video_files", 0) < summary.get("public_selected_video_files", 0) or summary.get("public_selected_video_files") != len(tables["assets"]):
+            errors.append("Private inventory and public selected counts are inconsistent")
     return {"valid": not errors, "entity_count": len(all_items), "counts": {k: len(v) for k, v in tables.items()}, "errors": errors}
 
 
@@ -653,12 +756,16 @@ def record_publication(args):
         raise ValueError("A reported caption publication requires explicit subtitle references")
     publication = {**registry.get("publication", args.channel + "|" + args.video), "kind": "publication", "title": asset["accession"] + " · YouTube 人工声明", "asset_id": asset["id"], "file_id": asset["file_id"], "channel_id": args.channel, "youtube_video_id": args.video, "url": "https://www.youtube.com/watch?v=" + args.video, "visibility": args.visibility, "reported_observation_at": reported_at, "record_basis": "operator_reported", "reported_playback_status": args.playback_status, "subtitle_ids": subtitle_ids, "reported_caption_status": args.caption_status, "platform_readback_verification": "not_recorded", "in_current_inventory": True}
     table = read_json(root / "catalog" / "publications.json")
-    old = next((i for i, x in enumerate(table["items"]) if x["id"] == publication["id"]), None)
+    old = next((i for i, x in enumerate(table["items"]) if x["id"] == publication["id"] or (x.get("channel_id") == args.channel and x.get("youtube_video_id") == args.video)), None)
     if old is None:
         table["items"].append(publication)
     else:
         if table["items"][old]["asset_id"] != asset["id"] or table["items"][old]["file_id"] != asset["file_id"]:
             raise ValueError("An existing channel/video association cannot be silently reassigned to another asset or file version")
+        if table["items"][old].get("platform_readback_verification") == "verified":
+            raise ValueError("An operator report cannot overwrite an existing platform-readback receipt")
+        if table["items"][old]["id"] != publication["id"]:
+            raise ValueError("Private publication registry is not aligned with the existing channel/video record")
         table["items"][old] = publication
     if publication["id"] not in asset["youtube_publication_ids"]:
         asset["youtube_publication_ids"].append(publication["id"])
@@ -667,8 +774,7 @@ def record_publication(args):
     summary = read_json(root / "catalog" / "summary.json")
     summary["counts"]["publications"] = len(table["items"])
     summary["current_inventory_counts"]["publications"] = len(table["items"])
-    summary["publication_reports_recorded"] = len(table["items"])
-    summary["youtube_uploads_recorded"] = 0
+    summary.update(publication_summary(table["items"]))
     write_json(root / "catalog" / "summary.json", summary)
     registry.save()
     print(json.dumps(publication, ensure_ascii=False))
