@@ -45,5 +45,10 @@
     "namespace": "public-edition-accession:v1",
     "initialization": "first_allocation_only",
     "original_private_numbering_state_modified": false
+  },
+  "caption_wechat_recovery": {
+    "record": "coordination/caption-wechat-recovery-20261026.json",
+    "base_commit": "74dd4b9f4869dea701e4b36940ecec490e61b1b3",
+    "pc_acknowledgement": "not_received"
   }
 }

@@ -274,7 +274,8 @@ def _markdown(summary):
     lines += ["## 后续线索", "", "线索不是已完成发布，也不加入各批分母。", ""]
     for lead in summary["leads"]:
         done = lead["state"] in ("done", "completed")
-        lines += ["- [" + ("x" if done else " ") + "] **" + _md(lead["title"]) + "** · " + _md(lead["state"]) + " · " + _evidence(lead["evidence_urls"]), "  下一步：" + _md(lead["next_action"])]
+        display_state = "已完成" if done else lead["state"]
+        lines += ["- [" + ("x" if done else " ") + "] **" + _md(lead["title"]) + "** · " + _md(display_state) + " · " + _evidence(lead["evidence_urls"]), "  下一步：" + _md(lead["next_action"])]
     lines += ["", "口径：[进度口径](docs/进度口径.md) · [维护输入](progress/work-items.json) · [机器可读摘要](progress/summary.json)", ""]
     return "\n".join(lines)
 

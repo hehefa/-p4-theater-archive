@@ -2,12 +2,12 @@
   "schema_version": 1,
   "namespace": "public-edition-accession:v1",
   "initial_manifest_sha256": "f851ce8cd05dcd31df3d5a7840f7afdd1539e7acdc4bf63596fe832c9a56eed9",
-  "source_manifest_sha256": "f851ce8cd05dcd31df3d5a7840f7afdd1539e7acdc4bf63596fe832c9a56eed9",
+  "source_manifest_sha256": "09877bc3125f670d3258f0c1a78c964101144e800eab628cb9ac16960cf73344",
   "counters": {
     "document": 1227,
-    "caption": 487,
+    "caption": 540,
     "research": 64,
-    "image": 1326
+    "image": 1340
   },
   "items": [
     {
@@ -28269,7 +28269,7 @@
           "value": "a.p4theater.cn:wechat-article:wechat-2020-06-28-ca712394e3"
         }
       ],
-      "file_counter": 1,
+      "file_counter": 2,
       "files": [
         {
           "file_accession": "AR-T000158-F00001",
@@ -28280,6 +28280,19 @@
               "path": "published/materials/official-a-wechat-2020-06-28-ca712394e3.md",
               "sha256": "56106efb24360ac21e57927c6360247c2c4b52f68718cc2425cf330d268753b2",
               "bytes": 1182
+            }
+          ]
+        },
+        {
+          "file_accession": "AR-T000158-F00002",
+          "sha256": "51590246a4985faca1f467eb0decedff052a000ae7ee9dbd541436119c090ee1",
+          "bytes": 487,
+          "locations": [
+            {
+              "path": "published/materials/wechat-recovered/wechat-2020-06-28-ca712394e3-video-description.md",
+              "sha256": "51590246a4985faca1f467eb0decedff052a000ae7ee9dbd541436119c090ee1",
+              "bytes": 487,
+              "role": "verified_wechat_video_description"
             }
           ]
         }
@@ -28295,10 +28308,25 @@
             }
           ],
           "version_sha256": "b16a13e1ab1621f71f6e8ccd5a805eb00e3da077a4f0375890f6240e9cd16f00"
+        },
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2020-06-28-ca712394e3",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2020-06-28-ca712394e3",
+          "files": [
+            {
+              "file_accession": "AR-T000158-F00001",
+              "location_sha256": "a73572465a358e06f44363af22ae87260c919bc41e6845cc9a1a0000e82e1c1b"
+            },
+            {
+              "file_accession": "AR-T000158-F00002",
+              "location_sha256": "dda457fec5118204dc617c568441f83d6fefa8d5f6bd3184b1d9dc9fd2d982bf"
+            }
+          ],
+          "version_sha256": "0eff35c84bcbf11304bdbe974a4dd19bba9abe040621c9f4a193c224aa415ddf"
         }
       ],
       "in_current_manifest": true,
-      "current_version_sha256": "b16a13e1ab1621f71f6e8ccd5a805eb00e3da077a4f0375890f6240e9cd16f00"
+      "current_version_sha256": "0eff35c84bcbf11304bdbe974a4dd19bba9abe040621c9f4a193c224aa415ddf"
     },
     {
       "source_id": "a.p4theater.cn:wechat-article:wechat-2020-06-30-3c90702e0d",
@@ -30873,7 +30901,7 @@
           "value": "a.p4theater.cn:wechat-article:wechat-2020-11-19-217b0c7943"
         }
       ],
-      "file_counter": 1,
+      "file_counter": 2,
       "files": [
         {
           "file_accession": "AR-T000220-F00001",
@@ -30884,6 +30912,19 @@
               "path": "published/materials/official-a-wechat-2020-11-19-217b0c7943.md",
               "sha256": "a90f74c5b86496cfb80cee6c1fda9661317993fed944fed5b3754fe15bcb8f15",
               "bytes": 973
+            }
+          ]
+        },
+        {
+          "file_accession": "AR-T000220-F00002",
+          "sha256": "fe645ca0e1e9f5f15aa6aa988c7e8e7e360610485223176ef359348a182cf4f0",
+          "bytes": 264,
+          "locations": [
+            {
+              "path": "published/materials/wechat-recovered/wechat-2020-11-19-217b0c7943-video-description.md",
+              "sha256": "fe645ca0e1e9f5f15aa6aa988c7e8e7e360610485223176ef359348a182cf4f0",
+              "bytes": 264,
+              "role": "verified_wechat_video_description"
             }
           ]
         }
@@ -30899,10 +30940,25 @@
             }
           ],
           "version_sha256": "81e0816f2e9eacae79ecf732b8bc66e7269f4f319225268ad84493d71948b89f"
+        },
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2020-11-19-217b0c7943",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2020-11-19-217b0c7943",
+          "files": [
+            {
+              "file_accession": "AR-T000220-F00001",
+              "location_sha256": "812817956c2abaf1c623d952f5e0e6cb948df66684df5723a8a2d83fdcbc8f56"
+            },
+            {
+              "file_accession": "AR-T000220-F00002",
+              "location_sha256": "a4c7359355098534e328b1ea2367ca836d9bd2be36bcc45c7feb5e3997209644"
+            }
+          ],
+          "version_sha256": "58928a0b6f92f2e9b1a1af0fa5e9508e52d11cb193baff23e6a2e8d3a904faa9"
         }
       ],
       "in_current_manifest": true,
-      "current_version_sha256": "81e0816f2e9eacae79ecf732b8bc66e7269f4f319225268ad84493d71948b89f"
+      "current_version_sha256": "58928a0b6f92f2e9b1a1af0fa5e9508e52d11cb193baff23e6a2e8d3a904faa9"
     },
     {
       "source_id": "a.p4theater.cn:wechat-article:wechat-2020-11-19-d6e594f369",
@@ -37887,7 +37943,7 @@
           "value": "a.p4theater.cn:wechat-article:wechat-2021-12-25-7458a5209c"
         }
       ],
-      "file_counter": 1,
+      "file_counter": 2,
       "files": [
         {
           "file_accession": "AR-T000387-F00001",
@@ -37898,6 +37954,19 @@
               "path": "published/materials/official-a-wechat-2021-12-25-7458a5209c.md",
               "sha256": "b47c66d3bf40513ca6f06bbc1371ddbffdefcb461cd5298850519e059172ac67",
               "bytes": 948
+            }
+          ]
+        },
+        {
+          "file_accession": "AR-T000387-F00002",
+          "sha256": "38c6ed92029a389d4242be08b01a77dc5e451cab89276bee4620c568f9370a82",
+          "bytes": 236,
+          "locations": [
+            {
+              "path": "published/materials/wechat-recovered/wechat-2021-12-25-7458a5209c-video-description.md",
+              "sha256": "38c6ed92029a389d4242be08b01a77dc5e451cab89276bee4620c568f9370a82",
+              "bytes": 236,
+              "role": "verified_wechat_video_description"
             }
           ]
         }
@@ -37913,10 +37982,25 @@
             }
           ],
           "version_sha256": "7eb10b964f73c0e276a77bd40ee899d8b853ba0e4549bde761e3bcbd4e25321d"
+        },
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2021-12-25-7458a5209c",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2021-12-25-7458a5209c",
+          "files": [
+            {
+              "file_accession": "AR-T000387-F00001",
+              "location_sha256": "ebf5b3c2eb03332b0c52ea660777558f23bd793d2dd2433f90a6903769ccbbfa"
+            },
+            {
+              "file_accession": "AR-T000387-F00002",
+              "location_sha256": "d92c5445313106621df92b523634b17f5f763648e3e6ddd44878d7d52ac30257"
+            }
+          ],
+          "version_sha256": "fa74e245488ad669c273602423929a643536e8fbd23fc3b43f72d09155b27e2a"
         }
       ],
       "in_current_manifest": true,
-      "current_version_sha256": "7eb10b964f73c0e276a77bd40ee899d8b853ba0e4549bde761e3bcbd4e25321d"
+      "current_version_sha256": "fa74e245488ad669c273602423929a643536e8fbd23fc3b43f72d09155b27e2a"
     },
     {
       "source_id": "a.p4theater.cn:wechat-article:wechat-2022-01-06-057afb0d03",
@@ -48765,7 +48849,7 @@
           "value": "a.p4theater.cn:wechat-article:wechat-2024-01-20-b903069d35"
         }
       ],
-      "file_counter": 1,
+      "file_counter": 2,
       "files": [
         {
           "file_accession": "AR-T000646-F00001",
@@ -48776,6 +48860,19 @@
               "path": "published/materials/official-a-wechat-2024-01-20-b903069d35.md",
               "sha256": "4836cb4f1accc183e42a72cdc423ed94460aa0da795b7544722efcd0c96ba9cb",
               "bytes": 850
+            }
+          ]
+        },
+        {
+          "file_accession": "AR-T000646-F00002",
+          "sha256": "b974be736ced4736f8a254ad4584306c97074ef33b573b125de42de83374e67e",
+          "bytes": 445,
+          "locations": [
+            {
+              "path": "published/materials/wechat-recovered/wechat-2024-01-20-b903069d35-video-description.md",
+              "sha256": "b974be736ced4736f8a254ad4584306c97074ef33b573b125de42de83374e67e",
+              "bytes": 445,
+              "role": "historical_wechat_video_description"
             }
           ]
         }
@@ -48791,10 +48888,25 @@
             }
           ],
           "version_sha256": "d1b3782c033232c72fed2b167b80bcc88b34c7f436daac519f34e7f6c394cc52"
+        },
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2024-01-20-b903069d35",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2024-01-20-b903069d35",
+          "files": [
+            {
+              "file_accession": "AR-T000646-F00001",
+              "location_sha256": "0d4fb2801e1d03862da80891c0781cecc8d10dc9c54200b2d1de921512094ca9"
+            },
+            {
+              "file_accession": "AR-T000646-F00002",
+              "location_sha256": "d2b42c987b49016b62b7abaa720ef7f74bb5148dac79d3d169174fab30c281da"
+            }
+          ],
+          "version_sha256": "a536e9ed1afd1b54e93ab2e7117809d08b5215d80c53306cb871f33045ff6959"
         }
       ],
       "in_current_manifest": true,
-      "current_version_sha256": "d1b3782c033232c72fed2b167b80bcc88b34c7f436daac519f34e7f6c394cc52"
+      "current_version_sha256": "a536e9ed1afd1b54e93ab2e7117809d08b5215d80c53306cb871f33045ff6959"
     },
     {
       "source_id": "a.p4theater.cn:wechat-article:wechat-2024-01-23-63ecaafbd5",
@@ -340847,6 +340959,2999 @@
       ],
       "in_current_manifest": true,
       "current_version_sha256": "ac69c74de9bd427ca200f20e3332bd20698863b4d2e8d8b54758f7e7959cd4d0"
+    },
+    {
+      "source_id": "youtube-caption:EbG1mVS6nLM:de:77a1d3238e29dfeb189342bf8851145128353b16012919210f45240163013e16",
+      "kind": "caption",
+      "accession": "AR-S000488",
+      "title": "Who Controls the Camera in an Intimate Scene? | P4 剧场主档案 · de",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:EbG1mVS6nLM:de:77a1d3238e29dfeb189342bf8851145128353b16012919210f45240163013e16"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000488-F00001",
+          "sha256": "77a1d3238e29dfeb189342bf8851145128353b16012919210f45240163013e16",
+          "bytes": 3624,
+          "locations": [
+            {
+              "path": "published/captions/EbG1mVS6nLM/de.77a1d3238e29dfeb189342bf8851145128353b16012919210f45240163013e16.srt",
+              "sha256": "77a1d3238e29dfeb189342bf8851145128353b16012919210f45240163013e16",
+              "bytes": 3624
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/EbG1mVS6nLM",
+          "official_context_url": "https://a.p4theater.cn/videos/EbG1mVS6nLM",
+          "files": [
+            {
+              "file_accession": "AR-S000488-F00001",
+              "location_sha256": "326c8a682007cd55b1f79936c06e12d2125bebcecc0937e931bfdcf6a85d1553"
+            }
+          ],
+          "version_sha256": "0fe65ae35951dc83991b166fde141b0f05d92d83eaea1989efa3e434011fdc8e"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "0fe65ae35951dc83991b166fde141b0f05d92d83eaea1989efa3e434011fdc8e"
+    },
+    {
+      "source_id": "youtube-caption:F1riPOyQuCI:de:5b712985f71dd1b05753429560332336447caf56ea78564f0248c5d52ff44197",
+      "kind": "caption",
+      "accession": "AR-S000489",
+      "title": "Shoot Self with You (English Subtitles) Chinese Experimental Film / Directed by He Fa | P4 剧场主档案 · de",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:F1riPOyQuCI:de:5b712985f71dd1b05753429560332336447caf56ea78564f0248c5d52ff44197"
+        }
+      ],
+      "file_counter": 2,
+      "files": [
+        {
+          "file_accession": "AR-S000489-F00001",
+          "sha256": "5b712985f71dd1b05753429560332336447caf56ea78564f0248c5d52ff44197",
+          "bytes": 117309,
+          "locations": [
+            {
+              "path": "published/captions/F1riPOyQuCI/de.5b712985f71dd1b05753429560332336447caf56ea78564f0248c5d52ff44197.srt",
+              "sha256": "5b712985f71dd1b05753429560332336447caf56ea78564f0248c5d52ff44197",
+              "bytes": 117309,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        },
+        {
+          "file_accession": "AR-S000489-F00002",
+          "sha256": "0415cc8af3e4b13c790c1e54d50728cba6187888edfb67507dfabc6bcc047062",
+          "bytes": 117308,
+          "locations": [
+            {
+              "path": "published/captions/F1riPOyQuCI/de.0415cc8af3e4b13c790c1e54d50728cba6187888edfb67507dfabc6bcc047062.srt",
+              "sha256": "0415cc8af3e4b13c790c1e54d50728cba6187888edfb67507dfabc6bcc047062",
+              "bytes": 117308,
+              "role": "historical_upload_equal_cues"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/F1riPOyQuCI",
+          "official_context_url": "https://a.p4theater.cn/videos/F1riPOyQuCI",
+          "files": [
+            {
+              "file_accession": "AR-S000489-F00001",
+              "location_sha256": "9f1feb48428d849d4f1fd6e60a1454554695971b7d5307e5d2e11c8590b4b934"
+            },
+            {
+              "file_accession": "AR-S000489-F00002",
+              "location_sha256": "acc328a7aef9147d53865e8683e243a0e5afda366995f86bfb7ea9e4fec3ec59"
+            }
+          ],
+          "version_sha256": "2d01af9ff6a4e75eb79f69f80eb8cec8e948adf96555409028c57e55234e9ea0"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "2d01af9ff6a4e75eb79f69f80eb8cec8e948adf96555409028c57e55234e9ea0"
+    },
+    {
+      "source_id": "youtube-caption:F1riPOyQuCI:zh-Hans:61fafd22ab473b98bd30bd77ca377ac42bdb3974ba26a57158f1196dae9bd9d9",
+      "kind": "caption",
+      "accession": "AR-S000490",
+      "title": "Shoot Self with You (English Subtitles) Chinese Experimental Film / Directed by He Fa | P4 剧场主档案 · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:F1riPOyQuCI:zh-Hans:61fafd22ab473b98bd30bd77ca377ac42bdb3974ba26a57158f1196dae9bd9d9"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000490-F00001",
+          "sha256": "61fafd22ab473b98bd30bd77ca377ac42bdb3974ba26a57158f1196dae9bd9d9",
+          "bytes": 111660,
+          "locations": [
+            {
+              "path": "published/captions/F1riPOyQuCI/zh-Hans.61fafd22ab473b98bd30bd77ca377ac42bdb3974ba26a57158f1196dae9bd9d9.srt",
+              "sha256": "61fafd22ab473b98bd30bd77ca377ac42bdb3974ba26a57158f1196dae9bd9d9",
+              "bytes": 111660,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/F1riPOyQuCI",
+          "official_context_url": "https://a.p4theater.cn/videos/F1riPOyQuCI",
+          "files": [
+            {
+              "file_accession": "AR-S000490-F00001",
+              "location_sha256": "1f8b1fc2c43ae1b85c2ade754a2329079ee1aadd572458c2cf2b6482add7f63a"
+            }
+          ],
+          "version_sha256": "89800c6a848e99a6315a5f87f606f7cee5ccf234573dba1c3d3c251916bac82d"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "89800c6a848e99a6315a5f87f606f7cee5ccf234573dba1c3d3c251916bac82d"
+    },
+    {
+      "source_id": "youtube-caption:F6mOpeQDfpU:zh-Hans:0a2901d86f806c224ee7faa0c79e31b11b322d9547d088bead7f2759e957c69a",
+      "kind": "caption",
+      "accession": "AR-S000491",
+      "title": "P4 Theater Archive | Human Surrender | Jiarui / Ricky Bed Scene Materials 02 | P4 剧场主档案 · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:F6mOpeQDfpU:zh-Hans:0a2901d86f806c224ee7faa0c79e31b11b322d9547d088bead7f2759e957c69a"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000491-F00001",
+          "sha256": "0a2901d86f806c224ee7faa0c79e31b11b322d9547d088bead7f2759e957c69a",
+          "bytes": 26294,
+          "locations": [
+            {
+              "path": "published/captions/F6mOpeQDfpU/zh-Hans.0a2901d86f806c224ee7faa0c79e31b11b322d9547d088bead7f2759e957c69a.srt",
+              "sha256": "0a2901d86f806c224ee7faa0c79e31b11b322d9547d088bead7f2759e957c69a",
+              "bytes": 26294,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/F6mOpeQDfpU",
+          "official_context_url": "https://a.p4theater.cn/videos/F6mOpeQDfpU",
+          "files": [
+            {
+              "file_accession": "AR-S000491-F00001",
+              "location_sha256": "44bb8db6e4793b35df9edc1eb6fb76720c09dd0c7e3ec02f76debf3f7b76130b"
+            }
+          ],
+          "version_sha256": "3a2d815db3bd94a6a2193961e9e5de6a62265039d49f368230ca0c7b4cadf346"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "3a2d815db3bd94a6a2193961e9e5de6a62265039d49f368230ca0c7b4cadf346"
+    },
+    {
+      "source_id": "youtube-caption:IDtBlVWSsho:de:cc8059b58d4e3b643c5c6b81877a15ae5dd3fc42fe1bbe17f94225ccea6c8c1c",
+      "kind": "caption",
+      "accession": "AR-S000492",
+      "title": "一场亲密戏如何拍出来？｜How Is an Intimate Scene Filmed? — Shoot Self with You | P4 剧场主档案 · de",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:IDtBlVWSsho:de:cc8059b58d4e3b643c5c6b81877a15ae5dd3fc42fe1bbe17f94225ccea6c8c1c"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000492-F00001",
+          "sha256": "cc8059b58d4e3b643c5c6b81877a15ae5dd3fc42fe1bbe17f94225ccea6c8c1c",
+          "bytes": 27361,
+          "locations": [
+            {
+              "path": "published/captions/IDtBlVWSsho/de.cc8059b58d4e3b643c5c6b81877a15ae5dd3fc42fe1bbe17f94225ccea6c8c1c.srt",
+              "sha256": "cc8059b58d4e3b643c5c6b81877a15ae5dd3fc42fe1bbe17f94225ccea6c8c1c",
+              "bytes": 27361
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/IDtBlVWSsho",
+          "official_context_url": "https://a.p4theater.cn/videos/IDtBlVWSsho",
+          "files": [
+            {
+              "file_accession": "AR-S000492-F00001",
+              "location_sha256": "43b5c2ee79f0b7d895f9db147a333f1328fe773803535e732f4c2d707e61baef"
+            }
+          ],
+          "version_sha256": "00d62a9a4c411d92a219e0e2f6c8b8cb8876e293ab2199f204560f6b239e0842"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "00d62a9a4c411d92a219e0e2f6c8b8cb8876e293ab2199f204560f6b239e0842"
+    },
+    {
+      "source_id": "youtube-caption:IDtBlVWSsho:id:d1b8b00a64f8349b8921d8be7a2f58bf2b0974e0d1aa891aea71506dc98349fd",
+      "kind": "caption",
+      "accession": "AR-S000493",
+      "title": "一场亲密戏如何拍出来？｜How Is an Intimate Scene Filmed? — Shoot Self with You | P4 剧场主档案 · id",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:IDtBlVWSsho:id:d1b8b00a64f8349b8921d8be7a2f58bf2b0974e0d1aa891aea71506dc98349fd"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000493-F00001",
+          "sha256": "d1b8b00a64f8349b8921d8be7a2f58bf2b0974e0d1aa891aea71506dc98349fd",
+          "bytes": 25017,
+          "locations": [
+            {
+              "path": "published/captions/IDtBlVWSsho/id.d1b8b00a64f8349b8921d8be7a2f58bf2b0974e0d1aa891aea71506dc98349fd.srt",
+              "sha256": "d1b8b00a64f8349b8921d8be7a2f58bf2b0974e0d1aa891aea71506dc98349fd",
+              "bytes": 25017,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/IDtBlVWSsho",
+          "official_context_url": "https://a.p4theater.cn/videos/IDtBlVWSsho",
+          "files": [
+            {
+              "file_accession": "AR-S000493-F00001",
+              "location_sha256": "6484c68e9bda14cc55278b10a5ee0978c56b5c811eb08c05a9093d77ad745c79"
+            }
+          ],
+          "version_sha256": "ce53e1726158d4717fb6f923e5e56da2278895b4cd4d8cfbd4cb4102bbf0705f"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "ce53e1726158d4717fb6f923e5e56da2278895b4cd4d8cfbd4cb4102bbf0705f"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:ar:67496d318ad24e612de514efa9d5b0e4e786cecad09572067b25f0a10b92b9bc",
+      "kind": "caption",
+      "accession": "AR-S000494",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · ar",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:ar:67496d318ad24e612de514efa9d5b0e4e786cecad09572067b25f0a10b92b9bc"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000494-F00001",
+          "sha256": "67496d318ad24e612de514efa9d5b0e4e786cecad09572067b25f0a10b92b9bc",
+          "bytes": 105871,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/ar.67496d318ad24e612de514efa9d5b0e4e786cecad09572067b25f0a10b92b9bc.srt",
+              "sha256": "67496d318ad24e612de514efa9d5b0e4e786cecad09572067b25f0a10b92b9bc",
+              "bytes": 105871,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000494-F00001",
+              "location_sha256": "c056e09b3b65f812cd562f89b16e0dd2b572180c243f8701fc2741d160f019fa"
+            }
+          ],
+          "version_sha256": "7c2a23088f7f17abf48e2b1466a83fbd36223cd202bf88d72db45b98390a34a7"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "7c2a23088f7f17abf48e2b1466a83fbd36223cd202bf88d72db45b98390a34a7"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:bn:4273be8629896426d7117df08d287ce1f9378a04ca0253721dd5fcb2ad157b83",
+      "kind": "caption",
+      "accession": "AR-S000495",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · bn",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:bn:4273be8629896426d7117df08d287ce1f9378a04ca0253721dd5fcb2ad157b83"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000495-F00001",
+          "sha256": "4273be8629896426d7117df08d287ce1f9378a04ca0253721dd5fcb2ad157b83",
+          "bytes": 146395,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/bn.4273be8629896426d7117df08d287ce1f9378a04ca0253721dd5fcb2ad157b83.srt",
+              "sha256": "4273be8629896426d7117df08d287ce1f9378a04ca0253721dd5fcb2ad157b83",
+              "bytes": 146395,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000495-F00001",
+              "location_sha256": "b832209ea327ec07d23833b85fce1302c01c6c10bdf994e12813c0e523c2cb4d"
+            }
+          ],
+          "version_sha256": "03f2c790d8a5a8657977cd5faa11b889cfa8fdad9d8b546ac33d493a17910095"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "03f2c790d8a5a8657977cd5faa11b889cfa8fdad9d8b546ac33d493a17910095"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:de:8942ebc307b95fc0053e4f105092bb479d215da4690cab8c63d394c1964e021a",
+      "kind": "caption",
+      "accession": "AR-S000496",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · de",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:de:8942ebc307b95fc0053e4f105092bb479d215da4690cab8c63d394c1964e021a"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000496-F00001",
+          "sha256": "8942ebc307b95fc0053e4f105092bb479d215da4690cab8c63d394c1964e021a",
+          "bytes": 93795,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/de.8942ebc307b95fc0053e4f105092bb479d215da4690cab8c63d394c1964e021a.srt",
+              "sha256": "8942ebc307b95fc0053e4f105092bb479d215da4690cab8c63d394c1964e021a",
+              "bytes": 93795,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000496-F00001",
+              "location_sha256": "a5072197141dafe9725a616b30a803efad27611785a84c2c3d8a3fcfa1d84d3a"
+            }
+          ],
+          "version_sha256": "6b31f121fdbb4e444eb565fd955cd768467d81f6bc4e9b162abdc1ccb16db9d3"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "6b31f121fdbb4e444eb565fd955cd768467d81f6bc4e9b162abdc1ccb16db9d3"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:en:d32012441b3e7d9596fec56ebe30e248e5ca74ad1f7750282caee51cdcc67ecf",
+      "kind": "caption",
+      "accession": "AR-S000497",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · en",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:en:d32012441b3e7d9596fec56ebe30e248e5ca74ad1f7750282caee51cdcc67ecf"
+        }
+      ],
+      "file_counter": 2,
+      "files": [
+        {
+          "file_accession": "AR-S000497-F00001",
+          "sha256": "d32012441b3e7d9596fec56ebe30e248e5ca74ad1f7750282caee51cdcc67ecf",
+          "bytes": 86155,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/en.d32012441b3e7d9596fec56ebe30e248e5ca74ad1f7750282caee51cdcc67ecf.srt",
+              "sha256": "d32012441b3e7d9596fec56ebe30e248e5ca74ad1f7750282caee51cdcc67ecf",
+              "bytes": 86155,
+              "role": "archived_source_version"
+            }
+          ]
+        },
+        {
+          "file_accession": "AR-S000497-F00002",
+          "sha256": "14f67dd19c9567a18acc3fe032140ae351f7263d9b0837c2df0c5e9959442137",
+          "bytes": 86154,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/en.14f67dd19c9567a18acc3fe032140ae351f7263d9b0837c2df0c5e9959442137.srt",
+              "sha256": "14f67dd19c9567a18acc3fe032140ae351f7263d9b0837c2df0c5e9959442137",
+              "bytes": 86154,
+              "role": "authoring_master_equal_cues"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000497-F00001",
+              "location_sha256": "1189955605bb0fbfc50f5d7516a5513c327085791fd3fcd16bc77d72c652b951"
+            },
+            {
+              "file_accession": "AR-S000497-F00002",
+              "location_sha256": "9d0c1f102397de1ce04f40bf388f14b061e34abb265eb05751140edbeff2be70"
+            }
+          ],
+          "version_sha256": "88fc5c67b7dbcfb4de9ba0230f44467449685b359d1bc33bba1af5ba892c383e"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "88fc5c67b7dbcfb4de9ba0230f44467449685b359d1bc33bba1af5ba892c383e"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:es:dd26dcb4d539993027fbfc27ddbbede64fff6bc967daf42d5c57e6a92aa96cef",
+      "kind": "caption",
+      "accession": "AR-S000498",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · es",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:es:dd26dcb4d539993027fbfc27ddbbede64fff6bc967daf42d5c57e6a92aa96cef"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000498-F00001",
+          "sha256": "dd26dcb4d539993027fbfc27ddbbede64fff6bc967daf42d5c57e6a92aa96cef",
+          "bytes": 89905,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/es.dd26dcb4d539993027fbfc27ddbbede64fff6bc967daf42d5c57e6a92aa96cef.srt",
+              "sha256": "dd26dcb4d539993027fbfc27ddbbede64fff6bc967daf42d5c57e6a92aa96cef",
+              "bytes": 89905,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000498-F00001",
+              "location_sha256": "67035cef1983b0ccd995b5dd6af9e6e6a3057c7b7f554bee130f4db26862731c"
+            }
+          ],
+          "version_sha256": "3a76ca94f6faca1677082688f35dc7509c40db820806ea4b9aa6549013612961"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "3a76ca94f6faca1677082688f35dc7509c40db820806ea4b9aa6549013612961"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:fa:e964188fc964342a7a1833a49cdfbe55b89b132f0602a248239e0dd2f89c3640",
+      "kind": "caption",
+      "accession": "AR-S000499",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · fa",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:fa:e964188fc964342a7a1833a49cdfbe55b89b132f0602a248239e0dd2f89c3640"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000499-F00001",
+          "sha256": "e964188fc964342a7a1833a49cdfbe55b89b132f0602a248239e0dd2f89c3640",
+          "bytes": 111982,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/fa.e964188fc964342a7a1833a49cdfbe55b89b132f0602a248239e0dd2f89c3640.srt",
+              "sha256": "e964188fc964342a7a1833a49cdfbe55b89b132f0602a248239e0dd2f89c3640",
+              "bytes": 111982,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000499-F00001",
+              "location_sha256": "17ced734130bf3e2834c48e490bb0f47bd7861fcbfa4b3912bfc4f0b13159c94"
+            }
+          ],
+          "version_sha256": "db3cdd8bda48a5f9bc3e363de4317227383598f9ed8dbf04daaa6712f7dbd450"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "db3cdd8bda48a5f9bc3e363de4317227383598f9ed8dbf04daaa6712f7dbd450"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:fr:35f71f94f5a99f91f5b215e53aded9efe57dc5966c56849fac62fe522264dad5",
+      "kind": "caption",
+      "accession": "AR-S000500",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · fr",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:fr:35f71f94f5a99f91f5b215e53aded9efe57dc5966c56849fac62fe522264dad5"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000500-F00001",
+          "sha256": "35f71f94f5a99f91f5b215e53aded9efe57dc5966c56849fac62fe522264dad5",
+          "bytes": 94771,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/fr.35f71f94f5a99f91f5b215e53aded9efe57dc5966c56849fac62fe522264dad5.srt",
+              "sha256": "35f71f94f5a99f91f5b215e53aded9efe57dc5966c56849fac62fe522264dad5",
+              "bytes": 94771,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000500-F00001",
+              "location_sha256": "bc5ea4a4d3641eab4730d34b4c053e152a976b660f9ade36b3a8a6d1b0de2973"
+            }
+          ],
+          "version_sha256": "76dfac060a0eeebfc7b1eb65253b6b35647229ef98d3ce25f500e4c609bb163e"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "76dfac060a0eeebfc7b1eb65253b6b35647229ef98d3ce25f500e4c609bb163e"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:hi:3ed5adf7a0acddb318165111fe52740e8d969a51873364cb41c3c0f48e982a44",
+      "kind": "caption",
+      "accession": "AR-S000501",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · hi",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:hi:3ed5adf7a0acddb318165111fe52740e8d969a51873364cb41c3c0f48e982a44"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000501-F00001",
+          "sha256": "3ed5adf7a0acddb318165111fe52740e8d969a51873364cb41c3c0f48e982a44",
+          "bytes": 145887,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/hi.3ed5adf7a0acddb318165111fe52740e8d969a51873364cb41c3c0f48e982a44.srt",
+              "sha256": "3ed5adf7a0acddb318165111fe52740e8d969a51873364cb41c3c0f48e982a44",
+              "bytes": 145887,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000501-F00001",
+              "location_sha256": "612e8b3829c270c2d4a00965ac8cff079d2c0718395d0646678ddf8257a06a87"
+            }
+          ],
+          "version_sha256": "edc98a19ac6418141e6c06917a2ed4815818f6e052ff17d860158a09e82ef7a5"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "edc98a19ac6418141e6c06917a2ed4815818f6e052ff17d860158a09e82ef7a5"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:id:5f6b1af14e2b78966a2e0b46556b2708deb867adcccb5cb3e466b9b1dffbbe36",
+      "kind": "caption",
+      "accession": "AR-S000502",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · id",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:id:5f6b1af14e2b78966a2e0b46556b2708deb867adcccb5cb3e466b9b1dffbbe36"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000502-F00001",
+          "sha256": "5f6b1af14e2b78966a2e0b46556b2708deb867adcccb5cb3e466b9b1dffbbe36",
+          "bytes": 93974,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/id.5f6b1af14e2b78966a2e0b46556b2708deb867adcccb5cb3e466b9b1dffbbe36.srt",
+              "sha256": "5f6b1af14e2b78966a2e0b46556b2708deb867adcccb5cb3e466b9b1dffbbe36",
+              "bytes": 93974,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000502-F00001",
+              "location_sha256": "4d94fdfc2748cfc7e54a0e8d25d2ccfad3ceaf9a160da25f100f95329301907e"
+            }
+          ],
+          "version_sha256": "5cbcab081679639bda414399165123db4d521923d640a082038adecdd32b103b"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "5cbcab081679639bda414399165123db4d521923d640a082038adecdd32b103b"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:it:140c3200a70f0f5ed06de655fd5c99db18ec8be44b17b242759ffbf5dda4a1f0",
+      "kind": "caption",
+      "accession": "AR-S000503",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · it",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:it:140c3200a70f0f5ed06de655fd5c99db18ec8be44b17b242759ffbf5dda4a1f0"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000503-F00001",
+          "sha256": "140c3200a70f0f5ed06de655fd5c99db18ec8be44b17b242759ffbf5dda4a1f0",
+          "bytes": 90156,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/it.140c3200a70f0f5ed06de655fd5c99db18ec8be44b17b242759ffbf5dda4a1f0.srt",
+              "sha256": "140c3200a70f0f5ed06de655fd5c99db18ec8be44b17b242759ffbf5dda4a1f0",
+              "bytes": 90156,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000503-F00001",
+              "location_sha256": "a92c40fb239d5709f30c899d151d58dfddd6b69405783d419e9db78b520c43c8"
+            }
+          ],
+          "version_sha256": "6300ca47f56ccbce3f69fabad0b760794ce408acc544c499347bcd0e66965167"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "6300ca47f56ccbce3f69fabad0b760794ce408acc544c499347bcd0e66965167"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:ja:ce9761b09477fde2bf97adb2cabc6555fcdac285583755778948651242a14494",
+      "kind": "caption",
+      "accession": "AR-S000504",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · ja",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:ja:ce9761b09477fde2bf97adb2cabc6555fcdac285583755778948651242a14494"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000504-F00001",
+          "sha256": "ce9761b09477fde2bf97adb2cabc6555fcdac285583755778948651242a14494",
+          "bytes": 108324,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/ja.ce9761b09477fde2bf97adb2cabc6555fcdac285583755778948651242a14494.srt",
+              "sha256": "ce9761b09477fde2bf97adb2cabc6555fcdac285583755778948651242a14494",
+              "bytes": 108324,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000504-F00001",
+              "location_sha256": "e06df8abdec0cef86a99437b7b342431833c1e56c288e7f6df3592f3f501f1ab"
+            }
+          ],
+          "version_sha256": "b5247e72950ed752cd52d8596c37f71b400cb771fe0b84eaea72eca3174d54a2"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "b5247e72950ed752cd52d8596c37f71b400cb771fe0b84eaea72eca3174d54a2"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:ko:e1659c6ff6dec2a82781f655c6feffd92cac8e338e59b984ccf11eff466d1b52",
+      "kind": "caption",
+      "accession": "AR-S000505",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · ko",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:ko:e1659c6ff6dec2a82781f655c6feffd92cac8e338e59b984ccf11eff466d1b52"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000505-F00001",
+          "sha256": "e1659c6ff6dec2a82781f655c6feffd92cac8e338e59b984ccf11eff466d1b52",
+          "bytes": 102188,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/ko.e1659c6ff6dec2a82781f655c6feffd92cac8e338e59b984ccf11eff466d1b52.srt",
+              "sha256": "e1659c6ff6dec2a82781f655c6feffd92cac8e338e59b984ccf11eff466d1b52",
+              "bytes": 102188,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000505-F00001",
+              "location_sha256": "a81aaf90f89f26d7aee8b6d0a2869aef190618aaa5d8bb5587733dfe1296899e"
+            }
+          ],
+          "version_sha256": "59cdd15461d9b33ea8597a6e23ff103d2bb77c37777f5f030ed83fad53ade234"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "59cdd15461d9b33ea8597a6e23ff103d2bb77c37777f5f030ed83fad53ade234"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:ms:f948e9671b6d47fd475845f9742c99cd98c2dccf3ec1b2fc805599500e08eb7c",
+      "kind": "caption",
+      "accession": "AR-S000506",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · ms",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:ms:f948e9671b6d47fd475845f9742c99cd98c2dccf3ec1b2fc805599500e08eb7c"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000506-F00001",
+          "sha256": "f948e9671b6d47fd475845f9742c99cd98c2dccf3ec1b2fc805599500e08eb7c",
+          "bytes": 92781,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/ms.f948e9671b6d47fd475845f9742c99cd98c2dccf3ec1b2fc805599500e08eb7c.srt",
+              "sha256": "f948e9671b6d47fd475845f9742c99cd98c2dccf3ec1b2fc805599500e08eb7c",
+              "bytes": 92781,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000506-F00001",
+              "location_sha256": "4c434324db7eda597ad7c4052cbbf1e954e6f564811e5d2fadb726ba813d5e1a"
+            }
+          ],
+          "version_sha256": "96504e00b2e44abe3dce7c2021c43c41fe202293344cd36928778a3b4ef317b5"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "96504e00b2e44abe3dce7c2021c43c41fe202293344cd36928778a3b4ef317b5"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:nl:cb61f0cb54f954ebe535b626fafd76840b538dc3d34612217aac8d25235883b5",
+      "kind": "caption",
+      "accession": "AR-S000507",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · nl",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:nl:cb61f0cb54f954ebe535b626fafd76840b538dc3d34612217aac8d25235883b5"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000507-F00001",
+          "sha256": "cb61f0cb54f954ebe535b626fafd76840b538dc3d34612217aac8d25235883b5",
+          "bytes": 91204,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/nl.cb61f0cb54f954ebe535b626fafd76840b538dc3d34612217aac8d25235883b5.srt",
+              "sha256": "cb61f0cb54f954ebe535b626fafd76840b538dc3d34612217aac8d25235883b5",
+              "bytes": 91204,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000507-F00001",
+              "location_sha256": "43069a1311c28a2451b0dab8c0c1bd441b295a8e20b71ba46fdec35acf041c2a"
+            }
+          ],
+          "version_sha256": "c3e691616ec1a1fde66419213929baade91aea35e4d67d04c6cd6639a38e7a9f"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "c3e691616ec1a1fde66419213929baade91aea35e4d67d04c6cd6639a38e7a9f"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:pl:86fa43ab321b92a8c3825505d76d7e44b99d4fe0dc8e00003d8de75b3dd3616c",
+      "kind": "caption",
+      "accession": "AR-S000508",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · pl",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:pl:86fa43ab321b92a8c3825505d76d7e44b99d4fe0dc8e00003d8de75b3dd3616c"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000508-F00001",
+          "sha256": "86fa43ab321b92a8c3825505d76d7e44b99d4fe0dc8e00003d8de75b3dd3616c",
+          "bytes": 91171,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/pl.86fa43ab321b92a8c3825505d76d7e44b99d4fe0dc8e00003d8de75b3dd3616c.srt",
+              "sha256": "86fa43ab321b92a8c3825505d76d7e44b99d4fe0dc8e00003d8de75b3dd3616c",
+              "bytes": 91171,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000508-F00001",
+              "location_sha256": "eac3a45225990d2286ca53fc402f5eaaa85a967dcbf6fdcce59985b71f4423de"
+            }
+          ],
+          "version_sha256": "ccdde4703b58ee6815d5af13c381f6bfe8f61828e06989ef349dc320668b03d4"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "ccdde4703b58ee6815d5af13c381f6bfe8f61828e06989ef349dc320668b03d4"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:pt:9dd6c04e4fc7de725ff6afcca7f380caeb9bb03818b070406e8d08509e5e7a2a",
+      "kind": "caption",
+      "accession": "AR-S000509",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · pt",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:pt:9dd6c04e4fc7de725ff6afcca7f380caeb9bb03818b070406e8d08509e5e7a2a"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000509-F00001",
+          "sha256": "9dd6c04e4fc7de725ff6afcca7f380caeb9bb03818b070406e8d08509e5e7a2a",
+          "bytes": 91370,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/pt.9dd6c04e4fc7de725ff6afcca7f380caeb9bb03818b070406e8d08509e5e7a2a.srt",
+              "sha256": "9dd6c04e4fc7de725ff6afcca7f380caeb9bb03818b070406e8d08509e5e7a2a",
+              "bytes": 91370,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000509-F00001",
+              "location_sha256": "0cbf916ff636863e49b0bbc11028960068eba649775f22adebcc8b7c141b02b1"
+            }
+          ],
+          "version_sha256": "fa198f1bf4a247e78b73000c9495c63e4b800d9464ccdd59dc2f862611d2c4f5"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "fa198f1bf4a247e78b73000c9495c63e4b800d9464ccdd59dc2f862611d2c4f5"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:ru:e0f5ed32ac1264f7db4728656ba80a7e457b177f70234c0ce9d390dd72ad760c",
+      "kind": "caption",
+      "accession": "AR-S000510",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · ru",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:ru:e0f5ed32ac1264f7db4728656ba80a7e457b177f70234c0ce9d390dd72ad760c"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000510-F00001",
+          "sha256": "e0f5ed32ac1264f7db4728656ba80a7e457b177f70234c0ce9d390dd72ad760c",
+          "bytes": 118693,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/ru.e0f5ed32ac1264f7db4728656ba80a7e457b177f70234c0ce9d390dd72ad760c.srt",
+              "sha256": "e0f5ed32ac1264f7db4728656ba80a7e457b177f70234c0ce9d390dd72ad760c",
+              "bytes": 118693,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000510-F00001",
+              "location_sha256": "1eb319fa861cff32ae0a03a6e613ca42ec305b4573c78454f57d5ee5c9c3f49b"
+            }
+          ],
+          "version_sha256": "0aa6aa0cc741d8bc2efb7104c8b118be085e1dd6576f9ab35acec344633876d6"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "0aa6aa0cc741d8bc2efb7104c8b118be085e1dd6576f9ab35acec344633876d6"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:sw:293af8fa9dee6f89c35a3ff1f62c3e7f89cbc969923a02f3504d7c2300108cff",
+      "kind": "caption",
+      "accession": "AR-S000511",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · sw",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:sw:293af8fa9dee6f89c35a3ff1f62c3e7f89cbc969923a02f3504d7c2300108cff"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000511-F00001",
+          "sha256": "293af8fa9dee6f89c35a3ff1f62c3e7f89cbc969923a02f3504d7c2300108cff",
+          "bytes": 87098,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/sw.293af8fa9dee6f89c35a3ff1f62c3e7f89cbc969923a02f3504d7c2300108cff.srt",
+              "sha256": "293af8fa9dee6f89c35a3ff1f62c3e7f89cbc969923a02f3504d7c2300108cff",
+              "bytes": 87098,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000511-F00001",
+              "location_sha256": "d07be2b62e7c5d1667cb712d959cf40e0ef1655953d52783522ebf7e832a70d8"
+            }
+          ],
+          "version_sha256": "92c062e2a4beb0b203e5cc060444e2ac5567552aa9d196af16a7fc62099f9906"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "92c062e2a4beb0b203e5cc060444e2ac5567552aa9d196af16a7fc62099f9906"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:th:4053dc1b87d9256151094e3439dece96d61fcebf426745c5b549e708595ca151",
+      "kind": "caption",
+      "accession": "AR-S000512",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · th",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:th:4053dc1b87d9256151094e3439dece96d61fcebf426745c5b549e708595ca151"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000512-F00001",
+          "sha256": "4053dc1b87d9256151094e3439dece96d61fcebf426745c5b549e708595ca151",
+          "bytes": 149850,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/th.4053dc1b87d9256151094e3439dece96d61fcebf426745c5b549e708595ca151.srt",
+              "sha256": "4053dc1b87d9256151094e3439dece96d61fcebf426745c5b549e708595ca151",
+              "bytes": 149850,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000512-F00001",
+              "location_sha256": "ccfd5d7253a68d11e28a103f8636f0e4491948f9e7b2f1b798f773957fdf956b"
+            }
+          ],
+          "version_sha256": "fa720d63b57461e4cf154a85bbf9e7d3acb331251e5643bdf338e984bebdf92b"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "fa720d63b57461e4cf154a85bbf9e7d3acb331251e5643bdf338e984bebdf92b"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:tr:b5ce8c608e23061006d00986ceb2162055ea1d48251f0a2fd86d92ec96e68534",
+      "kind": "caption",
+      "accession": "AR-S000513",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · tr",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:tr:b5ce8c608e23061006d00986ceb2162055ea1d48251f0a2fd86d92ec96e68534"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000513-F00001",
+          "sha256": "b5ce8c608e23061006d00986ceb2162055ea1d48251f0a2fd86d92ec96e68534",
+          "bytes": 92451,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/tr.b5ce8c608e23061006d00986ceb2162055ea1d48251f0a2fd86d92ec96e68534.srt",
+              "sha256": "b5ce8c608e23061006d00986ceb2162055ea1d48251f0a2fd86d92ec96e68534",
+              "bytes": 92451,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000513-F00001",
+              "location_sha256": "c2677073d9439c793939e6381dc57d915a233ea8f6bfcbceaceebf6b348f4c3a"
+            }
+          ],
+          "version_sha256": "ed3fc907c17f419a4bc903845e13f4e6fb0ec9210d0b72c0686e6cbc91b2ec62"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "ed3fc907c17f419a4bc903845e13f4e6fb0ec9210d0b72c0686e6cbc91b2ec62"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:uk:ce35c4752cc900a1ce4b77295aec156209a1a7aded98082029c93ed561d9546f",
+      "kind": "caption",
+      "accession": "AR-S000514",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · uk",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:uk:ce35c4752cc900a1ce4b77295aec156209a1a7aded98082029c93ed561d9546f"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000514-F00001",
+          "sha256": "ce35c4752cc900a1ce4b77295aec156209a1a7aded98082029c93ed561d9546f",
+          "bytes": 113813,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/uk.ce35c4752cc900a1ce4b77295aec156209a1a7aded98082029c93ed561d9546f.srt",
+              "sha256": "ce35c4752cc900a1ce4b77295aec156209a1a7aded98082029c93ed561d9546f",
+              "bytes": 113813,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000514-F00001",
+              "location_sha256": "69b3d591b1d6c4f22b7ecdf280936f021f094d71420d59c366e434bde8fe2b73"
+            }
+          ],
+          "version_sha256": "5203fed1e6bc48232f564540fbe3c905e4e5a0e7b582050ff56ce31aa47f56be"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "5203fed1e6bc48232f564540fbe3c905e4e5a0e7b582050ff56ce31aa47f56be"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:vi:b3516bfc247e398a7988dee8b3528d6bfa7de09035e45e5423f524416fd46844",
+      "kind": "caption",
+      "accession": "AR-S000515",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · vi",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:vi:b3516bfc247e398a7988dee8b3528d6bfa7de09035e45e5423f524416fd46844"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000515-F00001",
+          "sha256": "b3516bfc247e398a7988dee8b3528d6bfa7de09035e45e5423f524416fd46844",
+          "bytes": 105776,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/vi.b3516bfc247e398a7988dee8b3528d6bfa7de09035e45e5423f524416fd46844.srt",
+              "sha256": "b3516bfc247e398a7988dee8b3528d6bfa7de09035e45e5423f524416fd46844",
+              "bytes": 105776,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000515-F00001",
+              "location_sha256": "91be5286bfaa1f4e282d70822de1db74ef0cd8dc603416f94e6ed40f7c910460"
+            }
+          ],
+          "version_sha256": "96dc60628463602ad2594e55e3486805b40492eee45b6141b77fd7f70442b9cc"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "96dc60628463602ad2594e55e3486805b40492eee45b6141b77fd7f70442b9cc"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:zh-Hans:cffc889866894e9213affb43125bfe59e9ae33297aaff9bc267aeaa8ff77d6f2",
+      "kind": "caption",
+      "accession": "AR-S000516",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:zh-Hans:cffc889866894e9213affb43125bfe59e9ae33297aaff9bc267aeaa8ff77d6f2"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000516-F00001",
+          "sha256": "cffc889866894e9213affb43125bfe59e9ae33297aaff9bc267aeaa8ff77d6f2",
+          "bytes": 124178,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/zh-Hans.cffc889866894e9213affb43125bfe59e9ae33297aaff9bc267aeaa8ff77d6f2.srt",
+              "sha256": "cffc889866894e9213affb43125bfe59e9ae33297aaff9bc267aeaa8ff77d6f2",
+              "bytes": 124178,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000516-F00001",
+              "location_sha256": "39a3d191a19c428c59377e63f244fdd809421dc79917974ff079eb370cd38ea8"
+            }
+          ],
+          "version_sha256": "b7aa527209f2d82eab96dbaed6f92a3b32b6ac0a7b62c674ff18aa864cadfc2c"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "b7aa527209f2d82eab96dbaed6f92a3b32b6ac0a7b62c674ff18aa864cadfc2c"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:zh-Hant:68a0cc6370ea039c7f704f3d9bf4634cdd2529a13689a5ab065449ef2c1dae86",
+      "kind": "caption",
+      "accession": "AR-S000517",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · zh-Hant",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:zh-Hant:68a0cc6370ea039c7f704f3d9bf4634cdd2529a13689a5ab065449ef2c1dae86"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000517-F00001",
+          "sha256": "68a0cc6370ea039c7f704f3d9bf4634cdd2529a13689a5ab065449ef2c1dae86",
+          "bytes": 89314,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/zh-Hant.68a0cc6370ea039c7f704f3d9bf4634cdd2529a13689a5ab065449ef2c1dae86.srt",
+              "sha256": "68a0cc6370ea039c7f704f3d9bf4634cdd2529a13689a5ab065449ef2c1dae86",
+              "bytes": 89314,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000517-F00001",
+              "location_sha256": "f5a4c85e174e638ea672a31dc1d88892b45062d3918bd3e6ada0f6c83aded54a"
+            }
+          ],
+          "version_sha256": "893924cb631103f62f435203b5d0d89a96665b2d60ae46c68cecdc138580fa52"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "893924cb631103f62f435203b5d0d89a96665b2d60ae46c68cecdc138580fa52"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:zh:064eccf42ba9c004c8dc619832cd8820e62f874907a96b2ae86701b741e07d1c",
+      "kind": "caption",
+      "accession": "AR-S000518",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · zh",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:zh:064eccf42ba9c004c8dc619832cd8820e62f874907a96b2ae86701b741e07d1c"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000518-F00001",
+          "sha256": "064eccf42ba9c004c8dc619832cd8820e62f874907a96b2ae86701b741e07d1c",
+          "bytes": 89728,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/zh.064eccf42ba9c004c8dc619832cd8820e62f874907a96b2ae86701b741e07d1c.srt",
+              "sha256": "064eccf42ba9c004c8dc619832cd8820e62f874907a96b2ae86701b741e07d1c",
+              "bytes": 89728,
+              "role": "archived_source_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000518-F00001",
+              "location_sha256": "4ff3b00ff1fee1cd8ac4067ad3bfe38530dcda1152d3505d71ca5b2240aad9f3"
+            }
+          ],
+          "version_sha256": "9a9dde69698b7ac914738b3c5ea7ddfd2b4c75580bc323ac9a95a6939319c508"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "9a9dde69698b7ac914738b3c5ea7ddfd2b4c75580bc323ac9a95a6939319c508"
+    },
+    {
+      "source_id": "youtube-caption:WH8cwipcVEI:ja:743589c85eb1170d4657fa67cc9a2eb6ae2e5a055bac8644b8d156d6868a25be",
+      "kind": "caption",
+      "accession": "AR-S000519",
+      "title": "《人类投降派》4K无字幕完整片｜4K Full Film (No Subtitles) — Shoot Self with You | P4 剧场主档案 · ja",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:WH8cwipcVEI:ja:743589c85eb1170d4657fa67cc9a2eb6ae2e5a055bac8644b8d156d6868a25be"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000519-F00001",
+          "sha256": "743589c85eb1170d4657fa67cc9a2eb6ae2e5a055bac8644b8d156d6868a25be",
+          "bytes": 121496,
+          "locations": [
+            {
+              "path": "published/captions/WH8cwipcVEI/ja.743589c85eb1170d4657fa67cc9a2eb6ae2e5a055bac8644b8d156d6868a25be.srt",
+              "sha256": "743589c85eb1170d4657fa67cc9a2eb6ae2e5a055bac8644b8d156d6868a25be",
+              "bytes": 121496
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "official_context_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "files": [
+            {
+              "file_accession": "AR-S000519-F00001",
+              "location_sha256": "b3aa72e0cf16451d8a1f789f705287a644d1f144d18d340e6371b48c3fe6ea46"
+            }
+          ],
+          "version_sha256": "4694a30a0c4ab0c3c3c025df0309f9c97d51dd34fe97afcf1261c4456099403c"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "4694a30a0c4ab0c3c3c025df0309f9c97d51dd34fe97afcf1261c4456099403c"
+    },
+    {
+      "source_id": "youtube-caption:WH8cwipcVEI:ko:02fa26860a55c758229914b672a017e1cd0562284ec538ae35fa1672e193a4da",
+      "kind": "caption",
+      "accession": "AR-S000520",
+      "title": "《人类投降派》4K无字幕完整片｜4K Full Film (No Subtitles) — Shoot Self with You | P4 剧场主档案 · ko",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:WH8cwipcVEI:ko:02fa26860a55c758229914b672a017e1cd0562284ec538ae35fa1672e193a4da"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000520-F00001",
+          "sha256": "02fa26860a55c758229914b672a017e1cd0562284ec538ae35fa1672e193a4da",
+          "bytes": 116393,
+          "locations": [
+            {
+              "path": "published/captions/WH8cwipcVEI/ko.02fa26860a55c758229914b672a017e1cd0562284ec538ae35fa1672e193a4da.srt",
+              "sha256": "02fa26860a55c758229914b672a017e1cd0562284ec538ae35fa1672e193a4da",
+              "bytes": 116393
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "official_context_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "files": [
+            {
+              "file_accession": "AR-S000520-F00001",
+              "location_sha256": "d775a86fd659dc220dc30f1b2da2446bf0a652c76026713dacd9a1c04680ec6e"
+            }
+          ],
+          "version_sha256": "7682922975c14514d16095f2f954110533bf1b8cbaa25e4e23256f260d2c2c67"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "7682922975c14514d16095f2f954110533bf1b8cbaa25e4e23256f260d2c2c67"
+    },
+    {
+      "source_id": "youtube-caption:WH8cwipcVEI:zh-Hans:c33014c9b6a2f037b39166ed8ec59feab41e636b30e3fedf8ae688a3be5594d2",
+      "kind": "caption",
+      "accession": "AR-S000521",
+      "title": "《人类投降派》4K无字幕完整片｜4K Full Film (No Subtitles) — Shoot Self with You | P4 剧场主档案 · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:WH8cwipcVEI:zh-Hans:c33014c9b6a2f037b39166ed8ec59feab41e636b30e3fedf8ae688a3be5594d2"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000521-F00001",
+          "sha256": "c33014c9b6a2f037b39166ed8ec59feab41e636b30e3fedf8ae688a3be5594d2",
+          "bytes": 116388,
+          "locations": [
+            {
+              "path": "published/captions/WH8cwipcVEI/zh-Hans.c33014c9b6a2f037b39166ed8ec59feab41e636b30e3fedf8ae688a3be5594d2.srt",
+              "sha256": "c33014c9b6a2f037b39166ed8ec59feab41e636b30e3fedf8ae688a3be5594d2",
+              "bytes": 116388,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "official_context_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "files": [
+            {
+              "file_accession": "AR-S000521-F00001",
+              "location_sha256": "0689f528a08bc4dc563fa385d5ccfd7639f49a6d82a7847c2dee58f9e007e69e"
+            }
+          ],
+          "version_sha256": "7e4239e4013ead5ed667582b85f31cac8dd5a437f59241e15d74911b3a256d2e"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "7e4239e4013ead5ed667582b85f31cac8dd5a437f59241e15d74911b3a256d2e"
+    },
+    {
+      "source_id": "youtube-caption:h2F6Bpk-9m8:id:4daa620b2edf048633db3abf51f6e06c85a4c0ccc1b1d78ca7bed7c15ae97ecd",
+      "kind": "caption",
+      "accession": "AR-S000522",
+      "title": "When the Water Runs Out — Revised Cut | Psychological Short Film | P4 剧场主档案 · id",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:h2F6Bpk-9m8:id:4daa620b2edf048633db3abf51f6e06c85a4c0ccc1b1d78ca7bed7c15ae97ecd"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000522-F00001",
+          "sha256": "4daa620b2edf048633db3abf51f6e06c85a4c0ccc1b1d78ca7bed7c15ae97ecd",
+          "bytes": 7817,
+          "locations": [
+            {
+              "path": "published/captions/h2F6Bpk-9m8/id.4daa620b2edf048633db3abf51f6e06c85a4c0ccc1b1d78ca7bed7c15ae97ecd.srt",
+              "sha256": "4daa620b2edf048633db3abf51f6e06c85a4c0ccc1b1d78ca7bed7c15ae97ecd",
+              "bytes": 7817,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/h2F6Bpk-9m8",
+          "official_context_url": "https://a.p4theater.cn/videos/h2F6Bpk-9m8",
+          "files": [
+            {
+              "file_accession": "AR-S000522-F00001",
+              "location_sha256": "550c1c222b49d46ceb0c307b180414ae4f9ad06781f680c3f303833d3d5caa7b"
+            }
+          ],
+          "version_sha256": "504ae612cf49fad14516aeb0e8ff6b2b258f834ddaeb19ac79dc139e00370ec0"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "504ae612cf49fad14516aeb0e8ff6b2b258f834ddaeb19ac79dc139e00370ec0"
+    },
+    {
+      "source_id": "youtube-caption:h2F6Bpk-9m8:zh-Hans:1f4e6ce56d754f159361797701d2c28d8455fb8e389438e4d7ac547efec11521",
+      "kind": "caption",
+      "accession": "AR-S000523",
+      "title": "When the Water Runs Out — Revised Cut | Psychological Short Film | P4 剧场主档案 · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:h2F6Bpk-9m8:zh-Hans:1f4e6ce56d754f159361797701d2c28d8455fb8e389438e4d7ac547efec11521"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000523-F00001",
+          "sha256": "1f4e6ce56d754f159361797701d2c28d8455fb8e389438e4d7ac547efec11521",
+          "bytes": 8040,
+          "locations": [
+            {
+              "path": "published/captions/h2F6Bpk-9m8/zh-Hans.1f4e6ce56d754f159361797701d2c28d8455fb8e389438e4d7ac547efec11521.srt",
+              "sha256": "1f4e6ce56d754f159361797701d2c28d8455fb8e389438e4d7ac547efec11521",
+              "bytes": 8040,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/h2F6Bpk-9m8",
+          "official_context_url": "https://a.p4theater.cn/videos/h2F6Bpk-9m8",
+          "files": [
+            {
+              "file_accession": "AR-S000523-F00001",
+              "location_sha256": "bacfe61d35e54649e311b034d3a857254551c6757c9111ac66dba01f1cb066c1"
+            }
+          ],
+          "version_sha256": "98f7293cfd78c1077833d016eb1366370f294da44a0cd4ef79bf1fa981594313"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "98f7293cfd78c1077833d016eb1366370f294da44a0cd4ef79bf1fa981594313"
+    },
+    {
+      "source_id": "youtube-caption:pGmFA0GVkaM:zh-Hans:41dbdd05648f32871d5f6d5e1ea57163b67c03cc90d6495bb20421016b6be98f",
+      "kind": "caption",
+      "accession": "AR-S000524",
+      "title": "一间房，两个人：子丑 × 阿蒙｜One Room, Two People: Zichou × Ameng — Shoot Self with You | P4 剧场主档案 · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:pGmFA0GVkaM:zh-Hans:41dbdd05648f32871d5f6d5e1ea57163b67c03cc90d6495bb20421016b6be98f"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000524-F00001",
+          "sha256": "41dbdd05648f32871d5f6d5e1ea57163b67c03cc90d6495bb20421016b6be98f",
+          "bytes": 24184,
+          "locations": [
+            {
+              "path": "published/captions/pGmFA0GVkaM/zh-Hans.41dbdd05648f32871d5f6d5e1ea57163b67c03cc90d6495bb20421016b6be98f.srt",
+              "sha256": "41dbdd05648f32871d5f6d5e1ea57163b67c03cc90d6495bb20421016b6be98f",
+              "bytes": 24184,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/pGmFA0GVkaM",
+          "official_context_url": "https://a.p4theater.cn/videos/pGmFA0GVkaM",
+          "files": [
+            {
+              "file_accession": "AR-S000524-F00001",
+              "location_sha256": "cedff3b8600069709d60e719b083c0393162c19b483a2171e7cd265e2f3da72e"
+            }
+          ],
+          "version_sha256": "e178ec4fffc3db4f5361b45bc0367c58d97360fbd15de3ba88f0b6640c9457c5"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "e178ec4fffc3db4f5361b45bc0367c58d97360fbd15de3ba88f0b6640c9457c5"
+    },
+    {
+      "source_id": "youtube-caption:pGmFA0GVkaM:zh-Hant:7c73559978684497e0dca4de673aedeb0687302f65915a1ddc523e506e87b339",
+      "kind": "caption",
+      "accession": "AR-S000525",
+      "title": "一间房，两个人：子丑 × 阿蒙｜One Room, Two People: Zichou × Ameng — Shoot Self with You | P4 剧场主档案 · zh-Hant",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:pGmFA0GVkaM:zh-Hant:7c73559978684497e0dca4de673aedeb0687302f65915a1ddc523e506e87b339"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000525-F00001",
+          "sha256": "7c73559978684497e0dca4de673aedeb0687302f65915a1ddc523e506e87b339",
+          "bytes": 24184,
+          "locations": [
+            {
+              "path": "published/captions/pGmFA0GVkaM/zh-Hant.7c73559978684497e0dca4de673aedeb0687302f65915a1ddc523e506e87b339.srt",
+              "sha256": "7c73559978684497e0dca4de673aedeb0687302f65915a1ddc523e506e87b339",
+              "bytes": 24184,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/pGmFA0GVkaM",
+          "official_context_url": "https://a.p4theater.cn/videos/pGmFA0GVkaM",
+          "files": [
+            {
+              "file_accession": "AR-S000525-F00001",
+              "location_sha256": "42e461339302896b030ec1e37f71e6b9541722786fbe57ff0f31773a0136ca3d"
+            }
+          ],
+          "version_sha256": "92da1b88ca50e02c3e1379d2ac4ca278d965cc876d455496b3a7a71b86e639bd"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "92da1b88ca50e02c3e1379d2ac4ca278d965cc876d455496b3a7a71b86e639bd"
+    },
+    {
+      "source_id": "youtube-caption:rNv_kwuQKKQ:zh-Hans:aab1669e3b81d35c0f561fa137eacab9df5bd41783bdc5875ed27e1a8452ba6b",
+      "kind": "caption",
+      "accession": "AR-S000526",
+      "title": "Intimate Scene Rehearsal: Jiarui & Ricky (Part 4) | Shoot Self with You — P4 Theater | P4 剧场主档案 · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:rNv_kwuQKKQ:zh-Hans:aab1669e3b81d35c0f561fa137eacab9df5bd41783bdc5875ed27e1a8452ba6b"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000526-F00001",
+          "sha256": "aab1669e3b81d35c0f561fa137eacab9df5bd41783bdc5875ed27e1a8452ba6b",
+          "bytes": 44489,
+          "locations": [
+            {
+              "path": "published/captions/rNv_kwuQKKQ/zh-Hans.aab1669e3b81d35c0f561fa137eacab9df5bd41783bdc5875ed27e1a8452ba6b.srt",
+              "sha256": "aab1669e3b81d35c0f561fa137eacab9df5bd41783bdc5875ed27e1a8452ba6b",
+              "bytes": 44489,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/rNv_kwuQKKQ",
+          "official_context_url": "https://a.p4theater.cn/videos/rNv_kwuQKKQ",
+          "files": [
+            {
+              "file_accession": "AR-S000526-F00001",
+              "location_sha256": "e001a23f4353ea15b7f4ce52a3bff854b14c99f95b26f7606ef72cd40b596ccb"
+            }
+          ],
+          "version_sha256": "7eb372387137b4ad6a62ff7627081ed818cd89f077f93292274c0b91aa0b4276"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "7eb372387137b4ad6a62ff7627081ed818cd89f077f93292274c0b91aa0b4276"
+    },
+    {
+      "source_id": "youtube-caption:rS3KFGmoWac:ja:04b757ee1150d3991bf0ef37da4c1083546c0cad3c16190b41e114d7ffff525c",
+      "kind": "caption",
+      "accession": "AR-S000527",
+      "title": "When the Water Runs Out | A Psychological Short Film (English Subtitles) | P4 剧场主档案 · ja",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:rS3KFGmoWac:ja:04b757ee1150d3991bf0ef37da4c1083546c0cad3c16190b41e114d7ffff525c"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000527-F00001",
+          "sha256": "04b757ee1150d3991bf0ef37da4c1083546c0cad3c16190b41e114d7ffff525c",
+          "bytes": 9710,
+          "locations": [
+            {
+              "path": "published/captions/rS3KFGmoWac/ja.04b757ee1150d3991bf0ef37da4c1083546c0cad3c16190b41e114d7ffff525c.srt",
+              "sha256": "04b757ee1150d3991bf0ef37da4c1083546c0cad3c16190b41e114d7ffff525c",
+              "bytes": 9710
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "official_context_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "files": [
+            {
+              "file_accession": "AR-S000527-F00001",
+              "location_sha256": "6a48f9845aae5f71a9ba3cc3f15cc584f3dc8763591165b58fd83fb56fe435bc"
+            }
+          ],
+          "version_sha256": "97b86e7e7ac9412daaec851cfdf66beef670e3ee93b2aaf9b989d154cded8409"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "97b86e7e7ac9412daaec851cfdf66beef670e3ee93b2aaf9b989d154cded8409"
+    },
+    {
+      "source_id": "youtube-caption:rS3KFGmoWac:ko:f99bfb7e29e1239ffcd785f411efcd118745e9a1c6b250d9a4b44dac62699763",
+      "kind": "caption",
+      "accession": "AR-S000528",
+      "title": "When the Water Runs Out | A Psychological Short Film (English Subtitles) | P4 剧场主档案 · ko",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:rS3KFGmoWac:ko:f99bfb7e29e1239ffcd785f411efcd118745e9a1c6b250d9a4b44dac62699763"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000528-F00001",
+          "sha256": "f99bfb7e29e1239ffcd785f411efcd118745e9a1c6b250d9a4b44dac62699763",
+          "bytes": 8886,
+          "locations": [
+            {
+              "path": "published/captions/rS3KFGmoWac/ko.f99bfb7e29e1239ffcd785f411efcd118745e9a1c6b250d9a4b44dac62699763.srt",
+              "sha256": "f99bfb7e29e1239ffcd785f411efcd118745e9a1c6b250d9a4b44dac62699763",
+              "bytes": 8886
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "official_context_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "files": [
+            {
+              "file_accession": "AR-S000528-F00001",
+              "location_sha256": "d45f47b92118ffcbe9d8d75deac37b79387bc6cc57916149f2461599234c71ab"
+            }
+          ],
+          "version_sha256": "a93d2c006afe4d00b88be6446e8a7afe58b852442f2e04c2563d968fab643564"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "a93d2c006afe4d00b88be6446e8a7afe58b852442f2e04c2563d968fab643564"
+    },
+    {
+      "source_id": "youtube-caption:rS3KFGmoWac:zh-Hans:c2748df94ec50e2d6494de21111ccd8e127af23c53f38ca3ae7efaaf62d4e83f",
+      "kind": "caption",
+      "accession": "AR-S000529",
+      "title": "When the Water Runs Out | A Psychological Short Film (English Subtitles) | P4 剧场主档案 · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:rS3KFGmoWac:zh-Hans:c2748df94ec50e2d6494de21111ccd8e127af23c53f38ca3ae7efaaf62d4e83f"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000529-F00001",
+          "sha256": "c2748df94ec50e2d6494de21111ccd8e127af23c53f38ca3ae7efaaf62d4e83f",
+          "bytes": 8040,
+          "locations": [
+            {
+              "path": "published/captions/rS3KFGmoWac/zh-Hans.c2748df94ec50e2d6494de21111ccd8e127af23c53f38ca3ae7efaaf62d4e83f.srt",
+              "sha256": "c2748df94ec50e2d6494de21111ccd8e127af23c53f38ca3ae7efaaf62d4e83f",
+              "bytes": 8040,
+              "role": "owner_api_srt_download"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "official_context_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "files": [
+            {
+              "file_accession": "AR-S000529-F00001",
+              "location_sha256": "c33886c25a56d1c4d2d88657e85df28c6203019e27113d4c614840617e3340f1"
+            }
+          ],
+          "version_sha256": "6c2f608a5af437ffb69cb6c9afc716e8578c8f07143735278896541937b7cd59"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "6c2f608a5af437ffb69cb6c9afc716e8578c8f07143735278896541937b7cd59"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:01",
+      "kind": "image",
+      "accession": "AR-I001327",
+      "title": "秀秀初次邀约 | 清明前夜大联谊！｜原文图像 1",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:01"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001327-F00001",
+          "sha256": "6d7fe68c36c675074481d524d460ed8abd09fca84c8f6b425a9bef15cae6444c",
+          "bytes": 509718,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-04-02-b738dc3fb0-01.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "6d7fe68c36c675074481d524d460ed8abd09fca84c8f6b425a9bef15cae6444c",
+              "bytes": 509718,
+              "mime": "image/png",
+              "width": 1080,
+              "height": 1833,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/ypxvfjHNR1kZBPuSJvTWQkh5AYIZ4e7neqI5D2UnK9PEWENA2lmISlhluiamSXrLL1ySsGpibCMAo4w0DVaMhKdw/640?wx_fmt=png",
+              "ordinal_in_article": 1
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-04-02-b738dc3fb0",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-04-02-b738dc3fb0",
+          "files": [
+            {
+              "file_accession": "AR-I001327-F00001",
+              "location_sha256": "b2452ecbf145e9ce1a446a185431e4d8e5dc0f39761c831ad7f9cdaeb1d2ae85"
+            }
+          ],
+          "version_sha256": "a89295fd0133084fc425ca9125be2ece071037a4dde9dc10bfbf3076990e3b99"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "a89295fd0133084fc425ca9125be2ece071037a4dde9dc10bfbf3076990e3b99"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:02",
+      "kind": "image",
+      "accession": "AR-I001328",
+      "title": "秀秀初次邀约 | 清明前夜大联谊！｜原文图像 2",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:02"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001328-F00001",
+          "sha256": "45c7f217be3d0c803088b5c29cb49d8a0572491e0f4877e3581e17b948ac31ee",
+          "bytes": 3870848,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-04-02-b738dc3fb0-02.gif",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "45c7f217be3d0c803088b5c29cb49d8a0572491e0f4877e3581e17b948ac31ee",
+              "bytes": 3870848,
+              "mime": "image/gif",
+              "width": 455,
+              "height": 251,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_gif/ypxvfjHNR1kZBPuSJvTWQkh5AYIZ4e7nfquibBqFt3KK19Vhk6K4JOqXHicYfFrqFyTxzFbTeLcliajUoCn9zrKNQ/640?wx_fmt=gif",
+              "ordinal_in_article": 2
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-04-02-b738dc3fb0",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-04-02-b738dc3fb0",
+          "files": [
+            {
+              "file_accession": "AR-I001328-F00001",
+              "location_sha256": "a91c4a732b7004f6457b55e3947976f739c0d50c305fe0354bff41aa14aadd76"
+            }
+          ],
+          "version_sha256": "deef3201ca6726fcf0a31919bad89088e1378f42cca8b5cad0269b43183f1583"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "deef3201ca6726fcf0a31919bad89088e1378f42cca8b5cad0269b43183f1583"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:03",
+      "kind": "image",
+      "accession": "AR-I001329",
+      "title": "秀秀初次邀约 | 清明前夜大联谊！｜原文图像 3",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:03"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001329-F00001",
+          "sha256": "55693a2e4e305d7ff9af6b5b067d22ea94321f180dae5adb92e788c3df5fc6d9",
+          "bytes": 174925,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-04-02-b738dc3fb0-03.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "55693a2e4e305d7ff9af6b5b067d22ea94321f180dae5adb92e788c3df5fc6d9",
+              "bytes": 174925,
+              "mime": "image/png",
+              "width": 1080,
+              "height": 1998,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/ypxvfjHNR1kZBPuSJvTWQkh5AYIZ4e7nsrPY9K7REOEEbQLzGqibIph2hk1Kia0bCItH5VubOSic6eLcfuGibNicprA/640?wx_fmt=png",
+              "ordinal_in_article": 3
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-04-02-b738dc3fb0",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-04-02-b738dc3fb0",
+          "files": [
+            {
+              "file_accession": "AR-I001329-F00001",
+              "location_sha256": "8aeb0f2031d0c4af896a3decb50dc70a48dd62056829297bfff31e33d2a3b76f"
+            }
+          ],
+          "version_sha256": "19b777fac39f3d99ad784a674fbe0418c3ebeccc98c92fdecf1fd43d6ec0debe"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "19b777fac39f3d99ad784a674fbe0418c3ebeccc98c92fdecf1fd43d6ec0debe"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:04",
+      "kind": "image",
+      "accession": "AR-I001330",
+      "title": "秀秀初次邀约 | 清明前夜大联谊！｜原文图像 4",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:04"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001330-F00001",
+          "sha256": "533dfcdc1fd59100711b4e3156c3239bad76d705544350f3034ae8d1ed1e90a9",
+          "bytes": 33500,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-04-02-b738dc3fb0-04.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "533dfcdc1fd59100711b4e3156c3239bad76d705544350f3034ae8d1ed1e90a9",
+              "bytes": 33500,
+              "mime": "image/png",
+              "width": 1080,
+              "height": 501,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/ypxvfjHNR1kZBPuSJvTWQkh5AYIZ4e7n6skciaPkMleiciaiaglaV1Bnibur7ibCiaAPLESSPIKmQeUaqNqqMKs3LvZGw/640?wx_fmt=png",
+              "ordinal_in_article": 4
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-04-02-b738dc3fb0",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-04-02-b738dc3fb0",
+          "files": [
+            {
+              "file_accession": "AR-I001330-F00001",
+              "location_sha256": "edb7eccf324dd63e83d96ba238e8cf8c7e0560fbe8eee523ea33bf4aced666fc"
+            }
+          ],
+          "version_sha256": "d6872542a28ae0b52e7f29116a016b097c0f29ff75bd42d361a30db93618b396"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "d6872542a28ae0b52e7f29116a016b097c0f29ff75bd42d361a30db93618b396"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-04-08-781b065c94:01",
+      "kind": "image",
+      "accession": "AR-I001331",
+      "title": "紫色行动招募｜在杭州天目里，一起创作一场“隔空”演出｜原文图像 1",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-04-08-781b065c94:01"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001331-F00001",
+          "sha256": "5f44f1b597e49afba6d1714b2859c61fe797360fea9799ebf2f367ecc3121ad4",
+          "bytes": 1674958,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-04-08-781b065c94-01.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "5f44f1b597e49afba6d1714b2859c61fe797360fea9799ebf2f367ecc3121ad4",
+              "bytes": 1674958,
+              "mime": "image/png",
+              "width": 1080,
+              "height": 3704,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/hCScCreUWn3db9BibPIlHa6XDQrUoP7MXUROougXAEFWUQ9O3bOy1yfJicQSSTxBricjAYVbupAbtB7cN1omClvPw/640?wx_fmt=png",
+              "ordinal_in_article": 1
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-04-08-781b065c94",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-04-08-781b065c94",
+          "files": [
+            {
+              "file_accession": "AR-I001331-F00001",
+              "location_sha256": "93dccd0b2a84a08900387751a7bb07b9b0913cc36c7c3d5b67df5c0ade595cbb"
+            }
+          ],
+          "version_sha256": "8105460c9fba87919291fbfe7cb3c066a6faa38a976aa20ff141941282746501"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "8105460c9fba87919291fbfe7cb3c066a6faa38a976aa20ff141941282746501"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:01",
+      "kind": "image",
+      "accession": "AR-I001332",
+      "title": "【101剧团】演员招募｜撞个头破血流，冲破意义迷墙，把尸体烧光！｜原文图像 1",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:01"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001332-F00001",
+          "sha256": "1580c49fc95e01e55195fad65d7fdde2c841dbb88247693c47b5ed5f94b8dd2b",
+          "bytes": 101535,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-08-04-49d0154955-01.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "1580c49fc95e01e55195fad65d7fdde2c841dbb88247693c47b5ed5f94b8dd2b",
+              "bytes": 101535,
+              "mime": "image/png",
+              "width": 800,
+              "height": 2000,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/GMgmKjVDJQMTHBkruwOmMAhu8Ql1krzTejEjGNWlagmHqITurlArXwxkpGiaYpBY0ticRfVBjnPrJ7fM1iaaVkIJQ/640?wx_fmt=png",
+              "ordinal_in_article": 1
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "files": [
+            {
+              "file_accession": "AR-I001332-F00001",
+              "location_sha256": "d88eb61490a54f58428434bc777872205b29ca60af4bed422b5799d2c721d913"
+            }
+          ],
+          "version_sha256": "7670b767ec6e6b227e360f5a281d4caa882987453a5069a273677b24cbe7e959"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "7670b767ec6e6b227e360f5a281d4caa882987453a5069a273677b24cbe7e959"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:02",
+      "kind": "image",
+      "accession": "AR-I001333",
+      "title": "【101剧团】演员招募｜撞个头破血流，冲破意义迷墙，把尸体烧光！｜原文图像 2",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:02"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001333-F00001",
+          "sha256": "11f9a8bc802940640b97ff6530e529c98edb5932f7b6bfdbd9f3115cb2bb7871",
+          "bytes": 679232,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-08-04-49d0154955-02.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "11f9a8bc802940640b97ff6530e529c98edb5932f7b6bfdbd9f3115cb2bb7871",
+              "bytes": 679232,
+              "mime": "image/png",
+              "width": 800,
+              "height": 2000,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/GMgmKjVDJQMTHBkruwOmMAhu8Ql1krzT2b94iaYH8hc5ACNMxwPw71ZhAcfOg4Sl7JJXBTE1Qz4EDITC7pBvicgw/640?wx_fmt=png",
+              "ordinal_in_article": 2
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "files": [
+            {
+              "file_accession": "AR-I001333-F00001",
+              "location_sha256": "f6ce5b06f3c6c462aef5fc405add28206d8e70f6f7285c4d3ffb4e33a7de7e6b"
+            }
+          ],
+          "version_sha256": "abc3a1e0a004a581b455c4eea27fa364f348b730a4273602bdfd59e80be448cd"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "abc3a1e0a004a581b455c4eea27fa364f348b730a4273602bdfd59e80be448cd"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:03",
+      "kind": "image",
+      "accession": "AR-I001334",
+      "title": "【101剧团】演员招募｜撞个头破血流，冲破意义迷墙，把尸体烧光！｜原文图像 3",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:03"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001334-F00001",
+          "sha256": "404addc320107b35739701335e273f883f492b0fa6e36c0ab04413a71ea0196b",
+          "bytes": 226294,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-08-04-49d0154955-03.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "404addc320107b35739701335e273f883f492b0fa6e36c0ab04413a71ea0196b",
+              "bytes": 226294,
+              "mime": "image/png",
+              "width": 800,
+              "height": 2000,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/GMgmKjVDJQMTHBkruwOmMAhu8Ql1krzTcoPkg8WN9PQvymnphGqiaFlQIy9m04WSB0mzbdqZ3dGwAXRUaRLNATw/640?wx_fmt=png",
+              "ordinal_in_article": 3
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "files": [
+            {
+              "file_accession": "AR-I001334-F00001",
+              "location_sha256": "a8e0c515e6a69e198d3f8f22024a5a53cad5ef8e7b94f4f19b75673a555eea69"
+            }
+          ],
+          "version_sha256": "93b77136707627e825c5e38671890803c78799abff4fc2556a89a213b10213a5"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "93b77136707627e825c5e38671890803c78799abff4fc2556a89a213b10213a5"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:04",
+      "kind": "image",
+      "accession": "AR-I001335",
+      "title": "【101剧团】演员招募｜撞个头破血流，冲破意义迷墙，把尸体烧光！｜原文图像 4",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:04"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001335-F00001",
+          "sha256": "474ff16d91de7bdd4062f404c37f4370adbe4ce5af8b2335202aedb7f01b0fbb",
+          "bytes": 56233,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-08-04-49d0154955-04.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "474ff16d91de7bdd4062f404c37f4370adbe4ce5af8b2335202aedb7f01b0fbb",
+              "bytes": 56233,
+              "mime": "image/png",
+              "width": 800,
+              "height": 2000,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/GMgmKjVDJQMTHBkruwOmMAhu8Ql1krzTcyLNGzIqpWO26wmKKDUSc20f3vSUz6gMm8K9TicOquvjQibVc22KicFtQ/640?wx_fmt=png",
+              "ordinal_in_article": 4
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "files": [
+            {
+              "file_accession": "AR-I001335-F00001",
+              "location_sha256": "70947c580678b7bba2ec1c5fd6e37099ff489fd94dea555124789384753e5650"
+            }
+          ],
+          "version_sha256": "70ec3af513094cee11d3fdd1a1ee729d049dd43317e559c846728b3f760a36cd"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "70ec3af513094cee11d3fdd1a1ee729d049dd43317e559c846728b3f760a36cd"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:05",
+      "kind": "image",
+      "accession": "AR-I001336",
+      "title": "【101剧团】演员招募｜撞个头破血流，冲破意义迷墙，把尸体烧光！｜原文图像 5",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:05"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001336-F00001",
+          "sha256": "616080cda412e4bdbffb8fd750ef71bbb98bcfba98b292d22c03e2bc2b98e2a6",
+          "bytes": 415999,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-08-04-49d0154955-05.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "616080cda412e4bdbffb8fd750ef71bbb98bcfba98b292d22c03e2bc2b98e2a6",
+              "bytes": 415999,
+              "mime": "image/png",
+              "width": 800,
+              "height": 2000,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/GMgmKjVDJQMTHBkruwOmMAhu8Ql1krzToSFhyzn6KB3bRExHQ4Wknleq8HRW7yohx3nqXK4XLE4aZ0MmrZUY4A/640?wx_fmt=png",
+              "ordinal_in_article": 5
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "files": [
+            {
+              "file_accession": "AR-I001336-F00001",
+              "location_sha256": "5e5c343c6c48aa9587dd0fe59eee98c1dc1c80f8d7671ec0ccd0ac9e4bcb09d4"
+            }
+          ],
+          "version_sha256": "c9b1e55bb521479c8df2520f00692b76edc7062405739316f0796bd33daed827"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "c9b1e55bb521479c8df2520f00692b76edc7062405739316f0796bd33daed827"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:06",
+      "kind": "image",
+      "accession": "AR-I001337",
+      "title": "【101剧团】演员招募｜撞个头破血流，冲破意义迷墙，把尸体烧光！｜原文图像 6",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:06"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001337-F00001",
+          "sha256": "a669b8bc8eb094fcabe198af3b547b12a024b2f2f7040318fae0d2d143a182a0",
+          "bytes": 52850,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-08-04-49d0154955-06.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "a669b8bc8eb094fcabe198af3b547b12a024b2f2f7040318fae0d2d143a182a0",
+              "bytes": 52850,
+              "mime": "image/png",
+              "width": 600,
+              "height": 400,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/GMgmKjVDJQPQ61iaMhs1pjsxoJUom1ibuia12DZmvrFGWCph7N3Gs7WlCmB9puj2acfiao6ZkneTjicC1IQJ6hB43KA/640?wx_fmt=png",
+              "ordinal_in_article": 6
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-08-04-49d0154955",
+          "files": [
+            {
+              "file_accession": "AR-I001337-F00001",
+              "location_sha256": "227f5a29600b6d97bff1e0d6028c7912ad02e7b6f70952aa56e77a972db4bfc5"
+            }
+          ],
+          "version_sha256": "7854ac5a7f7374caa9974023ccb0d4732f96f4bdb1cf2162b28ca37f10c6e005"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "7854ac5a7f7374caa9974023ccb0d4732f96f4bdb1cf2162b28ca37f10c6e005"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-08-31-e60dcedc94:01",
+      "kind": "image",
+      "accession": "AR-I001338",
+      "title": "《一鹏的梦》｜原文图像 1",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-08-31-e60dcedc94:01"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001338-F00001",
+          "sha256": "6b450faa3782cbf2408127d1014e0b433a84fd1c6498011defe3c08087a623af",
+          "bytes": 40235,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-08-31-e60dcedc94-01.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "6b450faa3782cbf2408127d1014e0b433a84fd1c6498011defe3c08087a623af",
+              "bytes": 40235,
+              "mime": "image/png",
+              "width": 372,
+              "height": 200,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/ypxvfjHNR1nGmvJWu4f8Giay8xrXyttYibiaxUQo2MGjzfF7uop46tQlXC5p9p5p7kttBVVWCPD9HG7jOT4OibFF0g/640?wx_fmt=png",
+              "ordinal_in_article": 1
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-31-e60dcedc94",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-08-31-e60dcedc94",
+          "files": [
+            {
+              "file_accession": "AR-I001338-F00001",
+              "location_sha256": "363190e12ccabaac28e1a11d0dd412fc50dc32d61e5c61456f74af268932bc95"
+            }
+          ],
+          "version_sha256": "5df2b45bfe0c090abfe061f338d2c9a98255ddb8f76bcc5267046d141c17e191"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "5df2b45bfe0c090abfe061f338d2c9a98255ddb8f76bcc5267046d141c17e191"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-08-31-e60dcedc94:02",
+      "kind": "image",
+      "accession": "AR-I001339",
+      "title": "《一鹏的梦》｜原文图像 2",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-08-31-e60dcedc94:02"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001339-F00001",
+          "sha256": "205717a3888c6a196e2b57ad56b4d4d6246316d3c1c412b6195fdbaefea91b3c",
+          "bytes": 355592,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-08-31-e60dcedc94-02.jpg",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "205717a3888c6a196e2b57ad56b4d4d6246316d3c1c412b6195fdbaefea91b3c",
+              "bytes": 355592,
+              "mime": "image/jpeg",
+              "width": 1080,
+              "height": 1895,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_jpg/ypxvfjHNR1nGmvJWu4f8Giay8xrXyttYibo1o7hBliasia2Oofw6MaLGQGtrWL8VA76MHhT0C2FwibSv7TjJHk5sv5A/640?wx_fmt=jpeg",
+              "ordinal_in_article": 2
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-31-e60dcedc94",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-08-31-e60dcedc94",
+          "files": [
+            {
+              "file_accession": "AR-I001339-F00001",
+              "location_sha256": "252874b2f77dbd718c0dd60edd037e52f2fc8222f76a3f294654ce8c54de1204"
+            }
+          ],
+          "version_sha256": "e7fcb41200f4933aa0ae1d6aaf63f50cd2591dbbc8a06eed81450c91c18b8720"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "e7fcb41200f4933aa0ae1d6aaf63f50cd2591dbbc8a06eed81450c91c18b8720"
+    },
+    {
+      "source_id": "a.p4theater.cn:wechat-public-image:wechat-2022-08-31-e60dcedc94:03",
+      "kind": "image",
+      "accession": "AR-I001340",
+      "title": "《一鹏的梦》｜原文图像 3",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "a.p4theater.cn:wechat-public-image:wechat-2022-08-31-e60dcedc94:03"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-I001340-F00001",
+          "sha256": "b22d292420b5f1898d5758977e70e57d731a05eb97f3b77b1167328d0f4ff304",
+          "bytes": 15249,
+          "locations": [
+            {
+              "path": "published/images/wechat/wechat-2022-08-31-e60dcedc94-03.png",
+              "storage": "git",
+              "role": "wechat_public_image_access_copy",
+              "sha256": "b22d292420b5f1898d5758977e70e57d731a05eb97f3b77b1167328d0f4ff304",
+              "bytes": 15249,
+              "mime": "image/png",
+              "width": 480,
+              "height": 480,
+              "source_url": "https://mmbiz.qpic.cn/mmbiz_png/ypxvfjHNR1nGmvJWu4f8Giay8xrXyttYib9Hkv14f1whXc34YvwOj5jFC1oykC1fwfPByCfU9kXTF38WLExHd4uA/640?wx_fmt=png",
+              "ordinal_in_article": 3
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/wechat/wechat-2022-08-31-e60dcedc94",
+          "official_context_url": "https://a.p4theater.cn/wechat/wechat-2022-08-31-e60dcedc94",
+          "files": [
+            {
+              "file_accession": "AR-I001340-F00001",
+              "location_sha256": "8e9310a49f7de4bb2e6c3c549cf2d9eb406dfb5211b4672353c09ddaf8a3b9e9"
+            }
+          ],
+          "version_sha256": "ccadec4c3b8edeb653863ae1b1b4755412ea7eead8dcef9076a79cf565f62ed6"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "ccadec4c3b8edeb653863ae1b1b4755412ea7eead8dcef9076a79cf565f62ed6"
+    },
+    {
+      "source_id": "youtube-caption:F1riPOyQuCI:de:76aed16f021361e6de5adfbc5a7b032694627edd99082c3b93d18a94bc68cd3a",
+      "kind": "caption",
+      "accession": "AR-S000530",
+      "title": "Shoot Self with You (English Subtitles) Chinese Experimental Film / Directed by He Fa | P4 剧场主档案 · de · 完整源时码机器译稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:F1riPOyQuCI:de:76aed16f021361e6de5adfbc5a7b032694627edd99082c3b93d18a94bc68cd3a"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000530-F00001",
+          "sha256": "76aed16f021361e6de5adfbc5a7b032694627edd99082c3b93d18a94bc68cd3a",
+          "bytes": 124462,
+          "locations": [
+            {
+              "path": "published/captions/F1riPOyQuCI/de.76aed16f021361e6de5adfbc5a7b032694627edd99082c3b93d18a94bc68cd3a.srt",
+              "sha256": "76aed16f021361e6de5adfbc5a7b032694627edd99082c3b93d18a94bc68cd3a",
+              "bytes": 124462,
+              "role": "supplementary_prepared_machine_translation"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/F1riPOyQuCI",
+          "official_context_url": "https://a.p4theater.cn/videos/F1riPOyQuCI",
+          "files": [
+            {
+              "file_accession": "AR-S000530-F00001",
+              "location_sha256": "6a36a25c737e7e04949f29397674e03500363b874c8ba56087a0a5d9c2251a3e"
+            }
+          ],
+          "version_sha256": "aea35b0ee409056ae627e96c9a3d8dae297133af19d615cfda32837c761868fe"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "aea35b0ee409056ae627e96c9a3d8dae297133af19d615cfda32837c761868fe"
+    },
+    {
+      "source_id": "youtube-caption:IDtBlVWSsho:de:18ca4e28bd29eda8b8dd3c0dcfb605d4b15ab02524c31219e6c2d85af1017d7a",
+      "kind": "caption",
+      "accession": "AR-S000531",
+      "title": "一场亲密戏如何拍出来？｜How Is an Intimate Scene Filmed? — Shoot Self with You | P4 剧场主档案 · de · 完整源时码机器译稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:IDtBlVWSsho:de:18ca4e28bd29eda8b8dd3c0dcfb605d4b15ab02524c31219e6c2d85af1017d7a"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000531-F00001",
+          "sha256": "18ca4e28bd29eda8b8dd3c0dcfb605d4b15ab02524c31219e6c2d85af1017d7a",
+          "bytes": 27218,
+          "locations": [
+            {
+              "path": "published/captions/IDtBlVWSsho/de.18ca4e28bd29eda8b8dd3c0dcfb605d4b15ab02524c31219e6c2d85af1017d7a.srt",
+              "sha256": "18ca4e28bd29eda8b8dd3c0dcfb605d4b15ab02524c31219e6c2d85af1017d7a",
+              "bytes": 27218,
+              "role": "supplementary_prepared_machine_translation"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/IDtBlVWSsho",
+          "official_context_url": "https://a.p4theater.cn/videos/IDtBlVWSsho",
+          "files": [
+            {
+              "file_accession": "AR-S000531-F00001",
+              "location_sha256": "8712ef063d2dfb5b998bc57aaf8a8c30ad67f23add4649b5c82e83cb7cfa3fea"
+            }
+          ],
+          "version_sha256": "81a6ee44d975097e66e73b9eb9b683eff0ba13f391d10788b606dd7ab73f1f0a"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "81a6ee44d975097e66e73b9eb9b683eff0ba13f391d10788b606dd7ab73f1f0a"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:ja:0b5fe0c08e5252e7fbf32649a830b1456877112c430f4516e1b7fd0b764cc1aa",
+      "kind": "caption",
+      "accession": "AR-S000532",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · ja · 完整源时码机器译稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:ja:0b5fe0c08e5252e7fbf32649a830b1456877112c430f4516e1b7fd0b764cc1aa"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000532-F00001",
+          "sha256": "0b5fe0c08e5252e7fbf32649a830b1456877112c430f4516e1b7fd0b764cc1aa",
+          "bytes": 108475,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/ja.0b5fe0c08e5252e7fbf32649a830b1456877112c430f4516e1b7fd0b764cc1aa.srt",
+              "sha256": "0b5fe0c08e5252e7fbf32649a830b1456877112c430f4516e1b7fd0b764cc1aa",
+              "bytes": 108475,
+              "role": "supplementary_prepared_machine_translation"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000532-F00001",
+              "location_sha256": "624de0d8dbdbaec79ec6022e840892128988ea2c1429ddfead53be7b512eb24f"
+            }
+          ],
+          "version_sha256": "a3233538c6f594b521e6baaa96d180509591e9fc21e2771ec79607098f75dbff"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "a3233538c6f594b521e6baaa96d180509591e9fc21e2771ec79607098f75dbff"
+    },
+    {
+      "source_id": "youtube-caption:URZf2R5N_jw:ko:a97b89ace1309c1e2e9fd1ff8fad3e9be33a0f69ec268e2a05f8eeae2ee796e6",
+      "kind": "caption",
+      "accession": "AR-S000533",
+      "title": "《在告别发生以前》Before Goodbye｜当被拍摄的人开始反问 · ko · 完整源时码机器译稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:URZf2R5N_jw:ko:a97b89ace1309c1e2e9fd1ff8fad3e9be33a0f69ec268e2a05f8eeae2ee796e6"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000533-F00001",
+          "sha256": "a97b89ace1309c1e2e9fd1ff8fad3e9be33a0f69ec268e2a05f8eeae2ee796e6",
+          "bytes": 102675,
+          "locations": [
+            {
+              "path": "published/captions/URZf2R5N_jw/ko.a97b89ace1309c1e2e9fd1ff8fad3e9be33a0f69ec268e2a05f8eeae2ee796e6.srt",
+              "sha256": "a97b89ace1309c1e2e9fd1ff8fad3e9be33a0f69ec268e2a05f8eeae2ee796e6",
+              "bytes": 102675,
+              "role": "supplementary_prepared_machine_translation"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "official_context_url": "https://www.youtube.com/watch?v=URZf2R5N_jw",
+          "files": [
+            {
+              "file_accession": "AR-S000533-F00001",
+              "location_sha256": "207369d291a859560e5bc5a5e9aafacb28c8c3d82aae8acede8aedf40c12972d"
+            }
+          ],
+          "version_sha256": "9975e6e2b4fa92b649eb9f47033c8e32c01fcf3df496888e8dd2d71a08bf0db0"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "9975e6e2b4fa92b649eb9f47033c8e32c01fcf3df496888e8dd2d71a08bf0db0"
+    },
+    {
+      "source_id": "youtube-caption:WH8cwipcVEI:ja:2db274c763c07efcd0710c4ff3eb2460eb1bbd74ebfe7371ce2f8a4548271678",
+      "kind": "caption",
+      "accession": "AR-S000534",
+      "title": "《人类投降派》4K无字幕完整片｜4K Full Film (No Subtitles) — Shoot Self with You | P4 剧场主档案 · ja · 完整源时码机器译稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:WH8cwipcVEI:ja:2db274c763c07efcd0710c4ff3eb2460eb1bbd74ebfe7371ce2f8a4548271678"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000534-F00001",
+          "sha256": "2db274c763c07efcd0710c4ff3eb2460eb1bbd74ebfe7371ce2f8a4548271678",
+          "bytes": 138492,
+          "locations": [
+            {
+              "path": "published/captions/WH8cwipcVEI/ja.2db274c763c07efcd0710c4ff3eb2460eb1bbd74ebfe7371ce2f8a4548271678.srt",
+              "sha256": "2db274c763c07efcd0710c4ff3eb2460eb1bbd74ebfe7371ce2f8a4548271678",
+              "bytes": 138492,
+              "role": "supplementary_prepared_machine_translation"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "official_context_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "files": [
+            {
+              "file_accession": "AR-S000534-F00001",
+              "location_sha256": "f419dce63138da93fac6d9e5784234c809ef9c8952113a3b8bf1730f0fd3fac7"
+            }
+          ],
+          "version_sha256": "99bd820269e6a6fd85bff9abec8d24235afae9de43057b3f1480bee8be1c7b38"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "99bd820269e6a6fd85bff9abec8d24235afae9de43057b3f1480bee8be1c7b38"
+    },
+    {
+      "source_id": "youtube-caption:WH8cwipcVEI:ko:4a174d79bc54281b968987a8c516c0d798ed5a92a100183d8ad3d94758d9df69",
+      "kind": "caption",
+      "accession": "AR-S000535",
+      "title": "《人类投降派》4K无字幕完整片｜4K Full Film (No Subtitles) — Shoot Self with You | P4 剧场主档案 · ko · 完整源时码机器译稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:WH8cwipcVEI:ko:4a174d79bc54281b968987a8c516c0d798ed5a92a100183d8ad3d94758d9df69"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000535-F00001",
+          "sha256": "4a174d79bc54281b968987a8c516c0d798ed5a92a100183d8ad3d94758d9df69",
+          "bytes": 136805,
+          "locations": [
+            {
+              "path": "published/captions/WH8cwipcVEI/ko.4a174d79bc54281b968987a8c516c0d798ed5a92a100183d8ad3d94758d9df69.srt",
+              "sha256": "4a174d79bc54281b968987a8c516c0d798ed5a92a100183d8ad3d94758d9df69",
+              "bytes": 136805,
+              "role": "supplementary_prepared_machine_translation"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "official_context_url": "https://a.p4theater.cn/videos/WH8cwipcVEI",
+          "files": [
+            {
+              "file_accession": "AR-S000535-F00001",
+              "location_sha256": "b216a72a14f2a8a0429af052e9e871713434f35c662f9f9abe0caf28675427a2"
+            }
+          ],
+          "version_sha256": "bf37b74de928b62fa9c0ccc92b10a95bf45cf6368b6ed4402c1b79cd51eb9e0e"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "bf37b74de928b62fa9c0ccc92b10a95bf45cf6368b6ed4402c1b79cd51eb9e0e"
+    },
+    {
+      "source_id": "youtube-caption:rS3KFGmoWac:ja:2d5e5045eefaf48b451c37a8a329ae9688a95b8a26914e12aafb3e71edebc616",
+      "kind": "caption",
+      "accession": "AR-S000536",
+      "title": "When the Water Runs Out | A Psychological Short Film (English Subtitles) | P4 剧场主档案 · ja · 完整源时码机器译稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:rS3KFGmoWac:ja:2d5e5045eefaf48b451c37a8a329ae9688a95b8a26914e12aafb3e71edebc616"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000536-F00001",
+          "sha256": "2d5e5045eefaf48b451c37a8a329ae9688a95b8a26914e12aafb3e71edebc616",
+          "bytes": 9792,
+          "locations": [
+            {
+              "path": "published/captions/rS3KFGmoWac/ja.2d5e5045eefaf48b451c37a8a329ae9688a95b8a26914e12aafb3e71edebc616.srt",
+              "sha256": "2d5e5045eefaf48b451c37a8a329ae9688a95b8a26914e12aafb3e71edebc616",
+              "bytes": 9792,
+              "role": "supplementary_prepared_machine_translation"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "official_context_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "files": [
+            {
+              "file_accession": "AR-S000536-F00001",
+              "location_sha256": "9f9bc17de06baf6761550996c8b823ed56d6d2c2f99cc6202b01f7a339d48887"
+            }
+          ],
+          "version_sha256": "3a77d1c6c4c5f36028b9a307a1c0a012470266216889422908da66206ce2dacb"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "3a77d1c6c4c5f36028b9a307a1c0a012470266216889422908da66206ce2dacb"
+    },
+    {
+      "source_id": "youtube-caption:rS3KFGmoWac:ko:ea50139e8b6700a73b53fcebe772064da7047b3170ebf23b4ec6e69354d3acc3",
+      "kind": "caption",
+      "accession": "AR-S000537",
+      "title": "When the Water Runs Out | A Psychological Short Film (English Subtitles) | P4 剧场主档案 · ko · 完整源时码机器译稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:rS3KFGmoWac:ko:ea50139e8b6700a73b53fcebe772064da7047b3170ebf23b4ec6e69354d3acc3"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000537-F00001",
+          "sha256": "ea50139e8b6700a73b53fcebe772064da7047b3170ebf23b4ec6e69354d3acc3",
+          "bytes": 9408,
+          "locations": [
+            {
+              "path": "published/captions/rS3KFGmoWac/ko.ea50139e8b6700a73b53fcebe772064da7047b3170ebf23b4ec6e69354d3acc3.srt",
+              "sha256": "ea50139e8b6700a73b53fcebe772064da7047b3170ebf23b4ec6e69354d3acc3",
+              "bytes": 9408,
+              "role": "supplementary_prepared_machine_translation"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "official_context_url": "https://a.p4theater.cn/videos/rS3KFGmoWac",
+          "files": [
+            {
+              "file_accession": "AR-S000537-F00001",
+              "location_sha256": "7048719837876d1bfbb89ca9cccd16c65ff3a4e51d4fede415f91c1cefedf26f"
+            }
+          ],
+          "version_sha256": "c4c6dcdd3a0d9618b91f183b4df30e92fb650d2f7ca4e43e2410eba75bde0036"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "c4c6dcdd3a0d9618b91f183b4df30e92fb650d2f7ca4e43e2410eba75bde0036"
+    },
+    {
+      "source_id": "youtube-caption:F6mOpeQDfpU:zh-Hans:af5ce429650ffac529775d392553b8dcbb4a7ff185404175184af2e6f5fb4bb3",
+      "kind": "caption",
+      "accession": "AR-S000538",
+      "title": "P4 Theater Archive | Human Surrender | Jiarui / Ricky Bed Scene Materials 02 | P4 剧场主档案 · zh-Hans · 保守机器修订稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:F6mOpeQDfpU:zh-Hans:af5ce429650ffac529775d392553b8dcbb4a7ff185404175184af2e6f5fb4bb3"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000538-F00001",
+          "sha256": "af5ce429650ffac529775d392553b8dcbb4a7ff185404175184af2e6f5fb4bb3",
+          "bytes": 27379,
+          "locations": [
+            {
+              "path": "published/captions/F6mOpeQDfpU/zh-Hans.af5ce429650ffac529775d392553b8dcbb4a7ff185404175184af2e6f5fb4bb3.srt",
+              "sha256": "af5ce429650ffac529775d392553b8dcbb4a7ff185404175184af2e6f5fb4bb3",
+              "bytes": 27379,
+              "role": "supplementary_prepared_conservative_repair"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/F6mOpeQDfpU",
+          "official_context_url": "https://a.p4theater.cn/videos/F6mOpeQDfpU",
+          "files": [
+            {
+              "file_accession": "AR-S000538-F00001",
+              "location_sha256": "9c2909997625523d9f69752e65ca7ea4ae33b278f859e9ace760e4a4329b6cd8"
+            }
+          ],
+          "version_sha256": "9017328ed73deb1ea5bfd72d7b6c429cf7b2d4a57e4cd8916225f3ef3e2b65bc"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "9017328ed73deb1ea5bfd72d7b6c429cf7b2d4a57e4cd8916225f3ef3e2b65bc"
+    },
+    {
+      "source_id": "youtube-caption:pGmFA0GVkaM:zh-Hans:574c89230f0d027842e73d8df5faf187781b93b3e35a12a4e8c2c6ef6493c04c",
+      "kind": "caption",
+      "accession": "AR-S000539",
+      "title": "一间房，两个人：子丑 × 阿蒙｜One Room, Two People: Zichou × Ameng — Shoot Self with You | P4 剧场主档案 · zh-Hans · 保守机器修订稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:pGmFA0GVkaM:zh-Hans:574c89230f0d027842e73d8df5faf187781b93b3e35a12a4e8c2c6ef6493c04c"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000539-F00001",
+          "sha256": "574c89230f0d027842e73d8df5faf187781b93b3e35a12a4e8c2c6ef6493c04c",
+          "bytes": 24102,
+          "locations": [
+            {
+              "path": "published/captions/pGmFA0GVkaM/zh-Hans.574c89230f0d027842e73d8df5faf187781b93b3e35a12a4e8c2c6ef6493c04c.srt",
+              "sha256": "574c89230f0d027842e73d8df5faf187781b93b3e35a12a4e8c2c6ef6493c04c",
+              "bytes": 24102,
+              "role": "supplementary_prepared_conservative_repair"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/pGmFA0GVkaM",
+          "official_context_url": "https://a.p4theater.cn/videos/pGmFA0GVkaM",
+          "files": [
+            {
+              "file_accession": "AR-S000539-F00001",
+              "location_sha256": "612e96a2aa178441b4b79ce6e7b67796ad5989dd65f6f526c4eb0fd4fbec8f1c"
+            }
+          ],
+          "version_sha256": "be2afac93ff7a0c6558a417b977098edb6d4d62d08193ff62cec38a5b8f50783"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "be2afac93ff7a0c6558a417b977098edb6d4d62d08193ff62cec38a5b8f50783"
+    },
+    {
+      "source_id": "youtube-caption:rNv_kwuQKKQ:zh-Hans:01a13af4ef2511258b4dbe61a565715d56ef198788d3e2e5b8a9aafe0e29aacc",
+      "kind": "caption",
+      "accession": "AR-S000540",
+      "title": "Intimate Scene Rehearsal: Jiarui & Ricky (Part 4) | Shoot Self with You — P4 Theater | P4 剧场主档案 · zh-Hans · 保守机器修订稿",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:rNv_kwuQKKQ:zh-Hans:01a13af4ef2511258b4dbe61a565715d56ef198788d3e2e5b8a9aafe0e29aacc"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000540-F00001",
+          "sha256": "01a13af4ef2511258b4dbe61a565715d56ef198788d3e2e5b8a9aafe0e29aacc",
+          "bytes": 46350,
+          "locations": [
+            {
+              "path": "published/captions/rNv_kwuQKKQ/zh-Hans.01a13af4ef2511258b4dbe61a565715d56ef198788d3e2e5b8a9aafe0e29aacc.srt",
+              "sha256": "01a13af4ef2511258b4dbe61a565715d56ef198788d3e2e5b8a9aafe0e29aacc",
+              "bytes": 46350,
+              "role": "supplementary_prepared_conservative_repair"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/rNv_kwuQKKQ",
+          "official_context_url": "https://a.p4theater.cn/videos/rNv_kwuQKKQ",
+          "files": [
+            {
+              "file_accession": "AR-S000540-F00001",
+              "location_sha256": "539cb0c204c307898af04e8fb6a78eac4ae7b2d5e02ccf8ccc4e1624b5d3f4a2"
+            }
+          ],
+          "version_sha256": "0d212940dd810d9c122e8396fec1b12cdfb076681832d76ac3f5951d8cb4087c"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "0d212940dd810d9c122e8396fec1b12cdfb076681832d76ac3f5951d8cb4087c"
     }
   ]
 }

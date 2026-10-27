@@ -3,17 +3,19 @@
 from __future__ import annotations
 
 import argparse
+import base64
 from collections import Counter, defaultdict
 import csv
 import io
 from datetime import datetime
 import hashlib
+from html.parser import HTMLParser
 import json
 from pathlib import Path, PurePosixPath
 import re
 import sys
 import unicodedata
-from urllib.parse import quote, urlsplit
+from urllib.parse import quote, urlsplit, parse_qs
 
 from public_reading import _parse_srt
 
@@ -27,6 +29,10 @@ RAW_APPROVED_VERSIONS = {
     "subtitle:b5ffc023-03ac-40bc-8687-6896f71a8537": "19d8cbc069b148fb046fd62abf2158c9dc06669aad61d3410e4216870149975f",
 }
 BINDINGS = ("source_asset_ids", "source_file_ids", "source_subtitle_ids", "source_media_sha256")
+YOUTUBE_CHANNEL_ID = "UCbZU8SmY-hU_BhTlQHwctkg"
+YOUTUBE_AUTHOR_URL = "https://www.youtube.com/@p4theater510"
+YOUTUBE_AUTHOR_NAME = "P4 Theater | He Fa"
+VIDEO_ID = re.compile(r"[A-Za-z0-9_-]{11}\Z")
 INDEXES = frozenset(("published/README.md", "published/captions.md", "published/materials.md", "published/wechat.md", "published/images.md"))
 PRIVATE_KEY = re.compile(r"private|local_path|access_token|refresh_token|client_secret|upload_session|upload_url|session_uri|cookie", re.I)
 LOCAL_VALUE = re.compile(r"(?i)(?:/Users/|/Volumes/|(?<![a-z0-9/_-])/home/|file://|(?<![a-z0-9])[a-z]:[\\/])")
@@ -98,6 +104,78 @@ def _timestamp(value):
     except (ValueError, AttributeError):
         raise ValueError("Approval timestamp must include a timezone") from None
     _require(stamp.tzinfo is not None and stamp.utcoffset() is not None, "Approval timestamp must include a timezone")
+
+
+class _OembedIframe(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.sources = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() == "iframe":
+            values = [value for key, value in attrs if key.lower() == "src"]
+            _require(len(values) == 1, "Official YouTube oEmbed iframe needs one source")
+            self.sources.append(values[0])
+
+
+def _youtube_caption_source(item, approval, evidence):
+    """Validate recorded source evidence offline, without claiming a live fetch."""
+    video = item.get("youtube_id")
+    _require(item.get("kind") == "caption" and isinstance(video, str) and VIDEO_ID.fullmatch(video), "Official YouTube source requires a caption and exact video ID")
+    watch = "https://www.youtube.com/watch?v=" + video
+    _require(item.get("source_url") == watch and item.get("official_context_url") == watch, "Official YouTube source must be the exact watch URL")
+    proof = item.get("youtube_source_identity")
+    _require(isinstance(proof, dict) and proof == approval.get("youtube_source_identity"), "Official YouTube source proof must match approval exactly")
+    _require(proof.get("video_id") == video and proof.get("channel_id") == YOUTUBE_CHANNEL_ID and proof.get("author_url") == YOUTUBE_AUTHOR_URL, "Official YouTube identity does not match the P4 channel/video")
+    _require(proof.get("oembed_url") == "https://www.youtube.com/oembed?url=" + watch + "&format=json", "Official YouTube oEmbed URL must identify the same video")
+    _require(type(proof.get("oembed_http_status")) is int and proof["oembed_http_status"] == 200, "Official YouTube oEmbed observation must be HTTP 200")
+    _timestamp(proof.get("observed_at")); _timestamp(proof.get("oembed_observed_at"))
+    _require(_hash(proof.get("watch_response_sha256")) and _hash(proof.get("oembed_sha256")), "Official YouTube observations require response hashes")
+    encoded = proof.get("oembed_response_body_base64")
+    _require(isinstance(encoded, str) and len(encoded) <= 24000, "Official YouTube oEmbed raw response is required")
+    raw = base64.b64decode(encoded, validate=True)
+    _require(raw and len(raw) <= 16000 and _sha(raw) == proof["oembed_sha256"], "Official YouTube oEmbed response does not match its hash")
+    response = json.loads(raw.decode("utf-8"))
+    _require(isinstance(response, dict) and response.get("type") == "video" and response.get("provider_name") == "YouTube" and response.get("author_name") == YOUTUBE_AUTHOR_NAME and response.get("author_url") == YOUTUBE_AUTHOR_URL and isinstance(response.get("title"), str) and response["title"].strip(), "Official YouTube oEmbed response has a different channel or video type")
+    _require(isinstance(response.get("html"), str), "Official YouTube oEmbed response lacks its iframe")
+    parser = _OembedIframe(); parser.feed(response["html"]); parser.close()
+    _require(parser.sources == ["https://www.youtube.com/embed/" + video + "?feature=oembed"], "Official YouTube oEmbed points to a different video")
+    _require(any(isinstance(obs, dict) and obs.get("url") == watch and type(obs.get("http_status")) is int and obs.get("http_status") == 200 and obs.get("sha256") == proof["watch_response_sha256"] and obs.get("observed_at") == proof["observed_at"] for obs in evidence), "Watch page observation must match the approved YouTube identity")
+    return watch
+
+
+def _wechat_source_resolution(item, approval, manifest_by_id):
+    proof = item.get("wechat_source_resolution")
+    if proof is None:
+        return
+    _require(proof == approval.get("wechat_source_resolution") and isinstance(proof, dict), "WeChat recovery proof must match approval")
+    _require(item.get("subtype") == "wechat_article", "WeChat recovery is limited to existing article records")
+    _require(proof.get("kind") in ("forward_card", "video_page", "image_article") and _hash(proof.get("response_sha256")), "Invalid observed WeChat source")
+    if proof.get("evidence_kind") == "local_archive_snapshot":
+        _require(proof["kind"] in ("image_article", "video_page") and proof.get("http_status") is None, "Offline evidence must not claim a live HTTP result")
+    else:
+        _require(proof.get("http_status") == 200, "Live WeChat source requires an HTTP 200 observation")
+    _timestamp(proof.get("observed_at"))
+    def matches(identity, url):
+        parsed = urlsplit(url or "")
+        query = parse_qs(parsed.query)
+        return parsed.scheme == "https" and parsed.netloc == "mp.weixin.qq.com" and parsed.path == "/s" and isinstance(identity, dict) and set(identity) == {"__biz", "mid", "idx", "sn"} and all(query.get(k) == [identity[k]] for k in identity)
+    _require(matches(proof.get("wrapper_identity"), item.get("source_original_url")), "WeChat observed card differs from its original article identity")
+    observed_url = proof.get("observed_url", proof.get("short_url", ""))
+    parsed = urlsplit(observed_url)
+    short_valid = parsed.scheme == "https" and parsed.netloc == "mp.weixin.qq.com" and re.fullmatch(r"/s/[A-Za-z0-9_-]+", parsed.path) and not parsed.query and not parsed.fragment
+    _require(short_valid or (proof["kind"] in ("image_article", "video_page") and matches(proof.get("wrapper_identity"), observed_url)), "WeChat observation requires an exact article or short link")
+    if proof["kind"] == "forward_card":
+        target = manifest_by_id.get(proof.get("original_item_id"), {})
+        _require(item.get("content_status") == "verified_forwarded_original" and target.get("subtype") == "wechat_article" and target.get("content_status") in ("captured_text", "full_text", "edited_public_excerpt"), "Forwarded original requires an existing saved text")
+        _require(matches(proof.get("original_identity"), target.get("source_original_url")), "Forwarded original identity differs from the existing article")
+        _require(any(f.get("path") == proof.get("original_file_path") and f.get("sha256") == proof.get("original_file_sha256") for f in target.get("files", [])), "Forwarded original requires its registered file version")
+    elif proof["kind"] == "video_page":
+        video_id = proof.get("video_id")
+        valid_video = isinstance(video_id, str) and (re.fullmatch(r"wxv_[0-9]+", video_id) or (proof.get("evidence_kind") == "local_archive_snapshot" and re.fullmatch(r"export/[A-Za-z0-9_-]{20,200}", video_id)))
+        _require(item.get("content_status") == "verified_video_post" and valid_video, "WeChat video post requires its recorded video identity")
+    else:
+        _require(item.get("content_status") == "verified_image_article" and proof.get("body_structure") == "images_only" and proof.get("no_embedded_video_audio_or_iframe") is True and type(proof.get("image_count")) is int and proof["image_count"] == len(item.get("recovered_image_ids", [])), "Image article requires a complete recorded image sequence")
 
 
 def _image_store(root):
@@ -185,6 +263,7 @@ def _load_verified(root):
     denied, hard_media, withheld_versions, withheld_media, maps = _raw_scope(root)
     manifest = _table(_json(_path(root, "published/manifest.json", "published")), "official edition manifest")
     approvals = _table(_json(_path(root, "published/approvals.json", "published")), "official edition approvals")
+    manifest_by_id = {item.get("id"): item for item in manifest}
     _public_metadata(manifest)
     _public_metadata(approvals)
     approved = {}
@@ -203,17 +282,29 @@ def _load_verified(root):
         _require(isinstance(item.get("title"), str) and item["title"].strip(), "Edition title is required")
         kind = item.get("kind")
         _require(kind in ("caption", "document", "research", "image"), "Unsupported official edition kind")
-        for field in ("id", "kind", "source_url", "official_context_url", "files", "clock", *BINDINGS):
+        for field in ("id", "kind", "source_url", "official_context_url", "files", "clock", "youtube_source_identity", "wechat_source_resolution", "recovered_image_ids", *BINDINGS):
             _require(item.get(field) == approval.get(field), "Manifest/approval fields differ: " + field)
-        _url(item.get("source_url")); _url(item.get("official_context_url"))
+        _wechat_source_resolution(item, approval, manifest_by_id)
+        recovered_images = item.get("recovered_image_ids")
+        if recovered_images is not None:
+            _require(item.get("subtype") == "wechat_article" and item.get("content_status") in ("metadata_with_images", "verified_image_article") and isinstance(recovered_images, list) and recovered_images and len(set(recovered_images)) == len(recovered_images), "Recovered WeChat image list is invalid")
+            for ordinal, image_id in enumerate(recovered_images, 1):
+                image = manifest_by_id.get(image_id, {})
+                _require(image.get("kind") == "image" and image.get("source_article_id") == identity and image.get("files") and image["files"][0].get("ordinal_in_article") == ordinal, "Recovered image is not bound to this article and original order")
         if kind == "caption":
             _require(item.get("clock", "edition_zero") in ("edition_zero", "source_zero"), "Unsupported edition clock")
         evidence = approval.get("evidence")
         _require(isinstance(evidence, list) and evidence, "Edition approval requires a current official HTTP observation")
+        youtube_watch = None
+        if item.get("youtube_source_identity") is not None:
+            youtube_watch = _youtube_caption_source(item, approval, evidence)
+        else:
+            _url(item.get("source_url")); _url(item.get("official_context_url"))
         valid_observation = False
         for observation in evidence:
             _require(isinstance(observation, dict), "Invalid official HTTP observation")
-            _url(observation.get("url"))
+            if youtube_watch is None or observation.get("url") != youtube_watch:
+                _url(observation.get("url"))
             hashes = [observation[k] for k in ("sha256", "response_sha256", "html_utf8_sha256") if k in observation]
             _require(hashes and all(_hash(h) for h in hashes) and len(set(hashes)) == 1, "Official HTTP observation requires its response SHA-256")
             _timestamp(observation.get("observed_at"))
@@ -354,8 +445,8 @@ def _edition_indexes(root):
             links.append("[" + _label(language) + "](" + _download_target(record) + ")")
         return " · ".join(links)
 
-    lines = ["# 已完成的作品字幕", "", f"{counts['caption']}份SRT，{len(captions)}个准确视频版本。文件数量包括独立语言和另存的字节版本，不是作品总数。", "",
-             "每份保留来源、版本SHA和原有质量说明。历史平台回执、本次官网回读与YouTube字幕当前状态分别保存在逐项清单；本页不把本地成品写成已在YouTube上线。", "",
+    lines = ["# 已完成的作品字幕", "", f"{counts['caption']}条字幕记录，{len(captions)}个准确视频版本。各记录可包含多个文件；不同语言和另存的字节版本不是作品总数。", "",
+             "每份保留来源、版本SHA和原有质量说明。部分机器字幕存在缺句或识别错误；补齐时码的机器稿为独立版本，未声称已在YouTube发表或逐句听校。", "",
              "| 作品与准确版本 | 字幕下载 | 出处 |", "| --- | --- | --- |"]
     for identity, group in sorted(captions.items(), key=lambda pair: (pair[1][0]["title"].casefold(), pair[0])):
         first = group[0]
@@ -366,6 +457,11 @@ def _edition_indexes(root):
         for item in sorted(group, key=lambda item: (item.get("language", "und"), item["id"])):
             language = item.get("language", "und")
             label = language if versions[language] == 1 else language + " " + item["files"][0]["sha256"][:8]
+            omitted = item.get("historical_publication_evidence", {}).get("omitted_cue_count", item.get("owner_caption_evidence", {}).get("historical_empty_cues_omitted", 0))
+            if isinstance(omitted, int) and not isinstance(omitted, bool) and omitted > 0:
+                label += "（缺" + str(omitted) + "句）"
+            if item.get("reading_label"):
+                label += "（" + _label(item["reading_label"]) + "）"
             for record in item["files"]:
                 links.append("[" + _label(label) + "](" + _download_target(record) + ")")
         lines.append("| [" + _label(title) + "](" + target + ") | " + " · ".join(links) + " | [原文](" + first["official_context_url"] + ") |")
@@ -382,14 +478,34 @@ def _edition_indexes(root):
 
     articles = [item for item in wechat if item.get("subtype") == "wechat_article"]
     captured = sum(item.get("content_status") in ("full_text", "captured_text", "edited_public_excerpt") for item in articles)
-    lines = ["# 公众号原文与公开备份文本", "", f"{len(articles)}条公众号记录，其中{captured}条有保存文字；仅有目录信息的记录明确标为待补正文。保存文字不自动等于原始发表文章已经完整恢复。", "",
+    forwarded = sum(item.get("content_status") == "verified_forwarded_original" for item in articles)
+    videos = sum(item.get("content_status") == "verified_video_post" for item in articles)
+    image_articles = sum(item.get("content_status") == "verified_image_article" for item in articles)
+    lines = ["# 公众号原文与公开备份文本", "", f"{len(articles)}条公众号记录，其中{captured}条有保存文字，{image_articles}条恢复了图像版原文，{forwarded}条转载卡已关联原文，{videos}条已确认为视频页。保存文字不自动等于原始发表文章已经完整恢复。", "",
              "备份材料数量与文章篇数分别计算。保留原发布账号、原文署名、文章发布日期和原图链接；文章日期不自动当作演出或创作日期。", ""]
     for subtype, title in (("wechat_article", "公众号文章"), ("wechat_backup_material", "备份中的公开文本")):
         selected = [item for item in wechat if item.get("subtype") == subtype]
         lines += ["## " + title, "", "| 原文 | 状态 | 阅读 | 出处 |", "| --- | --- | --- | --- |"]
         for item in sorted(selected, key=lambda item: (str(item.get("publication_date", item.get("source_date", "")) or ""), item["id"])):
-            status = {"full_text": "正文", "captured_text": "保存文字", "metadata_only": "待补正文", "edited_public_excerpt": "公开节选"}.get(item.get("content_status"), "依条目说明")
-            lines.append("| " + _label(item["title"]) + " | " + status + " | " + files(item) + " | [原文](" + item["source_url"] + ") |")
+            status = {"full_text": "正文", "captured_text": "保存文字", "metadata_only": "待补正文", "metadata_with_images": "已保存图像，正文待核", "verified_image_article": "图像版原文已保存", "edited_public_excerpt": "公开节选", "verified_forwarded_original": "转载卡，原文已关联", "verified_video_post": "视频页"}.get(item.get("content_status"), "依条目说明")
+            reading = files(item)
+            proof = item.get("wechat_source_resolution", {})
+            if proof.get("evidence_kind") == "local_archive_snapshot":
+                status += "（历史快照）"
+            if proof.get("kind") == "forward_card":
+                original = proof["original_file_path"].removeprefix("published/")
+                original_title = _label(items[proof["original_item_id"]]["title"])
+                reading += " · [转载原文：" + original_title + "](" + quote(original, safe="/._-~") + ")"
+            elif proof.get("kind") == "video_page":
+                reading += " · [微信视频页面](" + proof.get("short_url", proof.get("observed_url", "")) + ")"
+            if item.get("recovered_image_ids"):
+                for index, image_id in enumerate(item["recovered_image_ids"], 1):
+                    image = items[image_id]
+                    reading += " · [图" + str(index) + "](" + _download_target(image["files"][0]) + ")"
+            original_link = item.get("source_original_url")
+            sources = "[微信原文](" + quote(original_link, safe=":/?#&=%._-~") + ") · " if original_link else ""
+            sources += "[档案页](" + item["source_url"] + ")"
+            lines.append("| " + _label(item["title"]) + " | " + status + " | " + reading + " | " + sources + " |")
         lines += [""]
     lines += ["[字幕](captions.md) · [文稿与研究](materials.md) · [打卡进度](../PROGRESS.md)", ""]
     output["published/wechat.md"] = "\n".join(lines)

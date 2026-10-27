@@ -27,6 +27,8 @@
 - 只将现有公开字幕导出及明确公开的来源用于公开检索；保留机器稿状态、字幕版本、cue与`source_zero`时间。
 - `published/`保存有逐项官方原文与版本证据的发行版字幕、已编辑公开文稿和研究。它使用原有网站/YouTube外部身份，不替代`catalog/`原片编号。改动须同步`published/manifest.json`及明确版本`approvals.json`，运行`official_publications.py check`；不得借发行版恢复排除身份、撤下字幕或私有原稿。原片时间为`source_zero`，剪辑发行版为`edition_zero`，不能互换。
 - `registry/public-accessions.json`与`NUMBERED_INDEX.md`为公开成品的独立AR编号空间，原片私有登记仍由原维护端分配。维护时先取得完整Git历史，运行`public_accessions.py assign --root .`增补，再运行`check`；只有仓库从未分配过AR号时允许一次`--initialize`。不重排、复用或删除旧号，已有P4/hf-img/网站ID保留。
+- 字幕可使用已验证的P4官方YouTube视频作为直接来源：视频ID、指定频道、watch页观察和oEmbed响应必须全部对应并与approval冻结一致；不同平台语言码、历史已发布轨、当前所有者API下载和未发布机器稿分别标记。机器稿补齐时码不等于听校。
+- 微信来源按真实结构记录：转发卡关联原文的原身份与已登记文件；图像正文保留原顺序；视频页不写成文章正文。离线HTML仅保留摘要与来源，不写成当前微信HTTP回读，原始备份与签名媒体地址不公开。
 - 图像使用`registry/public-image-scope.json`继续执行已有暂缓范围，`public-image-bundles.json`登记实际发布下载包与逐文件校验。`storage=release`的`path`是包成员虚拟身份，不是Git文件；界面链接必须用其真实`download_url`。包的字节回读与发布状态分别留证；本地通过不能冒充已上传。
 - 人工发布报告、历史回执、当前平台回读、处理状态和实际播放分别记录。候选对应不得写成确认；旧public状态不能改成今天已复核。
 - 已有公开视频先核对，避免重复上传。准确源文件/发布副本对应尚不确定时，保留项目相关候选，不强绑具体素材。

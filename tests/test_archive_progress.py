@@ -61,6 +61,16 @@ class ArchiveProgressTests(unittest.TestCase):
             self.assertEqual(cli.returncode, 0, cli.stderr)
             self.assertIsNone(json.loads(cli.stdout)["overall_percent"])
 
+    def test_completed_lead_is_checked_off(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data, unused = self.fixture(root)
+            data["leads"][0]["state"] = "done"
+            self.save(root, data)
+            self.assertTrue(progress.build(root)["valid"])
+            page = (root / "PROGRESS.md").read_text(encoding="utf-8")
+            self.assertIn("- [x] **新增材料待核定** · 已完成", page)
+
     def test_unknown_total_and_missing_metric_remain_unknown_not_zero(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
