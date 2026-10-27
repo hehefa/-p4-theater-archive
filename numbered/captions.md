@@ -2,7 +2,7 @@
 
 [编号入口](../NUMBERED_INDEX.md) · [完整文件号、位置与历史](../registry/public-accessions.json)
 
-本页540条登记，当前540条。主号与文件号不因分类或分页改变。
+本页548条登记，当前548条。主号与文件号不因分类或分页改变。
 
 | 编号 | 成品与原文 | 原始身份 | 文件子号/版本 |
 |---|---|---|---|
@@ -546,5 +546,13 @@
 | `AR-S000538` | [P4 Theater Archive \| Human Surrender \| Jiarui / Ricky Bed Scene Materials 02 \| P4 剧场主档案 · zh-Hans · 保守机器修订稿](https://a.p4theater.cn/videos/F6mOpeQDfpU) | youtube-caption:F6mOpeQDfpU:zh-Hans:af5ce429650ffac529775d392553b8dcbb4a7ff185404175184af2e6f5fb4bb3 | [AR-S000538-F00001](../published/captions/F6mOpeQDfpU/zh-Hans.af5ce429650ffac529775d392553b8dcbb4a7ff185404175184af2e6f5fb4bb3.srt)；累计1个文件号/1版 |
 | `AR-S000539` | [一间房，两个人：子丑 × 阿蒙｜One Room, Two People: Zichou × Ameng — Shoot Self with You \| P4 剧场主档案 · zh-Hans · 保守机器修订稿](https://a.p4theater.cn/videos/pGmFA0GVkaM) | youtube-caption:pGmFA0GVkaM:zh-Hans:574c89230f0d027842e73d8df5faf187781b93b3e35a12a4e8c2c6ef6493c04c | [AR-S000539-F00001](../published/captions/pGmFA0GVkaM/zh-Hans.574c89230f0d027842e73d8df5faf187781b93b3e35a12a4e8c2c6ef6493c04c.srt)；累计1个文件号/1版 |
 | `AR-S000540` | [Intimate Scene Rehearsal: Jiarui &amp; Ricky (Part 4) \| Shoot Self with You — P4 Theater \| P4 剧场主档案 · zh-Hans · 保守机器修订稿](https://a.p4theater.cn/videos/rNv_kwuQKKQ) | youtube-caption:rNv_kwuQKKQ:zh-Hans:01a13af4ef2511258b4dbe61a565715d56ef198788d3e2e5b8a9aafe0e29aacc | [AR-S000540-F00001](../published/captions/rNv_kwuQKKQ/zh-Hans.01a13af4ef2511258b4dbe61a565715d56ef198788d3e2e5b8a9aafe0e29aacc.srt)；累计1个文件号/1版 |
+| `AR-S000541` | [She Apologizes for Breaking Character. The Reply? · en](https://a.p4theater.cn/videos/B5TulvP7I0w) | youtube-caption:B5TulvP7I0w:en:2bc5c3ff25c5c27886e8a988b97d7dec677e2dc67fffaa34fbf28a6658e9cef3 | [AR-S000541-F00001](../published/captions/B5TulvP7I0w/en.2bc5c3ff25c5c27886e8a988b97d7dec677e2dc67fffaa34fbf28a6658e9cef3.srt)；累计1个文件号/1版 |
+| `AR-S000542` | [She Apologizes for Breaking Character. The Reply? · zh-Hans](https://a.p4theater.cn/videos/B5TulvP7I0w) | youtube-caption:B5TulvP7I0w:zh-Hans:e493ad92957f4115b53085e05c211e49a08ffee6de424c8f44bff04f146b5cae | [AR-S000542-F00001](../published/captions/B5TulvP7I0w/zh-Hans.e493ad92957f4115b53085e05c211e49a08ffee6de424c8f44bff04f146b5cae.srt)；累计1个文件号/1版 |
+| `AR-S000543` | [The Script Says Destruction. She Suggests Tenderness. · en](https://a.p4theater.cn/videos/YXJWVdf2r3I) | youtube-caption:YXJWVdf2r3I:en:4c056a9a222fa3f2511bff8f981c6219f03d496db26da294097c57d61c52aa98 | [AR-S000543-F00001](../published/captions/YXJWVdf2r3I/en.4c056a9a222fa3f2511bff8f981c6219f03d496db26da294097c57d61c52aa98.srt)；累计1个文件号/1版 |
+| `AR-S000544` | [The Script Says Destruction. She Suggests Tenderness. · zh-Hans](https://a.p4theater.cn/videos/YXJWVdf2r3I) | youtube-caption:YXJWVdf2r3I:zh-Hans:e2297dd89e6de7467fe199ceb086c9c3ea51f0e2421f5756d47337cc9f4641b3 | [AR-S000544-F00001](../published/captions/YXJWVdf2r3I/zh-Hans.e2297dd89e6de7467fe199ceb086c9c3ea51f0e2421f5756d47337cc9f4641b3.srt)；累计1个文件号/1版 |
+| `AR-S000545` | [Should I Do Comedy? Not the Reason She’s Smiling. · en](https://a.p4theater.cn/videos/fXBGs07MX5Q) | youtube-caption:fXBGs07MX5Q:en:fceef4b7affb1fa5b86f6290afa59d1ed13de77e4a1842d2c2a40d57cde28154 | [AR-S000545-F00001](../published/captions/fXBGs07MX5Q/en.fceef4b7affb1fa5b86f6290afa59d1ed13de77e4a1842d2c2a40d57cde28154.srt)；累计1个文件号/1版 |
+| `AR-S000546` | [Should I Do Comedy? Not the Reason She’s Smiling. · zh-Hans](https://a.p4theater.cn/videos/fXBGs07MX5Q) | youtube-caption:fXBGs07MX5Q:zh-Hans:cd6b1de5984497a906dc05d684639cf2fff8a1cd76d1a6d64554e8887d45b27d | [AR-S000546-F00001](../published/captions/fXBGs07MX5Q/zh-Hans.cd6b1de5984497a906dc05d684639cf2fff8a1cd76d1a6d64554e8887d45b27d.srt)；累计1个文件号/1版 |
+| `AR-S000547` | [The Script Says Destruction. The Actors Find Tenderness. · en](https://a.p4theater.cn/videos/uynQEJy6KGE) | youtube-caption:uynQEJy6KGE:en:1be553b1e9663a33adbd0d9f44c6d1e30fa0d138b1570826654ede7955f24bf4 | [AR-S000547-F00001](../published/captions/uynQEJy6KGE/en.1be553b1e9663a33adbd0d9f44c6d1e30fa0d138b1570826654ede7955f24bf4.srt)；累计1个文件号/1版 |
+| `AR-S000548` | [The Script Says Destruction. The Actors Find Tenderness. · zh-Hans](https://a.p4theater.cn/videos/uynQEJy6KGE) | youtube-caption:uynQEJy6KGE:zh-Hans:0993d4eea9f683e6629fb991d7fd24a67826f23b56a361f4b681e40d174f3b46 | [AR-S000548-F00001](../published/captions/uynQEJy6KGE/zh-Hans.0993d4eea9f683e6629fb991d7fd24a67826f23b56a361f4b681e40d174f3b46.srt)；累计1个文件号/1版 |
 
 Release链接指实际归档包；包内路径、全部成员F号与SHA见登记，不将虚拟成员路径当作本地文件。

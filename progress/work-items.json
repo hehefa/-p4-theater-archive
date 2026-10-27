@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "as_of": "2026-10-27T02:30:52.162991+00:00",
-  "scope_note": "仅统计已明确的固定批次；同一材料可有目录和正文两个观察口径，批次有重叠，不能相加为整体完成率。字幕、文章、视频与仓库各按自己的单位计算。家庭及范围排除单列，不当作待发布积压。",
+  "scope_note": "仅统计已明确的固定批次；同一材料可有目录和正文两个观察口径，批次有重叠，不能相加为整体完成率。字幕、文章、视频与仓库各按自己的单位计算。家庭及范围排除单列，不当作待发布积压。 当前全盘 P4 资料扫描和归档仍在进行；候选目录或文件位置记录不等于原文件已上传。",
   "batches": [
     {
       "id": "top10-caption-version-reconciliation-20261024",
@@ -7456,6 +7456,58 @@
           "youtube-caption:F6mOpeQDfpU:zh-Hans:af5ce429650ffac529775d392553b8dcbb4a7ff185404175184af2e6f5fb4bb3",
           "youtube-caption:pGmFA0GVkaM:zh-Hans:574c89230f0d027842e73d8df5faf187781b93b3e35a12a4e8c2c6ef6493c04c",
           "youtube-caption:rNv_kwuQKKQ:zh-Hans:01a13af4ef2511258b4dbe61a565715d56ef198788d3e2e5b8a9aafe0e29aacc"
+        ]
+      }
+    },
+    {
+      "id": "rehearsal-edit-caption-recovery-20261026",
+      "title": "排练短片与完整剪辑字幕恢复",
+      "scope": "4个已公开排练视频的8份本地中英文编辑字幕；历史回执标记字幕轨已发布，本地文件与当前平台字幕尚未逐字节比对。英文为编辑性翻译，可能省略片段。",
+      "total": 8,
+      "unit": "份字幕版本",
+      "stages": {
+        "prepared": {
+          "count": 8,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+          ]
+        },
+        "github_published": {
+          "count": 8,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+          ]
+        },
+        "platform_published": {
+          "count": null,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+          ],
+          "note": "历史语言轨已发布；本地文件与当前平台字幕未逐字节比对。"
+        }
+      },
+      "status": "GitHub并列归档",
+      "next_action": "保留来源及版本差异；如需核对当前平台字幕内容，另做所有者读取。",
+      "links": [
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+      ],
+      "snapshot": {
+        "kind": "caption",
+        "measure": "items",
+        "stage": "github_published",
+        "ids": [
+          "youtube-caption:B5TulvP7I0w:en:2bc5c3ff25c5c27886e8a988b97d7dec677e2dc67fffaa34fbf28a6658e9cef3",
+          "youtube-caption:B5TulvP7I0w:zh-Hans:e493ad92957f4115b53085e05c211e49a08ffee6de424c8f44bff04f146b5cae",
+          "youtube-caption:YXJWVdf2r3I:en:4c056a9a222fa3f2511bff8f981c6219f03d496db26da294097c57d61c52aa98",
+          "youtube-caption:YXJWVdf2r3I:zh-Hans:e2297dd89e6de7467fe199ceb086c9c3ea51f0e2421f5756d47337cc9f4641b3",
+          "youtube-caption:fXBGs07MX5Q:en:fceef4b7affb1fa5b86f6290afa59d1ed13de77e4a1842d2c2a40d57cde28154",
+          "youtube-caption:fXBGs07MX5Q:zh-Hans:cd6b1de5984497a906dc05d684639cf2fff8a1cd76d1a6d64554e8887d45b27d",
+          "youtube-caption:uynQEJy6KGE:en:1be553b1e9663a33adbd0d9f44c6d1e30fa0d138b1570826654ede7955f24bf4",
+          "youtube-caption:uynQEJy6KGE:zh-Hans:0993d4eea9f683e6629fb991d7fd24a67826f23b56a361f4b681e40d174f3b46"
         ]
       }
     }

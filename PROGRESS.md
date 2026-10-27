@@ -2,7 +2,7 @@
 
 截至：2026-10-27T02:30:52.162991+00:00
 
-仅统计已明确的固定批次；同一材料可有目录和正文两个观察口径，批次有重叠，不能相加为整体完成率。字幕、文章、视频与仓库各按自己的单位计算。家庭及范围排除单列，不当作待发布积压。
+仅统计已明确的固定批次；同一材料可有目录和正文两个观察口径，批次有重叠，不能相加为整体完成率。字幕、文章、视频与仓库各按自己的单位计算。家庭及范围排除单列，不当作待发布积压。 当前全盘 P4 资料扫描和归档仍在进行；候选目录或文件位置记录不等于原文件已上传。
 
 这里记录明确批次的打卡。各批次和单位分别计算；未核定不按0处理，不计算全量档案完成率。整理、GitHub发布、平台发布相互独立。
 
@@ -29,6 +29,7 @@
 | 原16条缺正文线索（条材料记录） | 16/16（100.0%） | 16/16（100.0%） | 未核定/16（未核定） |
 | 补齐时码的机器字幕稿（份字幕版本） | 8/8（100.0%） | 8/8（100.0%） | 未核定/8（未核定） |
 | 中文保守机器修订稿（份字幕版本） | 3/3（100.0%） | 3/3（100.0%） | 未核定/3（未核定） |
+| 排练短片与完整剪辑字幕恢复（份字幕版本） | 8/8（100.0%） | 8/8（100.0%） | 未核定/8（未核定） |
 
 ## 当前原片工序
 
@@ -296,6 +297,21 @@
   这些独立机器稿没有在本次上传或替换YouTube字幕。
 
 下一步：需要逐句质量核查时，以原语声画和各版本来源为依据。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+
+### 排练短片与完整剪辑字幕恢复
+
+范围：4个已公开排练视频的8份本地中英文编辑字幕；历史回执标记字幕轨已发布，本地文件与当前平台字幕尚未逐字节比对。英文为编辑性翻译，可能省略片段。；单位：份字幕版本。
+
+状态：GitHub并列归档
+
+- [x] 已整理：8/8（100.0%） 份字幕版本 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [x] GitHub已发布：8/8（100.0%） 份字幕版本 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [ ] 平台已发布：未核定/8（未核定） 份字幕版本 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+  历史语言轨已发布；本地文件与当前平台字幕未逐字节比对。
+
+下一步：保留来源及版本差异；如需核对当前平台字幕内容，另做所有者读取。
 
 [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
 
