@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "2026-10-26T18:23:00.305087+00:00",
+  "as_of": "2026-10-27T02:30:52.162991+00:00",
   "scope_note": "仅统计已明确的固定批次；同一材料可有目录和正文两个观察口径，批次有重叠，不能相加为整体完成率。字幕、文章、视频与仓库各按自己的单位计算。家庭及范围排除单列，不当作待发布积压。",
   "overall_progress": {
     "status": "not_calculated",
     "reason": "Batches have separate scope and units; unknown is not zero; excluded family scope is not pending publication."
   },
   "source_sha256": {
-    "progress/work-items.json": "4a8eb6b9be7ae76681967f58594adc0bca5275ece912883bf810260bbee77dbd",
-    "published/manifest.json": "f851ce8cd05dcd31df3d5a7840f7afdd1539e7acdc4bf63596fe832c9a56eed9",
+    "progress/work-items.json": "42fed2517815a71996c42c05b921f39e36d828c7287f0cc8d313f7f936616784",
+    "published/manifest.json": "09877bc3125f670d3258f0c1a78c964101144e800eab628cb9ac16960cf73344",
     "catalog/summary.json": "55c69349c8dfbacd263cd01cf6a16250e9ab269697548653a782c9f9dc7b3c79",
-    "progress/caption-top10-20261024.json": "0aec5f5d37bccd0948cd748e0b154867222b11d9562f19f99f4e15ce1e3d755e"
+    "progress/caption-top10-20261024.json": "babea3c84e6d5d6e5d748fffdf54cb752d46b737f6782471ed285588c765d7fb"
   },
   "catalogue_metrics": {
     "selected": 1445,
@@ -42,37 +42,38 @@
     {
       "id": "top10-caption-version-reconciliation-20261024",
       "title": "前十视频24语字幕版本对账",
-      "scope": "10个视频×24个目标语言槽位；22轨原已在库、177份新增精确版本、41槽位待核，不能用未采用译稿填数。",
+      "scope": "10个视频×24个目标语言槽位；全部已有对应归档版本，实际平台码、历史回执和字幕质量按版本分别记录。",
       "unit": "个语言槽位",
-      "status": "已记录明确缺口",
-      "next_action": "17槽核对被保留的既有轨准确版本；另24槽先补该发行版的有效官方出处。",
+      "status": "240个语言槽位已归档",
+      "next_action": "按逐项质量说明继续检查缺句与机器识别；保留历史版本和实际平台语言码。",
       "total": 240,
       "links": [
-        "https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json"
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json",
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/docs/recovery-20261026.md"
       ],
       "stages": {
         "prepared": {
-          "count": 199,
+          "count": 240,
           "evidence_urls": [
             "https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json"
           ],
-          "percent": 82.9,
-          "complete": false
+          "percent": 100.0,
+          "complete": true
         },
         "github_published": {
-          "count": 199,
+          "count": 240,
           "evidence_urls": [
             "https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json"
           ],
-          "percent": 82.9,
-          "complete": false
+          "percent": 100.0,
+          "complete": true
         },
         "platform_published": {
           "count": null,
           "evidence_urls": [
             "https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json"
           ],
-          "note": "10月24日有240槽覆盖的历史完成记录；本次尚有41槽未取得准确源文件/正式上下文，不写成当前平台240轨已逐字节复核。",
+          "note": "本批11个旧轨经所有者API下载；其余版本包含历史平台回执或抽样。不能将GitHub覆盖等同于240轨当前远端逐字节核验。",
           "percent": null,
           "complete": false
         }
@@ -80,8 +81,8 @@
       "coverage_source": "progress/caption-top10-20261024.json",
       "coverage": {
         "actual_total": 240,
-        "actual_stage_count": 199,
-        "source_version_unresolved": 41
+        "actual_stage_count": 240,
+        "source_version_unresolved": 0
       }
     },
     {
@@ -720,7 +721,7 @@
     {
       "id": "wechat-article-catalogue",
       "title": "公众号文章目录与原文入口",
-      "scope": "554个已公开文章身份；包含16个只有目录信息的条目，不将其当作全文。",
+      "scope": "固定554条公众号记录；原16条缺口经核对为7转载、4图像正文、5视频页，按实际类型分别记录。",
       "unit": "条文章记录",
       "status": "GitHub已归档",
       "next_action": "新增资料另建固定清单；本批版本与出处继续保留。",
@@ -1322,30 +1323,30 @@
     },
     {
       "id": "wechat-captured-text",
-      "title": "公众号保存文字覆盖",
-      "scope": "以全部554篇文章记录为分母；538篇有保存文字，16篇待补。保存文字不保证原始发表文章已完整恢复。",
+      "title": "公众号保存文字与图像正文覆盖",
+      "scope": "554条记录；538条有保存文字、4条图像版原文完整保存，另7条转载卡关联原文；保存文字并不自动代表原文完整。",
       "unit": "篇文章",
-      "status": "已记录明确缺口",
-      "next_action": "补齐缺正文记录的正式来源；保留当前可读文字与准确状态。",
+      "status": "原文字与图像正文已分类",
+      "next_action": "保留转载、视频页和原文图像的不同类型；后续新来源按版本增补。",
       "total": 554,
       "links": [
         "https://github.com/hehefa/-p4-theater-archive/tree/main/published"
       ],
       "stages": {
         "prepared": {
-          "count": 538,
+          "count": 542,
           "evidence_urls": [
             "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
           ],
-          "percent": 97.1,
+          "percent": 97.8,
           "complete": false
         },
         "github_published": {
-          "count": 538,
+          "count": 542,
           "evidence_urls": [
             "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
           ],
-          "percent": 97.1,
+          "percent": 97.8,
           "complete": false
         },
         "platform_published": {
@@ -1353,7 +1354,7 @@
           "evidence_urls": [
             "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
           ],
-          "note": "平台指A站现有保存文字，逐字符核对已通过；短文字不自动判为节选或缺失。",
+          "note": "A站逐字符核对的原有保存文字为538条；另4篇的图像正文按微信原页或历史快照和仓库副本核对，未声称A站已同步。",
           "percent": 97.1,
           "complete": false
         }
@@ -1922,12 +1923,13 @@
           "content_status": [
             "captured_text",
             "full_text",
-            "edited_public_excerpt"
+            "edited_public_excerpt",
+            "verified_image_article"
           ]
         },
         "actual_count": 554,
         "actual_total": 554,
-        "actual_stage_count": 538
+        "actual_stage_count": 542
       }
     },
     {
@@ -7288,26 +7290,382 @@
         "actual_total": 3104,
         "actual_stage_count": 3104
       }
+    },
+    {
+      "id": "caption-recovery-20261026",
+      "title": "补回字幕版本",
+      "scope": "41个目标槽位及额外一份中文单语版；部分历史机器稿缺句或识别有误，按项保留。",
+      "unit": "条材料记录",
+      "status": "已归档并编号",
+      "next_action": "后续版本继续保留来源和原有编号。",
+      "total": 42,
+      "links": [
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+      ],
+      "stages": {
+        "prepared": {
+          "count": 42,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "github_published": {
+          "count": 42,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "platform_published": {
+          "count": null,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+          ],
+          "note": "本次目的地为GitHub；平台历史回执与当前API回读按每条记录分别注明。",
+          "percent": null,
+          "complete": false
+        }
+      },
+      "snapshot": {
+        "kind": "caption",
+        "measure": "items",
+        "stage": "github_published",
+        "ids": [
+          "youtube-caption:EbG1mVS6nLM:de:77a1d3238e29dfeb189342bf8851145128353b16012919210f45240163013e16",
+          "youtube-caption:F1riPOyQuCI:de:5b712985f71dd1b05753429560332336447caf56ea78564f0248c5d52ff44197",
+          "youtube-caption:F1riPOyQuCI:zh-Hans:61fafd22ab473b98bd30bd77ca377ac42bdb3974ba26a57158f1196dae9bd9d9",
+          "youtube-caption:F6mOpeQDfpU:zh-Hans:0a2901d86f806c224ee7faa0c79e31b11b322d9547d088bead7f2759e957c69a",
+          "youtube-caption:IDtBlVWSsho:de:cc8059b58d4e3b643c5c6b81877a15ae5dd3fc42fe1bbe17f94225ccea6c8c1c",
+          "youtube-caption:IDtBlVWSsho:id:d1b8b00a64f8349b8921d8be7a2f58bf2b0974e0d1aa891aea71506dc98349fd",
+          "youtube-caption:URZf2R5N_jw:ar:67496d318ad24e612de514efa9d5b0e4e786cecad09572067b25f0a10b92b9bc",
+          "youtube-caption:URZf2R5N_jw:bn:4273be8629896426d7117df08d287ce1f9378a04ca0253721dd5fcb2ad157b83",
+          "youtube-caption:URZf2R5N_jw:de:8942ebc307b95fc0053e4f105092bb479d215da4690cab8c63d394c1964e021a",
+          "youtube-caption:URZf2R5N_jw:en:d32012441b3e7d9596fec56ebe30e248e5ca74ad1f7750282caee51cdcc67ecf",
+          "youtube-caption:URZf2R5N_jw:es:dd26dcb4d539993027fbfc27ddbbede64fff6bc967daf42d5c57e6a92aa96cef",
+          "youtube-caption:URZf2R5N_jw:fa:e964188fc964342a7a1833a49cdfbe55b89b132f0602a248239e0dd2f89c3640",
+          "youtube-caption:URZf2R5N_jw:fr:35f71f94f5a99f91f5b215e53aded9efe57dc5966c56849fac62fe522264dad5",
+          "youtube-caption:URZf2R5N_jw:hi:3ed5adf7a0acddb318165111fe52740e8d969a51873364cb41c3c0f48e982a44",
+          "youtube-caption:URZf2R5N_jw:id:5f6b1af14e2b78966a2e0b46556b2708deb867adcccb5cb3e466b9b1dffbbe36",
+          "youtube-caption:URZf2R5N_jw:it:140c3200a70f0f5ed06de655fd5c99db18ec8be44b17b242759ffbf5dda4a1f0",
+          "youtube-caption:URZf2R5N_jw:ja:ce9761b09477fde2bf97adb2cabc6555fcdac285583755778948651242a14494",
+          "youtube-caption:URZf2R5N_jw:ko:e1659c6ff6dec2a82781f655c6feffd92cac8e338e59b984ccf11eff466d1b52",
+          "youtube-caption:URZf2R5N_jw:ms:f948e9671b6d47fd475845f9742c99cd98c2dccf3ec1b2fc805599500e08eb7c",
+          "youtube-caption:URZf2R5N_jw:nl:cb61f0cb54f954ebe535b626fafd76840b538dc3d34612217aac8d25235883b5",
+          "youtube-caption:URZf2R5N_jw:pl:86fa43ab321b92a8c3825505d76d7e44b99d4fe0dc8e00003d8de75b3dd3616c",
+          "youtube-caption:URZf2R5N_jw:pt:9dd6c04e4fc7de725ff6afcca7f380caeb9bb03818b070406e8d08509e5e7a2a",
+          "youtube-caption:URZf2R5N_jw:ru:e0f5ed32ac1264f7db4728656ba80a7e457b177f70234c0ce9d390dd72ad760c",
+          "youtube-caption:URZf2R5N_jw:sw:293af8fa9dee6f89c35a3ff1f62c3e7f89cbc969923a02f3504d7c2300108cff",
+          "youtube-caption:URZf2R5N_jw:th:4053dc1b87d9256151094e3439dece96d61fcebf426745c5b549e708595ca151",
+          "youtube-caption:URZf2R5N_jw:tr:b5ce8c608e23061006d00986ceb2162055ea1d48251f0a2fd86d92ec96e68534",
+          "youtube-caption:URZf2R5N_jw:uk:ce35c4752cc900a1ce4b77295aec156209a1a7aded98082029c93ed561d9546f",
+          "youtube-caption:URZf2R5N_jw:vi:b3516bfc247e398a7988dee8b3528d6bfa7de09035e45e5423f524416fd46844",
+          "youtube-caption:URZf2R5N_jw:zh-Hans:cffc889866894e9213affb43125bfe59e9ae33297aaff9bc267aeaa8ff77d6f2",
+          "youtube-caption:URZf2R5N_jw:zh-Hant:68a0cc6370ea039c7f704f3d9bf4634cdd2529a13689a5ab065449ef2c1dae86",
+          "youtube-caption:URZf2R5N_jw:zh:064eccf42ba9c004c8dc619832cd8820e62f874907a96b2ae86701b741e07d1c",
+          "youtube-caption:WH8cwipcVEI:ja:743589c85eb1170d4657fa67cc9a2eb6ae2e5a055bac8644b8d156d6868a25be",
+          "youtube-caption:WH8cwipcVEI:ko:02fa26860a55c758229914b672a017e1cd0562284ec538ae35fa1672e193a4da",
+          "youtube-caption:WH8cwipcVEI:zh-Hans:c33014c9b6a2f037b39166ed8ec59feab41e636b30e3fedf8ae688a3be5594d2",
+          "youtube-caption:h2F6Bpk-9m8:id:4daa620b2edf048633db3abf51f6e06c85a4c0ccc1b1d78ca7bed7c15ae97ecd",
+          "youtube-caption:h2F6Bpk-9m8:zh-Hans:1f4e6ce56d754f159361797701d2c28d8455fb8e389438e4d7ac547efec11521",
+          "youtube-caption:pGmFA0GVkaM:zh-Hans:41dbdd05648f32871d5f6d5e1ea57163b67c03cc90d6495bb20421016b6be98f",
+          "youtube-caption:pGmFA0GVkaM:zh-Hant:7c73559978684497e0dca4de673aedeb0687302f65915a1ddc523e506e87b339",
+          "youtube-caption:rNv_kwuQKKQ:zh-Hans:aab1669e3b81d35c0f561fa137eacab9df5bd41783bdc5875ed27e1a8452ba6b",
+          "youtube-caption:rS3KFGmoWac:ja:04b757ee1150d3991bf0ef37da4c1083546c0cad3c16190b41e114d7ffff525c",
+          "youtube-caption:rS3KFGmoWac:ko:f99bfb7e29e1239ffcd785f411efcd118745e9a1c6b250d9a4b44dac62699763",
+          "youtube-caption:rS3KFGmoWac:zh-Hans:c2748df94ec50e2d6494de21111ccd8e127af23c53f38ca3ae7efaaf62d4e83f"
+        ],
+        "actual_count": 42,
+        "actual_total": 42,
+        "actual_stage_count": 42
+      }
+    },
+    {
+      "id": "wechat-image-recovery-20261026",
+      "title": "公众号存档图像",
+      "scope": "4条文章的14个来源图像；其中4篇原文DOM在当前原页或历史快照中均为图像，已完整按顺序保存。",
+      "unit": "条材料记录",
+      "status": "已归档并编号",
+      "next_action": "后续版本继续保留来源和原有编号。",
+      "total": 14,
+      "links": [
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+      ],
+      "stages": {
+        "prepared": {
+          "count": 14,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "github_published": {
+          "count": 14,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "platform_published": {
+          "count": null,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+          ],
+          "note": "本次目的地为GitHub；平台历史回执与当前API回读按每条记录分别注明。",
+          "percent": null,
+          "complete": false
+        }
+      },
+      "snapshot": {
+        "kind": "image",
+        "measure": "items",
+        "stage": "github_published",
+        "ids": [
+          "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:01",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:02",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:03",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-04-02-b738dc3fb0:04",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-04-08-781b065c94:01",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:01",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:02",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:03",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:04",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:05",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-08-04-49d0154955:06",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-08-31-e60dcedc94:01",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-08-31-e60dcedc94:02",
+          "a.p4theater.cn:wechat-public-image:wechat-2022-08-31-e60dcedc94:03"
+        ],
+        "actual_count": 14,
+        "actual_total": 14,
+        "actual_stage_count": 14
+      }
+    },
+    {
+      "id": "wechat-16-recovery-20261026",
+      "title": "原16条缺正文线索",
+      "scope": "7条转载卡已关联保存原文，4条图像版原文已按次序保存，5条核实为视频页；核清类型不等于16篇文字全文。",
+      "unit": "条材料记录",
+      "status": "16条内容类型及来源已核清",
+      "next_action": "保留图像原文、转载和视频页的原始形式及来源；如需逐字检索可另行标识识别稿。",
+      "total": 16,
+      "links": [
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md",
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/docs/recovery-20261026.md"
+      ],
+      "stages": {
+        "prepared": {
+          "count": 16,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "github_published": {
+          "count": 16,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "platform_published": {
+          "count": null,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md"
+          ],
+          "note": "本次目的地为GitHub；平台历史回执与当前API回读按每条记录分别注明。",
+          "percent": null,
+          "complete": false
+        }
+      },
+      "snapshot": {
+        "kind": "document",
+        "measure": "items",
+        "stage": "github_published",
+        "ids": [
+          "a.p4theater.cn:wechat-article:wechat-2020-06-23-f539325535",
+          "a.p4theater.cn:wechat-article:wechat-2020-06-24-bc151a2ed3",
+          "a.p4theater.cn:wechat-article:wechat-2020-06-25-dcb325f636",
+          "a.p4theater.cn:wechat-article:wechat-2020-06-26-2e7c078434",
+          "a.p4theater.cn:wechat-article:wechat-2020-06-28-605213af8f",
+          "a.p4theater.cn:wechat-article:wechat-2020-06-28-ca712394e3",
+          "a.p4theater.cn:wechat-article:wechat-2020-06-30-9e290e5382",
+          "a.p4theater.cn:wechat-article:wechat-2020-11-08-0c373a366c",
+          "a.p4theater.cn:wechat-article:wechat-2020-11-19-217b0c7943",
+          "a.p4theater.cn:wechat-article:wechat-2020-12-23-61cd695ba4",
+          "a.p4theater.cn:wechat-article:wechat-2021-12-25-7458a5209c",
+          "a.p4theater.cn:wechat-article:wechat-2022-04-02-b738dc3fb0",
+          "a.p4theater.cn:wechat-article:wechat-2022-04-08-781b065c94",
+          "a.p4theater.cn:wechat-article:wechat-2022-08-04-49d0154955",
+          "a.p4theater.cn:wechat-article:wechat-2022-08-31-e60dcedc94",
+          "a.p4theater.cn:wechat-article:wechat-2024-01-20-b903069d35"
+        ],
+        "completed_where": {
+          "content_status": [
+            "verified_forwarded_original",
+            "verified_image_article",
+            "verified_video_post"
+          ]
+        },
+        "actual_count": 16,
+        "actual_total": 16,
+        "actual_stage_count": 16
+      }
+    },
+    {
+      "id": "machine-caption-complete-timecodes-20261026",
+      "title": "补齐时码的机器字幕稿",
+      "scope": "8份已有本地机器译稿与同片源字幕逐时间窗核对，补入历史版本缺少的990个时窗。它们是未逐句听校的并列稿，未发布到YouTube；历史轨保留。",
+      "unit": "份字幕版本",
+      "status": "GitHub并列归档",
+      "next_action": "需要逐句质量核查时，以原语声画和各版本来源为依据。",
+      "total": 8,
+      "links": [
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+      ],
+      "stages": {
+        "prepared": {
+          "count": 8,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "github_published": {
+          "count": 8,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "platform_published": {
+          "count": null,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+          ],
+          "note": "这些独立机器稿没有在本次上传或替换YouTube字幕。",
+          "percent": null,
+          "complete": false
+        }
+      },
+      "snapshot": {
+        "kind": "caption",
+        "measure": "items",
+        "stage": "github_published",
+        "ids": [
+          "youtube-caption:F1riPOyQuCI:de:76aed16f021361e6de5adfbc5a7b032694627edd99082c3b93d18a94bc68cd3a",
+          "youtube-caption:IDtBlVWSsho:de:18ca4e28bd29eda8b8dd3c0dcfb605d4b15ab02524c31219e6c2d85af1017d7a",
+          "youtube-caption:URZf2R5N_jw:ja:0b5fe0c08e5252e7fbf32649a830b1456877112c430f4516e1b7fd0b764cc1aa",
+          "youtube-caption:URZf2R5N_jw:ko:a97b89ace1309c1e2e9fd1ff8fad3e9be33a0f69ec268e2a05f8eeae2ee796e6",
+          "youtube-caption:WH8cwipcVEI:ja:2db274c763c07efcd0710c4ff3eb2460eb1bbd74ebfe7371ce2f8a4548271678",
+          "youtube-caption:WH8cwipcVEI:ko:4a174d79bc54281b968987a8c516c0d798ed5a92a100183d8ad3d94758d9df69",
+          "youtube-caption:rS3KFGmoWac:ja:2d5e5045eefaf48b451c37a8a329ae9688a95b8a26914e12aafb3e71edebc616",
+          "youtube-caption:rS3KFGmoWac:ko:ea50139e8b6700a73b53fcebe772064da7047b3170ebf23b4ec6e69354d3acc3"
+        ],
+        "actual_count": 8,
+        "actual_total": 8,
+        "actual_stage_count": 8
+      }
+    },
+    {
+      "id": "machine-caption-conservative-repairs-20261026",
+      "title": "中文保守机器修订稿",
+      "scope": "3份既有中文保守修订稿分别保留不清标记；F6增补1个时窗，pGm片尾仍缺约143秒，rNv肯否未定。未逐句听校、未上传YouTube。",
+      "unit": "份字幕版本",
+      "status": "GitHub并列归档",
+      "next_action": "需要逐句质量核查时，以原语声画和各版本来源为依据。",
+      "total": 3,
+      "links": [
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+        "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+      ],
+      "stages": {
+        "prepared": {
+          "count": 3,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "github_published": {
+          "count": 3,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+          ],
+          "percent": 100.0,
+          "complete": true
+        },
+        "platform_published": {
+          "count": null,
+          "evidence_urls": [
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md",
+            "https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json"
+          ],
+          "note": "这些独立机器稿没有在本次上传或替换YouTube字幕。",
+          "percent": null,
+          "complete": false
+        }
+      },
+      "snapshot": {
+        "kind": "caption",
+        "measure": "items",
+        "stage": "github_published",
+        "ids": [
+          "youtube-caption:F6mOpeQDfpU:zh-Hans:af5ce429650ffac529775d392553b8dcbb4a7ff185404175184af2e6f5fb4bb3",
+          "youtube-caption:pGmFA0GVkaM:zh-Hans:574c89230f0d027842e73d8df5faf187781b93b3e35a12a4e8c2c6ef6493c04c",
+          "youtube-caption:rNv_kwuQKKQ:zh-Hans:01a13af4ef2511258b4dbe61a565715d56ef198788d3e2e5b8a9aafe0e29aacc"
+        ],
+        "actual_count": 3,
+        "actual_total": 3,
+        "actual_stage_count": 3
+      }
     }
   ],
   "leads": [
     {
       "id": "top10-caption-unresolved-versions",
       "title": "前十视频字幕剩余41个版本槽位",
-      "state": "待准确版本/出处",
+      "state": "240个槽位已归档，质量待逐项核对",
       "evidence_urls": [
         "https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json"
       ],
-      "next_action": "一片24槽的官网具体发行页返回404；其余17槽核对现有原轨，不以未采用译稿替代。"
+      "next_action": "依据每条记录检查机器字幕缺句、识别错误和平台语言码；已归档不等于逐句听校。"
     },
     {
       "id": "missing-article-body",
-      "title": "16篇只有目录信息的公众号记录",
-      "state": "待补正文",
+      "title": "原16条缺正文线索：7转载、4图像原文、5视频页",
+      "state": "done",
       "evidence_urls": [
         "https://github.com/hehefa/-p4-theater-archive/blob/main/progress/coverage-gaps.json"
       ],
-      "next_action": "逐篇寻找原始发表页或已有公开保存副本；补到真实文字后更新覆盖进度。"
+      "next_action": "按原始类型阅读；两篇图像版和一条视频页依据历史离线快照，不声称微信原页本次可读。"
     },
     {
       "id": "wechat-short-text-extent",

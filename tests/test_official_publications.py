@@ -1,5 +1,6 @@
 """Separate official editions preserve raw scope and cannot revive withheld text."""
 import copy
+import base64
 import hashlib
 import json
 import io
@@ -105,7 +106,7 @@ class OfficialPublicationTests(unittest.TestCase):
             self.assertTrue(published.build_indexes(work, check_only=True)["valid"])
             text = (work / "published/captions.md").read_text(encoding="utf-8")
             self.assertIn(item["official_context_url"], text)
-            self.assertIn("1份SRT", text)
+            self.assertIn("1条字幕记录", text)
             (work / "published/captions.md").write_text("stale", encoding="utf-8")
             self.assertFalse(published.build_indexes(work, check_only=True)["valid"])
     def test_exact_official_hosts_and_timezone_are_required(self):
@@ -120,6 +121,67 @@ class OfficialPublicationTests(unittest.TestCase):
             approval["observed_at"] = "2026-10-26T17:00:00"
             self.save(work, [item], [approval])
             self.assertFalse(published.check(work)["valid"])
+
+    def test_only_evidenced_p4_youtube_caption_identity_is_allowed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            item, approval = self.fixture(work)
+            video = "URZf2R5N_jw"
+            watch = "https://www.youtube.com/watch?v=" + video
+            response = {"title": "Synthetic public test", "type": "video", "provider_name": "YouTube", "author_name": "P4 Theater | He Fa", "author_url": "https://www.youtube.com/@p4theater510", "html": '<iframe src="https://www.youtube.com/embed/' + video + '?feature=oembed"></iframe>'}
+            raw = json.dumps(response, ensure_ascii=False).encode("utf-8")
+            proof = {"video_id": video, "channel_id": "UCbZU8SmY-hU_BhTlQHwctkg", "author_url": "https://www.youtube.com/@p4theater510", "oembed_url": "https://www.youtube.com/oembed?url=" + watch + "&format=json", "oembed_http_status": 200, "oembed_observed_at": "2026-10-27T02:14:45Z", "oembed_sha256": hashlib.sha256(raw).hexdigest(), "oembed_response_body_base64": base64.b64encode(raw).decode("ascii"), "watch_response_sha256": hashlib.sha256(b"synthetic watch response").hexdigest(), "observed_at": "2026-10-27T02:14:44Z"}
+            item.update(youtube_id=video, source_url=watch, official_context_url=watch, youtube_source_identity=proof)
+            approval.update(source_url=watch, official_context_url=watch, youtube_source_identity=copy.deepcopy(proof), evidence=[{"url": watch, "http_status": 200, "sha256": proof["watch_response_sha256"], "observed_at": proof["observed_at"]}])
+            self.save(work, [item], [approval])
+            result = published.check(work)
+            self.assertTrue(result["valid"], result)
+            self.assertTrue(published.build_indexes(work)["valid"])
+            self.assertIn(watch, (work / "published/captions.md").read_text(encoding="utf-8"))
+
+            def changed_identity(key, value):
+                i, a = copy.deepcopy(item), copy.deepcopy(approval)
+                i["youtube_source_identity"][key] = value
+                a["youtube_source_identity"][key] = value
+                return i, a
+
+            mutations = [
+                lambda: changed_identity("video_id", "different11"),
+                lambda: changed_identity("channel_id", "UCdifferent"),
+                lambda: changed_identity("author_url", "https://www.youtube.com/@other"),
+                lambda: changed_identity("oembed_url", "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=different11&format=json"),
+                lambda: changed_identity("oembed_http_status", 404),
+                lambda: changed_identity("oembed_observed_at", "2026-10-27T02:14:45"),
+                lambda: changed_identity("oembed_sha256", "0" * 64),
+                lambda: changed_identity("oembed_response_body_base64", "!not-base64!"),
+                lambda: changed_identity("watch_response_sha256", "0" * 64),
+                lambda: changed_identity("observed_at", "2026-10-27T03:14:44Z"),
+            ]
+            for mutate in mutations:
+                i, a = mutate()
+                self.save(work, [i], [a])
+                self.assertFalse(published.check(work)["valid"], (i, a))
+
+            for mutate_response in (
+                lambda r: r.update(author_url="https://www.youtube.com/@other"),
+                lambda r: r.update(author_name="Another channel"),
+                lambda r: r.update(html='<iframe src="https://www.youtube.com/embed/different11?feature=oembed"></iframe>'),
+            ):
+                changed = copy.deepcopy(response); mutate_response(changed)
+                body = json.dumps(changed, ensure_ascii=False).encode("utf-8")
+                i, a = changed_identity("oembed_response_body_base64", base64.b64encode(body).decode("ascii"))
+                i["youtube_source_identity"]["oembed_sha256"] = a["youtube_source_identity"]["oembed_sha256"] = hashlib.sha256(body).hexdigest()
+                self.save(work, [i], [a])
+                self.assertFalse(published.check(work)["valid"])
+            i, a = copy.deepcopy(item), copy.deepcopy(approval)
+            a["youtube_source_identity"]["channel_id"] = "UCdifferent"
+            self.save(work, [i], [a]); self.assertFalse(published.check(work)["valid"])
+            i, a = copy.deepcopy(item), copy.deepcopy(approval)
+            i["kind"] = a["kind"] = "document"
+            self.save(work, [i], [a]); self.assertFalse(published.check(work)["valid"])
+            i, a = copy.deepcopy(item), copy.deepcopy(approval)
+            i["source_url"] = a["source_url"] = watch + "&extra=1"
+            self.save(work, [i], [a]); self.assertFalse(published.check(work)["valid"])
 
     def test_tampering_unregistered_text_traversal_and_symlinks_are_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -398,6 +460,26 @@ class OfficialPublicationTests(unittest.TestCase):
 
 
 class PublicMetadataPathTests(unittest.TestCase):
+    def test_repost_requires_same_wechat_id_and_existing_original_text(self):
+        base = "https://mp.weixin.qq.com/s?__biz=abc&mid=12&idx=1&sn=1234"
+        original_url = "https://mp.weixin.qq.com/s?__biz=xyz&mid=34&idx=1&sn=5678"
+        source_id = {"__biz": "abc", "mid": "12", "idx": "1", "sn": "1234"}
+        target_id = {"__biz": "xyz", "mid": "34", "idx": "1", "sn": "5678"}
+        path = "published/materials/original.md"
+        sha = hashlib.sha256(b"saved original").hexdigest()
+        proof = {"kind": "forward_card", "http_status": 200, "response_sha256": "a" * 64,
+                 "observed_at": "2026-10-26T17:00:00Z", "short_url": "https://mp.weixin.qq.com/s/short-proof",
+                 "wrapper_identity": source_id, "original_identity": target_id,
+                 "original_item_id": "article:original", "original_file_path": path, "original_file_sha256": sha}
+        item = {"subtype": "wechat_article", "content_status": "verified_forwarded_original", "source_original_url": base, "wechat_source_resolution": proof}
+        target = {"subtype": "wechat_article", "content_status": "captured_text", "source_original_url": original_url, "files": [{"path": path, "sha256": sha}]}
+        approval = {"wechat_source_resolution": copy.deepcopy(proof)}
+        published._wechat_source_resolution(item, approval, {"article:original": target})
+        for change in (lambda p: p["wrapper_identity"].update(mid="99"), lambda p: p["original_identity"].update(sn="wrong"), lambda p: p.update(original_file_sha256="b" * 64), lambda p: p.update(original_item_id="article:missing")):
+            altered = copy.deepcopy(proof); change(altered)
+            with self.assertRaises(ValueError):
+                published._wechat_source_resolution({**item, "wechat_source_resolution": altered}, {"wechat_source_resolution": altered}, {"article:original": target})
+
     def test_public_nested_home_folder_is_not_a_local_home_path(self):
         published._public_metadata({"path": "published/packaged-images/bundle/media/home/hero.webp"})
         published._public_metadata({"archive_path": "media/home/hero.webp"})
@@ -405,6 +487,15 @@ class PublicMetadataPathTests(unittest.TestCase):
         for value in ("/home/user/private.txt", "source: /home/user/private.txt", "/Users/test/x", "/Volumes/archive/x"):
             with self.assertRaises(ValueError):
                 published._public_metadata({"source": value})
+
+    def test_offline_wechat_snapshot_does_not_claim_http_readback(self):
+        original = "https://mp.weixin.qq.com/s?__biz=abc&mid=12&idx=1&sn=1234"
+        proof = {"kind": "video_page", "evidence_kind": "local_archive_snapshot", "observed_at": "2026-10-26T17:00:00Z", "response_sha256": "a" * 64, "observed_url": original, "wrapper_identity": {"__biz": "abc", "mid": "12", "idx": "1", "sn": "1234"}, "video_id": "export/" + "a" * 32}
+        item = {"subtype": "wechat_article", "content_status": "verified_video_post", "source_original_url": original, "wechat_source_resolution": proof}
+        published._wechat_source_resolution(item, {"wechat_source_resolution": proof}, {})
+        invalid = {**proof, "http_status": 200}
+        with self.assertRaises(ValueError):
+            published._wechat_source_resolution({**item, "wechat_source_resolution": invalid}, {"wechat_source_resolution": invalid}, {})
 
 
 if __name__ == "__main__":

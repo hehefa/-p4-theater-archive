@@ -1,6 +1,6 @@
 # 档案进度
 
-截至：2026-10-26T18:23:00.305087+00:00
+截至：2026-10-27T02:30:52.162991+00:00
 
 仅统计已明确的固定批次；同一材料可有目录和正文两个观察口径，批次有重叠，不能相加为整体完成率。字幕、文章、视频与仓库各按自己的单位计算。家庭及范围排除单列，不当作待发布积压。
 
@@ -12,11 +12,11 @@
 
 | 批次 | 已整理 | GitHub归档 | 平台回执 |
 |---|---|---|---|
-| 前十视频24语字幕版本对账（个语言槽位） | 199/240（82.9%） | 199/240（82.9%） | 未核定/240（未核定） |
+| 前十视频24语字幕版本对账（个语言槽位） | 240/240（100.0%） | 240/240（100.0%） | 未核定/240（未核定） |
 | 首批字幕、文稿与研究（条公开版本记录） | 487/487（100.0%） | 487/487（100.0%） | 未核定/487（未核定） |
 | 五个既有字幕成品包（份SRT） | 48/48（100.0%） | 48/48（100.0%） | 43/48（89.6%） |
 | 公众号文章目录与原文入口（条文章记录） | 554/554（100.0%） | 554/554（100.0%） | 554/554（100.0%） |
-| 公众号保存文字覆盖（篇文章） | 538/554（97.1%） | 538/554（97.1%） | 538/554（97.1%） |
+| 公众号保存文字与图像正文覆盖（篇文章） | 542/554（97.8%） | 542/554（97.8%） | 538/554（97.1%） |
 | 微信备份中的明确公开文本（项文本） | 18/18（100.0%） | 18/18（100.0%） | 18/18（100.0%） |
 | 既有公开工具、导览、评论与总导航（个仓库） | 4/4（100.0%） | 4/4（100.0%） | 未核定/4（未核定） |
 | 公开图像统一归档（条公开材料记录） | 1326/1326（100.0%） | 1326/1326（100.0%） | 未核定/1326（未核定） |
@@ -24,6 +24,11 @@
 | B站公开来源正文（条公开材料记录） | 122/122（100.0%） | 122/122（100.0%） | 未核定/122（未核定） |
 | 批准图像目录导出（条公开材料记录） | 2/2（100.0%） | 2/2（100.0%） | 未核定/2（未核定） |
 | 本轮公开成品与文件总清单（条公开材料记录） | 3104/3104（100.0%） | 3104/3104（100.0%） | 未核定/3104（未核定） |
+| 补回字幕版本（条材料记录） | 42/42（100.0%） | 42/42（100.0%） | 未核定/42（未核定） |
+| 公众号存档图像（条材料记录） | 14/14（100.0%） | 14/14（100.0%） | 未核定/14（未核定） |
+| 原16条缺正文线索（条材料记录） | 16/16（100.0%） | 16/16（100.0%） | 未核定/16（未核定） |
+| 补齐时码的机器字幕稿（份字幕版本） | 8/8（100.0%） | 8/8（100.0%） | 未核定/8（未核定） |
+| 中文保守机器修订稿（份字幕版本） | 3/3（100.0%） | 3/3（100.0%） | 未核定/3（未核定） |
 
 ## 当前原片工序
 
@@ -41,18 +46,18 @@
 
 ### 前十视频24语字幕版本对账
 
-范围：10个视频×24个目标语言槽位；22轨原已在库、177份新增精确版本、41槽位待核，不能用未采用译稿填数。；单位：个语言槽位。
+范围：10个视频×24个目标语言槽位；全部已有对应归档版本，实际平台码、历史回执和字幕质量按版本分别记录。；单位：个语言槽位。
 
-状态：已记录明确缺口
+状态：240个语言槽位已归档
 
-- [ ] 已整理：199/240（82.9%） 个语言槽位 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json)
-- [ ] GitHub已发布：199/240（82.9%） 个语言槽位 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json)
+- [x] 已整理：240/240（100.0%） 个语言槽位 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json)
+- [x] GitHub已发布：240/240（100.0%） 个语言槽位 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json)
 - [ ] 平台已发布：未核定/240（未核定） 个语言槽位 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json)
-  10月24日有240槽覆盖的历史完成记录；本次尚有41槽未取得准确源文件/正式上下文，不写成当前平台240轨已逐字节复核。
+  本批11个旧轨经所有者API下载；其余版本包含历史平台回执或抽样。不能将GitHub覆盖等同于240轨当前远端逐字节核验。
 
-下一步：17槽核对被保留的既有轨准确版本；另24槽先补该发行版的有效官方出处。
+下一步：按逐项质量说明继续检查缺句与机器识别；保留历史版本和实际平台语言码。
 
-[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json)
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/docs/recovery-20261026.md)
 
 ### 首批字幕、文稿与研究
 
@@ -86,7 +91,7 @@
 
 ### 公众号文章目录与原文入口
 
-范围：554个已公开文章身份；包含16个只有目录信息的条目，不将其当作全文。；单位：条文章记录。
+范围：固定554条公众号记录；原16条缺口经核对为7转载、4图像正文、5视频页，按实际类型分别记录。；单位：条文章记录。
 
 状态：GitHub已归档
 
@@ -99,18 +104,18 @@
 
 [证据1](https://github.com/hehefa/-p4-theater-archive/tree/main/published)
 
-### 公众号保存文字覆盖
+### 公众号保存文字与图像正文覆盖
 
-范围：以全部554篇文章记录为分母；538篇有保存文字，16篇待补。保存文字不保证原始发表文章已完整恢复。；单位：篇文章。
+范围：554条记录；538条有保存文字、4条图像版原文完整保存，另7条转载卡关联原文；保存文字并不自动代表原文完整。；单位：篇文章。
 
-状态：已记录明确缺口
+状态：原文字与图像正文已分类
 
-- [ ] 已整理：538/554（97.1%） 篇文章 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
-- [ ] GitHub已发布：538/554（97.1%） 篇文章 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [ ] 已整理：542/554（97.8%） 篇文章 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [ ] GitHub已发布：542/554（97.8%） 篇文章 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
 - [ ] 平台已发布：538/554（97.1%） 篇文章 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
-  平台指A站现有保存文字，逐字符核对已通过；短文字不自动判为节选或缺失。
+  A站逐字符核对的原有保存文字为538条；另4篇的图像正文按微信原页或历史快照和仓库副本核对，未声称A站已同步。
 
-下一步：补齐缺正文记录的正式来源；保留当前可读文字与准确状态。
+下一步：保留转载、视频页和原文图像的不同类型；后续新来源按版本增补。
 
 [证据1](https://github.com/hehefa/-p4-theater-archive/tree/main/published)
 
@@ -219,14 +224,89 @@
 
 [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/NUMBERED_INDEX.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
 
+### 补回字幕版本
+
+范围：41个目标槽位及额外一份中文单语版；部分历史机器稿缺句或识别有误，按项保留。；单位：条材料记录。
+
+状态：已归档并编号
+
+- [x] 已整理：42/42（100.0%） 条材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+- [x] GitHub已发布：42/42（100.0%） 条材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+- [ ] 平台已发布：未核定/42（未核定） 条材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+  本次目的地为GitHub；平台历史回执与当前API回读按每条记录分别注明。
+
+下一步：后续版本继续保留来源和原有编号。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+
+### 公众号存档图像
+
+范围：4条文章的14个来源图像；其中4篇原文DOM在当前原页或历史快照中均为图像，已完整按顺序保存。；单位：条材料记录。
+
+状态：已归档并编号
+
+- [x] 已整理：14/14（100.0%） 条材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+- [x] GitHub已发布：14/14（100.0%） 条材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+- [ ] 平台已发布：未核定/14（未核定） 条材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+  本次目的地为GitHub；平台历史回执与当前API回读按每条记录分别注明。
+
+下一步：后续版本继续保留来源和原有编号。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+
+### 原16条缺正文线索
+
+范围：7条转载卡已关联保存原文，4条图像版原文已按次序保存，5条核实为视频页；核清类型不等于16篇文字全文。；单位：条材料记录。
+
+状态：16条内容类型及来源已核清
+
+- [x] 已整理：16/16（100.0%） 条材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+- [x] GitHub已发布：16/16（100.0%） 条材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+- [ ] 平台已发布：未核定/16（未核定） 条材料记录 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md)
+  本次目的地为GitHub；平台历史回执与当前API回读按每条记录分别注明。
+
+下一步：保留图像原文、转载和视频页的原始形式及来源；如需逐字检索可另行标识识别稿。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/PROGRESS.md) · [证据3](https://github.com/hehefa/-p4-theater-archive/blob/main/docs/recovery-20261026.md)
+
+### 补齐时码的机器字幕稿
+
+范围：8份已有本地机器译稿与同片源字幕逐时间窗核对，补入历史版本缺少的990个时窗。它们是未逐句听校的并列稿，未发布到YouTube；历史轨保留。；单位：份字幕版本。
+
+状态：GitHub并列归档
+
+- [x] 已整理：8/8（100.0%） 份字幕版本 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [x] GitHub已发布：8/8（100.0%） 份字幕版本 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [ ] 平台已发布：未核定/8（未核定） 份字幕版本 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+  这些独立机器稿没有在本次上传或替换YouTube字幕。
+
+下一步：需要逐句质量核查时，以原语声画和各版本来源为依据。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+
+### 中文保守机器修订稿
+
+范围：3份既有中文保守修订稿分别保留不清标记；F6增补1个时窗，pGm片尾仍缺约143秒，rNv肯否未定。未逐句听校、未上传YouTube。；单位：份字幕版本。
+
+状态：GitHub并列归档
+
+- [x] 已整理：3/3（100.0%） 份字幕版本 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [x] GitHub已发布：3/3（100.0%） 份字幕版本 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+- [ ] 平台已发布：未核定/3（未核定） 份字幕版本 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+  这些独立机器稿没有在本次上传或替换YouTube字幕。
+
+下一步：需要逐句质量核查时，以原语声画和各版本来源为依据。
+
+[证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/captions.md) · [证据2](https://github.com/hehefa/-p4-theater-archive/blob/main/published/manifest.json)
+
 ## 后续线索
 
 线索不是已完成发布，也不加入各批分母。
 
-- [ ] **前十视频字幕剩余41个版本槽位** · 待准确版本/出处 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json)
-  下一步：一片24槽的官网具体发行页返回404；其余17槽核对现有原轨，不以未采用译稿替代。
-- [ ] **16篇只有目录信息的公众号记录** · 待补正文 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/coverage-gaps.json)
-  下一步：逐篇寻找原始发表页或已有公开保存副本；补到真实文字后更新覆盖进度。
+- [ ] **前十视频字幕剩余41个版本槽位** · 240个槽位已归档，质量待逐项核对 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/caption-top10-20261024.json)
+  下一步：依据每条记录检查机器字幕缺句、识别错误和平台语言码；已归档不等于逐句听校。
+- [x] **原16条缺正文线索：7转载、4图像原文、5视频页** · 已完成 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/progress/coverage-gaps.json)
+  下一步：按原始类型阅读；两篇图像版和一条视频页依据历史离线快照，不声称微信原页本次可读。
 - [ ] **38条短保存文字的范围线索** · 已标记待辨识 · [证据1](https://github.com/hehefa/-p4-theater-archive/blob/main/published/wechat.md)
   下一步：逐条根据原文判断保存范围；短文章也可能完整，不按字数伪造缺口。
 - [ ] **567项公开微信材料中的图像与其他关系** · 范围待逐项接线 · [证据1](https://a.p4theater.cn/)

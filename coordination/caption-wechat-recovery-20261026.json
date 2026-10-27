@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "batch_id": "caption-41-wechat-16-recovery-20261026",
+  "base_commit": "74dd4b9f4869dea701e4b36940ecec490e61b1b3",
+  "implementation_branch": "codex/recover-missing-captions-articles-20261026",
+  "ownership": "public editions and progress only; private raw inventory untouched",
+  "results": {
+    "caption_target_slots_previously_unresolved": 41,
+    "caption_target_slots_archived": 41,
+    "target_coverage": {
+      "recorded": 240,
+      "total": 240
+    },
+    "additional_chinese_monolingual_caption": 1,
+    "additional_machine_drafts_with_full_source_timecodes": 8,
+    "previously_omitted_time_windows_covered_in_drafts": 990,
+    "wechat_target_records": 16,
+    "forwarded_original_links": 7,
+    "image_body_articles": 4,
+    "video_pages": 5,
+    "image_records_added": 14,
+    "public_materials_total": 3171,
+    "material_counts": {
+      "caption": 540,
+      "document": 1227,
+      "image": 1340,
+      "research": 64
+    },
+    "file_locations": 11272,
+    "file_accessions": 10913,
+    "additional_conservative_chinese_machine_drafts": 3
+  },
+  "evidence_boundaries": [
+    "Eleven existing captions were read through the authenticated owner API; historical uploaded tracks and sample-confirmed tracks retain their own observation scope.",
+    "Two Chinese platform codes are normalized to the target language while actual codes remain on the records.",
+    "Machine drafts retain full source-cue timing, are unreviewed, and were not uploaded to YouTube.",
+    "Two image articles and one embedded video are classified using a historical local HTML snapshot, not a current WeChat HTTP result.",
+    "Forwarded cards identify the exact saved original article; one Cocoon card forwards an earlier pre-performance announcement.",
+    "Current A-site and actual image file HTTP observations are recorded separately from WeChat snapshots."
+  ],
+  "maintenance": [
+    "Keep prior AR numbers and append versions; retrieve complete Git history before running public_accessions.py assign.",
+    "Keep target caption coverage separate from listening/translation quality and current platform readback.",
+    "Do not treat video posts or forwarded cards as newly recovered text bodies.",
+    "Build indexes and progress from manifest plus work-items, then validate."
+  ],
+  "pc_acknowledgement": "not_received",
+  "observed_at": "2026-10-27T02:28:02.956527+00:00"
+}
