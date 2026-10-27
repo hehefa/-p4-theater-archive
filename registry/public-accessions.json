@@ -2,10 +2,10 @@
   "schema_version": 1,
   "namespace": "public-edition-accession:v1",
   "initial_manifest_sha256": "f851ce8cd05dcd31df3d5a7840f7afdd1539e7acdc4bf63596fe832c9a56eed9",
-  "source_manifest_sha256": "09877bc3125f670d3258f0c1a78c964101144e800eab628cb9ac16960cf73344",
+  "source_manifest_sha256": "021a4b6a265a2fe6171db12ebe8066818a93144b37e85959f6f3d3e7c8d75170",
   "counters": {
     "document": 1227,
-    "caption": 540,
+    "caption": 548,
     "research": 64,
     "image": 1340
   },
@@ -343952,6 +343952,350 @@
       ],
       "in_current_manifest": true,
       "current_version_sha256": "0d212940dd810d9c122e8396fec1b12cdfb076681832d76ac3f5951d8cb4087c"
+    },
+    {
+      "source_id": "youtube-caption:B5TulvP7I0w:en:2bc5c3ff25c5c27886e8a988b97d7dec677e2dc67fffaa34fbf28a6658e9cef3",
+      "kind": "caption",
+      "accession": "AR-S000541",
+      "title": "She Apologizes for Breaking Character. The Reply? · en",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:B5TulvP7I0w:en:2bc5c3ff25c5c27886e8a988b97d7dec677e2dc67fffaa34fbf28a6658e9cef3"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000541-F00001",
+          "sha256": "2bc5c3ff25c5c27886e8a988b97d7dec677e2dc67fffaa34fbf28a6658e9cef3",
+          "bytes": 270,
+          "locations": [
+            {
+              "path": "published/captions/B5TulvP7I0w/en.2bc5c3ff25c5c27886e8a988b97d7dec677e2dc67fffaa34fbf28a6658e9cef3.srt",
+              "sha256": "2bc5c3ff25c5c27886e8a988b97d7dec677e2dc67fffaa34fbf28a6658e9cef3",
+              "bytes": 270,
+              "role": "local_editing_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/B5TulvP7I0w",
+          "official_context_url": "https://a.p4theater.cn/videos/B5TulvP7I0w",
+          "files": [
+            {
+              "file_accession": "AR-S000541-F00001",
+              "location_sha256": "a76aef435f2d13d4f96dfa40f441d06f9d49cafe6d0450de0a321bcc1eaeef06"
+            }
+          ],
+          "version_sha256": "4e1de50efd5ddeebdb411cc8959e435a5cb435de562d868f632a3b5c11081ade"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "4e1de50efd5ddeebdb411cc8959e435a5cb435de562d868f632a3b5c11081ade"
+    },
+    {
+      "source_id": "youtube-caption:B5TulvP7I0w:zh-Hans:e493ad92957f4115b53085e05c211e49a08ffee6de424c8f44bff04f146b5cae",
+      "kind": "caption",
+      "accession": "AR-S000542",
+      "title": "She Apologizes for Breaking Character. The Reply? · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:B5TulvP7I0w:zh-Hans:e493ad92957f4115b53085e05c211e49a08ffee6de424c8f44bff04f146b5cae"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000542-F00001",
+          "sha256": "e493ad92957f4115b53085e05c211e49a08ffee6de424c8f44bff04f146b5cae",
+          "bytes": 281,
+          "locations": [
+            {
+              "path": "published/captions/B5TulvP7I0w/zh-Hans.e493ad92957f4115b53085e05c211e49a08ffee6de424c8f44bff04f146b5cae.srt",
+              "sha256": "e493ad92957f4115b53085e05c211e49a08ffee6de424c8f44bff04f146b5cae",
+              "bytes": 281,
+              "role": "local_editing_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/B5TulvP7I0w",
+          "official_context_url": "https://a.p4theater.cn/videos/B5TulvP7I0w",
+          "files": [
+            {
+              "file_accession": "AR-S000542-F00001",
+              "location_sha256": "dfdc1e410a27253c734e389a42070886bac78746e828abf1270547bcf1605bed"
+            }
+          ],
+          "version_sha256": "6a89b59504e28bfbb5caaf4d45f01fdcd22d9cd1b5a34c528a074a8040423f4a"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "6a89b59504e28bfbb5caaf4d45f01fdcd22d9cd1b5a34c528a074a8040423f4a"
+    },
+    {
+      "source_id": "youtube-caption:YXJWVdf2r3I:en:4c056a9a222fa3f2511bff8f981c6219f03d496db26da294097c57d61c52aa98",
+      "kind": "caption",
+      "accession": "AR-S000543",
+      "title": "The Script Says Destruction. She Suggests Tenderness. · en",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:YXJWVdf2r3I:en:4c056a9a222fa3f2511bff8f981c6219f03d496db26da294097c57d61c52aa98"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000543-F00001",
+          "sha256": "4c056a9a222fa3f2511bff8f981c6219f03d496db26da294097c57d61c52aa98",
+          "bytes": 467,
+          "locations": [
+            {
+              "path": "published/captions/YXJWVdf2r3I/en.4c056a9a222fa3f2511bff8f981c6219f03d496db26da294097c57d61c52aa98.srt",
+              "sha256": "4c056a9a222fa3f2511bff8f981c6219f03d496db26da294097c57d61c52aa98",
+              "bytes": 467,
+              "role": "local_editing_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/YXJWVdf2r3I",
+          "official_context_url": "https://a.p4theater.cn/videos/YXJWVdf2r3I",
+          "files": [
+            {
+              "file_accession": "AR-S000543-F00001",
+              "location_sha256": "b7403cee9c6b057382d682f962fcf19ea5d92d1ac8bbdf21c3165a24003d696f"
+            }
+          ],
+          "version_sha256": "0ef86018b27bdcb24934e417f881f81b55c7a9185ea89d6badfea1f5a6ba246b"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "0ef86018b27bdcb24934e417f881f81b55c7a9185ea89d6badfea1f5a6ba246b"
+    },
+    {
+      "source_id": "youtube-caption:YXJWVdf2r3I:zh-Hans:e2297dd89e6de7467fe199ceb086c9c3ea51f0e2421f5756d47337cc9f4641b3",
+      "kind": "caption",
+      "accession": "AR-S000544",
+      "title": "The Script Says Destruction. She Suggests Tenderness. · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:YXJWVdf2r3I:zh-Hans:e2297dd89e6de7467fe199ceb086c9c3ea51f0e2421f5756d47337cc9f4641b3"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000544-F00001",
+          "sha256": "e2297dd89e6de7467fe199ceb086c9c3ea51f0e2421f5756d47337cc9f4641b3",
+          "bytes": 450,
+          "locations": [
+            {
+              "path": "published/captions/YXJWVdf2r3I/zh-Hans.e2297dd89e6de7467fe199ceb086c9c3ea51f0e2421f5756d47337cc9f4641b3.srt",
+              "sha256": "e2297dd89e6de7467fe199ceb086c9c3ea51f0e2421f5756d47337cc9f4641b3",
+              "bytes": 450,
+              "role": "local_editing_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/YXJWVdf2r3I",
+          "official_context_url": "https://a.p4theater.cn/videos/YXJWVdf2r3I",
+          "files": [
+            {
+              "file_accession": "AR-S000544-F00001",
+              "location_sha256": "af0e1634083bd466aad11d8c2f1de7972a6ae7fb5212669e21170568a75fe665"
+            }
+          ],
+          "version_sha256": "21f1ba9b3ef6403fdce83587360e6cdcd01d760122ded375c81b6dbd27287852"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "21f1ba9b3ef6403fdce83587360e6cdcd01d760122ded375c81b6dbd27287852"
+    },
+    {
+      "source_id": "youtube-caption:fXBGs07MX5Q:en:fceef4b7affb1fa5b86f6290afa59d1ed13de77e4a1842d2c2a40d57cde28154",
+      "kind": "caption",
+      "accession": "AR-S000545",
+      "title": "Should I Do Comedy? Not the Reason She’s Smiling. · en",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:fXBGs07MX5Q:en:fceef4b7affb1fa5b86f6290afa59d1ed13de77e4a1842d2c2a40d57cde28154"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000545-F00001",
+          "sha256": "fceef4b7affb1fa5b86f6290afa59d1ed13de77e4a1842d2c2a40d57cde28154",
+          "bytes": 310,
+          "locations": [
+            {
+              "path": "published/captions/fXBGs07MX5Q/en.fceef4b7affb1fa5b86f6290afa59d1ed13de77e4a1842d2c2a40d57cde28154.srt",
+              "sha256": "fceef4b7affb1fa5b86f6290afa59d1ed13de77e4a1842d2c2a40d57cde28154",
+              "bytes": 310,
+              "role": "local_editing_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/fXBGs07MX5Q",
+          "official_context_url": "https://a.p4theater.cn/videos/fXBGs07MX5Q",
+          "files": [
+            {
+              "file_accession": "AR-S000545-F00001",
+              "location_sha256": "baf245f769f04ad7838290e0d414e2fd03b8f704f0d6ce8b7f33985b36305bb2"
+            }
+          ],
+          "version_sha256": "a56ec23f5551290f7366380ba6a3ad2da2def065a6061d9af903c0935f6bed0d"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "a56ec23f5551290f7366380ba6a3ad2da2def065a6061d9af903c0935f6bed0d"
+    },
+    {
+      "source_id": "youtube-caption:fXBGs07MX5Q:zh-Hans:cd6b1de5984497a906dc05d684639cf2fff8a1cd76d1a6d64554e8887d45b27d",
+      "kind": "caption",
+      "accession": "AR-S000546",
+      "title": "Should I Do Comedy? Not the Reason She’s Smiling. · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:fXBGs07MX5Q:zh-Hans:cd6b1de5984497a906dc05d684639cf2fff8a1cd76d1a6d64554e8887d45b27d"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000546-F00001",
+          "sha256": "cd6b1de5984497a906dc05d684639cf2fff8a1cd76d1a6d64554e8887d45b27d",
+          "bytes": 300,
+          "locations": [
+            {
+              "path": "published/captions/fXBGs07MX5Q/zh-Hans.cd6b1de5984497a906dc05d684639cf2fff8a1cd76d1a6d64554e8887d45b27d.srt",
+              "sha256": "cd6b1de5984497a906dc05d684639cf2fff8a1cd76d1a6d64554e8887d45b27d",
+              "bytes": 300,
+              "role": "local_editing_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/fXBGs07MX5Q",
+          "official_context_url": "https://a.p4theater.cn/videos/fXBGs07MX5Q",
+          "files": [
+            {
+              "file_accession": "AR-S000546-F00001",
+              "location_sha256": "5f9e236a0e13c7e2fd5d253680e8b5496d91f876903d031256eb39b922220c6b"
+            }
+          ],
+          "version_sha256": "eb3bab45746622c56ef9bf1b43d01eecff18877d372cca3bfe22eded7ef0c1af"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "eb3bab45746622c56ef9bf1b43d01eecff18877d372cca3bfe22eded7ef0c1af"
+    },
+    {
+      "source_id": "youtube-caption:uynQEJy6KGE:en:1be553b1e9663a33adbd0d9f44c6d1e30fa0d138b1570826654ede7955f24bf4",
+      "kind": "caption",
+      "accession": "AR-S000547",
+      "title": "The Script Says Destruction. The Actors Find Tenderness. · en",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:uynQEJy6KGE:en:1be553b1e9663a33adbd0d9f44c6d1e30fa0d138b1570826654ede7955f24bf4"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000547-F00001",
+          "sha256": "1be553b1e9663a33adbd0d9f44c6d1e30fa0d138b1570826654ede7955f24bf4",
+          "bytes": 3054,
+          "locations": [
+            {
+              "path": "published/captions/uynQEJy6KGE/en.1be553b1e9663a33adbd0d9f44c6d1e30fa0d138b1570826654ede7955f24bf4.srt",
+              "sha256": "1be553b1e9663a33adbd0d9f44c6d1e30fa0d138b1570826654ede7955f24bf4",
+              "bytes": 3054,
+              "role": "local_editing_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/uynQEJy6KGE",
+          "official_context_url": "https://a.p4theater.cn/videos/uynQEJy6KGE",
+          "files": [
+            {
+              "file_accession": "AR-S000547-F00001",
+              "location_sha256": "34863e164c151f7fa044a2bd3cfe24a5292034827d21cafe5e1940b9357da7a1"
+            }
+          ],
+          "version_sha256": "12441d4867f407279731b616e2c9e954c58f74dee8154144dd83915233b88fd3"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "12441d4867f407279731b616e2c9e954c58f74dee8154144dd83915233b88fd3"
+    },
+    {
+      "source_id": "youtube-caption:uynQEJy6KGE:zh-Hans:0993d4eea9f683e6629fb991d7fd24a67826f23b56a361f4b681e40d174f3b46",
+      "kind": "caption",
+      "accession": "AR-S000548",
+      "title": "The Script Says Destruction. The Actors Find Tenderness. · zh-Hans",
+      "aliases": [
+        {
+          "namespace": "published:item-id",
+          "value": "youtube-caption:uynQEJy6KGE:zh-Hans:0993d4eea9f683e6629fb991d7fd24a67826f23b56a361f4b681e40d174f3b46"
+        }
+      ],
+      "file_counter": 1,
+      "files": [
+        {
+          "file_accession": "AR-S000548-F00001",
+          "sha256": "0993d4eea9f683e6629fb991d7fd24a67826f23b56a361f4b681e40d174f3b46",
+          "bytes": 2874,
+          "locations": [
+            {
+              "path": "published/captions/uynQEJy6KGE/zh-Hans.0993d4eea9f683e6629fb991d7fd24a67826f23b56a361f4b681e40d174f3b46.srt",
+              "sha256": "0993d4eea9f683e6629fb991d7fd24a67826f23b56a361f4b681e40d174f3b46",
+              "bytes": 2874,
+              "role": "local_editing_version"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "source_url": "https://a.p4theater.cn/videos/uynQEJy6KGE",
+          "official_context_url": "https://a.p4theater.cn/videos/uynQEJy6KGE",
+          "files": [
+            {
+              "file_accession": "AR-S000548-F00001",
+              "location_sha256": "6d488b1945c51e64ee01043ea47e55dd2eebeeed7d77a2fe76ea4348a2c34b9b"
+            }
+          ],
+          "version_sha256": "18efcd48c35de3093857027ebd9ed30fe36a21b24641768a01a18f5c92b43fd3"
+        }
+      ],
+      "in_current_manifest": true,
+      "current_version_sha256": "18efcd48c35de3093857027ebd9ed30fe36a21b24641768a01a18f5c92b43fd3"
     }
   ]
 }
