@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "as_of": "2026-10-27T10:02:02.564730+00:00",
-  "scope_note": "仅统计已明确的固定批次；同一材料可有目录和正文两个观察口径，批次有重叠，不能相加为整体完成率。字幕、文章、视频与仓库各按自己的单位计算。家庭及范围排除单列，不当作待发布积压。根据用户2026-10-27明确要求，后续归档此前完成的文章、字幕、图片和其他文字资料，不再上传大型视频原片；已有上传予以保留。候选目录或文件位置记录不等于原文件已上传。",
+  "as_of": "2026-10-27T10:46:24.452762+00:00",
+  "scope_note": "仅统计已明确的固定批次；同一材料可有目录和正文两个观察口径，批次有重叠，不能相加为整体完成率。字幕、文章、视频与仓库各按自己的单位计算。家庭及范围排除单列，不当作待发布积压。根据用户2026-10-27明确要求，后续归档此前完成的文章、字幕、图片和其他文字资料，不再上传大型视频原片；已有上传予以保留。用户另同意归档指定的《人类投降派》小片段用于按编号下载；累计时码仅为暂定拼接位置，尚未与成片核实。候选目录或文件位置记录不等于原文件已上传。",
   "overall_progress": {
     "status": "not_calculated",
     "reason": "Batches have separate scope and units; unknown is not zero; excluded family scope is not pending publication."
   },
   "source_sha256": {
-    "progress/work-items.json": "9548e50dd543cccbab706806f321271a2e6b11ad1f835d9622483309f70c49b9",
+    "progress/work-items.json": "eda635b3fd475b43d02cb8b37c19fef4d21b5b3123bd93882d8521504b147bb0",
     "published/manifest.json": "021a4b6a265a2fe6171db12ebe8066818a93144b37e85959f6f3d3e7c8d75170",
     "catalog/summary.json": "55c69349c8dfbacd263cd01cf6a16250e9ab269697548653a782c9f9dc7b3c79",
     "progress/caption-top10-20261024.json": "babea3c84e6d5d6e5d748fffdf54cb752d46b737f6782471ed285588c765d7fb"
